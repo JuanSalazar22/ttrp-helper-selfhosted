@@ -144,3 +144,130 @@ function readBody(req) {
     req.on('error', reject);
   });
 }
+
+/* ---------- routes ---------- */
+const routes = {
+  'GET /api/health': async (req, res) => json(res, 200, { ok: true, users: db.users.length }),
+
+  'GET /api/me': async (req, res) => {
+    const user = readSession(req);
+    if (!user) return json(res, 401, { error: 'not signed in' });
+    json(res, 200, { user: { id: user.id, name: user.name } });
+  },
+
+  'PATCH /api/me': async (req, res) => {
+    const user = readSession(req);
+    if (!user) return json(res, 401, { error: 'not signed in' });
+    const body = await readBody(req);
+    const name = String(body.name || '').trim().slice(0, 60);
+    if (!name) return json(res, 400, { error: 'name required' });
+    user.name = name;
+    saveDb();
+    json(res, 200, { user: { id: user.id, name: user.name } });
+  },
+
+  'POST /api/register/options': async (req, res) => {
+    const body = await readBody(req);
+    const name = String(body.name || '').trim().slice(0, 60);
+    if (!name) return json(res, 400, { error: 'name required' });
+    const uid = crypto.randomBytes(12).toString('base64url');
+    const options = await generateRegistrationOptions({
+      rpName: RP_NAME, rpID: RP_ID,
+      userID: Buffer.from(uid), userName: name, userDisplayName: name,
+      attestationType: 'none',
+      authenticatorSelection: { residentKey: 'required', userVerification: 'preferred' },
+      excludeCredentials: [],
+    });
+    const cid = putChallenge({ kind: 'register', challenge: options.challenge, name, uid });
+    json(res, 200, { cid, options });
+  },
+
+  'POST /api/register/verify': async (req, res) => {
+    const body = await readBody(req);
+    const c = takeChallenge(body.cid);
+    if (!c || c.kind !== 'register') return json(res, 400, { error: 'challenge expired — try again' });
+    let verification;
+    try {
+      verification = await verifyRegistrationResponse({
+        response: body.credential,
+        expectedChallenge: c.challenge,
+        expectedOrigin: ORIGIN,
+        expectedRPID: RP_ID,
+        requireUserVerification: false,
+      });
+    } catch (e) {
+      return json(res, 400, { error: 'verification failed: ' + e.message });
+    }
+    if (!verification.verified) return json(res, 400, { error: 'not verified' });
+    const { credential } = verification.registrationInfo;
+    if (db.creds.find((x) => x.id === credential.id)) {
+      return json(res, 409, { error: 'credential already registered' });
+    }
+    const user = { id: c.uid, name: c.name, created: new Date().toISOString() };
+    db.users.push(user);
+    db.creds.push({
+      id: credential.id, userId: user.id,
+      publicKey: Buffer.from(credential.publicKey).toString('base64url'),
+      counter: credential.counter || 0,
+      transports: body.credential?.response?.transports || [],
+    });
+    saveDb();
+    json(res, 200, { user: { id: user.id, name: user.name } }, { 'Set-Cookie': sessionCookie(user.id) });
+  },
+
+  'POST /api/login/options': async (req, res) => {
+    const options = await generateAuthenticationOptions({
+      rpID: RP_ID, userVerification: 'preferred', allowCredentials: [],
+    });
+    const cid = putChallenge({ kind: 'login', challenge: options.challenge });
+    json(res, 200, { cid, options });
+  },
+
+  'POST /api/login/verify': async (req, res) => {
+    const body = await readBody(req);
+    const c = takeChallenge(body.cid);
+    if (!c || c.kind !== 'login') return json(res, 400, { error: 'challenge expired — try again' });
+    const credId = body.credential?.id;
+    const stored = db.creds.find((x) => x.id === credId);
+    if (!stored) return json(res, 401, { error: 'unknown credential' });
+    let verification;
+    try {
+      verification = await verifyAuthenticationResponse({
+        response: body.credential,
+        expectedChallenge: c.challenge,
+        expectedOrigin: ORIGIN,
+        expectedRPID: RP_ID,
+        credential: {
+          id: stored.id,
+          publicKey: Buffer.from(stored.publicKey, 'base64url'),
+          counter: stored.counter,
+          transports: stored.transports,
+        },
+        requireUserVerification: false,
+      });
+    } catch (e) {
+      return json(res, 401, { error: 'verification failed: ' + e.message });
+    }
+    if (!verification.verified) return json(res, 401, { error: 'not verified' });
+    stored.counter = verification.authenticationInfo.newCounter;
+    saveDb();
+    const user = db.users.find((u) => u.id === stored.userId);
+    if (!user) return json(res, 401, { error: 'account no longer exists' });
+    json(res, 200, { user: { id: user.id, name: user.name } }, { 'Set-Cookie': sessionCookie(user.id) });
+  },
+
+  'POST /api/logout': async (req, res) => json(res, 200, { ok: true }, { 'Set-Cookie': clearCookie }),
+};
+
+http.createServer(async (req, res) => {
+  const url = new URL(req.url, 'http://x');
+  const key = req.method + ' ' + url.pathname;
+  const handler = routes[key];
+  if (!handler) return json(res, 404, { error: 'not found' });
+  try {
+    await handler(req, res);
+  } catch (e) {
+    console.error(key, e);
+    json(res, 500, { error: 'internal error' });
+  }
+}).listen(PORT, () => console.log(`ttrp-selfhosted api listening on :${PORT}`));
