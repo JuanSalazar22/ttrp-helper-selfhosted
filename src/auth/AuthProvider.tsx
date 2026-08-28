@@ -1,18 +1,17 @@
 import { createContext, useContext, useEffect, useState, useCallback } from 'react';
-import { Platform } from 'react-native';
-import * as Linking from 'expo-linking';
-import type { Session } from '@supabase/supabase-js';
-import { supabase } from '@/lib/supabase';
-import { supabaseConfig } from '@/lib/config';
+import * as api from '@/lib/api';
+import { createPasskey, getPasskey } from '@/auth/webauthn';
+
+type Session = { user: api.ApiUser };
 
 type AuthState = {
   session: Session | null;
   loading: boolean;
-  configured: boolean;
   displayName: string | null;
-  signInWithPassword: (email: string, password: string) => Promise<{ error: string | null }>;
-  signUp: (email: string, password: string) => Promise<{ error: string | null; needsConfirmation: boolean }>;
-  sendPasswordReset: (email: string) => Promise<{ error: string | null }>;
+  registerPasskey: (name: string) => Promise<{ error: string | null }>;
+  loginWithPasskey: () => Promise<{ error: string | null }>;
+  startDeviceLink: () => Promise<{ code: string | null; error: string | null }>;
+  linkDevice: (code: string, options: any) => Promise<{ error: string | null }>;
   signOut: () => Promise<void>;
   updateDisplayName: (name: string) => Promise<{ error: string | null }>;
   deleteAccount: () => Promise<{ error: string | null }>;
@@ -20,87 +19,87 @@ type AuthState = {
 
 const AuthContext = createContext<AuthState | null>(null);
 
+function errorMessage(e: unknown): string {
+  return e instanceof Error ? e.message : 'Something went wrong';
+}
+
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [session, setSession] = useState<Session | null>(null);
   const [loading, setLoading] = useState(true);
 
-  // Restore + subscribe to session changes.
+  // Restore session on mount — the browser sends the HttpOnly cookie automatically;
+  // we just ask the server who (if anyone) it belongs to.
   useEffect(() => {
-    if (!supabaseConfig.enabled) { setLoading(false); return; }
-    supabase.auth.getSession().then(({ data }) => {
-      setSession(data.session);
-      setLoading(false);
-    });
-    const { data: sub } = supabase.auth.onAuthStateChange((_event, s) => setSession(s));
-    return () => sub.subscription.unsubscribe();
+    api.getMe().then((user) => { setSession(user ? { user } : null); setLoading(false); });
   }, []);
 
-  // Native: turn the magic-link redirect (?code=…) into a session. Web is handled by
-  // detectSessionInUrl in the client config.
-  useEffect(() => {
-    if (!supabaseConfig.enabled || Platform.OS === 'web') return;
-    const handle = async (url: string | null) => {
-      if (!url) return;
-      const code = Linking.parse(url).queryParams?.code;
-      if (typeof code === 'string') await supabase.auth.exchangeCodeForSession(code);
-    };
-    Linking.getInitialURL().then(handle);
-    const sub = Linking.addEventListener('url', ({ url }) => handle(url));
-    return () => sub.remove();
+  const registerPasskey = useCallback(async (name: string) => {
+    try {
+      const { cid, options } = await api.registerOptions(name);
+      const credential = await createPasskey(options);
+      const user = await api.registerVerify(cid, credential);
+      setSession({ user });
+      return { error: null };
+    } catch (e) {
+      return { error: errorMessage(e) };
+    }
   }, []);
 
-  const signInWithPassword = useCallback(async (email: string, password: string) => {
-    if (!supabaseConfig.enabled) return { error: 'Sync is not configured' };
-    const { error } = await supabase.auth.signInWithPassword({
-      email: email.trim(),
-      password,
-    });
-    return { error: error?.message ?? null };
+  const loginWithPasskey = useCallback(async () => {
+    try {
+      const { cid, options } = await api.loginOptions();
+      const credential = await getPasskey(options);
+      const user = await api.loginVerify(cid, credential);
+      setSession({ user });
+      return { error: null };
+    } catch (e) {
+      return { error: errorMessage(e) };
+    }
   }, []);
 
-  const signUp = useCallback(async (email: string, password: string) => {
-    if (!supabaseConfig.enabled) return { error: 'Sync is not configured', needsConfirmation: false };
-    const emailRedirectTo = Linking.createURL('auth/callback');
-    const { data, error } = await supabase.auth.signUp({
-      email: email.trim(),
-      password,
-      options: { emailRedirectTo },
-    });
-    // session is null when email-confirmation is required by the project.
-    return { error: error?.message ?? null, needsConfirmation: !!data && data.session == null };
+  const startDeviceLink = useCallback(async () => {
+    try {
+      const { code } = await api.startDeviceLinkOptions();
+      return { code, error: null };
+    } catch (e) {
+      return { code: null, error: errorMessage(e) };
+    }
   }, []);
 
-  const sendPasswordReset = useCallback(async (email: string) => {
-    if (!supabaseConfig.enabled) return { error: 'Sync is not configured' };
-    const redirectTo = Linking.createURL('auth/reset-password');
-    const { error } = await supabase.auth.resetPasswordForEmail(email.trim(), { redirectTo });
-    return { error: error?.message ?? null };
+  // The receiving device only has a 6-digit code, no session — it fetches its
+  // registration options via api.exchangeLinkCode(code) *before* calling this
+  // (see AccountSheet.tsx), then completes the ceremony and verifies here.
+  const linkDevice = useCallback(async (code: string, options: any) => {
+    try {
+      const credential = await createPasskey(options);
+      const user = await api.verifyDeviceLink(code, credential);
+      setSession({ user });
+      return { error: null };
+    } catch (e) {
+      return { error: errorMessage(e) };
+    }
   }, []);
 
-  const signOut = useCallback(async () => { await supabase.auth.signOut(); }, []);
+  const signOut = useCallback(async () => { await api.logout(); setSession(null); }, []);
 
   const updateDisplayName = useCallback(async (name: string) => {
-    if (!supabaseConfig.enabled) return { error: 'Sync is not configured' };
-    const { error } = await supabase.auth.updateUser({ data: { full_name: name.trim() } });
-    return { error: error?.message ?? null };
+    const { error } = await api.updateMe(name.trim());
+    if (!error) setSession((s) => (s ? { user: { ...s.user, name: name.trim() } } : s));
+    return { error };
   }, []);
 
   const deleteAccount = useCallback(async () => {
-    if (!supabaseConfig.enabled || !session) return { error: 'Not signed in' };
-    const { error } = await supabase.functions.invoke('delete-account');
-    if (error) return { error: error.message };
-    await supabase.auth.signOut();
-    return { error: null };
+    if (!session) return { error: 'Not signed in' };
+    const { error } = await api.deleteAccountRequest();
+    if (!error) setSession(null);
+    return { error };
   }, [session]);
-
-  const displayName: string | null =
-    (session?.user.user_metadata?.full_name as string | undefined) ?? null;
 
   return (
     <AuthContext.Provider value={{
-      session, loading, configured: supabaseConfig.enabled,
-      displayName,
-      signInWithPassword, signUp, sendPasswordReset,
+      session, loading,
+      displayName: session?.user.name ?? null,
+      registerPasskey, loginWithPasskey, startDeviceLink, linkDevice,
       signOut, updateDisplayName, deleteAccount,
     }}>
       {children}

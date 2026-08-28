@@ -5,6 +5,7 @@
   "dependencies": {
     "@expo/metro-runtime": "~56.0.13",
     "@lottiefiles/dotlottie-react": "^0.13.5",
+    "@simplewebauthn/browser": "^13.3.0",
     "expo": "~56.0.12",
     "expo-constants": "~56.0.23",
     "expo-document-picker": "~56.0.4",
