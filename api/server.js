@@ -129,6 +129,12 @@ setInterval(() => {
 // code well within its 5-minute TTL. Capped low enough to make brute-forcing
 // impractical (reaching even a small fraction of 1e6 guesses is impossible
 // at this rate) while comfortably covering legitimate typos/retries.
+// Deliberately GLOBAL, not per-IP/per-code: this app targets a single
+// self-hosted instance for one small, mutually-trusting tenant (a household
+// or friend group), where device-linking is an occasional, cooperative
+// action — a shared short lockout is proportionate. Revisit with a per-IP
+// or per-code scheme if this ever needs to support many unrelated tenants
+// on one instance.
 let linkFailCount = 0;
 let linkFailWindowStart = Date.now();
 const LINK_FAIL_WINDOW_MS = 5 * 60000;
