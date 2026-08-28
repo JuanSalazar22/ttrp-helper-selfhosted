@@ -59,26 +59,68 @@ and switching to passkey auth."
 - Delete: `src/lib/secureStorage.ts`
 - Delete: `src/lib/__tests__/secureStorage.test.ts`
 - Delete: `app/auth/callback.tsx`, `app/auth/reset-password.tsx` (magic-link/password-reset screens — import `@/lib/supabase` directly, so they'd be left as broken imports for many tasks if deleted later; removed here instead)
-- Modify: `package.json`
+- Delete: `src/sync/bugReports.ts`, `src/sync/__tests__/bugReports.test.ts` — the beta bug-report feature `INSERT`s straight into the maintainer's own Supabase `bug_reports` table (see the file's own doc comment). Not part of this fork's scope (not sync, not login) and actively wrong to keep: it would either dangle on a deleted import, or if "fixed," silently phone every self-hoster's bug reports home to the original maintainer's cloud project.
+- Delete: `app/(tabs)/report.tsx` — its only consumer, `bugReports.ts`, is gone above; leaving this screen in place even one commit longer means a dangling import to a deleted module.
+- Modify: `app/(tabs)/_layout.tsx` — remove the `report` tab entirely: the `Tabs.Screen` block, the `Bug` icon import, and the now-unused `supabaseConfig` import (this file's *only* use of `supabaseConfig` is gating this tab's visibility — verified by reading the file, not guessed).
+- Modify: `package.json` — remove the Supabase dependency/scripts (below), and three now-orphaned dependencies whose only consumer was code just deleted: `expo-secure-store` (only used by the deleted `secureStorage.ts`), `buffer` and `react-native-url-polyfill` (Supabase-js's RN polyfills, not used anywhere else in this codebase — confirmed via `grep -rn "from 'buffer'\|react-native-url-polyfill" src app`).
+- Modify: `src/sync/reconcile.ts` — one stale doc-comment reference to "the Supabase `characters` table"; reword to stay accurate now that the backend is no longer Supabase (see Step 1's last bullet below for the exact wording).
 
-- [ ] **Step 1: Delete Supabase-only files and the screens that directly import the client**
+- [ ] **Step 1: Delete Supabase-only files, the auth screens that directly import the client, and the bug-report feature (screen + backend + tab wiring, all in the same commit — no dangling imports left for later tasks to trip over)**
 
 ```bash
 rm -rf supabase
 rm src/lib/supabase.ts
 rm src/lib/secureStorage.ts src/lib/__tests__/secureStorage.test.ts
 rm app/auth/callback.tsx app/auth/reset-password.tsx
+rmdir app/auth
+rm src/sync/bugReports.ts src/sync/__tests__/bugReports.test.ts
+rm "app/(tabs)/report.tsx"
 ```
 
-- [ ] **Step 2: Remove the Supabase dependency and CLI scripts from `package.json`**
+In `app/(tabs)/_layout.tsx`: change the icon import from
+```typescript
+import { Users, Dices, Settings, Bug } from 'lucide-react-native';
+```
+to
+```typescript
+import { Users, Dices, Settings } from 'lucide-react-native';
+```
+delete the line `import { supabaseConfig } from '@/lib/config';`, and delete the entire `report` `Tabs.Screen` block:
+```typescript
+      <Tabs.Screen
+        name="report"
+        options={{
+          title: tr('tabs.report'),
+          tabBarIcon: ({ color, size }) => <Bug size={size} color={color} />,
+          // Hidden when Supabase is unconfigured — a report form with nowhere to send
+          // is worse than no tab. Matches how AccountSheet hides account UI.
+          href: supabaseConfig.enabled ? undefined : null,
+        }}
+      />
+```
+The file should end up with exactly three tabs: `index`, `dice`, `settings`.
 
-Remove the `"@supabase/supabase-js": "^2.108.2",` line from `dependencies`, and remove these three lines from `scripts`:
+In `src/sync/reconcile.ts`, find the doc comment mentioning "the Supabase `characters` table" (near the top of the file, describing the `CloudCharacter` type) and reword it to describe the shape generically — e.g. "a character row as returned from the cloud backend's characters endpoint" — without naming Supabase, since it no longer is one. Read the existing comment first and make the minimal wording change; don't rewrite the whole comment block.
 
+- [ ] **Step 2: Remove the Supabase dependency, its now-orphaned polyfills, and the Supabase CLI scripts from `package.json`**
+
+Remove these four lines from `dependencies`:
+```json
+    "@supabase/supabase-js": "^2.108.2",
+    "buffer": "^6.0.3",
+    "expo-secure-store": "~56.0.4",
+    "react-native-url-polyfill": "^3.0.0",
+```
+(Before removing, confirm each is genuinely unused elsewhere: `grep -rn "from 'buffer'\|expo-secure-store\|react-native-url-polyfill" src app` should return nothing once Step 1's deletions are in place. `react-native-get-random-values` is a *different* package — still used for `uuid` elsewhere — do not remove it.)
+
+Remove these three lines from `scripts`:
 ```json
     "db:start": "npx supabase start",
     "db:stop": "npx supabase stop",
     "test:db": "npx supabase test db"
 ```
+
+Also remove `"expo-secure-store"` from the `plugins` array in `app.json` (it's an Expo config plugin, not just an npm dependency — leaving it listed there while the package is uninstalled breaks `expo prebuild`/native builds).
 
 - [ ] **Step 3: Reinstall to update the lockfile**
 
@@ -88,19 +130,33 @@ npm install
 
 Expected: exits 0, `package-lock.json` no longer references `@supabase/supabase-js`.
 
-- [ ] **Step 4: Confirm nothing still imports the deleted modules**
+- [ ] **Step 4: Confirm the ONLY remaining references to the deleted client are in files Tasks 9–10 will rewrite, not anywhere new**
 
 ```bash
 grep -rln "@supabase/supabase-js\|lib/supabase\b\|lib/secureStorage" src app 2>/dev/null
 ```
 
-Expected: no output. `AuthProvider.tsx`, `AccountSheet.tsx`, and the other screens still reference the *old* `useAuth()` shape (email/password fields, `session.user.email`) until Tasks 9–13 rewrite them — that's a separate, expected transient state (those files still compile against the old `AuthProvider` export, which Task 9 hasn't touched yet), not a dangling import of a deleted module.
+Expected: exactly these three files, and nothing else —
+```
+src/auth/AuthProvider.tsx
+src/sync/cloudCharacters.ts
+src/sync/__tests__/cloudCharacters.test.ts
+```
+`app/(tabs)/report.tsx` must NOT appear (it's deleted, per Step 1) and neither must anything else. These three ARE expected to still import the now-deleted `@/lib/supabase`/`@supabase/supabase-js` — **that specific breakage is by design**, not something to fix in this task: `npm run typecheck`/`npm test` will fail because of exactly these three files until Task 9 rewrites `AuthProvider.tsx` and Task 10 rewrites `cloudCharacters.ts`/its test. A reviewer or later reader seeing a red typecheck at this commit is seeing expected, planned, sequential-task breakage — not a defect in this task's work. If the grep shows any file OTHER than these three, THAT is a real dangling reference this task needs to resolve.
 
 - [ ] **Step 5: Commit**
 
 ```bash
 git add -A
-git commit -m "chore: remove Supabase (backend, client, secure-store auth adapter)"
+git commit -m "chore: remove Supabase and the Supabase-only bug-report feature
+
+Deletes the Supabase client/config/migrations/RLS, the secure-store
+auth adapter, the magic-link auth screens, and the bug-report feature
+(which posted straight to the maintainer's own Supabase project — out
+of scope for a self-hosted fork). AuthProvider.tsx and
+cloudCharacters.ts still reference the deleted client and will not
+compile until Tasks 9-10 rewrite them against the new backend; that
+breakage is expected and sequential, not a defect in this commit."
 ```
 
 ---
@@ -1706,17 +1762,33 @@ git commit -m "feat(ui): rewrite AccountSheet for passkey sign-up/sign-in + devi
 
 ---
 
-## Task 13: Frontend — remaining screens, config references, and dead auth routes
+## Task 13: Frontend — remaining screens' config references
+
+**Corrected against the actual source** (an earlier draft of this task guessed at these files without reading them — verified during Task 2's implementation that `configured` is what gates the Account UI in `settings.tsx`/`index.tsx`. The Report tab and its `_layout.tsx`/`supabaseConfig` wiring were moved into Task 2 and are already gone by this point — nothing left to do for them here.)
 
 **Files:**
-- Modify: `app/(tabs)/settings.tsx:123` — `session.user.email` → `session.user.name`
-- Modify: `app/(tabs)/index.tsx:133,136` — `session.user.email` → `session.user.name`
-- Modify: `app/(tabs)/report.tsx:43` — drop the email prefill (no email on a passkey account)
-- Modify: `app/(tabs)/_layout.tsx:56` — `supabaseConfig.enabled` → `Platform.OS === 'web'`
+- Modify: `app/(tabs)/settings.tsx` — drop `configured` from `useAuth()` destructuring (Task 9's `AuthProvider` no longer exposes it — the backend is always present in a self-hosted deploy), gate the Account section on `Platform.OS === 'web'` instead, fix the email reference.
+- Modify: `app/(tabs)/index.tsx` — same `configured` → `Platform.OS === 'web'` change, add the `Platform` import, fix the email references.
 
-(`app/auth/callback.tsx` and `app/auth/reset-password.tsx` were already deleted in Task 2, alongside `src/lib/supabase.ts`.)
+- [ ] **Step 1: Fix `app/(tabs)/settings.tsx`**
 
-- [ ] **Step 1: Fix `app/(tabs)/settings.tsx:123`**
+Change:
+```typescript
+  const { session, loading, configured } = useAuth();
+```
+to:
+```typescript
+  const { session, loading } = useAuth();
+```
+
+Change:
+```typescript
+      {configured && (
+```
+to:
+```typescript
+      {Platform.OS === 'web' && (
+```
 
 Change:
 ```typescript
@@ -1727,7 +1799,32 @@ to:
                   ? tr('settings.account.signedInAs', { name: session.user.name })
 ```
 
-- [ ] **Step 3: Fix `app/(tabs)/index.tsx:133,136`**
+`Platform` is already imported in this file (see its first import line), so no new import is needed here.
+
+- [ ] **Step 2: Fix `app/(tabs)/index.tsx`**
+
+Add `Platform` to the react-native import at the top of the file:
+```typescript
+import { View, Text, StyleSheet, TouchableOpacity, TextInput, FlatList, Alert, ActivityIndicator, Platform } from 'react-native';
+```
+
+Change:
+```typescript
+  const { session, configured, displayName } = useAuth();
+```
+to:
+```typescript
+  const { session, displayName } = useAuth();
+```
+
+Change:
+```typescript
+          {configured && (
+```
+to:
+```typescript
+          {Platform.OS === 'web' && (
+```
 
 Change:
 ```typescript
@@ -1737,7 +1834,8 @@ to:
 ```typescript
               {session && displayName ? (
 ```
-and:
+
+Change:
 ```typescript
                     {(displayName ?? session.user.email ?? '?')[0].toUpperCase()}
 ```
@@ -1746,41 +1844,15 @@ to:
                     {(displayName ?? '?')[0].toUpperCase()}
 ```
 
-- [ ] **Step 4: Fix `app/(tabs)/report.tsx:43`**
-
-Change:
-```typescript
-  const [email, setEmail] = useState(session?.user.email ?? '');
-```
-to:
-```typescript
-  const [email, setEmail] = useState('');
-```
-
-Passkey accounts have no email on file — the bug-report form's email field stays user-typed, same as when signed out today.
-
-- [ ] **Step 5: Fix `app/(tabs)/_layout.tsx:56`**
-
-Change:
-```typescript
-          href: supabaseConfig.enabled ? undefined : null,
-```
-to:
-```typescript
-          href: Platform.OS === 'web' ? undefined : null,
-```
-
-Remove the now-unused `import { supabaseConfig } from '@/lib/config';` from this file and add `import { Platform } from 'react-native';` if not already imported. Passkeys are web-only for this pass (see design spec's non-goals), so the Account tab is hidden on native rather than showing a backend that isn't reachable from there.
-
-- [ ] **Step 6: Confirm no remaining references to the deleted concepts**
+- [ ] **Step 3: Confirm no remaining references to the deleted concepts**
 
 ```bash
-grep -rn "supabaseConfig\|session\.user\.email\|isValidEmail\|isValidPassword\|signInWithPassword\|sendPasswordReset\|\bsignUp\b" app src 2>/dev/null
+grep -rn "supabaseConfig\|session\.user\.email\|isValidEmail\|isValidPassword\|signInWithPassword\|sendPasswordReset\|\bsignUp\b\|bugReports\|tabs\.report" app src 2>/dev/null
 ```
 
-Expected: no output.
+Expected: no output. (`tabs.report` is the i18n key used only by the Report tab deleted in Task 2 — a later cleanup could remove it from `en.ts`/`es.ts`, but leaving an unused i18n key behind is harmless and out of scope here; this grep is checking for *code* references, not flagging the key itself.)
 
-- [ ] **Step 7: Typecheck and test**
+- [ ] **Step 4: Typecheck and test**
 
 ```bash
 npm run typecheck
@@ -1789,11 +1861,11 @@ npm test
 
 Expected: both pass. If `npm test` fails on a file not touched by this plan, stop and report it rather than patching around it blind — it means something outside this plan's scope broke.
 
-- [ ] **Step 8: Commit**
+- [ ] **Step 5: Commit**
 
 ```bash
 git add -A
-git commit -m "fix: update remaining screens for passkey sessions (no email field), gate Account tab to web"
+git commit -m "fix: gate Account UI to web (backend is web-only for passkeys this pass), fix session field references"
 ```
 
 ---
