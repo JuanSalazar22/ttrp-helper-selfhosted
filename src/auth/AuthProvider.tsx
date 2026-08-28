@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState, useCallback } from 'react';
+import { Platform } from 'react-native';
 import * as api from '@/lib/api';
 import { createPasskey, getPasskey } from '@/auth/webauthn';
 
@@ -28,8 +29,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   // Restore session on mount — the browser sends the HttpOnly cookie automatically;
-  // we just ask the server who (if anyone) it belongs to.
+  // we just ask the server who (if anyone) it belongs to. Native has no passkey UI
+  // yet (web-only for this pass), so skip the network call entirely there rather
+  // than hitting a relative URL that isn't valid for React Native's fetch.
   useEffect(() => {
+    if (Platform.OS !== 'web') { setLoading(false); return; }
     api.getMe().then((user) => { setSession(user ? { user } : null); setLoading(false); });
   }, []);
 
