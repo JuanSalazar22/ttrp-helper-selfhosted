@@ -145,6 +145,11 @@ function readBody(req) {
   });
 }
 
+function charIdFromPath(pathname, suffix) {
+  const m = pathname.match(new RegExp('^/api/characters/([^/]+)' + suffix + '$'));
+  return m ? decodeURIComponent(m[1]) : null;
+}
+
 /* ---------- routes ---------- */
 const routes = {
   'GET /api/health': async (req, res) => json(res, 200, { ok: true, users: db.users.length }),
@@ -327,11 +332,67 @@ const routes = {
     });
     json(res, 200, { options });
   },
+
+  'GET /api/characters': async (req, res) => {
+    const user = readSession(req);
+    if (!user) return json(res, 401, { error: 'not signed in' });
+    json(res, 200, { characters: readChars(user.id) });
+  },
+
+  'POST /api/characters/clear': async (req, res) => {
+    const user = readSession(req);
+    if (!user) return json(res, 401, { error: 'not signed in' });
+    const now = new Date().toISOString();
+    const list = readChars(user.id).map((c) => ({ ...c, deleted_at: now }));
+    saveChars(user.id, list);
+    json(res, 200, { ok: true });
+  },
+
+  'POST /api/account/delete': async (req, res) => {
+    const user = readSession(req);
+    if (!user) return json(res, 401, { error: 'not signed in' });
+    db.users = db.users.filter((u) => u.id !== user.id);
+    db.creds = db.creds.filter((c) => c.userId !== user.id);
+    saveDb();
+    try { fs.unlinkSync(charsFile(user.id)); } catch {}
+    json(res, 200, { ok: true }, { 'Set-Cookie': clearCookie });
+  },
 };
 
 http.createServer(async (req, res) => {
   const url = new URL(req.url, 'http://x');
   const key = req.method + ' ' + url.pathname;
+
+  if (req.method === 'PUT' && charIdFromPath(url.pathname, '') !== null) {
+    const user = readSession(req);
+    if (!user) return json(res, 401, { error: 'not signed in' });
+    const id = charIdFromPath(url.pathname, '');
+    const body = await readBody(req);
+    const list = readChars(user.id);
+    const now = new Date().toISOString();
+    const existing = list.find((c) => c.id === id);
+    if (existing) {
+      existing.system = body.system;
+      existing.data = body.data;
+      existing.updated_at = now;
+      existing.deleted_at = null;
+    } else {
+      list.push({ id, system: body.system, data: body.data, updated_at: now, deleted_at: null });
+    }
+    saveChars(user.id, list);
+    return json(res, 200, { updated_at: now });
+  }
+
+  if (req.method === 'POST' && charIdFromPath(url.pathname, '/delete') !== null) {
+    const user = readSession(req);
+    if (!user) return json(res, 401, { error: 'not signed in' });
+    const id = charIdFromPath(url.pathname, '/delete');
+    const list = readChars(user.id);
+    const row = list.find((c) => c.id === id);
+    if (row) { row.deleted_at = new Date().toISOString(); saveChars(user.id, list); }
+    return json(res, 200, { ok: true });
+  }
+
   const handler = routes[key];
   if (!handler) return json(res, 404, { error: 'not found' });
   try {
