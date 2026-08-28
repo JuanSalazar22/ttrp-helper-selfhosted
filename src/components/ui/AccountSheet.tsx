@@ -7,91 +7,87 @@ import { X, LogOut } from 'lucide-react-native';
 import { useTheme } from '@/hooks/useTheme';
 import { useTranslation, type TKey } from '@/i18n';
 import { useAuth } from '@/auth/AuthProvider';
-import { isValidEmail } from '@/auth/email';
-import { isValidPassword } from '@/auth/password';
+import { exchangeLinkCode } from '@/lib/api';
 import { softDeleteAllCharacters } from '@/sync/cloudCharacters';
 import { confirmRemove } from '@/lib/confirm';
 
 type Props = { visible: boolean; onClose: () => void };
 
-type Mode = 'signIn' | 'signUp' | 'forgot' | 'emailSent';
-type EmailSentKind = 'signUp' | 'reset';
+type Mode = 'start' | 'enterName' | 'showLinkCode' | 'enterLinkCode';
 
-/** Bottom sheet for email+password auth (signed-out) or profile (signed-in). */
+/** Bottom sheet for passkey auth (signed-out) or profile (signed-in). */
 export function AccountSheet({ visible, onClose }: Props) {
   const t = useTheme();
   const tr = useTranslation();
   const {
-    session, loading, configured, displayName,
-    signInWithPassword, signUp, sendPasswordReset, signOut, updateDisplayName, deleteAccount,
+    session, loading, displayName,
+    registerPasskey, loginWithPasskey, startDeviceLink, linkDevice,
+    signOut, updateDisplayName, deleteAccount,
   } = useAuth();
 
-  // mode + form fields (signed-out flow)
-  const [mode, setMode] = useState<Mode>('signIn');
-  const [emailSentKind, setEmailSentKind] = useState<EmailSentKind>('signUp');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirm, setConfirm] = useState('');
+  const [mode, setMode] = useState<Mode>('start');
+  const [name, setName] = useState('');
+  const [linkCode, setLinkCode] = useState<string | null>(null);
+  const [linkCodeInput, setLinkCodeInput] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [formError, setFormError] = useState<string | null>(null);
 
-  // display-name edit (signed-in flow)
   const [nameInput, setNameInput] = useState('');
   const [nameStatus, setNameStatus] = useState<'idle' | 'saving' | 'saved'>('idle');
 
-  // danger-zone (signed-in flow)
   const [removingCloud, setRemovingCloud] = useState(false);
   const [deletingAccount, setDeletingAccount] = useState(false);
   const [deleteConfirmOpen, setDeleteConfirmOpen] = useState(false);
   const [accountError, setAccountError] = useState<string | null>(null);
 
-  // Reset signed-out form whenever the sheet closes or mode changes.
   useEffect(() => {
     if (!visible) {
-      setMode('signIn');
-      setEmail(''); setPassword(''); setConfirm('');
-      setFormError(null); setSubmitting(false);
-      setNameStatus('idle');
+      setMode('start'); setName(''); setLinkCode(null); setLinkCodeInput('');
+      setFormError(null); setSubmitting(false); setNameStatus('idle');
     }
   }, [visible]);
 
-  // Wipe stale error/secret on mode switch.
-  useEffect(() => { setFormError(null); setPassword(''); setConfirm(''); }, [mode]);
+  useEffect(() => { setFormError(null); }, [mode]);
 
-  // Prefill display name when the session changes.
   useEffect(() => {
     setNameInput(displayName ?? '');
     setNameStatus('idle');
   }, [displayName]);
 
-  async function onSignIn() {
-    if (!isValidEmail(email)) { setFormError(tr('settings.account.invalidEmail')); return; }
-    if (!isValidPassword(password)) { setFormError(tr('settings.account.passwordTooShort')); return; }
-    setSubmitting(true); setFormError(null);
-    const { error } = await signInWithPassword(email, password);
-    setSubmitting(false);
-    if (error) { setFormError(error); return; }
-    // success → AuthProvider session updates → sheet re-renders into signedIn view.
-  }
-
   async function onSignUp() {
-    if (!isValidEmail(email)) { setFormError(tr('settings.account.invalidEmail')); return; }
-    if (!isValidPassword(password)) { setFormError(tr('settings.account.passwordTooShort')); return; }
-    if (password !== confirm) { setFormError(tr('settings.account.passwordMismatch')); return; }
+    if (!name.trim()) { setFormError(tr('settings.account.error')); return; }
     setSubmitting(true); setFormError(null);
-    const { error, needsConfirmation } = await signUp(email, password);
+    const { error } = await registerPasskey(name.trim());
     setSubmitting(false);
-    if (error) { setFormError(error); return; }
-    if (needsConfirmation) { setEmailSentKind('signUp'); setMode('emailSent'); }
+    if (error) setFormError(error);
   }
 
-  async function onForgot() {
-    if (!isValidEmail(email)) { setFormError(tr('settings.account.invalidEmail')); return; }
+  async function onSignIn() {
     setSubmitting(true); setFormError(null);
-    const { error } = await sendPasswordReset(email);
+    const { error } = await loginWithPasskey();
+    setSubmitting(false);
+    if (error) setFormError(error);
+  }
+
+  async function onShowLinkCode() {
+    setSubmitting(true); setFormError(null);
+    const { code, error } = await startDeviceLink();
     setSubmitting(false);
     if (error) { setFormError(error); return; }
-    setEmailSentKind('reset'); setMode('emailSent');
+    setLinkCode(code); setMode('showLinkCode');
+  }
+
+  async function onSubmitLinkCode() {
+    if (!linkCodeInput.trim()) return;
+    setSubmitting(true); setFormError(null);
+    try {
+      const { options } = await exchangeLinkCode(linkCodeInput.trim());
+      const { error } = await linkDevice(linkCodeInput.trim(), options);
+      if (error) setFormError(error);
+    } catch (e) {
+      setFormError(e instanceof Error ? e.message : tr('settings.account.error'));
+    }
+    setSubmitting(false);
   }
 
   async function onSaveName() {
@@ -129,51 +125,6 @@ export function AccountSheet({ visible, onClose }: Props) {
     onClose();
   }
 
-  function renderBody() {
-    if (!configured) {
-      return <Text style={[styles.hint, { color: t.colors.textMuted }]}>{tr('settings.account.subtitle')}</Text>;
-    }
-    if (loading) {
-      return <ActivityIndicator color={t.colors.accent} style={{ marginTop: 24 }} />;
-    }
-    if (session) return renderSignedIn();
-    if (mode === 'emailSent') return renderEmailSent();
-    if (mode === 'signUp') return renderSignUp();
-    if (mode === 'forgot') return renderForgot();
-    return renderSignIn();
-  }
-
-  function emailField(autoFocus = false) {
-    return (
-      <TextInput
-        style={[styles.input, inputColors()]}
-        value={email}
-        onChangeText={(v) => { setEmail(v); if (formError) setFormError(null); }}
-        placeholder={tr('settings.account.emailPlaceholder')}
-        placeholderTextColor={t.colors.textMuted}
-        autoCapitalize="none"
-        keyboardType="email-address"
-        inputMode="email"
-        autoFocus={autoFocus}
-      />
-    );
-  }
-
-  function passwordField(placeholderKey: TKey, value: string, setValue: (v: string) => void) {
-    return (
-      <TextInput
-        style={[styles.input, inputColors()]}
-        value={value}
-        onChangeText={(v) => { setValue(v); if (formError) setFormError(null); }}
-        placeholder={tr(placeholderKey)}
-        placeholderTextColor={t.colors.textMuted}
-        secureTextEntry
-        autoCapitalize="none"
-        autoCorrect={false}
-      />
-    );
-  }
-
   function inputColors() {
     return { color: t.colors.text, borderColor: t.colors.border, backgroundColor: t.colors.backgroundSecondary };
   }
@@ -204,75 +155,84 @@ export function AccountSheet({ visible, onClose }: Props) {
     );
   }
 
-  function renderSignIn() {
-    return (
-      <View style={styles.body}>
-        {emailField(true)}
-        {passwordField('settings.account.passwordPlaceholder', password, setPassword)}
-        {errorRow()}
-        {primaryButton(tr('settings.account.signIn'), onSignIn)}
-        <View style={styles.linkRow}>
-          {linkButton('settings.account.forgotPassword', () => setMode('forgot'))}
-        </View>
-        <View style={styles.divider as any} />
-        <View style={styles.linkRowCenter}>
-          {linkButton('settings.account.createAccountLink', () => setMode('signUp'))}
-        </View>
-      </View>
-    );
+  function renderBody() {
+    if (loading) return <ActivityIndicator color={t.colors.accent} style={{ marginTop: 24 }} />;
+    if (session) return renderSignedIn();
+    if (mode === 'enterName') return renderEnterName();
+    if (mode === 'enterLinkCode') return renderEnterLinkCode();
+    return renderStart();
   }
 
-  function renderSignUp() {
-    return (
-      <View style={styles.body}>
-        {emailField(true)}
-        {passwordField('settings.account.passwordPlaceholder', password, setPassword)}
-        {passwordField('settings.account.confirmPassword', confirm, setConfirm)}
-        {errorRow()}
-        {primaryButton(tr('settings.account.createAccount'), onSignUp)}
-        <View style={styles.linkRowCenter}>
-          {linkButton('settings.account.backToSignIn', () => setMode('signIn'))}
-        </View>
-      </View>
-    );
-  }
-
-  function renderForgot() {
+  function renderStart() {
     return (
       <View style={styles.body}>
         <Text style={[styles.hint, { color: t.colors.textMuted }]}>{tr('settings.account.subtitle')}</Text>
-        {emailField(true)}
         {errorRow()}
-        {primaryButton(tr('settings.account.sendResetLink'), onForgot)}
-        <View style={styles.linkRowCenter}>
-          {linkButton('settings.account.backToSignIn', () => setMode('signIn'))}
-        </View>
+        {primaryButton(tr('settings.account.signInWithPasskey'), onSignIn)}
+        <View style={styles.linkRowCenter}>{linkButton('settings.account.signUpWithPasskey', () => setMode('enterName'))}</View>
+        <View style={styles.linkRowCenter}>{linkButton('settings.account.haveLinkCode', () => setMode('enterLinkCode'))}</View>
       </View>
     );
   }
 
-  function renderEmailSent() {
-    const key: TKey = emailSentKind === 'signUp'
-      ? 'settings.account.confirmEmailSent'
-      : 'settings.account.resetEmailSent';
+  function renderEnterName() {
     return (
       <View style={styles.body}>
-        <Text style={[styles.hint, { color: t.colors.text }]}>{tr(key)}</Text>
+        <TextInput
+          style={[styles.input, inputColors()]}
+          value={name}
+          onChangeText={(v) => { setName(v); if (formError) setFormError(null); }}
+          placeholder={tr('settings.account.namePlaceholder')}
+          placeholderTextColor={t.colors.textMuted}
+          autoFocus
+          autoCorrect={false}
+        />
+        {errorRow()}
+        {primaryButton(tr('settings.account.signUpWithPasskey'), onSignUp)}
+        <View style={styles.linkRowCenter}>{linkButton('settings.account.backToSignIn', () => setMode('start'))}</View>
+      </View>
+    );
+  }
+
+  function renderEnterLinkCode() {
+    return (
+      <View style={styles.body}>
+        <TextInput
+          style={[styles.input, inputColors()]}
+          value={linkCodeInput}
+          onChangeText={(v) => { setLinkCodeInput(v); if (formError) setFormError(null); }}
+          placeholder={tr('settings.account.linkCodePlaceholder')}
+          placeholderTextColor={t.colors.textMuted}
+          keyboardType="number-pad"
+          autoFocus
+        />
+        {errorRow()}
+        {primaryButton(tr('settings.account.linkDeviceSubmit'), onSubmitLinkCode)}
+        <View style={styles.linkRowCenter}>{linkButton('settings.account.backToSignIn', () => setMode('start'))}</View>
       </View>
     );
   }
 
   function renderSignedIn() {
     if (!session) return null;
+    if (mode === 'showLinkCode' && linkCode) {
+      return (
+        <View style={styles.body}>
+          <Text style={[styles.hint, { color: t.colors.textMuted }]}>{tr('settings.account.addThisDeviceHint')}</Text>
+          <Text style={[styles.linkCode, { color: t.colors.text }]}>{tr('settings.account.linkCodeShown', { code: linkCode })}</Text>
+          <View style={styles.linkRowCenter}>{linkButton('settings.account.backToSignIn', () => setMode('start'))}</View>
+        </View>
+      );
+    }
     return (
       <View style={styles.body}>
         <View style={[styles.avatar, { backgroundColor: t.colors.accent + '22' }]}>
           <Text style={[styles.avatarText, { color: t.colors.accent }]}>
-            {(displayName ?? session.user.email ?? '?')[0].toUpperCase()}
+            {(displayName ?? '?')[0].toUpperCase()}
           </Text>
         </View>
         <Text style={[styles.emailLabel, { color: t.colors.textSecondary }]} numberOfLines={1}>
-          {session.user.email}
+          {tr('settings.account.signedInAs', { name: displayName ?? '' })}
         </Text>
         <Text style={[styles.fieldLabel, { color: t.colors.textSecondary }]}>
           {tr('settings.account.displayName')}
@@ -296,6 +256,11 @@ export function AccountSheet({ visible, onClose }: Props) {
             </Text>
           </TouchableOpacity>
         )}
+
+        <TouchableOpacity style={[styles.dangerBtn, { borderColor: t.colors.border, marginTop: 8 }]} onPress={onShowLinkCode}>
+          <Text style={[styles.dangerBtnText, { color: t.colors.text }]}>{tr('settings.account.addThisDevice')}</Text>
+        </TouchableOpacity>
+
         <TouchableOpacity
           style={[styles.signOutBtn, { borderColor: t.colors.border }]}
           onPress={() => { signOut(); onClose(); }}
@@ -305,51 +270,34 @@ export function AccountSheet({ visible, onClose }: Props) {
         </TouchableOpacity>
 
         <View style={[styles.dangerZone, { borderColor: t.colors.border }]}>
-          <Text style={[styles.dangerZoneTitle, { color: t.colors.textMuted }]}>
-            {tr('settings.account.dangerZone')}
-          </Text>
+          <Text style={[styles.dangerZoneTitle, { color: t.colors.textMuted }]}>{tr('settings.account.dangerZone')}</Text>
 
           <TouchableOpacity
             style={[styles.dangerBtn, { borderColor: t.colors.border, opacity: removingCloud ? 0.6 : 1 }]}
             onPress={onRemoveCloudData}
             disabled={removingCloud}
           >
-            <Text style={[styles.dangerBtnText, { color: t.colors.text }]}>
-              {tr('settings.account.removeCloudData')}
-            </Text>
+            <Text style={[styles.dangerBtnText, { color: t.colors.text }]}>{tr('settings.account.removeCloudData')}</Text>
           </TouchableOpacity>
-          <Text style={[styles.dangerHint, { color: t.colors.textMuted }]}>
-            {tr('settings.account.removeCloudDataHint')}
-          </Text>
+          <Text style={[styles.dangerHint, { color: t.colors.textMuted }]}>{tr('settings.account.removeCloudDataHint')}</Text>
 
           <TouchableOpacity
             style={[styles.dangerBtn, { borderColor: t.colors.danger, marginTop: 12 }]}
             onPress={() => setDeleteConfirmOpen(true)}
           >
-            <Text style={[styles.dangerBtnText, { color: t.colors.danger }]}>
-              {tr('settings.account.deleteAccount')}
-            </Text>
+            <Text style={[styles.dangerBtnText, { color: t.colors.danger }]}>{tr('settings.account.deleteAccount')}</Text>
           </TouchableOpacity>
-          <Text style={[styles.dangerHint, { color: t.colors.textMuted }]}>
-            {tr('settings.account.deleteAccountHint')}
-          </Text>
+          <Text style={[styles.dangerHint, { color: t.colors.textMuted }]}>{tr('settings.account.deleteAccountHint')}</Text>
 
           {accountError && <Text style={[styles.errorText, { color: t.colors.danger }]}>{accountError}</Text>}
         </View>
 
         {deleteConfirmOpen && (
           <View style={[styles.confirmBox, { borderColor: t.colors.danger, backgroundColor: t.colors.backgroundSecondary }]}>
-            <Text style={[styles.confirmTitle, { color: t.colors.text }]}>
-              {tr('settings.account.deleteAccountConfirmTitle')}
-            </Text>
-            <Text style={[styles.confirmBody, { color: t.colors.textMuted }]}>
-              {tr('settings.account.deleteAccountConfirmBody')}
-            </Text>
+            <Text style={[styles.confirmTitle, { color: t.colors.text }]}>{tr('settings.account.deleteAccountConfirmTitle')}</Text>
+            <Text style={[styles.confirmBody, { color: t.colors.textMuted }]}>{tr('settings.account.deleteAccountConfirmBody')}</Text>
             <View style={styles.confirmActions}>
-              <TouchableOpacity
-                style={[styles.btn, { borderColor: t.colors.border }]}
-                onPress={() => setDeleteConfirmOpen(false)}
-              >
+              <TouchableOpacity style={[styles.btn, { borderColor: t.colors.border }]} onPress={() => setDeleteConfirmOpen(false)}>
                 <Text style={[styles.btnText, { color: t.colors.textMuted }]}>{tr('common.cancel')}</Text>
               </TouchableOpacity>
               <TouchableOpacity
@@ -374,9 +322,7 @@ export function AccountSheet({ visible, onClose }: Props) {
         <TouchableOpacity style={StyleSheet.absoluteFill as any} onPress={onClose} />
         <View style={[styles.sheet, { backgroundColor: t.colors.card, borderColor: t.colors.border }]}>
           <View style={styles.headerRow}>
-            <Text style={[styles.title, { color: t.colors.text, fontFamily: t.fontFamily.serif }]}>
-              {tr('settings.account.title')}
-            </Text>
+            <Text style={[styles.title, { color: t.colors.text, fontFamily: t.fontFamily.serif }]}>{tr('settings.account.title')}</Text>
             <TouchableOpacity onPress={onClose} hitSlop={12}><X size={22} color={t.colors.textMuted} /></TouchableOpacity>
           </View>
           {renderBody()}
@@ -404,9 +350,8 @@ const styles = StyleSheet.create({
   signOutText: { fontSize: 15, fontWeight: '600' },
   errorText: { fontSize: 12, marginTop: -4 },
   link: { fontSize: 14, fontWeight: '600' },
-  linkRow: { flexDirection: 'row', justifyContent: 'flex-end' },
   linkRowCenter: { alignItems: 'center', marginTop: 4 },
-  divider: { height: StyleSheet.hairlineWidth, backgroundColor: '#0002', marginVertical: 8 },
+  linkCode: { fontSize: 32, fontWeight: '700', textAlign: 'center', letterSpacing: 4, marginVertical: 12 },
   dangerZone: { marginTop: 16, paddingTop: 16, borderTopWidth: StyleSheet.hairlineWidth, gap: 6 },
   dangerZoneTitle: { fontSize: 12, fontWeight: '600', textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 4 },
   dangerBtn: { borderWidth: 1, borderRadius: 10, paddingVertical: 12, alignItems: 'center' },
