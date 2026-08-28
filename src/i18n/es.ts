@@ -135,7 +135,7 @@ export const es: DeepPartial<Messages> = {
       haveLinkCode: 'Tengo un código de otro dispositivo',
       linkCodePlaceholder: 'Ingresa el código',
       linkDeviceSubmit: 'Vincular dispositivo',
-      addThisDevice: 'Agregar este dispositivo',
+      addThisDevice: 'Añadir este dispositivo',
       addThisDeviceHint: 'Muestra este código en tu nuevo dispositivo, o ingrésalo allí en los próximos 5 minutos.',
       linkCodeShown: 'Código: {code}',
       backToSignIn: '← Volver',
