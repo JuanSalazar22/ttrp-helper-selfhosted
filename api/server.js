@@ -257,6 +257,76 @@ const routes = {
   },
 
   'POST /api/logout': async (req, res) => json(res, 200, { ok: true }, { 'Set-Cookie': clearCookie }),
+
+  'POST /api/passkey/link/options': async (req, res) => {
+    const user = readSession(req);
+    if (!user) return json(res, 401, { error: 'not signed in' });
+    const options = await generateRegistrationOptions({
+      rpName: RP_NAME, rpID: RP_ID,
+      userID: Buffer.from(user.id), userName: user.name, userDisplayName: user.name,
+      attestationType: 'none',
+      authenticatorSelection: { residentKey: 'required', userVerification: 'preferred' },
+      excludeCredentials: db.creds.filter((c) => c.userId === user.id).map((c) => ({ id: c.id })),
+    });
+    const cid = putChallenge({ kind: 'link', challenge: options.challenge, userId: user.id });
+    const code = makeLinkCode(user.id, cid);
+    json(res, 200, { code, options });
+  },
+
+  'POST /api/passkey/link/verify': async (req, res) => {
+    const body = await readBody(req);
+    const link = takeLinkCode(String(body.code || '').trim());
+    if (!link) return json(res, 400, { error: 'code expired or invalid — generate a new one' });
+    const c = takeChallenge(link.cid);
+    if (!c || c.kind !== 'link') return json(res, 400, { error: 'code expired or invalid — generate a new one' });
+    let verification;
+    try {
+      verification = await verifyRegistrationResponse({
+        response: body.credential,
+        expectedChallenge: c.challenge,
+        expectedOrigin: ORIGIN,
+        expectedRPID: RP_ID,
+        requireUserVerification: false,
+      });
+    } catch (e) {
+      return json(res, 400, { error: 'verification failed: ' + e.message });
+    }
+    if (!verification.verified) return json(res, 400, { error: 'not verified' });
+    const { credential } = verification.registrationInfo;
+    if (db.creds.find((x) => x.id === credential.id)) {
+      return json(res, 409, { error: 'credential already registered' });
+    }
+    // Attach to the EXISTING account (link.userId / c.userId) instead of minting a new user —
+    // this is the one thing opengym's own registration flow doesn't do.
+    db.creds.push({
+      id: credential.id, userId: c.userId,
+      publicKey: Buffer.from(credential.publicKey).toString('base64url'),
+      counter: credential.counter || 0,
+      transports: body.credential?.response?.transports || [],
+    });
+    saveDb();
+    const user = db.users.find((u) => u.id === c.userId);
+    json(res, 200, { user: { id: user.id, name: user.name } }, { 'Set-Cookie': sessionCookie(user.id) });
+  },
+
+  'POST /api/passkey/link/exchange': async (req, res) => {
+    const body = await readBody(req);
+    const code = String(body.code || '').trim();
+    const link = linkCodes.get(code);
+    if (!link || Date.now() > link.expires) return json(res, 400, { error: 'code expired or invalid' });
+    const c = challenges.get(link.cid);
+    if (!c) return json(res, 400, { error: 'code expired or invalid' });
+    const user = db.users.find((u) => u.id === link.userId);
+    const options = await generateRegistrationOptions({
+      rpName: RP_NAME, rpID: RP_ID,
+      userID: Buffer.from(user.id), userName: user.name, userDisplayName: user.name,
+      attestationType: 'none',
+      authenticatorSelection: { residentKey: 'required', userVerification: 'preferred' },
+      excludeCredentials: db.creds.filter((cr) => cr.userId === user.id).map((cr) => ({ id: cr.id })),
+      challenge: Buffer.from(c.challenge, 'base64url'),
+    });
+    json(res, 200, { options });
+  },
 };
 
 http.createServer(async (req, res) => {
