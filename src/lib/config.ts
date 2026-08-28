@@ -1,10 +1,7 @@
-const url = process.env.EXPO_PUBLIC_SUPABASE_URL;
-const anonKey = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY;
-
-/** Supabase connection config. `enabled` is false when keys are absent, so the app
- *  degrades to fully-local (the Account UI hides) instead of crashing. */
-export const supabaseConfig = {
-  url,
-  anonKey,
-  enabled: Boolean(url && anonKey),
+// The web build's nginx proxies /api/* to the api container (same origin,
+// required for WebAuthn), so a relative path works for any self-hoster's
+// domain with zero build-time configuration. Override for local dev when
+// running `expo start --web` against an api container on a different port.
+export const apiConfig = {
+  url: process.env.EXPO_PUBLIC_API_URL || '/api',
 };
