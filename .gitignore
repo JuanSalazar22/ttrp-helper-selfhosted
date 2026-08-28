@@ -20,3 +20,6 @@ web-build/
 # Supabase CLI local stack
 supabase/.branches
 supabase/.temp
+
+# Git worktrees
+.worktrees/
