@@ -1,9 +1,8 @@
 import { Tabs } from 'expo-router';
 import { useColorScheme } from 'react-native';
-import { Users, Dices, Settings, Bug } from 'lucide-react-native';
+import { Users, Dices, Settings } from 'lucide-react-native';
 import { light, dark } from '@/tokens/colors';
 import { useTranslation } from '@/i18n';
-import { supabaseConfig } from '@/lib/config';
 
 export default function TabLayout() {
   const scheme = useColorScheme();
@@ -44,16 +43,6 @@ export default function TabLayout() {
           tabBarIcon: ({ color, size }) => (
             <Dices size={size} color={color} />
           ),
-        }}
-      />
-      <Tabs.Screen
-        name="report"
-        options={{
-          title: tr('tabs.report'),
-          tabBarIcon: ({ color, size }) => <Bug size={size} color={color} />,
-          // Hidden when Supabase is unconfigured — a report form with nowhere to send
-          // is worse than no tab. Matches how AccountSheet hides account UI.
-          href: supabaseConfig.enabled ? undefined : null,
         }}
       />
       <Tabs.Screen

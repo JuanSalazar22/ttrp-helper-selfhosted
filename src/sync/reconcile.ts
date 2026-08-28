@@ -1,4 +1,4 @@
-/** A character row as returned from the Supabase `characters` table. */
+/** A character row as returned from the cloud backend's characters endpoint. */
 export type CloudCharacter = {
   id: string;
   system: string;

@@ -24,8 +24,7 @@
     "plugins": [
       "expo-router",
       "expo-sqlite",
-      "expo-sharing",
-      "expo-secure-store"
+      "expo-sharing"
     ],
     "web": {
       "bundler": "metro",
