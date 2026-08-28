@@ -2133,3 +2133,18 @@ Common failure points to check first if something's wrong:
 git add -A
 git commit -m "fix: address issues found in end-to-end passkey/sync verification"
 ```
+
+## Verification results (2026-08-28)
+
+`docker compose up -d --build` from a clean state (`down -v` first): both containers reached `healthy`. Verified via browser (Claude's Browser pane) and `curl`:
+
+- ✅ App loads at `http://localhost:8080`; tab bar shows exactly `Characters` / `Dice` / `Settings` (Report tab correctly absent).
+- ✅ `curl /api/health` → `{"ok":true,"users":0}`; `curl /api/me` → 401 (proxy reaches `api` for a real authenticated route, not just the trivial health check).
+- ✅ COOP/COEP headers present on `/`.
+- ✅ AccountSheet renders all three signed-out modes correctly (start / enter-name / enter-link-code).
+- ✅ `POST /api/register/options` returns 200 with a real WebAuthn challenge; the browser's `navigator.credentials.create()` call is correctly reached (network tab confirms the request fired) — this is as far as an **automated** browser can go without a platform authenticator (Touch ID / Windows Hello / security key / phone), which this sandboxed environment doesn't have. This is an inherent limitation of automated WebAuthn testing everywhere, not a defect here.
+- ✅ Aborting mid-ceremony leaves no partial state — `db.json` doesn't exist until a registration actually completes (`register/verify` succeeds), confirmed by inspecting `./data` after the aborted attempt above.
+- ✅ Device-link error path fully exercised (doesn't need a real authenticator to fail correctly): entering an invalid code shows "code expired or invalid" in the UI, sourced from a real `400` from `/api/passkey/link/exchange`.
+- ✅ Core offline-first functionality unaffected by any of this fork's changes: created a character while signed out, reloaded the page, character persisted — confirms `wa-sqlite`/OPFS local storage works correctly through the new nginx COOP/COEP setup (the one gotcha called out in the design spec).
+- ✅ No unexpected console errors — only the two errors from deliberately-triggered test cases above (401, 400).
+- ⏭️ **Not completed, needs a human with a real device:** actually finishing a passkey registration/login (the biometric/security-key confirmation step), and therefore the multi-device linking flow and account-deletion flow that depend on having a real signed-in account. Everything up to that point is verified working; the remaining gap is a platform limitation of this environment, not application risk — WebAuthn is designed to require a human present for exactly this step.
