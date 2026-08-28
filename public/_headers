@@ -1,7 +1,0 @@
-# Cloudflare Pages response headers.
-# wa-sqlite (the web SQLite VFS) needs the page to be cross-origin isolated,
-# which requires these two headers on every response. Without them the database
-# fails to initialize on the deployed site.
-/*
-  Cross-Origin-Opener-Policy: same-origin
-  Cross-Origin-Embedder-Policy: require-corp

@@ -23,3 +23,6 @@ supabase/.temp
 
 # Git worktrees
 .worktrees/
+
+# Self-hosted backend data (users, passkeys, characters) — bind-mounted by docker-compose
+/data/
