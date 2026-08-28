@@ -60,16 +60,16 @@ Backlog, known issues, and deferred work live in [TODO.md](TODO.md).
 **Platform & UX**
 - iOS / Android / Web from one codebase
 - SQLite persistence (native + `wa-sqlite` on web, survives reloads)
-- Cloudflare web deploy
+- Self-hosted (Docker) web deploy
 - Light / dark / system theme, haptics toggle
 - Landscape / wide-layout responsive columns with character portrait
 - Internationalization — full EN/ES UI + Spanish WFRP content names
 - Readability pass — WCAG AA contrast tokens + semantic text roles
 
 **Cloud sync & accounts** *(optional — app works fully offline without signing in)*
-- Email + password sign-in via Supabase Auth (confirmation email, password reset)
+- Passkey (WebAuthn) sign-in with device-linking, via the self-hosted backend
 - User display name (account profile), header sign-in entry point + signed-in profile chip
-- Automatic cloud backup — characters pushed to Supabase on every save
+- Automatic cloud backup — characters pushed to the self-hosted backend on every save
 - Two-way cross-device sync — pull on sign-in, push on save, server-authoritative clock
 - Sync status badge (syncing / backed up / offline / error) in character list
 - Soft-delete propagation — deleting on one device removes from others
@@ -83,9 +83,9 @@ Why these choices — each one exists because the app has to render two very dif
 - **Discriminated union in TypeScript.** `Character = Dnd5eCharacter | Wfrp4eCharacter`; the `system` field narrows the type in each render branch. Each system has its own type file + renderer under `src/components/<system>/`. Adding a system is a new type + renderer, no migration.
 - **Per-system schema versioning + read-time migration.** Every character JSON carries a monotonic `schemaVer`. On load, a per-system `migrate*Character` normalizer folds older shapes into the current one. Data-shape changes never require a SQLite migration. Buff schema is currently at **v9** (multi-effect `{target, value}[]`); the migrator rewrites legacy `{characteristic, value}` buffs and is idempotent.
 - **Derived state over stored state.** Wounds max, corruption threshold, encumbrance level, characteristic bonuses, effective movement, and the Encumbered debuff are all computed at read time from stored inputs. No state churn on rule changes, always in sync with base values. `buffTotal` flows through `displayBuffs` so manual buffs and the synthetic Encumbered stack through the same code path; `baseCharacteristicBonus` (stored-only path) breaks the derivation cycle at the encumbrance-max boundary.
-- **Offline-first, cloud-optional.** All writes go local first (SQLite). Supabase sync is a layer on top: push on save, pull on sign-in, last-writer-wins by server-authoritative clock, tombstones for deletes, offline push queue that retries on reconnect. The app is fully functional without an account. (The original "no backend, ever" constraint was intentionally lifted in mid-2026 once local persistence was mature.)
+- **Offline-first, cloud-optional.** All writes go local first (SQLite). The self-hosted backend is a layer on top: push on save, pull on sign-in, last-writer-wins by server-authoritative clock, tombstones for deletes, offline push queue that retries on reconnect. The app is fully functional without an account. (The original "no backend, ever" constraint was intentionally lifted in mid-2026 once local persistence was mature.)
 - **i18n with typed `tr()`.** EN is the source of truth. ES is a `DeepPartial` overlay — missing keys fall through to EN. Placeholders use `{name}` interpolation. Content names (skills, talents, spells) are translated separately from UI copy.
-- **Web via `wa-sqlite` + OPFS.** Requires cross-origin isolation (COOP/COEP). Dev headers are in `metro.config.js`; production headers ship in `public/_headers` for Cloudflare Workers Static Assets. `.wasm` assets are wired as extra Metro asset extensions.
+- **Web via `wa-sqlite` + OPFS.** Requires cross-origin isolation (COOP/COEP). Dev headers are in `metro.config.js`; production headers ship via `web/nginx.conf.template` in this self-hosted deploy. `.wasm` assets are wired as extra Metro asset extensions.
 - **Path alias `@/` → `src/`.** Wired in `tsconfig.json` and `babel.config.js`.
 - **Typecheck raises the Node stack.** `npm run typecheck` sets `--stack-size=16000` — bare `tsc --noEmit` overflows on this codebase.
 
@@ -101,9 +101,9 @@ src/
   components/ui/         Shared primitives (Section, Stepper, EditableNumber, modals, …)
   types/                 dnd5e.ts · wfrp4e.ts — types + migrators + derived helpers
   db/                    schema.ts · queries.ts — local SQLite (native + wa-sqlite on web)
-  sync/                  Supabase push/pull, offline queue, reconcile
-  auth/                  Supabase Auth wiring + AuthProvider
-  lib/                   supabase client, secure storage, config
+  sync/                  Self-hosted backend push/pull, offline queue, reconcile
+  auth/                  Passkey/WebAuthn wiring + AuthProvider
+  lib/                   src/lib/api.ts (self-hosted backend client), config
   hooks/                 useCharacter, useCharacterList, useRoll, useWfrpRoll, useTheme, useWideLayout, useWfrpLibrary
   dice/                  engine.ts (d20) · wfrp.ts (d100 + Success Levels)
   i18n/                  en.ts (source) · es.ts (DeepPartial overlay) · tr()
@@ -115,7 +115,7 @@ json_book_information/   raw content source (pre-processed into src/data/wfrp-co
 
 **WFRP derived-state flow.** Stored characteristic advances → `baseCharacteristicBonus` → `encumbranceMaxValue` → `encumbranceLevel` → `encumberedBuff` (synthetic) → `displayBuffs` → `buffTotal` → `characteristicBonus` and `effectiveMovement` → Resources / Combat UI. The `baseCharacteristicBonus` step reads only stored buffs, which is what breaks the otherwise-circular derivation.
 
-**Sync flow.** Local write → SQLite → push to Supabase (or queue if offline). Sign-in → pull → reconcile against local by server-authoritative `updated_at`. Delete → local tombstone → propagated on next sync.
+**Sync flow.** Local write → SQLite → push to the self-hosted backend (or queue if offline). Sign-in → pull → reconcile against local by server-authoritative `updated_at`. Delete → local tombstone → propagated on next sync.
 
 ## Getting started
 
@@ -132,13 +132,13 @@ Then:
 
 > Expo Go must match **SDK 56**. expo-sqlite works in Expo Go, so the full app (incl. the WFRP sheet) runs there.
 
-Cloud sync needs Supabase env vars — see `supabase/README.md` for running the backend locally.
+Cloud sync needs the self-hosted backend running — `docker compose up` per [docs/SELF_HOSTING.md](docs/SELF_HOSTING.md).
 
 ### Web notes
 
 Web uses `wa-sqlite`, which needs cross-origin isolation — handled in `metro.config.js` (`.wasm` assets + COOP/COEP headers) in dev. When **deploying** a web build, the host must send those same headers or the database won't initialize.
 
-**Deploy:** the demo deploys to Cloudflare (Workers Static Assets) — build `npm run build:web`, then `npx wrangler deploy` serves `dist/` per [`wrangler.jsonc`](wrangler.jsonc), with the COOP/COEP headers shipped in [`public/_headers`](public/_headers). Step-by-step in [docs/deploy-cloudflare.md](docs/deploy-cloudflare.md). Run `npm run serve:web` to test the production build locally with the isolation headers.
+**Deploy:** this fork deploys via Docker Compose — `docker compose up -d --build` builds and serves the app (nginx + the self-hosted API), with the COOP/COEP headers shipped in [`web/nginx.conf.template`](web/nginx.conf.template). Step-by-step in [docs/SELF_HOSTING.md](docs/SELF_HOSTING.md).
 
 ## Scripts
 
