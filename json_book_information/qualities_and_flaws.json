@@ -1,0 +1,2008 @@
+{
+  "data": [
+    {
+      "canEdit": false,
+      "id": "5cebd749e1eba33c449de821",
+      "object": {
+        "applicableTo": [
+          1
+        ],
+        "description": "An unloaded weapon with this flaw requires an Extended Ranged Test for the appropriate Weapon Group scoring 3 SL to reload. If interrupted, reloading must be started from the beginning.",
+        "name": "Reload 3",
+        "shared": true,
+        "source": {
+          "1": "p. 299"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5d190a836b4ccf7bc010990e",
+      "object": {
+        "applicableTo": [
+          1,
+          2
+        ],
+        "description": "All Characters within 4 yard of the struck target point take SL+Weapon Damage, and suffer any Conditions the weapon inflicts.",
+        "name": "Blast 4",
+        "shared": true,
+        "source": {
+          "1": "p. 297"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb074a2218c71f3493c08f",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "description": "Failed test using this item receives -1 SL. Further, penalties for wearing Unreliable armour are doubled.",
+        "name": "Unreliable",
+        "shared": true,
+        "source": {
+          "1": "p. 293"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb08122218c71f3493c090",
+      "object": {
+        "applicableTo": [
+          1
+        ],
+        "description": "The target must pass an Average (+20) Cool Test or take a Broken Condition, even if the shot misses.",
+        "name": "Blackpowder",
+        "shared": true,
+        "source": {
+          "1": "p. 297"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb084c2218c71f3493c091",
+      "object": {
+        "applicableTo": [
+          1,
+          2
+        ],
+        "description": "All Characters within 1 yard of the struck target point take SL+Weapon Damage, and suffer any Conditions the weapon inflicts.",
+        "name": "Blast 1",
+        "shared": true,
+        "source": {
+          "1": "p. 297"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5c7c44f787021912184422d8",
+      "object": {
+        "applicableTo": [
+          3
+        ],
+        "description": "If the attacker has a weapon with the Impale Quality and scores a Critical, the APs of the armour are ignored.",
+        "name": "Weakpoints",
+        "shared": true,
+        "source": {
+          "1": "p. 300",
+          "5": "p. 36"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5c48f193bc0ede3b9cffe87a",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "All APs are doubled against Undamaging weapons. The weapon does not automatically inflict a minimum of 1 Wound on a successful hit in combat.",
+        "name": "Undamaging",
+        "shared": true,
+        "source": {
+          "1": "p. 299"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb07252218c71f3493c08e",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "description": "The item breaks when used in any failed Test rolling a double. Similarly, Shoddy armour breaks if any Critical Hit is sustained to a Hit Location it protects.",
+        "name": "Shoddy",
+        "shared": true,
+        "source": {
+          "1": "p. 292"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb0fe72218c71f3493c097",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "On a successful hit, add the result of the units\ndie of the attack roll to any Damage caused by an Impact weapon. An Undamaging weapon can never also have Impact. Undamaging takes precedent.",
+        "name": "Impact",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cec1cb8494e843e34d7dbde",
+      "object": {
+        "applicableTo": [
+          1
+        ],
+        "description": "The weapon holds 4 shots, automatically reloading each time after firing. After all shots are fired, the weapon must be reloaded using standard rules.",
+        "name": "Repeater 4",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb0b292218c71f3493c095",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "The wielder of a Fast weapon can choose to attack with the Fast weapon outside of the normal Initiative sequence, either striking first, last, or somewhere in between as desired.\nAll Melee Tests to defend against Fast weapons suffer a penalty of -10 if the target is using a weapon without the Fast Quality. Two opponents with Fast weapons fight in Initiative order (relative to each other) as normal. A Fast weapon may never also be Slow. Slow takes precedent.",
+        "name": "Fast",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdc7efabec5e61f602c6d71",
+      "object": {
+        "applicableTo": [
+          0,
+          1
+        ],
+        "description": "Person using Slow weapon always strike the last in a Round, regardless of Initiative order. All opponents gain a bonus of +1 SL to any Test to defend against a Slow weapon.",
+        "name": "Slow",
+        "shared": true,
+        "source": {
+          "1": "p. 299"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cebd5a2e1eba33c449de81f",
+      "object": {
+        "applicableTo": [
+          1,
+          2
+        ],
+        "description": "All Characters within 2 yard of the struck target point take SL+Weapon Damage, and suffer any Conditions the weapon inflicts.",
+        "name": "Blast 2",
+        "shared": true,
+        "source": {
+          "1": "p. 297"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdc7e74bec5e61f602c6d70",
+      "object": {
+        "applicableTo": [
+          1
+        ],
+        "description": "An unloaded weapon with this flaw requires an Extended Ranged Test for the appropriate Weapon Group scoring 1 SL to reload. If interrupted, reloading must be started from the beginning.",
+        "name": "Reload 1",
+        "shared": true,
+        "source": {
+          "1": "p. 299"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb0baf2218c71f3493c096",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "Target hit by weapon with Hack, takes 1 Damage to a struck piece of armour or shield in addition to regular wounds.",
+        "name": "Hack",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb23abbec5e61f602c6d65",
+      "object": {
+        "applicableTo": [
+          1
+        ],
+        "description": "This weapon can be used to attack in Close Combat.",
+        "name": "Pistol",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cebcc43e1eba33c449de814",
+      "object": {
+        "applicableTo": [
+          0,
+          1
+        ],
+        "description": "Any time you are opposing an incoming attack (even with your melee weapon and not the shield), you get 3 AP on all locations of your body. \nYou can also use it to Oppose incoming missile shots in the Line of Sight.",
+        "name": "Shield 3",
+        "shared": true,
+        "source": {
+          "1": "p. 298",
+          "6": "p. 90"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cebd572e1eba33c449de81d",
+      "object": {
+        "applicableTo": [
+          1
+        ],
+        "description": "An unloaded weapon with this flaw requires an Extended Ranged Test for the appropriate Weapon Group scoring 2 SL to reload. If interrupted, reloading must be started from the beginning.",
+        "name": "Reload 2",
+        "shared": true,
+        "source": {
+          "1": "p. 299"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5d18fb92eeb0ed74f060f69a",
+      "object": {
+        "applicableTo": [
+          1,
+          2
+        ],
+        "description": "All Characters within 5 yard of the struck target point take SL+Weapon Damage, and suffer any Conditions the weapon inflicts.",
+        "name": "Blast 5",
+        "shared": true,
+        "source": {
+          "1": "p. 297"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5c4d83eb64ba1e2dbc5174c3",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "A Damaging weapon can use the higher score from either the units die or the SL to determine the Damage caused from a successful hit. An Undamaging weapon can never also be Damaging (Undamaging takes precedent).",
+        "name": "Damaging",
+        "shared": true,
+        "source": {
+          "1": "p. 297"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5c7c43a0a6b0763368407519",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "Causes a Critical Hit on any number divisible by 10 and on doubles rolled equal or under an appropriate Test in combat. Arrows and bolts require a successful Challenging (+0) Heal Test to remove. Bullets require a surgeon. Target cannot heal 1 of Wounds for each unremoved projectile.",
+        "name": "Impale",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb02db2218c71f3493c08b",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "description": "Reduce Encumbrance points by 1.",
+        "name": "Lightweight",
+        "shared": true,
+        "source": {
+          "1": "p. 292"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb030d2218c71f3493c08c",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "description": "A failed test using this item receives +1 SL. If the item is a piece of armour, any penalties for wearing it are reduced by one level, for example from -30 to -20.",
+        "name": "Practical",
+        "shared": true,
+        "source": {
+          "1": "p. 292"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdc7c51bec5e61f602c6d6b",
+      "object": {
+        "applicableTo": [
+          0,
+          1
+        ],
+        "description": "When scoring Critical when defending against an attack from a bladed weapon, one can chose to trap the weapon instead of causing a Critical Hit. When trapping, the defenders makes a an Opposed Strength Test, adding SL from the previous Melee Test. If the defender succeeds, the opponent drops the blade.  If the defenders scores an Astounding Success, trapping breaks opponent's blade unless it has Unbreakable quality. If the defender fail the Test, the opponent frees the blade and can fight as normal.",
+        "name": "Trap Blade",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdc7c7dbec5e61f602c6d6c",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "description": "This weapon does not break, corrode, or lose its edge.",
+        "name": "Unbreakable",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdc7d01bec5e61f602c6d6e",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "Any failed test including an 9 on either 10s or units die results in a Fumble.",
+        "name": "Dangerous",
+        "shared": true,
+        "source": {
+          "1": "p. 299"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb2c87bec5e61f602c6d6a",
+      "object": {
+        "applicableTo": [
+          0,
+          1
+        ],
+        "description": "Any time you are opposing an incoming attack (even with your melee weapon and not the shield), you get 2 AP on all locations of your body. \nYou can also use it to Oppose incoming missile shots in the Line of Sight.",
+        "name": "Shield 2  ",
+        "shared": true,
+        "source": {
+          "1": "p. 298",
+          "6": "p. 90"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdc7cd6bec5e61f602c6d6d",
+      "object": {
+        "applicableTo": [
+          0,
+          1
+        ],
+        "description": "Melee Tests opposing an attack from a Wrap weapon suffer a penalty of -1 SL.",
+        "name": "Wrap",
+        "shared": true,
+        "source": {
+          "1": "p. 299"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5c44dce24e09bc1980c8b024",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          3
+        ],
+        "description": "The item can take +1 Damage point before it suffers any negatives and gains a saving throw of 9+ on a 1d10 roll against instant breakage.",
+        "name": "Durable 1",
+        "shared": true,
+        "source": {
+          "1": "p. 292"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb0a042218c71f3493c092",
+      "object": {
+        "applicableTo": [
+          0,
+          1
+        ],
+        "description": "Gains a bonus of +1 SL to any Melee Test when opposing an incoming attack.",
+        "name": "Defensive",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb2443bec5e61f602c6d66",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "The attacker gains a +1 SL bonus to any successful Test when attacking with this weapon.",
+        "name": "Precise",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb0a7f2218c71f3493c094",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "Any successfully hit target gains the Entangled Condition with a Strength value equal to Strength Characteristic of the attacker. When Entangling a target, the attacker cannot otherwise use the weapon to hit. The attacker can end the Entangling at any time.",
+        "name": "Entangle",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5c3b3bf9e274765500371903",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "description": "Meticulously crafted to please the eye. This Quality is a sign of social status and can be taken multiple times. The higher the quality, the more impressive it seems.",
+        "name": "Fine 1",
+        "shared": true,
+        "source": {
+          "1": "p. 292"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5c4cd8f34426e04f44f8d0c2",
+      "object": {
+        "applicableTo": [
+          1,
+          2
+        ],
+        "description": "Gains a bonus of +10 to any Test when firing this weapon.",
+        "name": "Accurate",
+        "shared": true,
+        "source": {
+          "1": "p. 297"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb25c0bec5e61f602c6d68",
+      "object": {
+        "applicableTo": [
+          1
+        ],
+        "description": "The weapon holds 2 shots, automatically reloading each time after firing. After all shots are fired, the weapon must be reloaded using standard rules.",
+        "name": "Repeater 2",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdc80cdbec5e61f602c6d74",
+      "object": {
+        "applicableTo": [
+          3
+        ],
+        "description": "All Critical Wounds caused by an odd number to hit are ignored.",
+        "name": "Impenetrable",
+        "shared": true,
+        "source": {
+          "1": "p. 300",
+          "5": "p. 36"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdc8122bec5e61f602c6d75",
+      "object": {
+        "applicableTo": [
+          3
+        ],
+        "description": "An opponent that rolls an even number to hit, or rolls a Critical Hit, ignores the partial armour's APs.",
+        "name": "Partial",
+        "shared": true,
+        "source": {
+          "1": "p. 300",
+          "5": "p. 36"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cebd592e1eba33c449de81e",
+      "object": {
+        "applicableTo": [
+          1,
+          2
+        ],
+        "description": "All Characters within 3 yard of the struck target point take SL+Weapon Damage, and suffer any Conditions the weapon inflicts.",
+        "name": "Blast 3",
+        "shared": true,
+        "source": {
+          "1": "p. 297"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb24fabec5e61f602c6d67",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "After scoring a a Head hit with a Pummel weapon, the attacker makes Opposed Strength/Endurance test against the struck opponent. If the Test is a Success, the opponent gains a Stunned Condition.",
+        "name": "Pummel",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb2c4cbec5e61f602c6d69",
+      "object": {
+        "applicableTo": [
+          0,
+          1
+        ],
+        "description": "Any time you are opposing an incoming attack (even with your melee weapon and not the shield), you get 1 AP on all locations of your body.",
+        "name": "Shield 1",
+        "shared": true,
+        "source": {
+          "1": "p. 298",
+          "6": "p. 90"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdc802abec5e61f602c6d72",
+      "object": {
+        "applicableTo": [
+          0,
+          1
+        ],
+        "description": "The attacker can only gain the benefit of the Impact and Damaging Weapon Traits on a Turn he/she Charges.",
+        "name": "Tiring",
+        "shared": true,
+        "source": {
+          "1": "p. 299"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdc8099bec5e61f602c6d73",
+      "object": {
+        "applicableTo": [
+          3
+        ],
+        "description": "Flexible armour can be worn under non-Flexible armour. Their AP add.",
+        "name": "Flexible",
+        "shared": true,
+        "source": {
+          "1": "p. 300"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb0a372218c71f3493c093",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "Instead of causing Damage, a successful attack with a Distracting weapon can force an opponent back 1 yard per SL by which you win the Opposed Test.",
+        "name": "Distract",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cec1eb3494e843e34d7dbdf",
+      "object": {
+        "applicableTo": [
+          1
+        ],
+        "description": "An unloaded weapon with this flaw requires an Extended Ranged Test for the appropriate Weapon Group scoring 4 SL to reload. If interrupted, reloading must be started from the beginning.",
+        "name": "Reload 4",
+        "shared": true,
+        "source": {
+          "1": "p. 299"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb2390bec5e61f602c6d64",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "Non-metal APs are ignored, and the first point of all other armour is ignored.",
+        "name": "Penetrating",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdc7d83bec5e61f602c6d6f",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "The weapon suffers a penalty of  -1 SL when attacking. An Imprecise Weapon can never be Precise. Imprecise takes precedent.",
+        "name": "Imprecise",
+        "shared": true,
+        "source": {
+          "1": "p. 299"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cdb03382218c71f3493c08d",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "description": "Attracts negative attention, and related Fellowship Tests might even suffer a  -10 penalty.",
+        "name": "Ugly",
+        "shared": true,
+        "source": {
+          "1": "p. 292"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5cec1c85494e843e34d7dbdd",
+      "object": {
+        "applicableTo": [
+          1
+        ],
+        "description": "An unloaded weapon with this flaw requires an Extended Ranged Test for the appropriate Weapon Group scoring 5 SL to reload. If interrupted, reloading must be started from the beginning.",
+        "name": "Reload 5",
+        "shared": true,
+        "source": {
+          "1": "p. 299"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "636fb5e9338e71cc8b0fa734",
+      "object": {
+        "applicableTo": [
+          0,
+          2,
+          1
+        ],
+        "description": "Inflicts Ablaze on any critical hit.",
+        "name": "Igniting",
+        "shared": true,
+        "source": {
+          "3": "p. 93"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "636fb7100c40139be515aff1",
+      "object": {
+        "applicableTo": [
+          1,
+          0,
+          2
+        ],
+        "description": "Inflicts 1 Poisoned condition on any Target that lost at least 1 Wound from the attack. Can be resisted with (+0) Endurance Test.\nTo keep this property, the weapon has to has to rest in fertile earth each night.",
+        "name": "Blackbriar",
+        "shared": true,
+        "source": {
+          "3": "p. 93"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "636fb8bd0c40139be515aff2",
+      "object": {
+        "applicableTo": [
+          2,
+          1
+        ],
+        "description": "If you want to apply Blast 1 effect you must expend an additional projectile for each target that would be struck by the attack. Do it before making Attack Test.",
+        "name": "Optional Blast 1",
+        "shared": true,
+        "source": {
+          "1": "p. 297",
+          "3": "p. 93"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63ac4f3cce4942a1e6b20278",
+      "object": {
+        "applicableTo": [
+          0
+        ],
+        "description": "Because of uneven weight distribution, when used to oppose an incoming attack, it suffers a -1 SL penalty to the attack.",
+        "name": "Unbalanced",
+        "shared": true,
+        "source": {
+          "6": "p. 89"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63ac526ace4942a1e6b20279",
+      "object": {
+        "applicableTo": [
+          0,
+          2,
+          1
+        ],
+        "description": "After scoring a Critical Hit, the target takes 1 Bleeding Condition in addition to any other effects of the hit. You may spend 1 Advantage to cause 1 additional Bleeding Condition.",
+        "name": "Slash (1A)",
+        "shared": true,
+        "source": {
+          "6": "p. 89"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63ac528fce4942a1e6b2027a",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "After scoring a Critical Hit, the target takes 1 Bleeding Condition in addition to any other effects of the hit. You may spend 2 Advantage to cause 1 additional Bleeding Condition.",
+        "name": "Slash (2A)",
+        "shared": true,
+        "source": {
+          "6": "p. 89"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63acaa32a1e7d5e86a06cbb0",
+      "object": {
+        "applicableTo": [
+          1,
+          2
+        ],
+        "description": "Projectiles can strike additional targets. Effect varies by range, Point Blank: shot targets a single individual, add 1 to Damage. Short to Long Range: Shot targets individual and the next 1 closest visible creature. No two targets can be more than 1 yard apart. Long Range: Same as for short to Long range but reduce weapon's Damage by 1.",
+        "name": "Spread 1",
+        "shared": true,
+        "source": {
+          "10": "p. 102",
+          "38": "p. 92",
+          "6": "p. 89"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63acaa71a8c06089c0a0492a",
+      "object": {
+        "applicableTo": [
+          1,
+          2
+        ],
+        "description": "Projectiles can strike additional targets. Effect varies by range, Point Blank: shot targets a single individual, add 2 to Damage. Short to Long Range: Shot targets individual and the next 2 closest visible creatures. No two targets can be more than 2 yards apart. Long Range: Same as for short to Long range but reduce weapon's Damage by 2.",
+        "name": "Spread 2",
+        "shared": true,
+        "source": {
+          "10": "p. 102",
+          "38": "p. 92",
+          "6": "p. 89"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63acaa82a8c06089c0a0492b",
+      "object": {
+        "applicableTo": [
+          1,
+          2
+        ],
+        "description": "Projectiles can strike additional targets. Effect varies by range, Point Blank: shot targets a single individual, add 3 to Damage. Short to Long Range: Shot targets individual and the next 3 closest visible creatures. No two targets can be more than 3 yards apart. Long Range: Same as for short to Long range but reduce weapon's Damage by 3.",
+        "name": "Spread 3",
+        "shared": true,
+        "source": {
+          "10": "p. 102",
+          "38": "p. 92",
+          "6": "p. 89"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63acaa8ea8c06089c0a0492c",
+      "object": {
+        "applicableTo": [
+          1
+        ],
+        "description": "Projectiles can strike additional targets. Effect varies by range, Point Blank: shot targets a single individual, add 4 to Damage. Short to Long Range: Shot targets individual and the next 4 closest visible creatures. No two targets can be more than 4 yards apart. Long Range: Same as for short to Long range but reduce weapon's Damage by 4.",
+        "name": "Spread 4",
+        "shared": true,
+        "source": {
+          "10": "p. 102",
+          "38": "p. 92",
+          "6": "p. 89"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63acaaaaa8c06089c0a0492d",
+      "object": {
+        "applicableTo": [
+          1,
+          2
+        ],
+        "description": "Projectiles can strike additional targets. Effect varies by range, Point Blank: shot targets a single individual, add 5 to Damage. Short to Long Range: Shot targets individual and the next 5 closest visible creatures. No two targets can be more than 5 yards apart. Long Range: Same as for short to Long range but reduce weapon's Damage by 5.",
+        "name": "Spread 5",
+        "shared": true,
+        "source": {
+          "10": "p. 102",
+          "38": "p. 92",
+          "6": "p. 89"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63acabaea1e7d5e86a06cbb1",
+      "object": {
+        "applicableTo": [
+          0
+        ],
+        "description": "Trip weapons are designed to drive opponents from their feet. After successful hit, you may spend 2 Advantage to take an opposed Strength/Athletics Test. If successful, the opponent gets Prone Condition. If they were mounted they also suffer 2 yard fall.",
+        "name": "Trip",
+        "shared": true,
+        "source": {
+          "6": "p. 89"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63acd5c3a1e7d5e86a06cbb6",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "The weapon has both Pummel and Penetrating Qualities but only one can be selected for each attack. This choice must be made before any dice are rolled to determine the success of the attack. If not choice is made, the default quality is Pummel.",
+        "name": "Pummel or Penetrating",
+        "shared": true,
+        "source": {
+          "1": "p. 298",
+          "6": "p. 89"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63acd6029c45b448e68641ad",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "The weapon has both Impale or Slash (2A) Qualities but only one can be selected for each attack. This choice must be made before any dice are rolled to determine the success of the attack. If not choice is made, the default quality is Impale.",
+        "name": "Impale or Slash (2A)",
+        "shared": true,
+        "source": {
+          "1": "p. 298",
+          "6": "p. 89"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63acd6339c45b448e68641ae",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "The weapon has Hack, Impale, and Pummel Qualities but only one can be selected for each attack. This choice must be made before any dice are rolled to determine the success of the attack. If not choice is made, the default quality is Hack.",
+        "name": "Hack or Impale or Pummel",
+        "shared": true,
+        "source": {
+          "1": "p. 298",
+          "6": "p. 89"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63acd7519c45b448e68641af",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "Has Impale Quality if target has Prone of Surprised Conditions.",
+        "name": "Impale - when Prone or Surprised",
+        "shared": true,
+        "source": {
+          "1": "p. 298",
+          "6": "p. 91"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63acd7a49c45b448e68641b0",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "Has Precise Quality if target has Prone of Surprised Conditions.",
+        "name": "Precise - when Prone or Surprised",
+        "shared": true,
+        "source": {
+          "1": "p. 298",
+          "6": "p. 91"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63ad8d69422d37bd985bdc7d",
+      "object": {
+        "applicableTo": [
+          0,
+          1
+        ],
+        "description": "Any time you are opposing an incoming attack (even with your melee weapon and not the shield), you get 4 AP on all locations of your body. \nYou can also use it to Oppose incoming missile shots in the Line of Sight.",
+        "name": "Shield 4",
+        "shared": true,
+        "source": {
+          "1": "p. 298",
+          "6": "p. 90"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63ad8d75422d37bd985bdc7e",
+      "object": {
+        "applicableTo": [
+          0,
+          1
+        ],
+        "description": "Any time you are opposing an incoming attack (even with your melee weapon and not the shield), you get 5 AP on all locations of your body. \nYou can also use it to Oppose incoming missile shots in the Line of Sight.",
+        "name": "Shield 5",
+        "shared": true,
+        "source": {
+          "1": "p. 298",
+          "6": "p. 90"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63b189fc53d94cdc98c7d23c",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "The weapon has both Hack and Trip Qualities but only one can be selected for each attack. This choice must be made before any dice are rolled to determine the success of the attack. If not choice is made, the default quality is Hack.",
+        "name": "Hack or Trip",
+        "shared": true,
+        "source": {
+          "1": "p. 298",
+          "6": "p. 89"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63b18bf153d94cdc98c7d23d",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "The weapon has both Hack and Impale Qualities but only one can be selected for each attack. This choice must be made before any dice are rolled to determine the success of the attack. If not choice is made, the default quality is Hack.",
+        "name": "Hack or Impale",
+        "shared": true,
+        "source": {
+          "1": "p. 298",
+          "6": "p. 89"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63b2c55553d94cdc98c7d260",
+      "object": {
+        "applicableTo": [
+          1
+        ],
+        "description": "An unloaded weapon with this flaw requires an Extended Ranged Test for the appropriate Weapon Group scoring 6 SL to reload. If interrupted, reloading must be started from the beginning.",
+        "name": "Reload 6",
+        "shared": true,
+        "source": {
+          "1": "p. 299"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63b331ed53d94cdc98c7d270",
+      "object": {
+        "applicableTo": [
+          0,
+          2,
+          1
+        ],
+        "description": "Damage causes infection. If it causes a living opponent to lose Wounds, it must pass an Easy (+40) Endurance Test or contract a Festering Wound.",
+        "name": "Infected",
+        "shared": true,
+        "source": {
+          "1": "p. 340"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63b3585f53d94cdc98c7d276",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "Gives every affected target 1+SL Ablaze Conditions.",
+        "name": "Incendiary",
+        "shared": true,
+        "source": {
+          "1": "p. 295"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63b3596753d94cdc98c7d278",
+      "object": {
+        "applicableTo": [
+          2
+        ],
+        "description": "Increases weapon's reload SL by 1.",
+        "name": "Reload +1",
+        "shared": true,
+        "source": {
+          "6": "p. 102"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63b3597853d94cdc98c7d279",
+      "object": {
+        "applicableTo": [
+          2
+        ],
+        "description": "Increases weapon's reload SL by 2.",
+        "name": "Reload +2 ",
+        "shared": true,
+        "source": {
+          "6": "p. 102"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63b49aee76bd2da2010c5f74",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          3,
+          2,
+          5,
+          6,
+          4
+        ],
+        "description": "Increase Encumbrance by +1 (small objects cannot normally have this flaw). Bulky clothing and armour are Enc 1 even when worn, and Fatigue penalties for armour are doubled.",
+        "name": "Bulky",
+        "shared": true,
+        "source": {
+          "1": "p. 293"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63ced6d5b4a13dd03d7eba8a",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "description": "The item counts as Magical.",
+        "name": "Magical",
+        "shared": true,
+        "source": {
+          "7": "p. 170"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "63ced7f4b4a13dd03d7eba8b",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "description": "The item is Cursed. It has a boon an a bane.",
+        "name": "Cursed",
+        "shared": true,
+        "source": {
+          "7": "p. 170"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64031ed27a679bfba931dbae",
+      "object": {
+        "applicableTo": [
+          3
+        ],
+        "description": "Can be worn on top of either Leather or Mail armour. Armour worn in this way cannot be combined with Soft Kit anymore. This Quality is for Armour that uses new rules from Archives of the Empire Vol III.",
+        "name": "Overcoat",
+        "shared": true,
+        "source": {
+          "5": "p. 36"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64031fb77a679bfba931dbaf",
+      "object": {
+        "applicableTo": [
+          3
+        ],
+        "description": "If a Soft Kit with this Quality is worn under plate armour, that armour loses Weak Points flaw.",
+        "name": "Reinforced",
+        "shared": true,
+        "source": {
+          "5": "p. 36"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "640321397a679bfba931dbb1",
+      "object": {
+        "applicableTo": [
+          3
+        ],
+        "description": "If the helmet's visor is closed, the helmet performs as described. If it's opened, it loses any special powers it has due to its design and gains Partial Flaw. Perception Tests get -10 if the visor opened. It takes an action to open and close the visor. This Quality is for Armour that uses new rules from Archives of the Empire Vol III.",
+        "name": "Visor",
+        "shared": true,
+        "source": {
+          "5": "p. 36"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "640321aa7a679bfba931dbb2",
+      "object": {
+        "applicableTo": [
+          3
+        ],
+        "description": "This armour requires Soft Kit to be worn underneath.",
+        "name": "Requires Kit",
+        "shared": true,
+        "source": {
+          "5": "p. 36"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "65184a2049960d00019f14e2",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "ZZAP! weapons release a burst of electrical or arcane energy.\nThey reduce AP by 1 and ignore all APs from metal armour.",
+        "name": "ZZAP!",
+        "shared": true,
+        "source": {
+          "19": "p. 32"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "65184a2449960d00019f14e3",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "Any attack that inflicts a Critical Wound also causes a Minor Exposure to Corruption.",
+        "name": "Warpstone",
+        "shared": true,
+        "source": {
+          "18": "p. 8",
+          "19": "p. 32"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "6518508d49960d00019f14e4",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "If the weapon does not have Penetrating Quality, Warpforged adds that effect. If it has Penetrating Quality, Warpforged improves it to ignore the first 2 AP of metal armour, and all AP from non-metal armours.",
+        "name": "Warpforged",
+        "shared": true,
+        "source": {
+          "19": "p. 33"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "651851be49960d00019f14e5",
+      "object": {
+        "applicableTo": [
+          0,
+          2,
+          1
+        ],
+        "description": "Blade constantly sweats a powerful, Warpstone-tainted venom. Victims who suffer at least one Wound from the weapon immediately take 2 Poisoned Conditions per SL on the attack Test.",
+        "name": "Weeping",
+        "shared": true,
+        "source": {
+          "19": "p. 33"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "6519d77f49960d00016cb95d",
+      "object": {
+        "applicableTo": [
+          1
+        ],
+        "description": "The weapon holds 1d10 shots, automatically reloading each time after firing. After all shots are fired, the weapon must be reloaded using standard rules. Generate this number the first time you fire after reloading.",
+        "name": "Repeater 1d10",
+        "shared": true,
+        "source": {
+          "1": "p. 298",
+          "19": "p. 39"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "652582b549960d00019a7fb4",
+      "object": {
+        "applicableTo": [
+          0,
+          5,
+          1,
+          3,
+          4
+        ],
+        "description": "User needs to pass a Challenging (+0) Trade - Engineering Test for each hour they are using the item.  For any doubles rolled on a failure, something breaks. If this happens more than 1 time, the item breaks.",
+        "name": "Experimental 1",
+        "shared": true,
+        "source": {
+          "11": "p. 30"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "652583ea49960d00019a7fb5",
+      "object": {
+        "applicableTo": [
+          0,
+          5,
+          1,
+          3,
+          4
+        ],
+        "description": "User needs to pass a Challenging (+0) Trade - Engineering Test for each hour they are using the item.  For any doubles rolled on a failure, something breaks. If this happens more than 2 times, the item breaks.",
+        "name": "Experimental 2",
+        "shared": true,
+        "source": {
+          "11": "p. 30"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "6646fe5149960d00019aeda7",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "Attacks with weapon count as Magical and having Web - 40 Creature Trait.",
+        "name": "Spiderborn 40",
+        "shared": true,
+        "source": {
+          "30": "p. 15",
+          "31": "Miscellanea p. 15"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "6646ff4f49960d00019aeda8",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "Attacks with weapon count as Magical and having Web - 50 Creature Trait.",
+        "name": "Spiderborn 50",
+        "shared": true,
+        "source": {
+          "30": "p. 15",
+          "31": "Miscellanea p. 15"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "6646ff5249960d00019aeda9",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "Attacks with weapon count as Magical and having Web - 60 Creature Trait.",
+        "name": "Spiderborn 60",
+        "shared": true,
+        "source": {
+          "30": "p. 15",
+          "31": "Miscellanea p. 15"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "6646ff5449960d00019aedaa",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "Attacks with weapon count as Magical and having Web - 70 Creature Trait.",
+        "name": "Spiderborn 70",
+        "shared": true,
+        "source": {
+          "30": "p. 15",
+          "31": "Miscellanea p. 15"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "6646ff8549960d00019aedab",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2
+        ],
+        "description": "Attacks with weapon count as Magical and having Web - 80 Creature Trait.",
+        "name": "Spiderborn 80",
+        "shared": true,
+        "source": {
+          "30": "p. 15",
+          "31": "Miscellanea p. 15"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "6646ffaa49960d00019aedac",
+      "object": {
+        "applicableTo": [
+          3
+        ],
+        "description": "Gives the wearer Ward - 7 Creature Trait",
+        "name": "Warded 7",
+        "shared": true,
+        "source": {
+          "30": "p. 15",
+          "31": "Miscellanea p. 15"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "6646ffe249960d00019aedad",
+      "object": {
+        "applicableTo": [
+          3
+        ],
+        "description": "Gives the wearer Ward - 8 Creature Trait",
+        "name": "Warded 8",
+        "shared": true,
+        "source": {
+          "30": "p. 15",
+          "31": "Miscellanea p. 15"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "6646ffe449960d00019aedae",
+      "object": {
+        "applicableTo": [
+          3
+        ],
+        "description": "Gives the wearer Ward - 9 Creature Trait",
+        "name": "Warded 9",
+        "shared": true,
+        "source": {
+          "30": "p. 15",
+          "31": "Miscellanea p. 15"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "670a4a9c49960d00012d5edb",
+      "object": {
+        "applicableTo": [
+          1
+        ],
+        "description": "This weapon can be fired 2 times before it needs to be reloaded. When shooting, you can chose to fire a 1 or 2 shots. The second shot suffers -10 to its Ranged Test. Each shot, reduces Salvo by 1. Each successful Reload,  increases Salvo by 1, up to its maximum rating of 2.\nIf a Dwarf Salvo weapon Misfires of a 100 roll, the crew suffers a number of hits equal to the remaining Salvo rating.",
+        "name": "Salvo 2",
+        "shared": true,
+        "source": {
+          "38": "p. 92",
+          "6": "p. 126"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "670a4c6a49960d00012d5edc",
+      "object": {
+        "applicableTo": [
+          1
+        ],
+        "description": "Weapon is so large and complex it has to be operated by 2 characters (with relevant skill). When operated with less than that, it doubles its Reload Rating.",
+        "name": "Crewed 2",
+        "shared": true,
+        "source": {
+          "10": "p. 102",
+          "29": "p. 41",
+          "38": "92",
+          "6": "p. 125"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "67180ded49960d0001f4573e",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          3
+        ],
+        "description": "The item can take +4 Damage point before it suffers any negatives and gains a saving throw of 6+ on a 1d10 roll against instant breakage.",
+        "name": "Durable 4",
+        "shared": true,
+        "source": {
+          "1": "p. 292"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "671c0fc449960d0001e00233",
+      "object": {
+        "applicableTo": [
+          1
+        ],
+        "description": "The weapon holds 3 shots, automatically reloading each time after firing. After all shots are fired, the weapon must be reloaded using standard rules.",
+        "name": "Repeater 3",
+        "shared": true,
+        "source": {
+          "1": "p. 298"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "67dda2aa49960d0001be2d0c",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "description": "Meticulously crafted to please the eye. This Quality is a sign of social status and can be taken multiple times. The higher the quality, the more impressive it seems.",
+        "name": "Fine 2",
+        "shared": true,
+        "source": {
+          "1": "p. 292"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "67dda2b749960d0001be2d0d",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "description": "Meticulously crafted to please the eye. This Quality is a sign of social status and can be taken multiple times. The higher the quality, the more impressive it seems.",
+        "name": "Fine 3",
+        "shared": true,
+        "source": {
+          "1": "p. 292"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "67dda2d749960d0001be2d0f",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          3
+        ],
+        "description": "The item can take +2 Damage point before it suffers any negatives and gains a saving throw of 8+ on a 1d10 roll against instant breakage.",
+        "name": "Durable 2",
+        "shared": true,
+        "source": {
+          "1": "p. 292"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "67dda2e349960d0001be2d10",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          3
+        ],
+        "description": "The item can take +3 Damage point before it suffers any negatives and gains a saving throw of 7+ on a 1d10 roll against instant breakage.",
+        "name": "Durable 3",
+        "shared": true,
+        "source": {
+          "1": "p. 292"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "67ddedfb49960d0001be2d28",
+      "object": {
+        "applicableTo": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "description": "Meticulously crafted to please the eye. This Quality is a sign of social status and can be taken multiple times. The higher the quality, the more impressive it seems.",
+        "name": "Fine 4",
+        "shared": true,
+        "source": {
+          "1": "p. 292"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    }
+  ]
+}

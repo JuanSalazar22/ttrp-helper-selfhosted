@@ -1,0 +1,1299 @@
+[
+  {
+    "id": "5f8dc03f5c5ff9fd411f0311",
+    "name": "Extra Mouth - Head",
+    "kind": "physical",
+    "description": "Extra mouth somewhere on your head. Can only be hidden by clothing.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8dc427d2dfb95cda117bb2",
+    "name": "Patchy Feathers",
+    "kind": "physical",
+    "description": "Roll on the Hit Location table twice to see where.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8dbfefd2dfb95cda117bae",
+    "name": "Distended Digits",
+    "kind": "physical",
+    "modifiers": {
+      "attributes": {
+        "dex": 10
+      }
+    },
+    "description": "Gain +10 Dex. Cannot be hidden.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8dc0245c5ff9fd411f0310",
+    "name": "Extra Leg Joints",
+    "kind": "physical",
+    "modifiers": {
+      "attributes": {
+        "ag": 5
+      }
+    },
+    "description": "Gain +5 Ag. Cannot be hidden.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8dc61c5c5ff9fd411f0315",
+    "name": "Whiskered Snout",
+    "kind": "physical",
+    "description": "Gain +10 Track. Can only be hidden by clothing.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8dc0e7d2dfb95cda117bb1",
+    "name": "Inverted Face",
+    "kind": "physical",
+    "description": "Suffer -20 to Fellowship Tests.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8dc0f55c5ff9fd411f0313",
+    "name": "Iron Skin",
+    "kind": "physical",
+    "modifiers": {
+      "attributes": {
+        "ag": -10
+      }
+    },
+    "description": "Gain +2 Armour Points to all locations. Reduce Ag by -10.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8e1281d1949bb61bf0d3a2",
+    "name": "Tortured Visions",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "i": -10
+      }
+    },
+    "description": "Suffer -10 I.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8e1259d1949bb61bf0d3a1",
+    "name": "Shaky Morale",
+    "kind": "mental",
+    "description": "Every time you fail a Test derived from Willpower, get the Broken condition.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8dc5e3c513c07c621a9e96",
+    "name": "Thorny Scales",
+    "kind": "physical",
+    "description": "Gain +1 Armour Points to all locations.Can only be hidden by clothing.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8e11e8d1949bb61bf0d3a0",
+    "name": "Hollow Heart",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "fel": -10,
+        "wp": 10
+      }
+    },
+    "description": "Gain +10 WP. Suffer -10 Fel.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8e11d82b9883954565054f",
+    "name": "Hateful Impulses",
+    "kind": "mental",
+    "description": "Gain Animosity towards all species different than your own.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8e126b2b98839545650553",
+    "name": "Suspicious Mind",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "i": -5,
+        "int": -5
+      }
+    },
+    "description": "Suffer -5 I and -5 Int.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8e13552b98839545650555",
+    "name": "Worried Jitters",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "ag": 5,
+        "fel": -5
+      }
+    },
+    "description": "Gain +5 Ag. Suffer -5 Fel.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8e119fb771fd6aa7342de9",
+    "name": "Erratic Fantasist",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "i": -5,
+        "wp": -5
+      }
+    },
+    "description": "Suffer -5 I and -5 WP.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8e11ac2b9883954565054e",
+    "name": "Fearful Concern",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "wp": -10
+      }
+    },
+    "description": "Suffer -10 WP.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8e11432b9883954565054c",
+    "name": "Beast Within",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "fel": -5,
+        "i": -5,
+        "wp": 10
+      }
+    },
+    "description": "Gain +10 WP. Suffer -5 Fel and -5 Int.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8e12902b98839545650554",
+    "name": "Totally Unhinged",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "fel": -20,
+        "wp": 10
+      }
+    },
+    "description": "Suffer -20 Fel. Gain +10 WP.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8dcc80d2dfb95cda117bb5",
+    "name": "Awful Cravings",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "fel": -5,
+        "wp": -5
+      }
+    },
+    "description": "Suffer -5 Fel and -5 WP.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8dbfb6d2dfb95cda117bac",
+    "name": "Animalistic Legs",
+    "kind": "physical",
+    "modifiers": {
+      "movement": 1
+    },
+    "description": "Gain +1 Movement. Can only be hidden by clothing. Requires difficult (-10) Athletics Test to walk with a normal gait.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8e1346d1949bb61bf0d3a4",
+    "name": "Unholy Rage",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "ws": 10
+      }
+    },
+    "description": "Gain Frenzy trait. Gain +10 WS.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8dc005d2dfb95cda117baf",
+    "name": "Emaciated",
+    "kind": "physical",
+    "modifiers": {
+      "attributes": {
+        "ag": 5,
+        "s": -10
+      }
+    },
+    "description": "Gain -10 S, +5 Ag.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8dc05a5c5ff9fd411f0312",
+    "name": "Fleshy Tentacle",
+    "kind": "physical",
+    "description": "Gain the Tentacles Creature Trait. Can only be hidden by clothing.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8e12d2d1949bb61bf0d3a3",
+    "name": "Unending Malice",
+    "kind": "mental",
+    "description": "Gain +10 to all Tests that involve hurting others. Suffer -10 to all Tests that do not involve hurting others.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8dbfc9d2dfb95cda117bad",
+    "name": "Corpulent",
+    "kind": "physical",
+    "modifiers": {
+      "attributes": {
+        "s": 5,
+        "t": 5
+      },
+      "movement": -1
+    },
+    "description": "Gain -1 Movement, +5 S, +5 T.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8dc0ccd2dfb95cda117bb0",
+    "name": "Inhuman Beauty",
+    "kind": "physical",
+    "modifiers": {
+      "attributes": {
+        "fel": 10
+      }
+    },
+    "description": "Gain +10 Fel. Skin does not scar any more.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8dc433d2dfb95cda117bb3",
+    "name": "Short Legs",
+    "kind": "physical",
+    "modifiers": {
+      "movement": -1
+    },
+    "description": "Suffer -1 Movement. Cannot be hidden.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8e11f22b98839545650550",
+    "name": "Jealous Thoughts",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "fel": -10
+      }
+    },
+    "description": "Suffer -10 Fel.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8e12212b98839545650551",
+    "name": "Mental Blocks",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "int": -10
+      }
+    },
+    "description": "Suffer -10 Int.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8dc09bc513c07c621a9e95",
+    "name": "Glowing Skin",
+    "kind": "physical",
+    "description": "Skin emits as much light as a candle. Cannot be hidden.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8dc10c5c5ff9fd411f0314",
+    "name": "Lolling Tongue",
+    "kind": "physical",
+    "description": "Subtract -10 from all Language Tests when speaking. Cannot be hidden.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8e117dd1949bb61bf0d39f",
+    "name": "Chaotic Dreams",
+    "kind": "mental",
+    "description": "Every day, you get the Fatigued Condition for the first two hours of that day.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8e122f2b98839545650552",
+    "name": "Panicked Urgency",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "ag": 10,
+        "wp": -10
+      }
+    },
+    "description": "Suffer -10 WP. Gain +10 Ag.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8dc608d2dfb95cda117bb4",
+    "name": "Uneven Horns",
+    "kind": "physical",
+    "description": "Gain +1 Armour Points to the Head. Counts as a Creature Weapon of Damage equal to SB. Cannot be hidden.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8e1217b771fd6aa7342dea",
+    "name": "Lonely Spirit",
+    "kind": "mental",
+    "description": "If alone, you suffer -10 to all Tests.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8e1278b771fd6aa7342deb",
+    "name": "Thrill Seeker",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "i": -10,
+        "wp": 10
+      }
+    },
+    "description": "Gain +10 WP. Suffer -10 I.",
+    "page": "p. 185"
+  },
+  {
+    "id": "5f8dc0155c5ff9fd411f030f",
+    "name": "Enormous Eye",
+    "kind": "physical",
+    "description": "Gain +10 on Perception Tests involving sight.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8dc613c513c07c621a9e97",
+    "name": "Weeping Pus - Body",
+    "kind": "physical",
+    "description": "Pus is coming from your body region.",
+    "page": "p. 184"
+  },
+  {
+    "id": "5f8e118f2b9883954565054d",
+    "name": "Crawling Skin",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "dex": -5,
+        "int": -5
+      }
+    },
+    "description": "Suffer -5 Int and -5 Dex.",
+    "page": "p. 185"
+  },
+  {
+    "id": "64576882b7eed4e269afbdaa",
+    "name": "Brine Drinker",
+    "kind": "physical",
+    "description": "You can drink salt water without harm. In addition, you can spew a salty Vomit attack. The target takes no damage but must pass a Difficult (-10) Endurance Test or gain one Blinded Condition, and any metal armour they are wearing has its Armour Rating halved.\nYou skin is permanently covered with salty wet crust, and you must drink a pint of sea water every day or you gain a  a Fatigued Condition.",
+    "page": "p. 55"
+  },
+  {
+    "id": "64e75a5049960d000150e9d6",
+    "name": "Acid Blood",
+    "kind": "physical",
+    "description": "Gain the Corrosive Blood Creature Trait.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e75adb49960d000150e9d7",
+    "name": "Beaked Face",
+    "kind": "physical",
+    "description": "Gain the Bite +3 Creature Trait. Cannot be hidden.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e75b8f49960d000150e9d8",
+    "name": "Bear Head",
+    "kind": "physical",
+    "description": "+1 Armour Point to the Head. Gain the Bite +9 Creature Trait. Cannot be hidden.",
+    "page": "p. 66, 69"
+  },
+  {
+    "id": "64e75b9e49960d000150e9d9",
+    "name": "Boar Head",
+    "kind": "physical",
+    "description": "+1 Armour Point to the Head. Gain the Horns (Tusks) Creature Trait. Cannot be hidden.",
+    "page": "p. 66, 69"
+  },
+  {
+    "id": "64e75b9f49960d000150e9da",
+    "name": "Bull Head",
+    "kind": "physical",
+    "description": "+1 Armour Point to the Head. Gain the Horns Creature Trait. Cannot be hidden.",
+    "page": "p. 66, 69"
+  },
+  {
+    "id": "64e75ba049960d000150e9db",
+    "name": "Dog Head",
+    "kind": "physical",
+    "description": "Gain the Bite +5 Creature Trait. Cannot be hidden.",
+    "page": "p. 66, 69"
+  },
+  {
+    "id": "64e75ba149960d000150e9dc",
+    "name": "Eagle Head",
+    "kind": "physical",
+    "description": "Gain the Bite +4 Creature Trait. Cannot be hidden.",
+    "page": "p. 66, 69"
+  },
+  {
+    "id": "64e75ba149960d000150e9dd",
+    "name": "Rat Head",
+    "kind": "physical",
+    "description": "Gain the Bite +4 and Infected Creature Traits. Cannot be hidden.",
+    "page": "p. 66, 69"
+  },
+  {
+    "id": "64e75ba249960d000150e9de",
+    "name": "Giant Spider Head",
+    "kind": "physical",
+    "description": "Gain the Bite +3 and Venom (Average) Creature Traits. Cannot be hidden.",
+    "page": "p. 66, 69"
+  },
+  {
+    "id": "64e75ba649960d000150e9df",
+    "name": "Wolf Head",
+    "kind": "physical",
+    "description": "+1 Armour Point to the Head. Gain the Bite +6 Creature Trait. Gain the Acute Senses - Smell Talent. Cannot be hidden.",
+    "page": "p. 66, 69"
+  },
+  {
+    "id": "64e75ba749960d000150e9e0",
+    "name": "Snake Head",
+    "kind": "physical",
+    "description": "+1 Armour Point to the Head. Gain the Bite +3 and Venom (Average) Creature Traits. Cannot be hidden.",
+    "page": "p. 66, 69"
+  },
+  {
+    "id": "64e75bb149960d000150e9e1",
+    "name": "Goat Head",
+    "kind": "physical",
+    "description": "Gain the Horns Creature Trait. Cannot be hidden.",
+    "page": "p. 66, 69"
+  },
+  {
+    "id": "64e75f5649960d000150e9e2",
+    "name": "Beweaponed Extremities",
+    "kind": "physical",
+    "description": "Permanently reduce Dexterity to 0. You cannot be disarmed. Cannot be hidden.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e75f9f49960d000150e9e3",
+    "name": "Big Ears",
+    "kind": "physical",
+    "description": "Gain the Acute Sense - Hearing Talent. Can only be hidden by clothing.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e75fe349960d000150e9e4",
+    "name": "Bird's Feet",
+    "kind": "physical",
+    "description": "Gain the Arboreal Creature Trait. Cannot be hidden.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e7605249960d000150e9e5",
+    "name": "Blank Face",
+    "kind": "physical",
+    "description": "Gain the Fear 2 Creature Trait. Can only be hidden by clothing.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e7607449960d00018761cb",
+    "name": "Breathe Fire",
+    "kind": "physical",
+    "description": "Gain the Breath 5 (Fire) Creature Trait.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e760ba49960d000150e9e6",
+    "name": "Bulging Eyes",
+    "kind": "physical",
+    "modifiers": {
+      "attributes": {
+        "i": 10
+      }
+    },
+    "description": "Gain +10 Initiative. Can only be hidden by clothing.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e7612749960d000150e9e7",
+    "name": "Burning Skin",
+    "kind": "physical",
+    "description": "Anything that physically touch you must pass an Athletics Test or gain 1 Ablaze Condition. Cannot be hidden.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e761db49960d000150e9e8",
+    "name": "Carapace - Arms and Body",
+    "kind": "physical",
+    "description": "+1 Armour Point on arms and body. Can only be hidden by clothing.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e761df49960d000150e9e9",
+    "name": "Carapace - Arms and Legs",
+    "kind": "physical",
+    "description": "+1 Armour Point on arms and legs. Can only be hidden by clothing.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e761e249960d000150e9ea",
+    "name": "Carapace - Arms and Head",
+    "kind": "physical",
+    "description": "+1 Armour Point on arms and head. Can only be hidden by clothing.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e761e449960d000150e9eb",
+    "name": "Carapace - Legs and Body",
+    "kind": "physical",
+    "description": "+1 Armour Point on legs and body. Can only be hidden by clothing.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e761e449960d000150e9ec",
+    "name": "Carapace - Head and Body",
+    "kind": "physical",
+    "description": "+1 Armour Point on head and body. Can only be hidden by clothing.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e761e549960d000150e9ed",
+    "name": "Carapace - Legs and Head",
+    "kind": "physical",
+    "description": "+1 Armour Point on legs and head. Can only be hidden by clothing.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e7628549960d000150e9ee",
+    "name": "Claws",
+    "kind": "physical",
+    "description": "Hands count as a Creature Weapon of Damage equal to your SB. Cannot be hidden.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e762a849960d000150e9ef",
+    "name": "Cloud of Flies",
+    "kind": "physical",
+    "description": "Gain the Distracting Creature Trait. Cannot be hidden.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e762f849960d000150e9f0",
+    "name": "Crested Head",
+    "kind": "physical",
+    "description": "Gain the Attractive Talent when dealing with Mutants and Beastmen. Cannot be hidden.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e7631849960d000150e9f1",
+    "name": "Deafening Cry",
+    "kind": "physical",
+    "description": "Gain the Distracting Creature Trait.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e7637449960d000150e9f2",
+    "name": "Elastic Arms",
+    "kind": "physical",
+    "description": "You may count any melee weapon as having a Reach up to 2 steps longer.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e7646649960d000150e9f3",
+    "name": "Evil Eye",
+    "kind": "physical",
+    "description": "You may cast the Evil Eye Spell without performing a Test by\nspending a Fortune Point. Every time yo do it, you immediately suffer a Minor Miscast. Cannot be hidden.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e7653549960d000150e9f4",
+    "name": "Extra Mouth - Left Arm",
+    "kind": "physical",
+    "description": "Extra mouth somewhere on your left arm. Can only be hidden by clothing.",
+    "page": "p. 184"
+  },
+  {
+    "id": "64e7653649960d000150e9f5",
+    "name": "Extra Mouth - Right Arm",
+    "kind": "physical",
+    "description": "Extra mouth somewhere on your right arm. Can only be hidden by clothing.",
+    "page": "p. 184"
+  },
+  {
+    "id": "64e7653749960d000150e9f6",
+    "name": "Extra Mouth - Left Leg",
+    "kind": "physical",
+    "description": "Extra mouth somewhere on your left leg. Can only be hidden by clothing.",
+    "page": "p. 184"
+  },
+  {
+    "id": "64e7653749960d000150e9f7",
+    "name": "Extra Mouth - Right Leg",
+    "kind": "physical",
+    "description": "Extra mouth somewhere on your right leg. Can only be hidden by clothing.",
+    "page": "p. 184"
+  },
+  {
+    "id": "64e7653849960d000150e9f8",
+    "name": "Extra Mouth - Body",
+    "kind": "physical",
+    "description": "Extra mouth somewhere on your body. Can only be hidden by clothing.",
+    "page": "p. 184"
+  },
+  {
+    "id": "64e765e849960d000150e9f9",
+    "name": "Eyestalks",
+    "kind": "physical",
+    "description": "See over/around obstacles. Cannot be hidden.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e7679949960d000150e9fb",
+    "name": "Foul Odour",
+    "kind": "physical",
+    "description": "Gain the Distracting Creature Trait.",
+    "page": "p. 66"
+  },
+  {
+    "id": "64e7ce6b49960d0001b76573",
+    "name": "Furred Skin",
+    "kind": "physical",
+    "description": "You no longer suffer the effects of Exposure in cold climates. The\neffects of Exposure in hot climates are doubled. Cannot be hidden.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7cea049960d0001b76574",
+    "name": "Gills",
+    "kind": "physical",
+    "description": "You can breathe underwater. Can only be hidden by clothing.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7cef049960d0001b76575",
+    "name": "Headless",
+    "kind": "physical",
+    "description": "Gain the Fear 2 Creature Trait. All head hits count as misses. Cannot be hidden",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7cf5649960d0001b76576",
+    "name": "Hopper",
+    "kind": "physical",
+    "description": "Gain the Bounce Creature Trait but reduce movement to 2. It cannot be increased. Cannot be hidden.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d08849960d0001b76577",
+    "name": "Long Arms",
+    "kind": "physical",
+    "description": "If your opponent has melee weapon with the same Reach as yours, yours counts a longer. Cannot be hidden.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d0e149960d0001b76578",
+    "name": "Long Legs",
+    "kind": "physical",
+    "modifiers": {
+      "movement": 2
+    },
+    "description": "Gain +2 Movement. Cannot be hidden.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d15c49960d0001b76579",
+    "name": "Long Neck",
+    "kind": "physical",
+    "description": "Half of all body hits become head hits. Cannot be hidden.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d18149960d0001b7657a",
+    "name": "Multiple Arms",
+    "kind": "physical",
+    "description": "Gain one Free Attack. Cannot be hidden.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d19d49960d0001b7657b",
+    "name": "Multiple Legs",
+    "kind": "physical",
+    "modifiers": {
+      "movement": 1
+    },
+    "description": "Gain +1 Movement. Cannot be hidden.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d1d749960d0001b7657c",
+    "name": "One Eye",
+    "kind": "physical",
+    "modifiers": {
+      "attributes": {
+        "bs": -20
+      }
+    },
+    "description": "Subtract -20 from BS. Can only be hidden by clothing.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d24149960d0001b7657d",
+    "name": "Pin Head",
+    "kind": "physical",
+    "description": "Gain the Stupid Creature Trait. Cannot be hidden.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d27749960d0001b7657e",
+    "name": "Pointed Head",
+    "kind": "physical",
+    "description": "Gain the Stupid Creature Trait. You cannot wear a helmet. Cannot be hidden.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d2cb49960d0001b7657f",
+    "name": "Rearranged Face",
+    "kind": "physical",
+    "description": "Gain the Fear 1 Creature Trait. Anyone trying to see if you are lying suffer -20 penalty to Intuition. Can only be hidden by clothing.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d2ee49960d0001b76580",
+    "name": "Rotting Flesh",
+    "kind": "physical",
+    "description": "Gain the Fear 2 and Infected Creature Traits.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d31d49960d0001b76581",
+    "name": "Shifting Colours",
+    "kind": "physical",
+    "description": "Gain the Distracting Creature Trait. Cannot be hidden.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d37249960d0001b76582",
+    "name": "Skull Face",
+    "kind": "physical",
+    "description": "Gain the Fear 2 Creature Trait. Can only be hidden by clothing.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d46e49960d0001b76583",
+    "name": "Spiked Skin",
+    "kind": "physical",
+    "description": "Gain +1 Armour Points on all locations. Gain a Free Attack (Weapon +4 Creature Trait) when Charging. You can no longer wear armour. Cannot be hidden.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d4ac49960d0001b76584",
+    "name": "Suckered Hands and Feet",
+    "kind": "physical",
+    "description": "Gain the Wallcrawler Creature Trait. Can only be hidden by clothing.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d4c849960d0001b76585",
+    "name": "Tail",
+    "kind": "physical",
+    "description": "Gain the Tail Attack +3 Creature Trait. Can only be hidden by clothing.",
+    "page": "p. 67"
+  },
+  {
+    "id": "64e7d51a49960d0001b76586",
+    "name": "Three Eyes",
+    "kind": "physical",
+    "description": "Gain the Acute Sense - Vision Talent. Can only be hidden by clothing.",
+    "page": ""
+  },
+  {
+    "id": "64e7d5c749960d0001b76587",
+    "name": "Transparent Skin",
+    "kind": "physical",
+    "description": "Gain the Fear 2 Creature Trait. Cannot be hidden.",
+    "page": "p. 68"
+  },
+  {
+    "id": "64e7d5e049960d0001b76588",
+    "name": "Two Heads",
+    "kind": "physical",
+    "description": "Gain the Ambidextrous Talent. Cannot be hidden.",
+    "page": "p. 68"
+  },
+  {
+    "id": "64e7d63b49960d0001b76589",
+    "name": "Unusual Skin",
+    "kind": "physical",
+    "description": "Your skin has a strange colour or texture. Cannot be hidden.",
+    "page": "p. 68"
+  },
+  {
+    "id": "64e7d69749960d0001b7658a",
+    "name": "Warp Frenzy",
+    "kind": "physical",
+    "description": "Gain the Frenzy Creature Trait. Anytime you are under influence of Frenzy, temporarily gain another random physical mutation.",
+    "page": "p. 68"
+  },
+  {
+    "id": "64e7d6b749960d0001b7658b",
+    "name": "Webbed Feet",
+    "kind": "physical",
+    "description": "Gain the Amphibious Creature Trait. Can only be hidden by clothing.",
+    "page": "p. 68"
+  },
+  {
+    "id": "64e7d70549960d0001b7658c",
+    "name": "Weeping Pus - Head",
+    "kind": "physical",
+    "description": "Pus is coming from your head.",
+    "page": "p. 184"
+  },
+  {
+    "id": "64e7d70549960d0001b7658d",
+    "name": "Weeping Pus - Left Arm",
+    "kind": "physical",
+    "description": "Pus is coming from your left arm.",
+    "page": "p. 184"
+  },
+  {
+    "id": "64e7d70649960d0001b7658e",
+    "name": "Weeping Pus - Right Arm.",
+    "kind": "physical",
+    "description": "Pus is coming from your right arm.",
+    "page": "p. 184"
+  },
+  {
+    "id": "64e7d70849960d0001b7658f",
+    "name": "Weeping Pus - Left Leg",
+    "kind": "physical",
+    "description": "Pus is coming from your left leg.",
+    "page": "p. 184"
+  },
+  {
+    "id": "64e7d70949960d0001b76590",
+    "name": "Weeping Pus - Right Leg",
+    "kind": "physical",
+    "description": "Pus is coming from your right leg.",
+    "page": "p. 184"
+  },
+  {
+    "id": "64e7d7ac49960d0001b76591",
+    "name": "Wings",
+    "kind": "physical",
+    "description": "Gain the Flight 60 Creature Trait. Can only be hidden by clothing.",
+    "page": "p. 68"
+  },
+  {
+    "id": "64eb124949960d000141a369",
+    "name": "Aethyric Leak",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "fel": -5,
+        "int": -5
+      }
+    },
+    "description": "Gain the Witch! Talent. Suffer -5 Fel and -5 Int.",
+    "page": "p. 70"
+  },
+  {
+    "id": "64eb129b49960d000141a36a",
+    "name": "Animalistic Psyche",
+    "kind": "mental",
+    "description": "Gain the Bestial Creature Trait for 1d10 hours if you fail a WP related test.",
+    "page": "p. 70"
+  },
+  {
+    "id": "64eb130e49960d000141a36b",
+    "name": "Beacon of Corruption",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "fel": -10
+      }
+    },
+    "description": "Whenever subject to Psychology, gain the Corruption (Minor)\nCreature Trait. Suffer -10 Fel.",
+    "page": "p. 70"
+  },
+  {
+    "id": "64eb139849960d000141a36c",
+    "name": "Beyond Pain",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "i": -20,
+        "int": -20
+      }
+    },
+    "description": "Gain the Painless Creature Trait. Suffer -20 I and -20 Int.",
+    "page": "p. 70"
+  },
+  {
+    "id": "64eb13ca49960d000141a36d",
+    "name": "Blasphemous Soul",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "wp": 10
+      }
+    },
+    "description": "Gain the Hatred (Religion) Creature Trait. Gain +10 WP.",
+    "page": "p. 70"
+  },
+  {
+    "id": "64eb148149960d000141a36e",
+    "name": "Blasted Mind",
+    "kind": "mental",
+    "description": "Every time you would take a Broken Condition, gain Immunity to Psychology Creature Trait for 1d10 Rounds instead. Afterwards take 1d10 Broken Conditions.",
+    "page": "p. 70"
+  },
+  {
+    "id": "64eb1a2b49960d000141a36f",
+    "name": "Fitful Hatred",
+    "kind": "mental",
+    "description": "Gain the Hatred (Target) Creature Trait. Once a day, roll on the Fixations Table (Enemy in Shadows Companion p. 69) to determine target for that day.",
+    "page": "p. 70"
+  },
+  {
+    "id": "64eb1af849960d000141a370",
+    "name": "Glorious Corruption",
+    "kind": "mental",
+    "description": "Gain a Fatigued Condition every week you do not gain a Corruption Point or are not responsible for someone else gaining it. Lose all Fatigued Conditions if either situation occurs.",
+    "page": "p. 70"
+  },
+  {
+    "id": "64eb1b6f49960d000141a371",
+    "name": "Hounds of Despair",
+    "kind": "mental",
+    "description": "Every time you fail a WP related Test, gain the Malaise Symptom for 1d10 hours.",
+    "page": "p. 70"
+  },
+  {
+    "id": "64eb1ba349960d000141a372",
+    "name": "Hurried Masochism",
+    "kind": "mental",
+    "description": "Gain the Belligerent Creature Trait. You cannot Flee voluntarily.",
+    "page": "p. 70"
+  },
+  {
+    "id": "64eb1c1649960d000141a373",
+    "name": "Lingering Foulness",
+    "kind": "mental",
+    "description": "Every time you interact with filth, gain the Nausea Symptom for 1d10 hours.",
+    "page": "p. 70"
+  },
+  {
+    "id": "64ebc37149960d000141a37e",
+    "name": "Mindless Wandering",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "int": -10,
+        "wp": 10
+      }
+    },
+    "description": "Suffer -10 Int. Gain +10 WP. When alone, Gain the Stupid Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc3a649960d000141a37f",
+    "name": "Monstrous Paranoia",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "i": 10
+      }
+    },
+    "description": "Gain + 10 I. Gain the Skittish Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc40549960d000141a380",
+    "name": "Panicked Urgency",
+    "kind": "mental",
+    "modifiers": {
+      "attributes": {
+        "ag": 10,
+        "wp": -10
+      }
+    },
+    "description": "Suffer -10 WP. Gain +10 Ag.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc42449960d000141a381",
+    "name": "Ravenous Hunger",
+    "kind": "mental",
+    "description": "Gain the Hungry Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc4c149960d000141a382",
+    "name": "Soul Sickness",
+    "kind": "mental",
+    "description": "Every time you fail a Willpower related Test, gain the Convulsions Symptom for 1d10 hours.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc53549960d000141a383",
+    "name": "Terrible Phobia - Inanimate Objects",
+    "kind": "mental",
+    "description": "Gain the Afraid (Inanimate Objects) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc54d49960d000141a384",
+    "name": "Terrible Phobia - Poverty",
+    "kind": "mental",
+    "description": "Gain the Afraid (Poverty) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc54e49960d000141a385",
+    "name": "Terrible Phobia - Fire",
+    "kind": "mental",
+    "description": "Gain the Afraid (Fire) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc54f49960d000141a386",
+    "name": "Terrible Phobia - Figures/Symbols of War",
+    "kind": "mental",
+    "description": "Gain the Afraid (Figures/Symbols of War) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc54f49960d000141a387",
+    "name": "Terrible Phobia - Figures/Symbols of Authority",
+    "kind": "mental",
+    "description": "Gain the Afraid (Figures/Symbols of Authority) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc55049960d000141a388",
+    "name": "Terrible Phobia - Figures/Symbols of Religion",
+    "kind": "mental",
+    "description": "Gain the Afraid (Figures/Symbols of Religion) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc55149960d000141a389",
+    "name": "Terrible Phobia - Monsters",
+    "kind": "mental",
+    "description": "Gain the Afraid (Monsters) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc55149960d000141a38a",
+    "name": "Terrible Phobia - Mutants",
+    "kind": "mental",
+    "description": "Gain the Afraid (Mutants) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc55249960d000141a38b",
+    "name": "Terrible Phobia - Halflings",
+    "kind": "mental",
+    "description": "Gain the Afraid (Halflings) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc55349960d000141a38c",
+    "name": "Terrible Phobia - Humans",
+    "kind": "mental",
+    "description": "Gain the Afraid (Humans) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc55349960d000141a38d",
+    "name": "Terrible Phobia - Dwarfs",
+    "kind": "mental",
+    "description": "Gain the Afraid (Dwarfs) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc55449960d000141a38e",
+    "name": "Terrible Phobia - Elves",
+    "kind": "mental",
+    "description": "Gain the Afraid (Elves) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc55549960d000141a38f",
+    "name": "Terrible Phobia - Wild Animals",
+    "kind": "mental",
+    "description": "Gain the Afraid (Wild Animals) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc55549960d000141a390",
+    "name": "Terrible Phobia - Domestic Animals",
+    "kind": "mental",
+    "description": "Gain the Afraid (Domestic Animals) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc55649960d000141a391",
+    "name": "Terrible Phobia - Magic",
+    "kind": "mental",
+    "description": "Gain the Afraid (Magic) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc55649960d000141a392",
+    "name": "Terrible Phobia - Sickness",
+    "kind": "mental",
+    "description": "Gain the Afraid (Sickness) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc55749960d000141a393",
+    "name": "Terrible Phobia - Water",
+    "kind": "mental",
+    "description": "Gain the Afraid (Water) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc55a49960d000141a394",
+    "name": "Terrible Phobia - Affluence",
+    "kind": "mental",
+    "description": "Gain the Afraid (Affluence) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64ebc55a49960d000141a395",
+    "name": "Terrible Phobia - Happiness",
+    "kind": "mental",
+    "description": "Gain the Afraid (Happiness) Creature Trait.",
+    "page": "p. 71"
+  },
+  {
+    "id": "64f3b09a49960d0001621aab",
+    "name": "Animalistic Legs - Goat",
+    "kind": "physical",
+    "modifiers": {
+      "movement": 1
+    },
+    "description": "Your legs now resemble the hind legs of a goat. Gain +1 Movement. Can only be hidden by clothing. Requires difficult (-10) Athletics Test to walk with a normal gait.",
+    "page": "p. 184"
+  },
+  {
+    "id": "64f3b15049960d0001621aac",
+    "name": "Bestial Face - Dog",
+    "kind": "physical",
+    "modifiers": {
+      "attributes": {
+        "fel": -20,
+        "int": -10
+      }
+    },
+    "description": "Lose 20 Fel and 10 Int. Gain the Acute Sense - Smell Talent.",
+    "page": "p. 147"
+  },
+  {
+    "id": "64f3b1f949960d0001621aad",
+    "name": "Rotting Flesh - v2",
+    "kind": "physical",
+    "modifiers": {
+      "attributes": {
+        "fel": -20
+      }
+    },
+    "description": "Gain the Fear 3 Creature Trait. Lose -20 Fel.",
+    "page": "p. 147"
+  },
+  {
+    "id": "64f3b24b49960d0001621aae",
+    "name": "Pin Head - v2",
+    "kind": "physical",
+    "description": "Lose -40 Int, to a minimum of 10. Gain the Stupid Creature Trait.",
+    "page": "p. 147"
+  },
+  {
+    "id": "64f3b29a49960d0001621aaf",
+    "name": "Pointed Head - v2",
+    "kind": "physical",
+    "modifiers": {
+      "attributes": {
+        "fel": -10,
+        "int": -5
+      }
+    },
+    "description": "Lose -5 Int and -10 Fel. Gain +1 Armour point to\nyour Head Hit Location. Headwear only fits if specially crafted.",
+    "page": "p. 147"
+  },
+  {
+    "id": "64f3b30449960d0001621ab0",
+    "name": "Pointed Head - v2 - copy",
+    "kind": "physical",
+    "modifiers": {
+      "attributes": {
+        "fel": -10,
+        "int": -5
+      }
+    },
+    "description": "Lose -5 Int and -10 Fel. Gain +1 Armour point to\nyour Head Hit Location. Headwear only fits if specially crafted.",
+    "page": "p. 147"
+  },
+  {
+    "id": "64f3b32649960d0001621ab1",
+    "name": "Thorny Scales - v2",
+    "kind": "physical",
+    "modifiers": {
+      "attributes": {
+        "dex": -10,
+        "fel": -10
+      }
+    },
+    "description": "Lose -10 Dex and -10 Fel. Gain +1 Armour Points to all locations. This AP may not be used for Critical Deflection.",
+    "page": "p. 147"
+  },
+  {
+    "id": "6550cb6849960d00016b3ae4",
+    "name": "Clutch of Eyes",
+    "kind": "physical",
+    "description": "You have new eyes. Roll 1d100 to determine their Hit Location. Gain +1d10 I. If you have no I Characteristic, gain +3d10 I instead. All hits the the Hit Location with your new eyes inflict a Blinded Condition.",
+    "page": "p. 46"
+  },
+  {
+    "id": "6550cb7149960d00016b3ae5",
+    "name": "Massive Intelect",
+    "kind": "physical",
+    "description": "Your head to stretches in wide translucent folds around your swollen, glowing brain. Gain +1d10 Int.  If you have no Int Characteristic, gain +3d10 I instead.  All Head Hits cause a Critical Wound.",
+    "page": "p. 46"
+  },
+  {
+    "id": "6550cc0d49960d00016b3ae6",
+    "name": "Slippery Skin",
+    "kind": "physical",
+    "description": "You suffer -20 to all Tests requiring you to hold something and -20 to Fel Tests. When escaping Grapple, if you succeed, you can use unit die number as SL.",
+    "page": "p. 46"
+  },
+  {
+    "id": "6550cd0149960d00016b3ae7",
+    "name": "Telepathy",
+    "kind": "mental",
+    "description": "With a successful Willpower Test, you can mentally communicate with any sentient creature within WP yards. If you succeed an Opposed Willpower Test, you can read creature's surface thoughts.",
+    "page": "p. 46"
+  }
+]

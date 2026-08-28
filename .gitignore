@@ -1,2 +1,22 @@
+node_modules/
+.expo/
+dist/
+build/
+*.log
+.DS_Store
+*.env
+.env
+.env.local
 
-.worktrees/
+# Native build artifacts (regenerable via `expo prebuild`)
+/ios/
+/android/
+TTRP_helper/
+web-build/
+
+# Brainstorming visual companion artifacts
+.superpowers/
+
+# Supabase CLI local stack
+supabase/.branches
+supabase/.temp

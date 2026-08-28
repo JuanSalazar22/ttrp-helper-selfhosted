@@ -1,0 +1,1071 @@
+[
+  {
+    "id": "66c7879249960d000155cf03",
+    "name": "Afraid - Elves",
+    "description": "Creature has Fear - 0 towards Elves.",
+    "page": "p. 338"
+  },
+  {
+    "id": "6705383049960d000188c3a6",
+    "name": "Amphibious",
+    "description": "Add Agility Bonus to the SL for any Swim Tests. Can move through water with full Movement speed.",
+    "page": "p. 338"
+  },
+  {
+    "id": "6705388749960d000188c3a7",
+    "name": "Arboreal",
+    "description": "Add Agility Bonus to the SL for and Climb or Stealth Tests",
+    "page": "p. 338"
+  },
+  {
+    "id": "670539a049960d000188c3a8",
+    "name": "Animosity - Elves",
+    "description": "Creature does not like Elves.",
+    "page": "p. 338"
+  },
+  {
+    "id": "67053a1049960d000188c3a9",
+    "name": "Armour 1",
+    "description": "Extra 1 AP on all Hit Locations.",
+    "page": "p. 338"
+  },
+  {
+    "id": "67053a8d49960d000188c3aa",
+    "name": "Belligerent",
+    "description": "If the creature has more Advantage than its opponent, it is Immune to Psychology.",
+    "page": "p. 338"
+  },
+  {
+    "id": "6708d5dd49960d000105db27",
+    "name": "Bestial",
+    "description": "The creature gains a Broken Condition if struck by fire. It defends only with Dodge. If it loses more than half its Wounds, it will attempt to Flee. If protecting young or Territorial it enters Frenzy instead.",
+    "page": "p. 338"
+  },
+  {
+    "id": "6708d6b549960d000105db28",
+    "name": "Big",
+    "modifiers": {
+      "attributes": {
+        "ag": -5,
+        "s": 10,
+        "t": 10
+      }
+    },
+    "description": "Large variation of is species. Gains +10 S +10 T, and -5 Ag.",
+    "page": "p. 338"
+  },
+  {
+    "id": "6708d70949960d000105db29",
+    "name": "Bite 1",
+    "description": "Can spend 1 Advantage to make a Free Attack inflicting 1 damage (no extra Strength Bonus).",
+    "page": "p. 338"
+  },
+  {
+    "id": "6708d81449960d000105db2a",
+    "name": "Blessed - Rhya",
+    "description": "Creature can enact Rhya Blessings.",
+    "page": "p. 338"
+  },
+  {
+    "id": "6708d82349960d000105db2b",
+    "name": "Bounce",
+    "description": "Double movement when Charging or Running. Can ignore terrain obstacles.",
+    "page": "p. 338"
+  },
+  {
+    "id": "6708fa0d49960d000161ceb6",
+    "name": "Breath Cold 1",
+    "description": "For 2 Advantage activate Breath Free Attack. Target 1 opponent within 20+TB yards. All characters within SB yards and all characters between the on the path to the target are struck. Perform an Opposed Ballistic Skill/Dodge Test against all affected targets. Whoever fails, takes 1 Damage. \nCold effect: Targets gain a Stunned Condition for every full 5 Wounds suffered (minimum of 1).",
+    "page": "p. 338"
+  },
+  {
+    "id": "6708fb8049960d000161ceb7",
+    "name": "Breath Corrosion 1",
+    "description": "For 2 Advantage activate Breath Free Attack. Target 1 opponent within 20+TB yards. All characters within SB yards and all characters between the on the path to the target are struck. Perform an Opposed Ballistic Skill/Dodge Test against all affected targets. Whoever fails, takes 1 Damage. \nCorrosion effect: Armour and Weapons carried by affected targets suffer 1 Damage.",
+    "page": "p. 338"
+  },
+  {
+    "id": "6708fbe749960d000161ceb8",
+    "name": "Breath Fire 1",
+    "description": "For 2 Advantage activate Breath Free Attack. Target 1 opponent within 20+TB yards. All characters within SB yards and all characters between the on the path to the target are struck. Perform an Opposed Ballistic Skill/Dodge Test against all affected targets. Whoever fails, takes 1 Damage. \nFire effect: This attack ignores APs. Affected targets gain Ablaze Condition.",
+    "page": "p. 338"
+  },
+  {
+    "id": "6708fc3649960d000161ceb9",
+    "name": "Breath Electricity 1",
+    "description": "For 2 Advantage activate Breath Free Attack. Target 1 opponent within 20+TB yards. All characters within SB yards and all characters between the on the path to the target are struck. Perform an Opposed Ballistic Skill/Dodge Test against all affected targets. Whoever fails, takes 1 Damage. \nElectricity effect: This attack ignores APs. Affected targets gain Stunned Condition.",
+    "page": "p. 338"
+  },
+  {
+    "id": "6708fc5749960d000161ceba",
+    "name": "Breath Poison 1",
+    "description": "For 2 Advantage activate Breath Free Attack. Target 1 opponent within 20+TB yards. All characters within SB yards and all characters between the on the path to the target are struck. Perform an Opposed Ballistic Skill/Dodge Test against all affected targets. Whoever fails, takes 1 Damage. \nPoison effect: This attack ignores APs. Affected targets gain Poisoned Condition.",
+    "page": "p. 338"
+  },
+  {
+    "id": "6708fcc349960d000161cebb",
+    "name": "Breath Smoke 1",
+    "description": "For 2 Advantage activate Breath Free Attack. Target 1 opponent within 20+TB yards. All characters within SB yards and all characters between the on the path to the target are struck. Perform an Opposed Ballistic Skill/Dodge Test against all affected targets. Whoever fails, takes 1 Damage. \nSmoke effect: The area fills with smoke, blocking Line of Sight\nfor TB Rounds.",
+    "page": "p. 338"
+  },
+  {
+    "id": "6708fcfb49960d000161cebc",
+    "name": "Brute",
+    "modifiers": {
+      "attributes": {
+        "ag": -10,
+        "s": 10,
+        "t": 10
+      },
+      "movement": -1
+    },
+    "description": "Gain +10 to Strength and Toughness. Lose -1 Movement and -10 Agility",
+    "page": "p. 338"
+  },
+  {
+    "id": "6708fe3849960d000161cebd",
+    "name": "Champion",
+    "description": "When defending in melee, if the creature wins an Opposed Test, it causes Damage as if it were the attacker.",
+    "page": "p. 338"
+  },
+  {
+    "id": "6708fe8f49960d000161cebe",
+    "name": "Chill Grasp",
+    "description": "For 2 Advantage, the creature can use Action to perform an Opposed Weapon\nSkill/Melee or Dodge Test. If is wins, the target loses 1d10 + SL Wounds without AP or TB modification. The attack counts as Magical.",
+    "page": "p. 338"
+  },
+  {
+    "id": "6708ff3a49960d000161cebf",
+    "name": "Clever",
+    "modifiers": {
+      "attributes": {
+        "i": 10,
+        "int": 20
+      }
+    },
+    "description": "Gain +20 Int and +10 I.",
+    "page": "p. 338"
+  },
+  {
+    "id": "670900a949960d000161cec0",
+    "name": "Cold-blooded",
+    "description": "Can reverse all failed WP Tests.",
+    "page": "p. 339"
+  },
+  {
+    "id": "670900f449960d000161cec1",
+    "name": "Constrictor",
+    "description": "Targets gets an Entangled Condition on every successful hit. The creature can then enter a Grapple.",
+    "page": "p. 339"
+  },
+  {
+    "id": "6709015849960d000161cec2",
+    "name": "Construct",
+    "description": "The creature is a magical construct. It has no Int, WP, or Fel. Without wizard controlling it, it has no Territorial Trait. For the purpose of calculating its Wounds, it uses its SB whenever WB is required. All its attacks are Magical.",
+    "page": "p. 339"
+  },
+  {
+    "id": "670a3df349960d00012d5ece",
+    "name": "Corrosive Blood",
+    "description": "Every time the creature is Wounded, all Engaged targets take 1d10 Wounds reduced by TB and AP (minimum 1).",
+    "page": "p. 339"
+  },
+  {
+    "id": "670a3e6049960d00012d5ecf",
+    "name": "Corruption 1",
+    "description": "Creature is a source of Corruption with strength 1.",
+    "page": "p. 339"
+  },
+  {
+    "id": "670a3f4049960d00012d5ed0",
+    "name": "Cunning",
+    "modifiers": {
+      "attributes": {
+        "fel": 10,
+        "i": 10,
+        "int": 10
+      }
+    },
+    "description": "Gain +10 Fel, +10 Int, and +10 I.",
+    "page": "p. 339"
+  },
+  {
+    "id": "670a3f8f49960d00012d5ed1",
+    "name": "Dark Vision",
+    "description": "Create can is in the dark.",
+    "page": "p. 339"
+  },
+  {
+    "id": "670a3fb649960d00012d5ed2",
+    "name": "Daemonic",
+    "description": "Create does not require food, drink, etc. All attacks are Magical. Every time it is hit, roll 1d10, if the roll is equal higher that Target number, the hit is ignored. When wounds are reduced to 0, the creature disappears.",
+    "page": "p. 339"
+  },
+  {
+    "id": "670a408949960d00012d5ed3",
+    "name": "Die Hard",
+    "description": "All Critical Wounds can be healed. After death, for TB Rounds, it can attempt a Challenging (+0) Endurance Test at the start of each Round. If successful, the creature comes back to life wit 1 Wound.",
+    "page": "p. 339"
+  },
+  {
+    "id": "670a412e49960d00012d5ed4",
+    "name": "Disease - The Black Plague",
+    "description": "The creature has the Black Plague.",
+    "page": "p. 339"
+  },
+  {
+    "id": "670a419e49960d00012d5ed5",
+    "name": "Distracting",
+    "description": "All living targets withing TB yards suffer -20 to all Tests. Does not stack if there are multiple Distracting creatures around.",
+    "page": "p. 339"
+  },
+  {
+    "id": "670a41f449960d00012d5ed6",
+    "name": "Elite",
+    "modifiers": {
+      "attributes": {
+        "bs": 20,
+        "wp": 20,
+        "ws": 20
+      }
+    },
+    "description": "Gain +20 to WS, BS, and WP.",
+    "page": "p. 339"
+  },
+  {
+    "id": "670a422549960d00012d5ed7",
+    "name": "Ethereal",
+    "description": "The creature is insubstantial. It can pass through solid objects and can be damaged only by Magical attacks.",
+    "page": "p. 339"
+  },
+  {
+    "id": "670a429649960d00012d5ed8",
+    "name": "Fast",
+    "modifiers": {
+      "attributes": {
+        "ag": 10
+      },
+      "movement": 1
+    },
+    "description": "Gain  +1 Movement and +10 Ag.",
+    "page": "p. 339"
+  },
+  {
+    "id": "670a42bc49960d00012d5ed9",
+    "name": "Fear 1",
+    "description": "Causes Fear 1 in other creatures.",
+    "page": "p. 339"
+  },
+  {
+    "id": "670a42f649960d00012d5eda",
+    "name": "Flight 10",
+    "description": "The creature can fly up to 10 yards (as a Move). When flying, it gets -20 penalty to all ranged combat. See detailed rules in WFRP p. 339",
+    "page": "p. 339"
+  },
+  {
+    "id": "670abcd549960d0001ea7966",
+    "name": "Frenzy",
+    "description": "Creature can enter Frenzy",
+    "page": "p. 339"
+  },
+  {
+    "id": "670abd2549960d0001ea7967",
+    "name": "Fury",
+    "description": "For 1 Advantage, the creature can become subject to Hatred to close combat opponents. For 3 Advantage, it can become subject to Frenzy and lose all Advantage.",
+    "page": "p. 339-340"
+  },
+  {
+    "id": "670abdd149960d0001ea7968",
+    "name": "Ghostly Howl",
+    "description": "For 2 Advantage, the creature howls and loses all Advantage. All living targets within Initiative yards gain Deafened Conditions and suffer 1d10 Wounds ignoring TB and AP. They must also pass an Average (+20) Endurance Test or gain a Broken Condition.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670abe5549960d0001ea7969",
+    "name": "Hardy",
+    "description": "Creature gains benefits of Hardy Talent.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670abecd49960d0001ea796a",
+    "name": "Grim 1",
+    "description": "At the beginning of the turn, if its current Advantage is less than 1 and it is not Surprised, Unconscious, or Entangled, its Advantage increases to 1.\nIf using the Group Advantage rules from Up in Arms, the creature generates Advantage for the Adversary Advantage Pool.",
+    "page": "176"
+  },
+  {
+    "id": "670ac07049960d0001ea796c",
+    "name": "Hatred - Elves",
+    "description": "Creature hates Elves.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670ae5eb49960d00019d253b",
+    "name": "Horns 1",
+    "description": "When the creature has Advantage for Charging, it may make a Free Attack with its Horns and deal 1 Damage (without adding SB).",
+    "page": "p. 340"
+  },
+  {
+    "id": "670ae64e49960d00019d253c",
+    "name": "Hungry",
+    "description": "The creature must pass t pass a Average (+20) Willpower Test or it will try to eat a fresh or incapacitated body, losing next Move and Action.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670ae6b249960d00019d253d",
+    "name": "Immunity Poision",
+    "description": "This creature is completely immune to Poison Damage.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670ae6f349960d00019d253e",
+    "name": "Immunity Fire",
+    "description": "This creature is completely immune to Fire Damage.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670ae71149960d00019d253f",
+    "name": "Immunity to Psychology",
+    "description": "This creature ignores the Psychology rules.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670ae74249960d00019d2540",
+    "name": "Infected",
+    "description": "On every attack that causes loss of Wounds, the victim has to pass an Easy (+40) Endurance Test or contract a Festering Wound.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670ae78549960d00019d2541",
+    "name": "Infestation",
+    "description": "All enemies suffer -10 to hit it in melee combat.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670ae7a149960d00019d2542",
+    "name": "Leader",
+    "modifiers": {
+      "attributes": {
+        "fel": 10,
+        "wp": 10
+      }
+    },
+    "description": "Gain +10 to Fellowship and Willpower.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670ae7d049960d00019d2543",
+    "name": "Magical",
+    "description": "Creature's attacks count as Magical.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670ae7f649960d00019d2544",
+    "name": "Magic Resistance 1",
+    "description": "Reduces SL of any spell affecting the creature by 1.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670ae82f49960d00019d2545",
+    "name": "Mental Corruption",
+    "description": "Creature gains a random Mental Mutation.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670ae87149960d00019d2546",
+    "name": "Miracles - Rhya",
+    "description": "Creature can enact Rhya Miriacles.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670ae8ad49960d00019d2547",
+    "name": "Mutation",
+    "description": "Creature gains a random Physical Mutation.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670ae8e749960d00019d2548",
+    "name": "Night Vision",
+    "description": "Creature gains a Night Vision Talent.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670ae8fd49960d00019d2549",
+    "name": "Painless",
+    "description": "Creature ignores all non-amputation penalties from Critical Wounds. Conditions are suffered as normal.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670c07fd49960d00016b0202",
+    "name": "Petrifying Gaze",
+    "description": "Cost all Advantage Points (minimum 1). Perform Opposed Ballistic Skill/Initiative Test (or Language Magick instead of Initiative). Add 1 SL per Advantage spent. Inflicts 1 Stunned Condition per 2 SL. If the creature wins by 6 or more SL, the target is permanently turned  into stone.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670c093c49960d00016b0203",
+    "name": "Prejudice - Elves",
+    "description": "Creature does not like Elves.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670c098c49960d00016b0204",
+    "name": "Ranged 1",
+    "description": "Creature has a ranged weapon that deals 1 Damage.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670c0b6149960d00016b0205",
+    "name": "Rear",
+    "description": "If the creature is larger than its opponent, it can make a Stomp attack as its Move and deal SB Damage.",
+    "page": "p. 340"
+  },
+  {
+    "id": "670e917149960d0001b9bea2",
+    "name": "Regenerate",
+    "description": "If the creature has more than 0 Wounds, at the beginning of each turn, it regenerates 1d10 Wounds. If it has 0 Wounds, it can regenerate 1 Wound if it rolls 8+ on 1d10. On every 10 roll it can regenerate 1 Critical Wound. Wounds (normal and Critical) caused by fire cannot be regenerated.",
+    "page": "p. 341"
+  },
+  {
+    "id": "670e926749960d0001b9bea5",
+    "name": "Skittish",
+    "description": "Gets easily startle by Magic or loud noises. If that happens, it receives +3 Broken Conditions.",
+    "page": "p. 342"
+  },
+  {
+    "id": "670e92f049960d0001b9bea6",
+    "name": "Spellcaster - Lore of Fire",
+    "description": "Create can cast spells from the Lore of Fire.",
+    "page": "p. 342"
+  },
+  {
+    "id": "670e939d49960d0001b9bea7",
+    "name": "Stealthy",
+    "description": "Add Ag Bonus to all Stealth Tests.",
+    "page": "p. 342"
+  },
+  {
+    "id": "670e941d49960d0001b9bea8",
+    "name": "Size - Small",
+    "modifiers": {
+      "size": -1
+    },
+    "description": "Creature size is Small. See detailed rules in WFRP p. 341",
+    "page": "p. 341"
+  },
+  {
+    "id": "670e947249960d0001b9bea9",
+    "name": "Size - Large",
+    "modifiers": {
+      "size": 1
+    },
+    "description": "Creature size is Large. See detailed rules in WFRP p. 341",
+    "page": "p. 341"
+  },
+  {
+    "id": "670e94a149960d0001b9beaa",
+    "name": "Size - Little",
+    "modifiers": {
+      "size": -2
+    },
+    "description": "Creature size is Little. See detailed rules in WFRP p. 341",
+    "page": "p. 341"
+  },
+  {
+    "id": "670e94b749960d0001b9beab",
+    "name": "Size - Tiny",
+    "modifiers": {
+      "size": -2
+    },
+    "description": "Creature size is Tiny. See detailed rules in WFRP p. 341",
+    "page": "p. 341"
+  },
+  {
+    "id": "670e94d349960d0001b9beac",
+    "name": "Size - Enormous",
+    "modifiers": {
+      "size": 2
+    },
+    "description": "Creature size is Enormous. See detailed rules in WFRP p. 341",
+    "page": "p. 341"
+  },
+  {
+    "id": "670e94ec49960d0001b9bead",
+    "name": "Size - Monstrous",
+    "modifiers": {
+      "size": 2
+    },
+    "description": "Creature size is Monstrous. See detailed rules in WFRP p. 341",
+    "page": "p. 341"
+  },
+  {
+    "id": "670e950d49960d0001b9beae",
+    "name": "Stride",
+    "description": "Running speed is increased by 50%.",
+    "page": "p. 342"
+  },
+  {
+    "id": "670e991449960d0001b9beaf",
+    "name": "Stupid",
+    "description": "If the creature is not near allies without this Trait, it must pass an Easy (+40) Intelligence Test at the start of each round. If it fails, it loses both its Move and Action for that Turn.",
+    "page": "p. 342"
+  },
+  {
+    "id": "670e999549960d0001b9beb1",
+    "name": "Swamp-strider",
+    "description": "Creature does not suffer Movement penalties when moving through swamp.",
+    "page": "p. 342"
+  },
+  {
+    "id": "670e9a0549960d0001b9beb2",
+    "name": "Swarm",
+    "description": "The swarm counts a a single Creature. Ignores Psychology, Size, and Engaged rules when moving. Successful attacks against the opponent trigger Deathblow rule. All engaged opponents lose 1 Wound every Round. The swarm has 5 times more Wounds than a single creature and +10 WS. Ranged attacks against the swarm have +40 to hit.",
+    "page": "p. 342"
+  },
+  {
+    "id": "670e9b3f49960d0001b9beb3",
+    "name": "Tail Attack 1",
+    "description": "For 1 Advantage, the creature attacks with its tail as Free Attack. Does 1 Damage. If the opponent is smaller and suffers at least 1 Wound, it also gains a Prone Condition.",
+    "page": "p. 342"
+  },
+  {
+    "id": "670e9ccf49960d0001b9beb4",
+    "name": "2 Tentacle 1",
+    "description": "The creature has 2 tentacles. It gains one Free Attack Action per tentacle, which does 1 damage. If the tentacle attack causes at least 1 Wound, the target is receives Entangled Condition. To resolve Grapple, use tentacle's Free Attack Action.",
+    "page": "p. 342"
+  },
+  {
+    "id": "670e9e2949960d0001b9beb5",
+    "name": "Territorial",
+    "description": "The creature will fight to the death to protect its territory and will not chase anything beyond it.",
+    "page": "p. 342"
+  },
+  {
+    "id": "670e9e8649960d0001b9beb6",
+    "name": "Terror 1",
+    "description": "The creature causes Terror 1.",
+    "page": "p. 342"
+  },
+  {
+    "id": "671172f749960d0001cb3e2d",
+    "name": "Trained - Broken",
+    "description": "Animal has been trained using Animal Training Skill.\nBroken - ignores Bestial, gains 2d10 Fel.",
+    "page": "p. 342-343"
+  },
+  {
+    "id": "6711733f49960d0001cb3e2e",
+    "name": "Trained - Drive",
+    "description": "Animal has been trained using Animal Training Skill.\nDrive - trained to pull a cart , coach, etc.",
+    "page": "p. 342-343"
+  },
+  {
+    "id": "6711736849960d0001cb3e2f",
+    "name": "Trained - Entertain",
+    "description": "Animal has been trained using Animal Training Skill.\nEntertain -  gets +10 to Entertain, Perform or Play Tests.",
+    "page": "p. 342-343"
+  },
+  {
+    "id": "6711738349960d0001cb3e30",
+    "name": "Trained - Fetch",
+    "description": "Animal has been trained using Animal Training Skill.\nFetch - can fetch small items on command.",
+    "page": "p. 342-343"
+  },
+  {
+    "id": "671173a049960d0001cb3e31",
+    "name": "Trained - Guard",
+    "description": "Animal has been trained using Animal Training Skill.\nGuard - gains Territorial Trait.",
+    "page": "p. 342-343"
+  },
+  {
+    "id": "671173bb49960d0001cb3e32",
+    "name": "Trained - Home",
+    "description": "Animal has been trained using Animal Training Skill.\nHome - trained to return home if lost.",
+    "page": "p. 342-343"
+  },
+  {
+    "id": "6711740b49960d0001cb3e33",
+    "name": "Trained - Magic",
+    "description": "Animal has been trained using Animal Training Skill.\nHome - ignores Skittish when it comes to magic.",
+    "page": "p. 342-343"
+  },
+  {
+    "id": "6711742649960d0001cb3e34",
+    "name": "Trained - Mount",
+    "description": "Animal has been trained using Animal Training Skill.\nMount - can be mounted by a rider with correct skill.",
+    "page": "p. 342-343"
+  },
+  {
+    "id": "6711744649960d0001cb3e35",
+    "name": "Trained - War",
+    "modifiers": {
+      "attributes": {
+        "ws": 10
+      }
+    },
+    "description": "Animal has been trained using Animal Training Skill.\nWar - Gains +10 WS and ignores Skittish when it comes to loud noises.",
+    "page": "p. 342-343"
+  },
+  {
+    "id": "671175dd49960d0001cb3e37",
+    "name": "Tongue Attack 1 (5)",
+    "description": "For 1 Advantage, the creature makes a Free Attack that deals 1 Damage and has range of 5 yards. If the target is hit, it receives 1 Entangled Condition. If the opponents is smaller it is also dragged towards the creature. In this case, the creature can either release it, Grapple, or do a Free Attack using its Weapon Trait.",
+    "page": "p. 343"
+  },
+  {
+    "id": "6711773d49960d0001cb3e38",
+    "name": "Tough",
+    "modifiers": {
+      "attributes": {
+        "t": 10,
+        "wp": 10
+      }
+    },
+    "description": "Gain +10 to T and WP.",
+    "page": "p. 343"
+  },
+  {
+    "id": "6711778849960d0001cb3e39",
+    "name": "Tracker",
+    "description": "Add Initiative Bonus to SLs of all Track Tests.",
+    "page": "p. 343"
+  },
+  {
+    "id": "671177bc49960d0001cb3e3a",
+    "name": "Undead",
+    "description": "Creature is an Undead.",
+    "page": "p. 343"
+  },
+  {
+    "id": "671177e149960d0001cb3e3b",
+    "name": "Unstable",
+    "description": "At the end of every Round, if the creature has Advantage lower that any creature it is engaged with, it loses number of Wounds equal to the difference between its Advantage, and the highest Advantage engaged with it.",
+    "page": "p. 343"
+  },
+  {
+    "id": "6711790949960d0001cb3e3c",
+    "name": "Vampiric",
+    "description": "On successful Bite attack, heal number of Wounds equal to the number of Wounds lost by the target. This is the only way the creature can heal.",
+    "page": "p. 343"
+  },
+  {
+    "id": "6711798c49960d0001cb3e3d",
+    "name": "Venom Challenging",
+    "description": "When the creature causes any Wound, the target receives 1 Poisoned Condition that requires Challenging (+0) Endurance Test to remove.",
+    "page": "p. 343"
+  },
+  {
+    "id": "67117adc49960d0001cb3e3e",
+    "name": "Vomit",
+    "description": "For 3 Advantage, perform a Fee Attack against 1 opponent within TB yards. All creatures within 2 yards are also affected. The creature performs an Opposed Ballistic Skill/Dodge Test against each target. The Test is Easy (+40) for the creature and Challenging (+0) for the targets. Losing opponents are hit with TB +4 Damage, receive Stunned Condition, and all Armour and Weapon suffer 1 Damage due to Corrosion.",
+    "page": "p. 343"
+  },
+  {
+    "id": "67117c6149960d0001cb3e40",
+    "name": "Ward 10",
+    "description": "Roll 1d10 after any blow. If the creatures rolls 10, it ignores all Damage.",
+    "page": "p. 343"
+  },
+  {
+    "id": "6712025949960d000139252a",
+    "name": "Wallcrawler",
+    "description": "Can move at full speed on any wall or ceiling. Automatically passes all Climb Tests.",
+    "page": "p. 343"
+  },
+  {
+    "id": "6712029949960d000139252b",
+    "name": "Weapon 5",
+    "description": "Creature can make melee attacks that cause 5 Damage (already includes SB).",
+    "page": "p. 343"
+  },
+  {
+    "id": "671202e949960d000139252c",
+    "name": "Web 1",
+    "description": "On every successful hit, the opponent receives 1 Entangled Condition with strength 1.",
+    "page": "p. 343"
+  },
+  {
+    "id": "6712043249960d000139252d",
+    "name": "Burrow 30",
+    "description": "Creature can move by tunneling underground up to 30 yards.  See detailed rules in Imperial Zoo p. 23",
+    "page": "p. 23"
+  },
+  {
+    "id": "6712065149960d000139252e",
+    "name": "Absorb",
+    "description": "At the end of the Round, if the creature has a higher Advantage than all engaged opponents, it absorbs one opponent of equal Size or smaller. The victim receives number of Entangled Conditions equal to creatures SB and is in a Grapple. Each Round (at the end), the absorbed victim loses Wounds equal to creatures TB and the creature heals TB Wounds. Any attack that hits the creature do the same Damage to the absorbed victim.\nIf the absorbed victim is killed, the creature retreats to digest the corpse for the next few days.",
+    "page": "p. 147"
+  },
+  {
+    "id": "6712087449960d0001392530",
+    "name": "Amorphous",
+    "description": "Creature is a shapeless blob. Reduce by half all Damage not caused by fire, cold, or magic. It cannot be Critically Wounded. If reduced to 0 Wounds, it becomes dormant for 1d10 Rounds, then regenerates +1 Wound.",
+    "page": "p. 147"
+  },
+  {
+    "id": "6712b2d049960d00018528c9",
+    "name": "Blighted - The Black Plague",
+    "description": "If the creature touches the victim, they have to pass a Contraction Test that is 2 steps more Difficult than normal. If the disease is contracted, its Incubation is changed to Instant.",
+    "page": "p. 147"
+  },
+  {
+    "id": "6712b34e49960d00018528ca",
+    "name": "Fleshthief",
+    "description": "Requires Daemonic Trait as well. The creature can prepare and wear flesh of any Human it kills. This allows it to perfectly impersonate the victim. Detailed rules in Enemy in Shadows p. 148.",
+    "page": "p. 148"
+  },
+  {
+    "id": "6712b40249960d00018528cb",
+    "name": "Mindless",
+    "description": "The creature is completely mindless. It does not have Initiative, Intelligence, Willpower, or Fellowship. For Wounds calculations use S Bonus instead of WP Bonus. It always takes it Turn last in and Round.",
+    "page": "p. 148"
+  },
+  {
+    "id": "6712b4b749960d00018528cc",
+    "name": "Split",
+    "description": "When the creature loses all its Wounds or  suffers a Critical Wound, it is replaced by two Blue Horrors.",
+    "page": "p. 84"
+  },
+  {
+    "id": "6712b58149960d00018528cd",
+    "name": "Tzeentch's Fire",
+    "description": "All creatures of the same type in the vicinity pool their power. One Horror becomes a caster and can cast 1 Tzeentch Spell during their Round. Pink Horrors cast the Pink Fire of Tzeentch; other creatures cast the Blue Fire of Tzeentch. Each additional creature adds +1 SL up to +9 SL.",
+    "page": "p. 84"
+  },
+  {
+    "id": "6712b6c349960d00018528ce",
+    "name": "Analgesic Saliva",
+    "description": "Creatures bite does not cause pain, it can attach undetected. The effect wears off 10 - T Bonus Rounds after the creature detaches.",
+    "page": "p. 90"
+  },
+  {
+    "id": "6712b73049960d00018528cf",
+    "name": "Anticoagulant Saliva",
+    "description": "Creature's bite causes 1 Bleeding Condition.",
+    "page": "p. 90"
+  },
+  {
+    "id": "6712bf4749960d00018528d0",
+    "name": "Aquatic",
+    "description": "Creature can breath under water, can move in water at full speed. Cannot move on land.",
+    "page": "p. 90"
+  },
+  {
+    "id": "6712bf8349960d00018528d1",
+    "name": "Attach and Feed",
+    "description": "Creature can attach itself to the victim and suck blood. See detailed rules in Death on the Reik Companion p. 90.",
+    "page": "p. 90"
+  },
+  {
+    "id": "6712c02a49960d00018528d2",
+    "name": "Capricious",
+    "description": "When making Fellowship Test to deal with this creature, roll 1d10. 1: -2SL, 2-3: -1SL, 4-7: no effect, 8-9: +1 SL, 10: +2 SL.",
+    "page": "p. 90"
+  },
+  {
+    "id": "6712c0b149960d00018528d3",
+    "name": "Creeping",
+    "description": "Cannot run.",
+    "page": "p. 90"
+  },
+  {
+    "id": "6712c0fa49960d00018528d4",
+    "name": "Engulf",
+    "description": "Any successful attack engulfs the victim. Details in Death on the Reik Companion p. 90.",
+    "page": "p. 90"
+  },
+  {
+    "id": "6712c16649960d00018528d5",
+    "name": "Hallucinogen",
+    "description": "Anyone within 2 yards must pass an Average (+20) Willpower Test or they receive 1 Stunned Condition for each level of failure.",
+    "page": "p. 90"
+  },
+  {
+    "id": "6712c28849960d00018528d6",
+    "name": "Animal Telepathy",
+    "description": "Animal Familiar can communicate with its spirit-bonded spellcaster using telepathy. Works at a distance of up to 4 yards.",
+    "page": "p. 82"
+  },
+  {
+    "id": "6712c2e149960d00018528d7",
+    "name": "Messenger",
+    "description": "Animal Familiar deliver messages up to its Intelligence miles in distance.",
+    "page": "p. 82"
+  },
+  {
+    "id": "6712c31c49960d00018528d8",
+    "name": "Sensory Sharing",
+    "description": "The spirit-bonded spellcaster can see, hear, and smell through the senses  the Animal Familiar.",
+    "page": "p. 82"
+  },
+  {
+    "id": "6712c3ac49960d00018528d9",
+    "name": "Invisibility",
+    "description": "Animal Familiar can become invisible once per day. It lasts WP Bonus hours and cannot be deactivated early.  Perception Tests to notice the familiar are Very Hard (-30). When hiding, it can only be spotted by characters with the Magical Sense Talent.",
+    "page": "p. 82"
+  },
+  {
+    "id": "6712c58c49960d00018528da",
+    "name": "Bale Eye",
+    "description": "Cyclopean eye of Fimir gives them Second Sight Talent. All Second Sight Tests for Skill Tests gain +2 SL. Language (Magick) and Channelling Test gain +1 SL. When the creature suffers a Miscast, they make a Difficult (-10) Perception Test. If they succeed, the spell still fails but they do not suffer miscast effects.",
+    "page": "p. 217"
+  },
+  {
+    "id": "6712c8fe49960d00018528db",
+    "name": "Breath Warpfire 1",
+    "description": "For 2 Advantage activate Breath Free Attack. Target 1 opponent within 20+TB yards. All characters within SB yards and all characters between the on the path to the target are struck. Perform an Opposed Ballistic Skill/Dodge Test against all affected targets. Whoever fails, takes 1 Damage. \nWarpfire effect: details in Empire in Ruins Companion p. 21.",
+    "page": "p. 338"
+  },
+  {
+    "id": "6713a32849960d0001d9e150",
+    "name": "Telepathy",
+    "description": "Creature can send its thoughts directly to minds of others. It can also read their minds. To resist, they must pass an Average (+20) Cool Test.",
+    "page": "p. 151"
+  },
+  {
+    "id": "6713a34449960d0001d9e151",
+    "name": "Chameleon",
+    "description": "Creature can change colour to blend with environment better. All Perception Tests to spot it suffer -4 SL it it is still and -2 SL if it is moving. Ranged Tests to shoot at the creature also suffer -2 SL.",
+    "page": "p. 151"
+  },
+  {
+    "id": "6713a61449960d0001d9e152",
+    "name": "Marks of Chotec",
+    "modifiers": {
+      "attributes": {
+        "ag": 10,
+        "i": 10
+      }
+    },
+    "description": "Marked by the Chotec, chosen for a great destiny. Unique to Lizardmen.\nGain +10 I and Ag.\nGain Combat Reflexes Talent.",
+    "page": "p. 151"
+  },
+  {
+    "id": "6713a61849960d0001d9e153",
+    "name": "Marks of Huanchi",
+    "modifiers": {
+      "attributes": {
+        "ag": 10,
+        "i": 5
+      }
+    },
+    "description": "Marked by the Huanchi, chosen for a great destiny. Unique to Skink and Saurus.\nGain +5 I and +10 Ag.\nGain Shadow Talent.\nGain Dark Vision and Stealthy Traits.",
+    "page": "p. 151"
+  },
+  {
+    "id": "6713a66a49960d0001d9e154",
+    "name": "Marks of Itzl",
+    "modifiers": {
+      "attributes": {
+        "fel": 5,
+        "i": 5
+      }
+    },
+    "description": "Marked by the Itzl, chosen for a great destiny. Unique to Skink and Saurus.\nGain +5 I and Fel.\nGain Animal Affinity Talent.",
+    "page": "p. 151"
+  },
+  {
+    "id": "6713a69849960d0001d9e155",
+    "name": "Marks of Quetzl",
+    "modifiers": {
+      "attributes": {
+        "t": 5
+      }
+    },
+    "description": "Marked by the Quetzl, chosen for a great destiny. Unique to Lizardmen.\nGain +5 T and +1 Armour.\nGain Implacable Talent.\nGain Hardy Trait.",
+    "page": "p. 151"
+  },
+  {
+    "id": "6713a6fb49960d0001d9e156",
+    "name": "Marks of Sotek",
+    "modifiers": {
+      "attributes": {
+        "s": 5,
+        "ws": 10
+      }
+    },
+    "description": "Marked by the Sotek, chosen for a great destiny. Unique to Lizardmen.\nGain +10 WS and +5 S.\nGain Berserk Charge Talents.\nGain Hatred - Skaven and Immunity - Poison Trait.",
+    "page": "p. 151"
+  },
+  {
+    "id": "6713a73f49960d0001d9e157",
+    "name": "Marks of Tepok",
+    "modifiers": {
+      "attributes": {
+        "i": 5,
+        "int": 15
+      }
+    },
+    "description": "Marked by the Tepok, chosen for a great destiny. Unique to Skink and Saurus.\nGain +5 I and +15 Int.\nGain Sixth Sense Talent.\nGain Magic Resistance 1 Trait.",
+    "page": "p. 151"
+  },
+  {
+    "id": "6713a78a49960d0001d9e158",
+    "name": "Marks of Tlazcotl",
+    "modifiers": {
+      "attributes": {
+        "wp": 10
+      }
+    },
+    "description": "Marked by the Tlazcotl, chosen for a great destiny. Unique to Lizardmen.\nGain +10 WP.\nGain Fearless - Undead and Fearless - Warm-bloods Talents.",
+    "page": "p. 151"
+  },
+  {
+    "id": "6713a7d649960d0001d9e159",
+    "name": "Marks of Tzunki",
+    "modifiers": {
+      "attributes": {
+        "ag": 5,
+        "bs": 5
+      }
+    },
+    "description": "Marked by the Tzunki, chosen for a great destiny. Unique to Lizardmen.\nGain +5 BS and Ag.\nGain Acute Sense - Sight Talent.\nGain Amphibious Trait.",
+    "page": "p. 151"
+  },
+  {
+    "id": "6713a88d49960d0001d9e15a",
+    "name": "Marks of the Old Ones",
+    "modifiers": {
+      "attributes": {
+        "fel": 15
+      }
+    },
+    "description": "Marked by the the Old Ones, chosen for a great destiny. Unique to Skink and Saurus.\nGain +15 Fel.\nGain Luck Talent.\nGain Leader Trait.",
+    "page": "p. 151"
+  },
+  {
+    "id": "6713ac0349960d0001d9e15b",
+    "name": "Living Gate",
+    "description": "The Daemon can make a Challenging (+0) WP Test. On success it summons 1d10 lesser daemons appropriate to its god. If the Daemon takes any wound, it must pass an Average (+20) Cool Test to be able to summon again. It can attempt the Test every Round. On Impressive Failure, it loses this ability completely.",
+    "page": "p. 191"
+  },
+  {
+    "id": "6713afa149960d0001d9e15c",
+    "name": "Marine Creature",
+    "description": "Can move at full speed in water. When out of the water, their Movement drops to 1, and receive -2 SL to all Tests. They also need to be doused with water or they will begin to suffocate.",
+    "page": "p. 140"
+  },
+  {
+    "id": "6713afa549960d0001d9e15d",
+    "name": "Mark of Khorne",
+    "description": "Creature gains Frenzy and Etiquette - Followers of Khorne Talents. It suffers from Animosity towards followers of Slaanesh (and other way around if they can see the Mark). It can never use Language - Magick or Channeling skills unless to dispel a spell.",
+    "page": "p. 56"
+  },
+  {
+    "id": "6713b24f49960d0001d9e15e",
+    "name": "Deception - Fox",
+    "description": "Animal Familiar Trait. When the Familiar is within 4 yards, the spirit-bonded spellcaster has access to the following Talents (or get +1 SL if they already have it): Blather, Schemer",
+    "page": "p. 81 "
+  },
+  {
+    "id": "6713b25349960d0001d9e15f",
+    "name": "Divination - Owl",
+    "description": "Animal Familiar Trait. When the Familiar is within 4 yards, the spirit-bonded spellcaster has access to the following Talents (or get +1 SL if they already have it): Holy Visions, Sixth Sense",
+    "page": "p. 81 "
+  },
+  {
+    "id": "6713b26b49960d0001d9e160",
+    "name": "Perception - Stoat",
+    "description": "Animal Familiar Trait. When the Familiar is within 4 yards, the spirit-bonded spellcaster has access to the following Talents (or get +1 SL if they already have it): Hunter’s Eye, Shadowing",
+    "page": "p. 81 "
+  },
+  {
+    "id": "6713b28b49960d0001d9e161",
+    "name": "Resilience - Badger",
+    "description": "Animal Familiar Trait. When the Familiar is within 4 yards, the spirit-bonded spellcaster has access to the following Talents (or get +1 SL if they already have it): Robust, Tenacious",
+    "page": "p. 81 "
+  },
+  {
+    "id": "6713b2a449960d0001d9e162",
+    "name": "Stealth - Cat",
+    "description": "Animal Familiar Trait. When the Familiar is within 4 yards, the spirit-bonded spellcaster has access to the following Talents (or get +1 SL if they already have it):  Alley Cat, Rover",
+    "page": "p. 81 "
+  },
+  {
+    "id": "6713b2b549960d0001d9e163",
+    "name": "Transformation - Crow",
+    "description": "Animal Familiar Trait. When the Familiar is within 4 yards, the spirit-bonded spellcaster has access to the following Talents (or get +1 SL if they already have it):  Nose for Trouble, Master of Disguise",
+    "page": "p. 82"
+  },
+  {
+    "id": "6713b44449960d0001d9e164",
+    "name": "Easily Confused",
+    "description": "Whenever creature's immediate circumstances undergo a change they must pass an Easy (+40) Intelligence Test or receive 1 Stunned Condition. Each Round, they can attempt a new Easy (+40) Intelligence Test to remove this Condition.",
+    "page": "p. 91"
+  },
+  {
+    "id": "6713b52d49960d0001d9e165",
+    "name": "Flammable",
+    "description": "Creature receives -20 to all Tests to avoid Ablaze Condition. Suffers double Wounds from Ablaze Condition.",
+    "page": "p. 165"
+  },
+  {
+    "id": "6713b65a49960d0001d9e166",
+    "name": "Stationary Attacker",
+    "description": "Creature has Immunity to Psychology. It cannot take actions beside those which are associated with its attacks and Traits. Its reach depends on the size: Tiny or Little: Very Short, Small: Short, Average: Medium, Large: Long, Enormous: Very Long, Monstrous: Massive.",
+    "page": "p. 166"
+  },
+  {
+    "id": "6713b78b49960d0001d9e167",
+    "name": "Font of Flame",
+    "description": "If the creature does not have enough Advantage to use its Breath Trait, roll a d10. On a roll of 8 or more it may do so anyway.",
+    "page": "p. 21"
+  },
+  {
+    "id": "6713b8de49960d0001d9e168",
+    "name": "Formless Horror",
+    "description": "Unique to the Changeling Of Tzeentch. Once per Round, it can change to any typical creature or specific one if it studied it for a number of hours equal to the creature’s Intelligence Bonus. It gains access to all creature's Traits. When impersonating a specific creature it does not gain access to its memories.",
+    "page": "p. 85"
+  },
+  {
+    "id": "6713cf5a49960d0001da5880",
+    "name": "Mark of Tzeentch",
+    "description": "The creature gain 1d10/3 Mutations (rounded up, alternating between Physical and Mental) from table on p. 66 in Enemy in Shadows Companion. It gains Etiquette - Followers of Tzeentch Talent and Animosity towards followers of Nurgle (an other way around if the Mark is visible).",
+    "page": "p. 82"
+  },
+  {
+    "id": "6713d13a49960d0001da5881",
+    "name": "Piercing Gaze",
+    "description": "Creature has a gift that allows it to see flaws in everything: organizations, objects, people. If it studies an opponent in combat for its Action, on the following Action, its attack ignores both Toughness Bonus and Armour Points.",
+    "page": "p. 28"
+  },
+  {
+    "id": "6713d32a49960d0001da5882",
+    "name": "Random Caster",
+    "description": "When attacked, the creature can cast spells from a random Lore. The Lore changes every Round. To determine the Lore, see table on p. 214 in Winds of magic or p. 18 in Empire in Ruins Companion.",
+    "page": "p. 214"
+  },
+  {
+    "id": "6713d38d49960d0001da5883",
+    "name": "Shapeshifter - Great Cat",
+    "description": "This creature can shift at will between its regular form and a Great Cat. See detailed rules in Enemy in Shadows Companion p. 87.",
+    "page": "p. 87"
+  },
+  {
+    "id": "6713d49749960d0001da5884",
+    "name": "Spell Syphon",
+    "description": "Whenever a spell is cast, the creature can make an Opposed Willpower Test with the caster. If it succeeds, roll 1d10. 1-2: no effect, 3-7: the creature casts spell instead of the caster, 8-9: both creature and caster cast the spell, 10: both caster and the creature are in the centre of a Blast 5, Damage 6 explosion.",
+    "page": "p. 214"
+  },
+  {
+    "id": "6713d5ac49960d0001da5885",
+    "name": "Vampiric Gaze",
+    "description": "If the vampire wins an Opposed Willpower/Cool Test, the target comes under the Vampire’s control. The effects lasts for 1+SL hours. Controlled targets may attempt an Average (+20) Cool Test if forced to do something they would normally find morally or physically repugnant.",
+    "page": "p. 73"
+  },
+  {
+    "id": "6815e1e749960d000122f6d8",
+    "name": "Breath (Brimstone Fire)",
+    "description": "Can be activated as Free Attack by spending 2 Advantage. Choose 1 target it can see within 20 + TB yards. It makes an Opposed Ballistic Skill/Dodge Test against\nall creatures within SB yards of that target (the breathing creature single roll Opposed by each individual target). Losing targets take Damage equal to the attack’s rating, ignoring Armour, and gain an Ablaze Condition, a Blinded Condition, and two Poisoned Conditions. The Creature is immune to their own Breath. This attack is magical.",
+    "page": "p. 84"
+  },
+  {
+    "id": "6815e20d49960d000122f6d9",
+    "name": "Distendable Jaws",
+    "description": "Creature's Bite Attack benefits from the Entangling Quality.",
+    "page": "p. 83"
+  },
+  {
+    "id": "6815e23b49960d000122f6da",
+    "name": "Replaceable Teeth",
+    "description": "If the creature looses its teeth, they will grow back in 1d10 days.",
+    "page": "p. 83"
+  }
+]

@@ -1,0 +1,3575 @@
+[
+  {
+    "id": "5caddb56a48cc24ecc4eca90",
+    "name": "Secret Signs",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Ability to make and understand clandestine  signs known only to a closed group.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5ce909813f5a0e36c0a4bab6",
+    "name": "Lore - Witches",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have vast knowledge of witches.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5cadddd3a48cc24ecc4eca99",
+    "name": "Ride",
+    "characteristic": "ag",
+    "isAdvanced": false,
+    "isGroup": true,
+    "description": "Proficiency at riding animals.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5cadc7bb828dc9389cc7b15f",
+    "name": "Lore - Plants",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a broad knowledge and possibly a formal training in botany.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5cdfbd2c30259922e8ea210b",
+    "name": "Lore - Local",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "You have a broad knowledge of geography, history, people, and culture of a particular area.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5cadc6a3828dc9389cc7b15a",
+    "name": "Language",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Ability to speak a particular language other  than native one.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5cea8ed1adaed446d44365ec",
+    "name": "Play",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "You can play an instrument. The SL of the Play Test shows how much others like your performance.",
+    "page": "p. 128"
+  },
+  {
+    "id": "5cadc5d8828dc9389cc7b158",
+    "name": "Consume Alcohol",
+    "characteristic": "t",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Ability to handle alcohol without  suffering its negative consequences.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5cadd044828dc9389cc7b16c",
+    "name": "Gossip",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Allows to quickly find useful gossips and spread rumors efficiently.",
+    "page": "p. 122"
+  },
+  {
+    "id": "5ce8518006ad2230542604e3",
+    "name": "Track",
+    "characteristic": "i",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can recognize the most subtle signs that allows you to follow others.\nThis Skill can be also used to hide your own trail. Whoever is following you will have to take Track Test Opposed by your Track Test.\nTracking usually requires an Extended Test with the Difficulty modified by factors such as: how fresh the trail is, etc.\nGM my chose to use Pursuit rules to check if you are able to track down a fleeing animal.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5ca91ce545b5ad53fc7b080e",
+    "name": "Animal Care",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Allows to care for animals, and heal them.",
+    "page": "p. 118-119"
+  },
+  {
+    "id": "5ce84fb806ad2230542604e2",
+    "name": "Swim",
+    "characteristic": "s",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can swim. Swimming in calm water does not need a Test to succeed.\nThe test is required if there are any adverse conditions such as: currents, cold water, extra encumbrance, etc.\nIn combat, Swim is used when fighting in the water (deep). It replaces skills like Athletics to govern Movement. Your swim speed is half of your Movement speed.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5ce93cd3d836af2ec4248aab",
+    "name": "Lore - Local - Altdorf",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a broad knowledge of geography, history, people, and culture of Altdorf.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5ce984f11140dc34041696a0",
+    "name": "Row",
+    "characteristic": "s",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "By having a level in this Skill, you are automatically assumed to be able to row in calm water.\nThe Row Skill Test is usually necessary when rowing in some adverse conditions or racing.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5cea8a12adaed446d44365e5",
+    "name": "Lore - Dwarfs",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of culture and history of Dwarfs in the Old World.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5cf97cbfc611a9288474f5c1",
+    "name": "Lore - Engineering",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a broad knowledge and possibly a formal training in engineering.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d0f33dea6b5ad5d006b21ea",
+    "name": "Secret Signs - Miner",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Miner markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5d0fc4d7ff5ffa6a34fd1587",
+    "name": "Lore - Etiquette",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a broad knowledge of etiquette.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d0fedcc8332bf4c94ed6e9d",
+    "name": "Melee - Flail",
+    "characteristic": "ws",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Training and experience with the weapons from Flail group.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5f5e90e7807c850c3dcd01b6",
+    "name": "Sail - Cog",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Cog or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "6367bcf99e8c0edb465ccb2b",
+    "name": "Language - Ghassally",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Ghassally (spoken by Gnomes) language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5ce47184099f0c36546bdde1",
+    "name": "Lore - Law",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a broad knowledge and possibly a formal training in law.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5cadcbb5828dc9389cc7b169",
+    "name": "Charm",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Makes people think better of you and your actions.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5d126c79a5009175446b700d",
+    "name": "Language - Magick",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Magick language. This skill allows you to use The Winds of Magic to cast spells.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5d16930b339d63247c167c87",
+    "name": "Trade - Barber",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can cut hair and shave.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5f5e92cc13ccf32ae905fc93",
+    "name": "Language - Norse",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Norse language (spoken by the folk of Norsca).",
+    "page": "p. 124"
+  },
+  {
+    "id": "5f5e931d807c850c3dcd01b9",
+    "name": "Language - Reikspiel",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Reikspiel (Empire) language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5ce986db1140dc34041696a1",
+    "name": "Sail",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Your ability to operate a particular kind of vessel.  You are automatically presumed to be able to sail in calm water. Test is usually necessary when sailing in adverse conditions or racing.\nHaving a level in any specialisation of Sail, allows you to use Sail as basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5caddb8fa48cc24ecc4eca91",
+    "name": "Secret Signs - Guilder - Apothecary",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Apothecary Guilder markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5ce844433ec45d1a88e33240",
+    "name": "Secret Signs - Hunter",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Hunter markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5cdfbaf930259922e8ea210a",
+    "name": "Evaluate",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Let you estimate the value of rare artifacts, works of art, and other unusual goods.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5d068f634c58df585c1bc30c",
+    "name": "Ranged - Entangling",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Training and experience with weapons from the Entangling group.",
+    "page": "p. 128"
+  },
+  {
+    "id": "5d06a164bbde575820bf30a5",
+    "name": "Perform - Fight",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can fight in a most spectacular way.\nIt can be used to entertain patrons or (with permission of your GM) to give you an extra edge in combat.",
+    "page": "p. 127"
+  },
+  {
+    "id": "5d111aa944bd6063e885c0d0",
+    "name": "Channelling - Aqshy",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to channel Red Wind spells (The Lore of Fire). It also lets you channel Petty and Arcane Spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5d126d69a5009175446b700e",
+    "name": "Trade - Herbalist",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You posses practical knowledge about Herbal medicine. It lets you to recognise herbs and use trade tools to make herbal medicine.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5d1693ef339d63247c167c88",
+    "name": "Perform - Dancing",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You are a great dancer. Your skill can be used to entertain patrons or (with permission of your GM) to give you an extra edge in combat.",
+    "page": "p. 127"
+  },
+  {
+    "id": "5d17ec4d6dcd9568649b11dc",
+    "name": "Lore - Wrecks",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Wrecks.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d1886d723353e73dca2ec6b",
+    "name": "Lore - Herbs",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Herbs.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5cea88faadaed446d44365e2",
+    "name": "Entertain",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": true,
+    "description": "You can use it to entertain people near you with your talents such as stories, songs, acting, etc. The SL of the Entertain Test shows how much others like your performance.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5ce46ed8099f0c36546bddda",
+    "name": "Melee - Parry",
+    "characteristic": "ws",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Training and experience with the weapons from Parry group.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5ce987721140dc34041696a2",
+    "name": "Sail - Barge",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Barge or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5ce9cbaf179ba450886fba7e",
+    "name": "Stealth - Urban",
+    "characteristic": "ag",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Lets you hide and move undetected in a urban environment. Stealth Test is Opposed by opponent's Perception Skill. The Test is modified by a number of situational factors such as: lighting condition, your camouflage, etc.\nIn combat, Stealth can be used to prepare for an Ambush.",
+    "page": "p. 130"
+  },
+  {
+    "id": "5ce9be19c831083940ff5853",
+    "name": "Lore - Riverways",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have vast knowledge of Riverways.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5cea8ef8adaed446d44365ed",
+    "name": "Play - Violin",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can play Violin. The SL of the Play Test shows how much others like your performance.",
+    "page": "p. 128"
+  },
+  {
+    "id": "5cea8c22adaed446d44365eb",
+    "name": "Language - Eltharin",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Eltharin language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5d06765048a38f3b4c12ef5a",
+    "name": "Lore - Empire",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have vast knowledge of the Empire.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d0fc194ff5ffa6a34fd1583",
+    "name": "Lore - History",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge and possible a formal training in history.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d112a3aa85de1596cf2620f",
+    "name": "Channelling - Hysh",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to channel White Wind spells (The Lore of Light). It also lets you channel Petty and Arcane Spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5d188aa923353e73dca2ec72",
+    "name": "Lore - Art",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Art.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d18905a23353e73dca2ec76",
+    "name": "Entertain - Lecture",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "You can use it to entertain people near you with your lectures. The SL of the Entertain Test shows how much others like your performance.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5f26706140ec5f788f3ab085",
+    "name": "Sail - Caravel",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Caravel or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5f5e914f807c850c3dcd01b8",
+    "name": "Sail - Wolfship",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Wolfship or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5cadc8b7828dc9389cc7b162",
+    "name": "Trade - Poisoner",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You posses practical knowledge about poisons. It lets you to use trade tools, recognize ingredients, and brew poisons.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5cade0c1a48cc24ecc4ecaa0",
+    "name": "Research",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Describes how good one is at conducting research. Research requires Read/Write talent.",
+    "page": "p. 128-129"
+  },
+  {
+    "id": "5ce3027f97b74e3c4cebdbbd",
+    "name": "Athletics",
+    "characteristic": "ag",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Describes how well you move and perform physical activities such as jumping or running.",
+    "page": "p. 119"
+  },
+  {
+    "id": "5cec2d31488ae64fb84c0483",
+    "name": "Animal Training - Pigeon",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Represents your understanding of pigeons, and the ability to train them.",
+    "page": "p. 119"
+  },
+  {
+    "id": "5cadc70d828dc9389cc7b15b",
+    "name": "Language - Classical",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Classical language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5cea8a3aadaed446d44365e6",
+    "name": "Lore - Geology",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge and possible a formal training in geology.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5ce114c70f123f1f14a4cc66",
+    "name": "Cool",
+    "characteristic": "wp",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Allows to resist influence of others (such as Charm or Intimidate).",
+    "page": "p. 120"
+  },
+  {
+    "id": "5ce909163f5a0e36c0a4bab5",
+    "name": "Melee - Brawling",
+    "characteristic": "ws",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Training and experience with the weapons from Brawling group.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d0ead9cc773f26d50fcc956",
+    "name": "Art",
+    "characteristic": "dex",
+    "isAdvanced": false,
+    "isGroup": true,
+    "description": "Lets you create works of art. To use Art without extra penalties you have to have access to appropriate Trade Tools. Large projects might require extended Tests. SL determines the quality of your work.",
+    "page": "p. 119"
+  },
+  {
+    "id": "5d1877cb23353e73dca2ec5c",
+    "name": "Language - Thief",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Thief language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5ce47011099f0c36546bdddd",
+    "name": "Trade - Gunsmith",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You posses practical gunsmith knowledge that allows you to use trade tools to make and repair guns.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5d18b4ad7209656444284f3e",
+    "name": "Animal Training - Dog",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Represents your understanding of dogs, and the ability to train them.",
+    "page": "p. 119"
+  },
+  {
+    "id": "5cadd072828dc9389cc7b16d",
+    "name": "Language - Guilder - Apothecary",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Apothecary Guilder language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5d18b8647209656444284f44",
+    "name": "Melee - Fencing",
+    "characteristic": "ws",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Training and experience with the weapons from Fencing group.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d0fed8a8332bf4c94ed6e9c",
+    "name": "Play - Fife",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can play Fife. The SL of the Play Test shows how much others like your performance.",
+    "page": "p. 128"
+  },
+  {
+    "id": "5d1120f844bd6063e885c0d3",
+    "name": "Channelling - Dhar",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to channel Dark Magic spells. It also lets you channel Petty and Arcane Spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5d18f132eeb0ed74f060f68b",
+    "name": "Language - Estalian",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Estalian language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5d167ce1339d63247c167c68",
+    "name": "Pray",
+    "characteristic": "fel",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Lets you commune with your deity. In combat, each round you pray, you gain 1 Advantage point up to a maxim of your Fellowship Bonus. If you opponents can understand you and fear your deity, you can use pray as if it was Intimidate Skill.",
+    "page": "p. 128"
+  },
+  {
+    "id": "5d18f3d9eeb0ed74f060f691",
+    "name": "Lore - Dragons",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge about the dragons.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d1885e223353e73dca2ec6a",
+    "name": "Stealth - Rural or Urban",
+    "characteristic": "ag",
+    "isAdvanced": false,
+    "isGroup": true,
+    "description": "Lets you hide and move undetected in a particular type on environment.",
+    "page": "p. 130"
+  },
+  {
+    "id": "5d1887f423353e73dca2ec6d",
+    "name": "Lore - Spirits",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Spirits.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d189a7423353e73dca2ec7c",
+    "name": "Language - Guilder - Artisan",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Artisan Guilder language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5d18f3b9eeb0ed74f060f690",
+    "name": "Lore - Giants",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge about giants.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5ce8439f3ec45d1a88e3323e",
+    "name": "Set Trap",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You know how to set and disarm traps. Everyone with this Skill can set and disarm traps without any Test if given enough time.\nThe test is necessary if trap is unusually complex or if there is a time pressure.\nMost traps require Average (+20) Set Trap Test to succeed. More complex traps may require an extended Test that needs multiple SL over a number of rounds.",
+    "page": "p. 130"
+  },
+  {
+    "id": "5cac706c25ce892b4c4a91ab",
+    "name": "Animal Training - Demigryph",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Represents your understanding of demigryphs, and the ability to train them.",
+    "page": "p. 119"
+  },
+  {
+    "id": "5cadcc22828dc9389cc7b16b",
+    "name": "Lore - Science",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a broad knowledge and possibly a formal training in science.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5cdf45c430259922e8ea2108",
+    "name": "Drive",
+    "characteristic": "ag",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Ability to guide basic vehicles such as carts and lumbering coaches.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5cea55d10bf34d4a646aa973",
+    "name": "Lore - Heraldry",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a broad knowledge and possibly a formal training in heraldry.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5cfbf2e0f85c764dd8a5e908",
+    "name": "Trade - Cartographer",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You posses practical cartography knowledge that allows you to use  specialist cartography tools. You can create high quality maps.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5cea8a8dadaed446d44365e8",
+    "name": "Language - Mootish",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Mootish language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5d0eab9ec773f26d50fcc953",
+    "name": "Language - Guilder - Lawyer",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Lawyer Guilder language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5d0f34d5a6b5ad5d006b21ec",
+    "name": "Stealth - Underground",
+    "characteristic": "ag",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Lets you hide and move undetected in an underground environment.  Stealth Test is Opposed by opponent's Perception Skill. The Test is modified by a number of  situational factors such as: lighting condition, your camouflage, etc.\nIn combat, Stealth can be used to prepare for an Ambush.",
+    "page": "p. 130"
+  },
+  {
+    "id": "5d0fbca9ff5ffa6a34fd1580",
+    "name": "Trade - Boatbuilding",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You know how to build boats.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5d112abfa85de1596cf26210",
+    "name": "Channelling - Shyish",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to channel Purple Wind spells (The Lore of Death). It also lets you channel Petty and Arcane Spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5d112af3a85de1596cf26211",
+    "name": "Channelling - Ulgu",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to channel Grey Wind spells (The Lore of Shadows). It also lets you channel Petty and Arcane Spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5d17e6796dcd9568649b11d6",
+    "name": "Animal Training - Horse",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Represents your understanding of horses, and the ability to train them.",
+    "page": "p. 119"
+  },
+  {
+    "id": "5d17f24d6dcd9568649b11e2",
+    "name": "Secret Signs - Knight",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Ability to use and understand secret Knightly Order markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5d1870d223353e73dca2ec57",
+    "name": "Entertain - Taunt",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "You can use it to entertain people near you with insults and sarcastic comments. The SL of the Entertain Test shows how much others like your taunts.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5d18736823353e73dca2ec59",
+    "name": "Lore - Genealogy",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Genealogy.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d18f14ceeb0ed74f060f68c",
+    "name": "Language - Tilean",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Tilean language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5f5e925b13ccf32ae905fc92",
+    "name": "Language - Grumbarth",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Grumbarth language (language of the Ogres).",
+    "page": "p. 124"
+  },
+  {
+    "id": "5cadc77c828dc9389cc7b15c",
+    "name": "Lore",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Having Lore skill in a discipline means that you have a broad knowledge of it. It usually means you have a formal training in that field.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d068e764c58df585c1bc30b",
+    "name": "Melee - Flail or Two-Handed",
+    "characteristic": "ws",
+    "isAdvanced": false,
+    "isGroup": true,
+    "description": "Training and experience with a particular type of melee weapon.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5ce848c93ec45d1a88e33242",
+    "name": "Stealth - Rural",
+    "characteristic": "ag",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Lets you hide and move undetected in a rural environment.  Stealth Test is Opposed by opponent's Perception Skill. The Test is modified by a number of  situational factors such as: lighting condition, your camouflage, etc.\nIn combat, Stealth can be used to prepare for an Ambush.",
+    "page": "p. 130"
+  },
+  {
+    "id": "5cadc791828dc9389cc7b15d",
+    "name": "Lore - Chemistry",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a broad knowledge and possibly a formal training in chemistry.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5ce909ed3f5a0e36c0a4bab8",
+    "name": "Lore - Politics",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have vast knowledge of politics.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5ce9ccc7179ba450886fba7f",
+    "name": "Pick Lock",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can attempt to pick locks. These require an Extended Test.",
+    "page": "p. 127"
+  },
+  {
+    "id": "5ce9ce54179ba450886fba81",
+    "name": "Sleight of Hand",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Let's you perform nimble hand movements that allow to pick pockets, perform car/coin tricks, etc. Test of this Skill is usually Opposed by the Perception of your target.\nYou can also use this Skill in gambling.  Before any round you may attempt Sleight of Hand Test (Opposed if other are suspecting you). If you succeed to may reverse your Gamble Test tat round if necessary.",
+    "page": "p. 130"
+  },
+  {
+    "id": "5cf97d99c611a9288474f5c3",
+    "name": "Ranged - Engineering",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Training and experience with weapons from the Engineering group.",
+    "page": "p. 128"
+  },
+  {
+    "id": "5d0eabdfc773f26d50fcc954",
+    "name": "Secret Signs - Guilder - Lawyer",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Lawyer Guilder markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5d0fed6c8332bf4c94ed6e9b",
+    "name": "Play - Drum",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can play Drum. The SL of the Play Test shows how much others like your performance.",
+    "page": "p. 128"
+  },
+  {
+    "id": "5d167d92339d63247c167c69",
+    "name": "Trade - Brewer",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You know how to brew. You can use Brewery and Brewing Tools to make alcoholic beverages.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5d187bb123353e73dca2ec60",
+    "name": "Language - Guilder",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Ability to understand and speak jargon used by members of a  particular guild.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5d188a7f23353e73dca2ec71",
+    "name": "Trade - Art Supplies",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You know how to make various art supplies.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5d189c3123353e73dca2ec7d",
+    "name": "Secret Signs - Guilder - Artisan",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Artisan Guilder markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5d18bf857209656444284f4a",
+    "name": "Entertain - Prophecy",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "You can entertain people near you by telling them prophecies. The SL of the Entertain Test shows how much others like your performance.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5f5e910a807c850c3dcd01b7",
+    "name": "Sail - Frigate",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Frigate or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5f5e920f13ccf32ae905fc91",
+    "name": "Language - Gospodarinyi",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Gospodarinyi (spoken in Kislev) language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5ce470dd099f0c36546bdddf",
+    "name": "Perform",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "You know a physical type of art. You can use it to entertain people near you.",
+    "page": "p. 127"
+  },
+  {
+    "id": "5ce46f1e099f0c36546bdddb",
+    "name": "Ranged",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Training and experience with a particular type of ranged weapon.",
+    "page": "p. 128"
+  },
+  {
+    "id": "5cadc62a828dc9389cc7b159",
+    "name": "Heal",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Can diagnose and heal injuries and diseases.",
+    "page": "p. 122"
+  },
+  {
+    "id": "5caddae3a48cc24ecc4eca8e",
+    "name": "Leadership",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "How well can you lead others and command their respect.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5ce8410d3ec45d1a88e33239",
+    "name": "Charm Animal",
+    "characteristic": "wp",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Allows you to befriend or subjugate animals.\nTake an Opposed Charm Animal/Willpower test. If the animal(s) is docile, this Test is not Opposed. You can influence WP Bonus + SL animals at once.\nIn combat, if you succeed, any affected animals will not attack you this round and you gain +1 Advantage. You can use this skill every Round until you fail the Test. After failing, you cannot use it on the same animals anymore.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5ce116570f123f1f14a4cc67",
+    "name": "Navigation",
+    "characteristic": "i",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Help with orientation in wilderness using any means available: maps, landmarks, stars, etc.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5cadc7a7828dc9389cc7b15e",
+    "name": "Lore - Medicine",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a broad knowledge and possibly a formal training in medicine.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5ce841be3ec45d1a88e3323b",
+    "name": "Lore - Beasts",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have vast knowledge of Beasts.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5cf97d3cc611a9288474f5c2",
+    "name": "Trade - Engineer",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You posses practical knowledge about engineering. It lets you to use trade tools, recognize components, and build new machinery.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5d0f346ba6b5ad5d006b21eb",
+    "name": "Trade - Explosives",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You posses practical knowledge about explosives. It lets you use explosive materials, estimate detonation time (when fused), blast strength etc.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5d187c0023353e73dca2ec61",
+    "name": "Secret Signs - Guilder",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Ability to use and understand secret markings  used by a particular guild members.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5d18810423353e73dca2ec67",
+    "name": "Lore - Geography",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Geography.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d18c5f47209656444284f51",
+    "name": "Lore - Sigmar",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Sigmar.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d18eda3eeb0ed74f060f686",
+    "name": "Lore - Taxes",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge about taxes.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5ce46f66099f0c36546bdddc",
+    "name": "Ranged - Blackpowder",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Training and experience with weapons from the  Blackpowder group.",
+    "page": "p. 128"
+  },
+  {
+    "id": "5ce841743ec45d1a88e3323a",
+    "name": "Climb",
+    "characteristic": "s",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Determines how good you are at climbing.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5ce302d497b74e3c4cebdbbe",
+    "name": "Dodge",
+    "characteristic": "ag",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Dodge allows you to avoid harm by ducking, diving, sidestepping, etc.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5cadddb1a48cc24ecc4eca98",
+    "name": "Intimidate",
+    "characteristic": "s",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "You can fight and coerce others to influence their behavior.",
+    "page": "p. 122-123"
+  },
+  {
+    "id": "5ce843d83ec45d1a88e3323f",
+    "name": "Ranged - Sling",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Training and experience with weapons from the Sling group.",
+    "page": "p. 128"
+  },
+  {
+    "id": "5cf97e32c611a9288474f5c5",
+    "name": "Secret Signs - Guilder - Engineer",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Engineer Guilder markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5d068f9a4c58df585c1bc30d",
+    "name": "Lore - Anatomy",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a broad knowledge and possibly a formal training in anatomy.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d0fcbfcff5ffa6a34fd158e",
+    "name": "Melee - Polearm",
+    "characteristic": "ws",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Training and experience with the weapons from Polearm group.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d12731a3807396984fd240c",
+    "name": "Lore - Dark Magic",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Dark Magic.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d18c6727209656444284f52",
+    "name": "Art - Icons",
+    "characteristic": "dex",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Lets you create religious paintings and other religious art. To use Art - Icons without extra penalties you have to have access to appropriate Trade Tools. Large projects might require extended Tests. SL determines the quality of your work.",
+    "page": "p. 119"
+  },
+  {
+    "id": "5caddaa1a48cc24ecc4eca8d",
+    "name": "Intuition",
+    "characteristic": "i",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Lets you get a sense when something is wrong or when people might be hiding something from you.",
+    "page": "p. 123"
+  },
+  {
+    "id": "5cadc89d828dc9389cc7b161",
+    "name": "Trade - Apothecary",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You posses practical apothecary knowledge that allows you to use trade tools, recognize ingredients, and brew medical potions.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5cadddf5a48cc24ecc4eca9a",
+    "name": "Ride - Horse",
+    "characteristic": "ag",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Proficiency at riding horses.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5ce47042099f0c36546bddde",
+    "name": "Melee - Basic",
+    "characteristic": "ws",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Training and experience with the weapons from Basic group.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5ce9cea1179ba450886fba82",
+    "name": "Ranged - Crossbow",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Training and experience with weapons from the Crossbow group.",
+    "page": "p. 128"
+  },
+  {
+    "id": "5cea8beaadaed446d44365ea",
+    "name": "Entertain - Singing",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "You can use it to entertain people near you with your singing. The SL of the Entertain Test shows how much others like your songs.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5cec2d07488ae64fb84c0482",
+    "name": "Entertain - Acting",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "You can use it to entertain people near you with your acting. The SL of the Entertain Test shows how much others like your performance.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5cea87e2adaed446d44365df",
+    "name": "Language - Bretonnian",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Bretonnian language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5d066de248a38f3b4c12ef54",
+    "name": "Trade - Carpenter",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You know your way around timber. You know how to use various tools and building techniques.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5d0eac3bc773f26d50fcc955",
+    "name": "Entertain - Speeches",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "You can use it to entertain people near you with your speeches. The SL of the Entertain Test shows how much others like your performance.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5d0eaec0c773f26d50fcc957",
+    "name": "Art - Writing",
+    "characteristic": "dex",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Lets you create written works of art. To use Art - Writing without extra penalties you have to have access to writing Trade Tools. Large projects might require extended Tests. SL determines the quality of your work.",
+    "page": "p. 119"
+  },
+  {
+    "id": "5d11182d44bd6063e885c0cf",
+    "name": "Channelling - Untrained",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to channel Witchery spells. It also lets you channel Petty and Arcane Spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5d1274dc3807396984fd240e",
+    "name": "Lore - Daemonology",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of demons.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d167e93339d63247c167c6a",
+    "name": "Trade - Vintner",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You know how to make wines. You can use Winemaking Tools and Infrastructure.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5d18bfa57209656444284f4b",
+    "name": "Lore - Astrology",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Astrology.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5ce4714b099f0c36546bdde0",
+    "name": "Perform - Acrobatics",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You know acrobatics. It can be used to entertain patrons or (with permission of your GM) in lieu of Dodge.",
+    "page": "p. 127"
+  },
+  {
+    "id": "5ce909d13f5a0e36c0a4bab7",
+    "name": "Lore - Chaos",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have vast knowledge of Chaos.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5cdf464330259922e8ea2109",
+    "name": "Gamble",
+    "characteristic": "int",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Allows to estimate probability of winning and improve chances of winning.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5d0eab36c773f26d50fcc952",
+    "name": "Lore - Theology",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a broad knowledge and possibly a formal training in theology.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d0fee1c8332bf4c94ed6e9e",
+    "name": "Play - Drum or Fife",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "You can play an instrument. The SL of the Play Test shows how much others like your performance.",
+    "page": "p. 128"
+  },
+  {
+    "id": "5d111b1344bd6063e885c0d1",
+    "name": "Channelling - Azyr",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to channel Blue Wind spells (The Lore of Heavens). It also lets you channel Petty and Arcane Spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5d11238e44bd6063e885c0d4",
+    "name": "Channelling - Ghur",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to channel Amber Wind spells (The Lore of Beasts). It also lets you channel Petty and Arcane Spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5d11243a44bd6063e885c0d5",
+    "name": "Channelling - Ghyran",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to channel Jade Wind spells (The Lore of Life). It also lets you channel Petty and Arcane Spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5d17f1cc6dcd9568649b11e1",
+    "name": "Trade - Farrier",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You know how to shoe horses.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5d1880c623353e73dca2ec66",
+    "name": "Trade - Tinker",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You know how to make and repair things made out of tin (mostly utensils).",
+    "page": "p. 131"
+  },
+  {
+    "id": "5d18bf337209656444284f49",
+    "name": "Entertain - Fortune Telling",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "You can entertain people near you by predicting their future. The SL of the Entertain Test shows how much others like your performance.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5d18f16beeb0ed74f060f68d",
+    "name": "Language - Estalian or Tilean",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Ability to speak a particular language other than native one.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5cadc7f7828dc9389cc7b160",
+    "name": "Trade",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "The Trade Skill is the ability to craft, or provide a service. It also includes professional knowledge about your craft.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5cadd0b9828dc9389cc7b16e",
+    "name": "Perception",
+    "characteristic": "i",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Ability to notice with any sense available.",
+    "page": "p. 127"
+  },
+  {
+    "id": "5cea55710bf34d4a646aa972",
+    "name": "Lore - Warfare",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a broad knowledge and possibly a formal training in warfare.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5cea546f0bf34d4a646aa970",
+    "name": "Language - Battle",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Battle tongue. Battle Tongue is a set of simple commands and gestures that enable efficient coordination in combat situation.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5cf97de1c611a9288474f5c4",
+    "name": "Language - Guilder - Engineer",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Engineer Guilder language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5ce9ccf5179ba450886fba80",
+    "name": "Secret Signs - Thief",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Thief markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5d0f3bb5a6b5ad5d006b21f2",
+    "name": "Melee - Two Handed",
+    "characteristic": "ws",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Training and experience with the weapons from Two Handed group.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d111b5f44bd6063e885c0d2",
+    "name": "Channelling - Chamon",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to channel Gold Wind spells (The Lore of Metal). It also lets you channel Petty and Arcane Spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5d169297339d63247c167c86",
+    "name": "Language - Guilder - Physician",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Physician Guilder language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5d17e6b16dcd9568649b11d7",
+    "name": "Lore - Routes",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have vast knowledge of Routes.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d17e7026dcd9568649b11d8",
+    "name": "Ranged - Throwing",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Training and experience with weapons from the Throwing group.",
+    "page": "p. 128"
+  },
+  {
+    "id": "5d18f391eeb0ed74f060f68f",
+    "name": "Lore - Trolls",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge about trolls.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5ca92017451e0b3aa075c6b2",
+    "name": "Animal Training",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Represents understanding of a particular type of animal, and the ability to train them.",
+    "page": "p. 119"
+  },
+  {
+    "id": "5ce842173ec45d1a88e3323c",
+    "name": "Outdoor Survival",
+    "characteristic": "int",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Indicates how good you are in surviving in the wilderness.",
+    "page": "p. 126-127"
+  },
+  {
+    "id": "5cdf457530259922e8ea2107",
+    "name": "Bribery",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Allows you to guess how likely someone is to accept a bribe, and how to best offer it.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5ce842533ec45d1a88e3323d",
+    "name": "Ranged - Bow",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Training and experience with weapons from the Bow group.",
+    "page": "p. 128"
+  },
+  {
+    "id": "5ce93dc0d836af2ec4248aac",
+    "name": "Language - Guilder - Merchant",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Merchant Guilder language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5cea891eadaed446d44365e3",
+    "name": "Entertain - Storytelling",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "You can use it to entertain people near you with your stories. The SL of the Entertain Test shows how much others like your stories.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5cea54be0bf34d4a646aa971",
+    "name": "Melee - Cavalry",
+    "characteristic": "ws",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Training and experience with the weapons from Cavalry group.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d11161944bd6063e885c0ce",
+    "name": "Channelling - Wind of Magic",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Your ability to channel spells of a particular colour (one of eight Lores). It also lets you channel Petty and Arcane Spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5d11249444bd6063e885c0d6",
+    "name": "Channelling",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Your ability to channel spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "5d1273d73807396984fd240d",
+    "name": "Lore - Magic",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Magic in general.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d16a5579ae1c87a18017575",
+    "name": "Secret Signs - Vagabond",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Vagabond markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5d1887b223353e73dca2ec6c",
+    "name": "Trade - Charms",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can use Trade Tools to create charms such as necklaces and bracelets.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5ce303c497b74e3c4cebdbbf",
+    "name": "Endurance",
+    "characteristic": "t",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Describes how well you endure physical hardships. Endurance is Tested to resist or recover from various Conditions and helps to recover lost Wounds.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5cadcbf8828dc9389cc7b16a",
+    "name": "Haggle",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Allows to negotiate a better deal.",
+    "page": "p. 122"
+  },
+  {
+    "id": "5cea8a5badaed446d44365e7",
+    "name": "Lore - Metallurgy",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge and possible a formal training in metallurgy.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5cea8801adaed446d44365e0",
+    "name": "Language - Wastelander",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Wastelander language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5cea884aadaed446d44365e1",
+    "name": "Lore - Local - Reikland",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a great deal of knowledge and of geography, history, people, and culture of Reikland.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5cea89b3adaed446d44365e4",
+    "name": "Language - Khazalid",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Khazalid language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "5d18789223353e73dca2ec5d",
+    "name": "Lore - Folklore",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You know a lot of Folklore.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d18911323353e73dca2ec77",
+    "name": "Entertain - Rhetoric",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "You can use it to entertain people near you with your rhetoric skills (art of persuasion). The SL of the Entertain Test shows how much others like your performance.",
+    "page": "p. 121"
+  },
+  {
+    "id": "5d18b7957209656444284f43",
+    "name": "Stealth - Underground or Urban",
+    "characteristic": "ag",
+    "isAdvanced": false,
+    "isGroup": true,
+    "description": "Lets you hide and move undetected in a particular type on environment.",
+    "page": "p. 130"
+  },
+  {
+    "id": "5d18c0867209656444284f4d",
+    "name": "Lore - Prophecy",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of prophecies.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d18eb73eeb0ed74f060f683",
+    "name": "Secret Signs - Smuggler",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Smuggler markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5d18efa9eeb0ed74f060f689",
+    "name": "Trade - Engraver",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can use specialist Trade Tools to make engravings in metal.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5ce305ee97b74e3c4cebdbc0",
+    "name": "Melee",
+    "characteristic": "ws",
+    "isAdvanced": false,
+    "isGroup": true,
+    "description": "Training and experience with a particular type of melee weapon.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5ce8489d3ec45d1a88e33241",
+    "name": "Stealth",
+    "characteristic": "ag",
+    "isAdvanced": false,
+    "isGroup": true,
+    "description": "Lets you hide and move undetected in a particular type on environment.  Stealth Test is Opposed by opponent's Perception Skill. The Test is modified by a number of  situational factors such as: lighting condition, your camouflage, etc.\nIn combat, Stealth can be used to prepare for an Ambush.",
+    "page": "p. 130"
+  },
+  {
+    "id": "5ce908533f5a0e36c0a4bab4",
+    "name": "Lore - Torture",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a broad knowledge, experience, and training in torturing.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5ce93eadd836af2ec4248aad",
+    "name": "Secret Signs - Guilder - Merchant",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Merchant Guilder markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "5cea8badadaed446d44365e9",
+    "name": "Trade - Cook",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You posses vast cooking experience that means you can easily recognize ingredients and know when to get them from.\nYou know a great number of delicious recipes, and the best way to use them.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5d0f2aafa6b5ad5d006b21e3",
+    "name": "Trade - Printing",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You posses practical knowledge about printing. It lets you to use printing machines.",
+    "page": "p. 131"
+  },
+  {
+    "id": "5d167bdd339d63247c167c67",
+    "name": "Art - Calligraphy",
+    "characteristic": "dex",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Lets you create particularly beautiful writings and inscriptions. To use Art - Calligraphy without extra penalties you have to have access to Writing Trade Tools. Large projects might require extended Tests. SL determines the quality of your work.",
+    "page": "p. 119"
+  },
+  {
+    "id": "5d16942e339d63247c167c89",
+    "name": "Lore - Noble",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Nobility.",
+    "page": "p. 126"
+  },
+  {
+    "id": "5d18b4e97209656444284f3f",
+    "name": "Lore - Poison",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of poisons.",
+    "page": "p. 126"
+  },
+  {
+    "id": "636f74cee8373533abe494ae",
+    "name": "Trade - Bowyer",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You posses practical knowledge about bows that allows you to use trade tools to make and repair them.",
+    "page": "p. 131"
+  },
+  {
+    "id": "636f7544e8373533abe494af",
+    "name": "Secret Signs - Ranger",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Ranger markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "636f759be8373533abe494b0",
+    "name": "Lore - Local - Moot",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a broad knowledge of geography, history, people, and culture of Moot.",
+    "page": "p. 126"
+  },
+  {
+    "id": "636f75fce8373533abe494b1",
+    "name": "Secret Signs - Scout",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Scout markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "636f7633e8373533abe494b2",
+    "name": "Lore - Necromancy",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have vast knowledge of Necromancy.",
+    "page": "p. 126"
+  },
+  {
+    "id": "636f76c1e8373533abe494b3",
+    "name": "Secret Signs - Scout or Ranger",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Ability to make and understand clandestine  signs known only to a closed group.",
+    "page": "p. 129"
+  },
+  {
+    "id": "636f7777e8373533abe494b4",
+    "name": "Animal Training - Badger",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Represents your understanding of badgers, and the ability to train them.",
+    "page": "p. 119"
+  },
+  {
+    "id": "636f77b0e8373533abe494b5",
+    "name": "Ride - Badger",
+    "characteristic": "ag",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Proficiency at riding badgers.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b5ce75d059011ad48a8645",
+    "name": "Play - Horn",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can play Drum. The SL of the Play Test shows how much others like your performance.",
+    "page": "p. 128"
+  },
+  {
+    "id": "63b5cf12841671a97ecfb40e",
+    "name": "Trade - Fletcher",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You posses practical knowledge that allows you to use trade tools to make arrows.",
+    "page": "p. 131"
+  },
+  {
+    "id": "63b60439d059011ad48a864d",
+    "name": "Perform - Parade",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You are very good at parading.",
+    "page": "p. 127"
+  },
+  {
+    "id": "63b60734d059011ad48a864f",
+    "name": "Play - Flute",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can play Flute. The SL of the Play Test shows how much others like your performance.",
+    "page": "p. 128"
+  },
+  {
+    "id": "63b74c74d059011ad48a865f",
+    "name": "Ranged - Blackpowder, Catapult, Crossbow, or Engineering",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Training and experience with a particular type of ranged weapon.",
+    "page": "p. 128"
+  },
+  {
+    "id": "63b74d59d059011ad48a8660",
+    "name": "Ranged - Catapult",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Training and experience with weapons from the Cataputl group.",
+    "page": "p. 128"
+  },
+  {
+    "id": "63b74dc6d059011ad48a8661",
+    "name": "Trade - Carpenter or Gunsmith",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "The Trade Skill is the ability to craft, or provide a service. It also includes professional knowledge about your craft.",
+    "page": "p. 131"
+  },
+  {
+    "id": "63b74e45d059011ad48a8662",
+    "name": "Lore - Artillery",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Artillery.",
+    "page": "p. 126"
+  },
+  {
+    "id": "63b89d03d059011ad48a867b",
+    "name": "Art - Cartography",
+    "characteristic": "dex",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Lets you create particularly beautiful maps. To use Art - Cartography without extra penalties you have to have access to writing Trade Tools. Large projects might require extended Tests. SL determines the quality of your work.",
+    "page": "p. 119"
+  },
+  {
+    "id": "63b89d80d059011ad48a867c",
+    "name": "Language - Guilder - Cartographer",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Cartographer Guilder language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "63b89dc9d059011ad48a867d",
+    "name": "Secret Signs - Guilder - Cartographer",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Cartographer Guilder markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b97e7f44e648c34b2f5fe4",
+    "name": "Secret Signs - Knight - Blazing Sun",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Blazing Sun markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9878be69fefc9d52c06b6",
+    "name": "Secret Signs - Knight - White Wolf",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret White Wolf markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b988e1e69fefc9d52c06b7",
+    "name": "Secret Signs - Knight - Black Bear",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Black Bear markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b98913e69fefc9d52c06b8",
+    "name": "Secret Signs - Knight - Black Griffon",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Black Griffon markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b98a2be69fefc9d52c06b9",
+    "name": "Secret Signs - Knight - Black Guard of Morr",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Black Guard of Morr markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b98a5be69fefc9d52c06ba",
+    "name": "Secret Signs - Knight - Black Rose",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Black Rose markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b98cbde69fefc9d52c06bb",
+    "name": "Secret Signs - Knight - Bloody Fist",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Bloody Fist markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9b008c4b8b0714e9b971d",
+    "name": "Secret Signs - Knight - Bloodied Spur",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Bloodied Spur markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9b042c4b8b0714e9b971e",
+    "name": "Secret Signs - Knight - Broken Sword",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Broken Sword markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9b06bc4b8b0714e9b971f",
+    "name": "Secret Signs - Knight - Coldfire",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Coldfire markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9b096c4b8b0714e9b9720",
+    "name": "Secret Signs - Knight - Crystal Lance",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Crystal Lance markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9b0d1c4b8b0714e9b9721",
+    "name": "Secret Signs - Knight - Divine Sword",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Divine Sword markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9b10ac4b8b0714e9b9722",
+    "name": "Secret Signs - Knight - Encarmine",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Encarmine markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9b14fa3311c4aae1e9901",
+    "name": "Secret Signs - Knight - Everlasting Light",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Everlasting Light markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9b185c4b8b0714e9b9723",
+    "name": "Secret Signs - Knight - Fiery Heart",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Fiery Heart markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9b1b8c4b8b0714e9b9724",
+    "name": "Secret Signs - Knight - Glinting Steel",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Glinting Steel markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9b394a3311c4aae1e9902",
+    "name": "Secret Signs - Knight - Gold Lion",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Gold Lion markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9bc876b8788597fb6ddf8",
+    "name": "Secret Signs - Knight - Hammer of Sigmar",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Hammer of Sigmar markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9bca76b8788597fb6ddf9",
+    "name": "Secret Signs - Knight - Jade Griffon",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Jade Griffon markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9bcdd6b8788597fb6ddfa",
+    "name": "Secret Signs - Knight - Knights Griffon",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Knights Griffon markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9bd426b8788597fb6ddfb",
+    "name": "Secret Signs - Knight - Knights Mariner",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Knights Mariner markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9bd676b8788597fb6ddfc",
+    "name": "Secret Signs - Knight - Knights of the Arrow",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Knights of the Arrow markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9bd8b6b8788597fb6ddfd",
+    "name": "Secret Signs - Knight - Knights of the Bull",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Knights of the Bull markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9bdc16b8788597fb6ddfe",
+    "name": "Secret Signs - Knight - Knights of the Scroll",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Knights of the Scroll markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9be276b8788597fb6ddff",
+    "name": "Secret Signs - Knight - Knights of the Setting Sun",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Knights of the Setting Sun markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9be526b8788597fb6de00",
+    "name": "Secret Signs - Knight - Knights of the Stag",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Knights of the Stag markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9be706b8788597fb6de01",
+    "name": "Secret Signs - Knight - Knights Panther",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Knights Panther markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9bebc6b8788597fb6de02",
+    "name": "Secret Signs - Knight - Knights Raven",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Knights Raven markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9bee06b8788597fb6de03",
+    "name": "Secret Signs - Knight - North Star",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret North Star markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9bf156b8788597fb6de04",
+    "name": "Secret Signs - Knight - Northern Cross",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Northern Cross markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9bf356b8788597fb6de05",
+    "name": "Secret Signs - Knight - Osterknacht",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Osterknacht markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9bf556b8788597fb6de06",
+    "name": "Secret Signs - Knight - Red Shields",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Red Shields markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9bf8b6b8788597fb6de07",
+    "name": "Secret Signs - Knight - Reiksguard",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Reiksguard markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9c35b65b8644b8e8ca68a",
+    "name": "Secret Signs - Knight - Righteous Spear",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Righteous Spear markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9c38f6b8788597fb6de08",
+    "name": "Secret Signs - Knight - Sacred Scythe",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Sacred Scythe markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9c4e96b8788597fb6de09",
+    "name": "Secret Signs - Knight - Shining Sword",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Shining Sword markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9c5076b8788597fb6de0a",
+    "name": "Secret Signs - Knight - Sigmar’s Blood",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Sigmar’s Blood markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9c5236b8788597fb6de0b",
+    "name": "Secret Signs - Knight - Silver Mountain",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Silver Mountain markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9c55a6b8788597fb6de0c",
+    "name": "Secret Signs - Knight - Sons of Manann",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Sons of Manann markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9c5806b8788597fb6de0d",
+    "name": "Secret Signs - Knight - Sword and Scale",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Sword and Scale markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9c62065b8644b8e8ca68b",
+    "name": "Secret Signs - Knight - Taal’s Fury",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Taal’s Fury markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9c6466b8788597fb6de0e",
+    "name": "Secret Signs - Knight - Twin-tailed Orb",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Twin-tailed Orb markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9c6656b8788597fb6de0f",
+    "name": "Secret Signs - Knight - Vengeful Sun",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Vengeful Sun markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63b9ef216b8788597fb6de14",
+    "name": "Lore - Law or Heraldry",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Having Lore skill in a discipline means that you have a broad knowledge of it. It usually means you have a formal training in that field.",
+    "page": "p. 126"
+  },
+  {
+    "id": "63bad3bbc656841ea3364baa",
+    "name": "Trade - Miner",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You know how to work in a mine.",
+    "page": "p. 131"
+  },
+  {
+    "id": "63bad40cc656841ea3364bab",
+    "name": "Ranged - Blackpowder or Engineering",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Training and experience with a particular type of ranged weapon.",
+    "page": "p. 128"
+  },
+  {
+    "id": "63baeab5c656841ea3364bb2",
+    "name": "Trade - Weaponsmith",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You posses practical blacksmith knowledge that allows you to use trade tools to make and repair melee weapons.",
+    "page": "p. 131"
+  },
+  {
+    "id": "63baeaebc656841ea3364bb3",
+    "name": "Trade - Armourer",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You posses practical blacksmith knowledge that allows you to use trade tools to make and repair armours.",
+    "page": "p. 131"
+  },
+  {
+    "id": "63baeb13c656841ea3364bb4",
+    "name": "Trade - Weaponsmith or Armourer",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "The Trade Skill is the ability to craft, or provide a service. It also includes professional knowledge about your craft.",
+    "page": "p. 131"
+  },
+  {
+    "id": "63e28d31838ea72d008326ce",
+    "name": "Augury",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Lets you look into the future. This can be done in a few different ways:\nPriests and Sisters receive prophetic visions.\nCelestial Wizards read future from the stars.\nMystics use tools such as cards or dice.\nConsulting the Thaumodivinator in Altdorf.\nConsorting with Daemons. \nYou can make a single Augury Test one per day.",
+    "page": "p. 44"
+  },
+  {
+    "id": "63e28ea4838ea72d008326d0",
+    "name": "Psychometry",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Lets you see and feel sensations relating to a recent event or another person’s unspoken thoughts. To use it you must either be at the place associated with events, or be touching object involved in the event, or be touching someone whose thought you want to read.",
+    "page": "p. 47"
+  },
+  {
+    "id": "63e425fb6450a8143fabca64",
+    "name": "Trade - Alchemy",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You know Mundane Alchemy, also known as Low Alchemy. It involves isolating chemical elements, combining them to create compounds, or utilising scientific knowledge in the creation of small, simple artefacts.",
+    "page": "p. 131"
+  },
+  {
+    "id": "63e426a779b42d19391ffb44",
+    "name": "Language - Guilder - Alchemy",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Alchemy Guilder language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "63e426dd79b42d19391ffb45",
+    "name": "Secret Signs - Guilder - Alchemy",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Alchemy Guilder markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63e429b079b42d19391ffb49",
+    "name": "Lore - Local - Nehekhara",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a broad knowledge of geography, history, people, and culture of Nehekhara also known as the Land of the Dead.",
+    "page": "p. 126"
+  },
+  {
+    "id": "63e42a4279b42d19391ffb4a",
+    "name": "Trade - Blacksmith, Goldsmith, or Engineer",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "The Trade Skill is the ability to craft, or provide a service. It also includes professional knowledge about your craft.",
+    "page": "p. 131"
+  },
+  {
+    "id": "63e42b106450a8143fabca65",
+    "name": "Trade - Blacksmith",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You are a trained blacksmith. You can use blacksmith tools to work with metal.",
+    "page": "p. 131"
+  },
+  {
+    "id": "63e42be979b42d19391ffb4c",
+    "name": "Trade - Goldsmith",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You specialise in working with gold. You can create jewellery, silverware, platters, goblets, etc.",
+    "page": "p. 131"
+  },
+  {
+    "id": "63e42dbd79b42d19391ffb4f",
+    "name": "Lore - Astronomy",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Astronomy.",
+    "page": "p. 126"
+  },
+  {
+    "id": "63e42e3979b42d19391ffb50",
+    "name": "Secret Signs - Grey Order",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Grey Order markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63e42ebe6450a8143fabca67",
+    "name": "Art - Engraving",
+    "characteristic": "dex",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Lets you create particularly beautiful engravings. To use Art - Engraving without extra penalties you have to have access to engraving Trade Tools. Large projects might require extended Tests. SL determines the quality of your work.",
+    "page": "p. 119"
+  },
+  {
+    "id": "63e42f826450a8143fabca68",
+    "name": "Lore - Undead",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your knowledge on the topic of the Undead is extensive and encompasses a wide range of information.",
+    "page": "p. 126"
+  },
+  {
+    "id": "63e4304879b42d19391ffb52",
+    "name": "Secret Signs - Amber Order",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Amber Order markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63ee6bf6dcbb1970798de45e",
+    "name": "Entertain - Bellow",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "You can use it to entertain people near you with your deep voice. The SL of the Entertain Test shows how much others like your performance.",
+    "page": "p. 121"
+  },
+  {
+    "id": "63ee6da2dcbb1970798de45f",
+    "name": "Animal Training - Rhinox",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Represents your understanding of Rhinoxen, and the ability to train them.",
+    "page": "p. 119"
+  },
+  {
+    "id": "63ee6e55dcbb1970798de460",
+    "name": "Lore - Rhinox",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have an extensive knowledge about Rhinoxen.",
+    "page": "p. 126"
+  },
+  {
+    "id": "63ee6edadcbb1970798de461",
+    "name": "Ride - Rhinox",
+    "characteristic": "ag",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Proficiency at riding Rhinoxen.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63eea492021463a5afe8b284",
+    "name": "Trade - Butcher",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You are a trained butcher and know how to slaughter animals and dress their flesh. You can use Butcher Tools.",
+    "page": "p. 131"
+  },
+  {
+    "id": "63eea632021463a5afe8b285",
+    "name": "Art - Butchery",
+    "characteristic": "dex",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "You make art out of slaughtering animals and cutting meat. It's particularly popular among Ogres. To use Art - Butchery without extra penalties you have to have access to Butcher Trade Tools. Large projects might require extended Tests. SL determines the quality of your work.",
+    "page": "p. 119"
+  },
+  {
+    "id": "63eea6e1021463a5afe8b286",
+    "name": "Channelling - The Great Maw",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to channel spells from the Lore of the Great Maw. It also lets you channel Petty and Arcane Spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "63eea73eaf86ce22afb0f5b3",
+    "name": "Secret Signs - The Great Maw",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret markings of the Great Maw.",
+    "page": "p. 129"
+  },
+  {
+    "id": "63eea830021463a5afe8b287",
+    "name": "Lore - The Great Maw",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You poses extensive knowledge about Ogres' god the Great Maw.",
+    "page": "p. 126"
+  },
+  {
+    "id": "63eea95caf86ce22afb0f5b5",
+    "name": "Lore - Ogres",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have know a lot about Ogres.",
+    "page": "p. 126"
+  },
+  {
+    "id": "642abea5ba6680a279153509",
+    "name": "Language - Queekish",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak the language of the Under-Empire. Used by the Skaven and their many slaves.",
+    "page": "p. 124"
+  },
+  {
+    "id": "6443c0a11474dc011058d112",
+    "name": "Lore - Ulric",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Ulric.",
+    "page": "p. 126"
+  },
+  {
+    "id": "6443e2e1299189654234bd04",
+    "name": "Lore - Roadways",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Roads in the area you operate.",
+    "page": "p. 126"
+  },
+  {
+    "id": "6443fb00299189654234bd09",
+    "name": "Lore - Coasts and Tides",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have vast knowledge of Coasts and Tides.",
+    "page": "p. 126"
+  },
+  {
+    "id": "6443fea6299189654234bd0d",
+    "name": "Play - Fiddle",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can play Fiddle. The SL of the Play Test shows how much others like your performance.",
+    "page": "p. 128"
+  },
+  {
+    "id": "6443fec0299189654234bd0e",
+    "name": "Play - Fiddle, Squeezebox, or Tin Whistle",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "You can play an instrument. The SL of the Play Test shows how much others like your performance.",
+    "page": "p. 128"
+  },
+  {
+    "id": "6443fee5299189654234bd0f",
+    "name": "Play - Squeezebox",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can play Squeezebox. The SL of the Play Test shows how much others like your performance.",
+    "page": "p. 128"
+  },
+  {
+    "id": "6443fee6299189654234bd10",
+    "name": "Play - Tin Whistle",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can play Tin Whistle. The SL of the Play Test shows how much others like your performance.",
+    "page": "p. 128"
+  },
+  {
+    "id": "64440069299189654234bd13",
+    "name": "Lore - Oceans",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have vast knowledge of Oceans.",
+    "page": "p. 126"
+  },
+  {
+    "id": "6444326f299189654234bd18",
+    "name": "Sail - Knarr",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Knarr or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "6444328f299189654234bd19",
+    "name": "Sail - Longship",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Longship or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "644434d0299189654234bd1c",
+    "name": "Sail - Carrack",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Carrack or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "644434ec299189654234bd1d",
+    "name": "Sail - Wargalley",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Wargalley or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "6444350f299189654234bd1e",
+    "name": "Sail - Greatship",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Greatship or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "64444663299189654234bd1f",
+    "name": "Sail - Xebec",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Xebec or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "64444697299189654234bd20",
+    "name": "Sail - Dhow",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Dhow or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "644446aa299189654234bd21",
+    "name": "Sail - Cathayan Gem Ship",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a  Cathayan Gem Ship or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "644447d0299189654234bd22",
+    "name": "Play - Pennywhistle",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can play Pennywhistle. The SL of the Play Test shows how much others like your performance.",
+    "page": "p. 128"
+  },
+  {
+    "id": "64444800299189654234bd23",
+    "name": "Lore - Manann",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a great deal of knowledge and specialise in the topic of Manann.",
+    "page": "p. 126"
+  },
+  {
+    "id": "64444939299189654234bd24",
+    "name": "Lore - Stromfels",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a great deal of knowledge and specialise in the topic of Stromfels.",
+    "page": "p. 126"
+  },
+  {
+    "id": "644d817d1b9a2f929a766dea",
+    "name": "Language - Battle or Thief",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Ability to speak a particular language other than native one.",
+    "page": "p. 124"
+  },
+  {
+    "id": "644d888c1b9a2f929a766deb",
+    "name": "Lore - Local - Middenheim",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a great deal of knowledge and of geography, history, people, and culture of Middenheim.",
+    "page": "p. 126"
+  },
+  {
+    "id": "644d8a221b9a2f929a766dec",
+    "name": "Lore - Local - Middenland",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a great deal of knowledge and of geography, history, people, and culture of Middenland.",
+    "page": "p. 126"
+  },
+  {
+    "id": "644d8adc1b9a2f929a766ded",
+    "name": "Lore - Local - Nordland",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a great deal of knowledge and of geography, history, people, and culture of Nordland.",
+    "page": "p. 126"
+  },
+  {
+    "id": "644d8d431b9a2f929a766dee",
+    "name": "Language - Arabyan",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Arabyan language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "644d8d8a1b9a2f929a766def",
+    "name": "Lore - Local - Tilea",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a great deal of knowledge and of geography, history, people, and culture of Tilea.",
+    "page": "p. 126"
+  },
+  {
+    "id": "644d8da91b9a2f929a766df0",
+    "name": "Lore - Local - Estalia",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a great deal of knowledge and of geography, history, people, and culture of Estalia.",
+    "page": "p. 126"
+  },
+  {
+    "id": "644d8de01b9a2f929a766df1",
+    "name": "Lore - Local - Kislev",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a great deal of knowledge and of geography, history, people, and culture of Kislev.",
+    "page": "p. 126"
+  },
+  {
+    "id": "644d8e0d1b9a2f929a766df2",
+    "name": "Lore - Local - Bretonnia",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a great deal of knowledge and of geography, history, people, and culture of Bretonnia.",
+    "page": "p. 126"
+  },
+  {
+    "id": "644d8e321b9a2f929a766df3",
+    "name": "Lore - Local - Marienburg",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a great deal of knowledge and of geography, history, people, and culture of Marienburg.",
+    "page": "p. 126"
+  },
+  {
+    "id": "644d90c11b9a2f929a766df4",
+    "name": "Lore - Local - Norsca",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a great deal of knowledge and of geography, history, people, and culture of Norsca.",
+    "page": "p. 126"
+  },
+  {
+    "id": "644d90eb1b9a2f929a766df5",
+    "name": "Lore - Khorne",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a great deal of knowledge and specialise in the topic of Khorne.",
+    "page": "p. 126"
+  },
+  {
+    "id": "644d95221b9a2f929a766df6",
+    "name": "Trade - Silversmith",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You specialise in working with silver. You can create jewellery, silverware, platters, goblets, etc.",
+    "page": "p. 131"
+  },
+  {
+    "id": "646145a99439abb2698d7c34",
+    "name": "Trade - Farmer",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You posses practical knowledge about Farming. You know where and what can be farmed. You can also make and use all farming tools.",
+    "page": "p. 131"
+  },
+  {
+    "id": "64e3b5ea49960d00011d3e90",
+    "name": "Ranged - Blowpipe",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Training and experience with weapons from the Blowpipe group.",
+    "page": "p. 128"
+  },
+  {
+    "id": "64e3cd6f49960d0001be47ea",
+    "name": "Secret Signs - Lizardman",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret markings or the Lizardman.",
+    "page": "p. 129"
+  },
+  {
+    "id": "64e3cea749960d0001be47ec",
+    "name": "Channelling - Azyr or Ghur",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Your ability to channel spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "64e3cef549960d0001be47ed",
+    "name": "Lore - Old Ones",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have know a lot about Old Ones.",
+    "page": "p. 126"
+  },
+  {
+    "id": "64eca5ed49960d0001e67a80",
+    "name": "Lore - Tzeentch",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You possess an extensive wealth of knowledge about Tzeentch.",
+    "page": "p. 126"
+  },
+  {
+    "id": "64eca68549960d0001e67a81",
+    "name": "Secret Signs - Cultist",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Cultist markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "64eca6ec49960d0001e67a82",
+    "name": "Language - Dark Tongue",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak the Dark Tongue.",
+    "page": "p. 124"
+  },
+  {
+    "id": "64f4b0b049960d0001d69bd9",
+    "name": "Language - Beast Tongue",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak language of Beastmen. It is beyond the ability of any species without bestial mouths and tongues.",
+    "page": "p. 124"
+  },
+  {
+    "id": "650b256649960d0001c52277",
+    "name": "Hypnotism",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Lets you place another Character into a trance.",
+    "page": "p. 149"
+  },
+  {
+    "id": "651b294b49960d00010e7ec2",
+    "name": "Ranged - Explosives",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Training and experience with weapons from the Explosives group.",
+    "page": "p. 128"
+  },
+  {
+    "id": "651e8ee949960d00017d8749",
+    "name": "Channelling - Little Waaagh!",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to channel spells from the Lore of the Little Waaagh! It also lets you channel Petty and Arcane Spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "651eafb649960d00017c94ee",
+    "name": "Secret Signs - Hedge Witch",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Hedge Witch markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "651eafd349960d00017c94ef",
+    "name": "Language - Belthani",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Belthani language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "651ebf4249960d00017c94fe",
+    "name": "Language - Barnyard",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to communicate with domesticated animals. This can only be learned by gifted animals, Beastman bray-shamans and Wood Elf shapeshifters.",
+    "page": "p. 124"
+  },
+  {
+    "id": "651ebfbd49960d00017c94ff",
+    "name": "Language - Wilds",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to communicate with wild animals. This can only be learned by gifted animals, Beastman bray-shamans and Wood Elf shapeshifters.",
+    "page": "p. 124"
+  },
+  {
+    "id": "6523149549960d00019a7f8d",
+    "name": "Channelling - Qhaysh",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to channel a combination of the Winds of Magic - Qhaysh.  Required to take High Magic Talent.",
+    "page": "p. 120"
+  },
+  {
+    "id": "6525903e49960d00019a7fc0",
+    "name": "Channelling - WAAAGH!",
+    "characteristic": "wp",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to channel spells from the Lore of WAAAGH! It also lets you channel Petty and Arcane Spells.",
+    "page": "p. 120"
+  },
+  {
+    "id": "66478f3c49960d0001694c7f",
+    "name": "Language - Malla-room-ba-larin",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Malla-room-ba-larin (language of the trees) language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "670a5ecd49960d000100f084",
+    "name": "Lore - Runes",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have vast knowledge of Dwarf Runes. It lets you identify runes and their powers. You can also reveal faded or invisible inscriptions.",
+    "page": "p. 126"
+  },
+  {
+    "id": "670a5fe849960d000100f085",
+    "name": "Runesmithing",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "The art of runesmithing involves creating magical runes and manipulating existing ones. Practitioners can craft new runes or use their skills to activate or deactivate runes made by others.",
+    "page": "p. 80"
+  },
+  {
+    "id": "670a5ff349960d000100f086",
+    "name": "Sail - Skycraft",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate gyrocopters, airships, war balloons and other flying machines.  Tests are only required during take-off and landing (Average +20) and when trying to push the machine beyond its usual capabilities.",
+    "page": "p. 129"
+  },
+  {
+    "id": "6722aa8649960d000187f1de",
+    "name": "Lore - History or Heraldry",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Having Lore skill in a discipline means that you have a broad knowledge of it. It usually means you have a formal training in that field.",
+    "page": "p. 126"
+  },
+  {
+    "id": "6722ac7a49960d000187f1e0",
+    "name": "Secret Signs - Guilder - Grudgemaster",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Grudgemaster Guilder markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "6725542749960d00013b8a72",
+    "name": "Melee - Engineering",
+    "characteristic": "ws",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Training and experience with the weapons from Engineering (Melee) group.",
+    "page": "p. 126"
+  },
+  {
+    "id": "6725f28a49960d00019d2e8e",
+    "name": "Secret Signs - Brotherhood of Grimnir",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret  Brotherhood of Grimnir markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "6725f2b549960d00019d2e8f",
+    "name": "Art - Tatoo",
+    "characteristic": "dex",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Lets you create particularly beautiful tatoos. To use Art - Engraving without extra penalties you have to have access to Tatoo Trade Tools. Large projects might require extended Tests. SL determines the quality of your work.",
+    "page": "p. 119"
+  },
+  {
+    "id": "67267f3549960d00011f3256",
+    "name": "Entertain - Singing or Storytelling",
+    "characteristic": "fel",
+    "isAdvanced": false,
+    "isGroup": true,
+    "description": "You can use it to entertain people near you with your talents such as stories, songs, acting, etc. The SL of the Entertain Test shows how much others like your performance.",
+    "page": "p. 121"
+  },
+  {
+    "id": "67267fc949960d00011f3257",
+    "name": "Melee - Basic or Two-Handed",
+    "characteristic": "ws",
+    "isAdvanced": false,
+    "isGroup": true,
+    "description": "Training and experience with a particular type of melee weapon.",
+    "page": "p. 126"
+  },
+  {
+    "id": "6726b86f49960d00018f1acc",
+    "name": "Language - Guilder - Brewer",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Brewer Guilder language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "6726b89949960d00018f1acd",
+    "name": "Ranged - Crossbow or Throwing",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Training and experience with a particular type of ranged weapon.",
+    "page": "p. 128"
+  },
+  {
+    "id": "6726b93149960d00018f1acf",
+    "name": "Secret Signs - Guilder - Brewer",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Brewer Guilder markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "6727cecd49960d00013447a7",
+    "name": "Lore - Theology or Warfare",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Having Lore skill in a discipline means that you have a broad knowledge of it. It usually means you have a formal training in that field.",
+    "page": "p. 126"
+  },
+  {
+    "id": "6727d47749960d00013447b0",
+    "name": "Art - Sculpture",
+    "characteristic": "dex",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Lets you create particularly beautiful sculptures. To use Art - Sculpture without extra penalties you have to have access to sculpting Trade Tools. Large projects might require extended Tests. SL determines the quality of your work.",
+    "page": "p. 119"
+  },
+  {
+    "id": "6727d4a349960d00013447b1",
+    "name": "Art - Sculpture or Engraving",
+    "characteristic": "dex",
+    "isAdvanced": false,
+    "isGroup": true,
+    "description": "Lets you create works of art. To use Art without extra penalties you have to have access to appropriate Trade Tools. Large projects might require extended Tests. SL determines the quality of your work.",
+    "page": "p. 119"
+  },
+  {
+    "id": "6727d52849960d00013447b3",
+    "name": "Lore - Geology or Metallurgy",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Having Lore skill in a discipline means that you have a broad knowledge of it. It usually means you have a formal training in that field.",
+    "page": "p. 126"
+  },
+  {
+    "id": "6727d5f549960d00013447b5",
+    "name": "Language - Guilder - Forge Priest",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Forge Priest Guilder language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "6727d65f49960d00013447b6",
+    "name": "Language - Battle or Guilder - Forge Priest",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Ability to speak a particular language other  than native one.",
+    "page": "p. 124"
+  },
+  {
+    "id": "6727d6ae49960d00013447b7",
+    "name": "Lore - Runes or Theology",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Having Lore skill in a discipline means that you have a broad knowledge of it. It usually means you have a formal training in that field.",
+    "page": "p. 126"
+  },
+  {
+    "id": "6727d6f649960d00013447b8",
+    "name": "Secret Signs - Forge Priest",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Forge Priest markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "6727d70e49960d00013447b9",
+    "name": "Secret Signs - Miner or Guilder - Forge Priest",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Ability to make and understand clandestine  signs known only to a closed group.",
+    "page": "p. 129"
+  },
+  {
+    "id": "6728029c49960d00013b5c43",
+    "name": "Trade - Brewer or Cook",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "The Trade Skill is the ability to craft, or provide a service. It also includes professional knowledge about your craft.",
+    "page": "p. 131"
+  },
+  {
+    "id": "672803b149960d00013b5c46",
+    "name": "Lore - Medicine or Anatomy",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Having Lore skill in a discipline means that you have a broad knowledge of it. It usually means you have a formal training in that field.",
+    "page": "p. 126"
+  },
+  {
+    "id": "672a9e6549960d000118ac48",
+    "name": "Play - Drum or Horn",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "You can play an instrument. The SL of the Play Test shows how much others like your performance.",
+    "page": "p. 128"
+  },
+  {
+    "id": "672b3d1b49960d00011c7870",
+    "name": "Lore - Local or Politics",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Having Lore skill in a discipline means that you have a broad knowledge of it. It usually means you have a formal training in that field.",
+    "page": "p. 126"
+  },
+  {
+    "id": "672b4ee149960d00015df7d7",
+    "name": "Ranged - Crossbow or Blackpowder",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Training and experience with a particular type of ranged weapon.",
+    "page": "p. 128"
+  },
+  {
+    "id": "672b4f0e49960d00015df7d8",
+    "name": "Language - Guilder - Karak Nobility",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to speak Karak Nobility Guilder language.",
+    "page": "p. 124"
+  },
+  {
+    "id": "672b4f3b49960d00015df7d9",
+    "name": "Secret Signs - Guilder - Karak Nobility",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Karak Nobility Guilder markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "672b527549960d00015df7da",
+    "name": "Lore - Engineering or Geology - copy",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Having Lore skill in a discipline means that you have a broad knowledge of it. It usually means you have a formal training in that field.",
+    "page": "p. 126"
+  },
+  {
+    "id": "6771853b49960d0001c9556c",
+    "name": "Lore - Ranald",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You have a vast knowledge of Ranald.",
+    "page": "p. 126"
+  },
+  {
+    "id": "6771935549960d0001c95575",
+    "name": "Perform - Acting",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You are a great actor. Your skill can be used to entertain patrons or (with permission of your GM) to give you an extra edge in combat.",
+    "page": "p. 127"
+  },
+  {
+    "id": "6771b1ad49960d00019506cd",
+    "name": "Trade - Art",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You can create and copy works of art.",
+    "page": "p. 131"
+  },
+  {
+    "id": "6771b1db49960d00019506ce",
+    "name": "Trade - Blacksmith or Art",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "The Trade Skill is the ability to craft, or provide a service. It also includes professional knowledge about your craft.",
+    "page": "p. 131"
+  },
+  {
+    "id": "67f0d71b49960d0001cd2529",
+    "name": "Ranged - Catapult or Crossbow",
+    "characteristic": "bs",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Training and experience with a particular type of ranged weapon.",
+    "page": "p. 128"
+  },
+  {
+    "id": "67f54bd549960d0001cbdc0f",
+    "name": "Sail - Bloodhawk",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Bloodhawk or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "67f54c0649960d0001cbdc10",
+    "name": "Sail - Falconship",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Falconship or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "67f54c1b49960d0001cbdc11",
+    "name": "Sail - Hawkship",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Hawkship or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "67f54c2849960d0001cbdc12",
+    "name": "Sail - Dragonship",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Your ability to operate a Dragonship or a similar ship. You are automatically presumed to be able to sail in calm water. \nTest is usually necessary when sailing in adverse conditions or racing.\nYou can use Sail as a basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "67f54c3349960d0001cbdc13",
+    "name": "Sail - Bloodhawk, Falconship, Hawkship, or Dragonship",
+    "characteristic": "ag",
+    "isAdvanced": true,
+    "isGroup": true,
+    "description": "Your ability to operate a particular kind of vessel.  You are automatically presumed to be able to sail in calm water. Test is usually necessary when sailing in adverse conditions or racing.\nHaving a level in any specialisation of Sail, allows you to use Sail as basic Skill with any other Specialisations.",
+    "page": "p. 129"
+  },
+  {
+    "id": "67f65a2d49960d0001cbdc26",
+    "name": "Art - Painting",
+    "characteristic": "dex",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Lets you create particularly beautiful paintings. To use Art - Painting without extra penalties you have to have access to painting Trade Tools. Large projects might require extended Tests. SL determines the quality of your work.",
+    "page": "p. 119"
+  },
+  {
+    "id": "67f65a7849960d0001cbdc27",
+    "name": "Art - Poetry",
+    "characteristic": "dex",
+    "isAdvanced": false,
+    "isGroup": false,
+    "description": "Lets you create poetry works of art. Large projects might require extended Tests. SL determines the quality of your work.",
+    "page": "p. 119"
+  },
+  {
+    "id": "67f65aa349960d0001cbdc28",
+    "name": "Art - Painting or Sculpture",
+    "characteristic": "dex",
+    "isAdvanced": false,
+    "isGroup": true,
+    "description": "Lets you create works of art. To use Art without extra penalties you have to have access to appropriate Trade Tools. Large projects might require extended Tests. SL determines the quality of your work.",
+    "page": "p. 119"
+  },
+  {
+    "id": "67f6601949960d0001cbdc2a",
+    "name": "Secret Signs - Shadow Warriors",
+    "characteristic": "int",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "Ability to use and understand secret Shadow Warriors markings.",
+    "page": "p. 129"
+  },
+  {
+    "id": "67f662bf49960d0001cbdc2e",
+    "name": "Haggle or Gamble",
+    "characteristic": null,
+    "isAdvanced": false,
+    "isGroup": true,
+    "description": "You know how Haggle or Gamble.",
+    "page": "p. 128"
+  },
+  {
+    "id": "67f6880b49960d0001cbdc35",
+    "name": "Trade - Jeweller",
+    "characteristic": "dex",
+    "isAdvanced": true,
+    "isGroup": false,
+    "description": "You specialise in working with precious stones. You can create various jewellery.",
+    "page": "p. 131"
+  },
+  {
+    "id": "68015f3f49960d0001615c6e",
+    "name": "Art - Calligraphy or Engraving",
+    "characteristic": "dex",
+    "isAdvanced": false,
+    "isGroup": true,
+    "description": "Lets you create works of art. To use Art without extra penalties you have to have access to appropriate Trade Tools. Large projects might require extended Tests. SL determines the quality of your work.",
+    "page": "p. 119"
+  }
+]

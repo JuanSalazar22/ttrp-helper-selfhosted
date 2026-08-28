@@ -1,0 +1,740 @@
+[
+  {
+    "id": "6736255049960d0001998c55",
+    "name": "Rune of Cleaving",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 10\n+1 Damage for each Rune of Cleaving.",
+    "page": "p. 127"
+  },
+  {
+    "id": "6736256149960d0001998c56",
+    "name": "Rune of Retribution",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 12\nYou may add +20 to rolls on a Critical Wound table for each Rune of Retribution.",
+    "page": "p. 127"
+  },
+  {
+    "id": "673625e849960d0001998c57",
+    "name": "Rune of Cutting",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 10\nYou may ignore 2 APs of armour per Rune of Cutting on successful hits.",
+    "page": "p. 127"
+  },
+  {
+    "id": "6736266149960d0001998c58",
+    "name": "Rune of Daunting",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 14\nWhilst drawing the weapon with this rune, you gain the Fear Creature Trait. Your Fear Rating is equal to the number of Runes of Daunting. If you already have\na Fear Rating, increase by +1 for each Rune of Daunting.",
+    "page": "p. 127"
+  },
+  {
+    "id": "673626b449960d0001998c59",
+    "name": "Rune of Fire",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 16\nWhilst drawing the weapon with this rune, its blade bursts into flames, providing 20 yards of illumination, and inflicting 1 Ablaze Condition on enemies it inflicts damage upon.\nA weapon with two or three Runes of Fire can be used to make ranged attacks using BS, with a Range equal to the wielder’s WP Bonus, and the Blast 4 Quality. This attack deals no Damage, but inflicts 1 Ablaze Condition for each Rune of Fire.",
+    "page": "p. 160"
+  },
+  {
+    "id": "6736277c49960d0001998c5a",
+    "name": "Rune of Fury",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 15\nGain 1 level of Dual Wielder for each Rune of Fury (this may go over the Talent \nmaximum levels).\nFor purposes of activating Dual Wielder, you may count a weapon bearing the Rune of Fury as two separate weapons, one in each hand, allowing you to attack two targets even if you aren’t carrying a second weapon.",
+    "page": "p. 127"
+  },
+  {
+    "id": "6736281649960d0001998c5b",
+    "name": "Grudge Rune",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 10\nNominate an enemy you bear a Blood Grudge. For each Grudge Rune, the weapon gains +10 to hit and +1 Damage on attacks against the nominated enemy. At the end of the adventure, if your the enemy is slain, you may nominate a new one.",
+    "page": "p. 127"
+  },
+  {
+    "id": "6736287b49960d0001998c5c",
+    "name": "Rune of Might",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 10\nWhen attacking target larger than yourself, the weapon deals +3 Damage for each Rune of Might.",
+    "page": "p. 127"
+  },
+  {
+    "id": "6736293649960d0001998c5d",
+    "name": "Rune of Speed",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 10\nGain +10 Initiative for each Rune of Speed.",
+    "page": "p. 47"
+  },
+  {
+    "id": "6736298249960d0001998c5e",
+    "name": "Rune of Striking",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 14\nWhen attacking with a weapon with this rune, gain +10 to Melee Skill (appropriate for the weapon with the rune) for each Rune of Striking.",
+    "page": "p. 47"
+  },
+  {
+    "id": "67362d5049960d0001998c60",
+    "name": "Master Rune of Alaric the Mad",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 30\nThis weapon ignores the target’s AP, the target’s armour Qualities, and any other benefits provided by the target’s armour.",
+    "page": "p. 127"
+  },
+  {
+    "id": "67362db849960d0001998c61",
+    "name": "Master Rune of Breaking",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 20\nWhen you win a Opposed Melee Test (either as attacked or defender) any magic weapon used by your opponent during their Melee Test is destroyed.",
+    "page": "p. 127"
+  },
+  {
+    "id": "67362f3449960d0001998c63",
+    "name": "Master Rune of Flight",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 20\nThe weapon can be used as a Thrown ranged weapon, with a Range of SBx3. It gains the Accurate Quality, and returns to your hand after inflicting Damage.",
+    "page": "p. 128"
+  },
+  {
+    "id": "67362f7a49960d0001998c64",
+    "name": "Master Rune of Skalf Blackhammer",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 28\nAny successful attack with this weapon counts as scoring a Critical.",
+    "page": "p. 128"
+  },
+  {
+    "id": "67362f9549960d0001998c65",
+    "name": "Master Rune of the Slayer",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 20\nChoose a specific type of enemy: Daemons, Undead, etc. When attacking\nthat enemy of this type, you may Reverse any attack Tests, and Reverse any rolls they make on a Critical Wound table.",
+    "page": "p. 128"
+  },
+  {
+    "id": "6736306849960d0001998c66",
+    "name": "Master Rune of Snorri Spangelhelm",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 22\nAny failed Melee Tests made always count a success with 0 SL. The only way the attack can fail is when the target scores more SLs on their Opposed Test.",
+    "page": "p. 128"
+  },
+  {
+    "id": "673630da49960d0001998c67",
+    "name": "Master Rune of Haste",
+    "applicableTo": [
+      0
+    ],
+    "description": "SLs Required: 20\nThe weapon gains an improved version Fast Quality. All Melee Tests to defend against it suffer a penalty of -30 (instead of -10).",
+    "page": "p. 128"
+  },
+  {
+    "id": "673795c349960d000106de8a",
+    "name": "Rune of Force",
+    "applicableTo": [
+      3
+    ],
+    "description": "SLs Required: 14\nIf you make a successful Melee attack as part of a Charge, you inflict bonus Damage for each Rune of Impact equal to the APs of your most armoured location.",
+    "page": "p. 128"
+  },
+  {
+    "id": "6737986449960d000106de8b",
+    "name": "Rune of Fortitude",
+    "applicableTo": [
+      3
+    ],
+    "description": "SLs Required: 14\nGain +10 T for each Rune of Fortitude.",
+    "page": "p. 128"
+  },
+  {
+    "id": "673798da49960d000106de8c",
+    "name": "Rune of Iron",
+    "applicableTo": [
+      3
+    ],
+    "description": "SLs Required: 12\nGain +2 Wounds for each Rune of Iron. These Wounds are lost when the armour is removed, which can trigger a Critical Wound.",
+    "page": "p. 128"
+  },
+  {
+    "id": "6737a21d49960d000106de8f",
+    "name": "Rune of Resistance",
+    "applicableTo": [
+      3
+    ],
+    "description": "SLs Required: 12\nFor each Rune of Resistance, gain +10 to Tests to Oppose an incoming Melee attack.",
+    "page": "p. 128"
+  },
+  {
+    "id": "6737a27a49960d000106de90",
+    "name": "Rune of Shielding",
+    "applicableTo": [
+      3
+    ],
+    "description": "SLs Required: 12\nIncoming ranged attacks and spells reduce have their Damage reduced by 2 for each Rune of Shielding.",
+    "page": "p. 128"
+  },
+  {
+    "id": "6737a2e249960d000106de91",
+    "name": "Rune of Stone",
+    "applicableTo": [
+      3
+    ],
+    "description": "SLs Required: 10\nThe armour gains +1 AP for each Rune of Stone. Suits with one or more Runes of Stone, and no other runes, are exempt from the Rule of Pride - they continue to function even if identical suits of runic armour enters 100 yards.",
+    "page": "p. 128"
+  },
+  {
+    "id": "6737a36a49960d000106de92",
+    "name": "Master Rune of Adamant",
+    "applicableTo": [
+      3
+    ],
+    "description": "SLs Required: 22\nYou may Reverse the roll on the Critical Wound table.",
+    "page": "p. 128"
+  },
+  {
+    "id": "6737a43e49960d000106de93",
+    "name": "Master Rune of Gromril",
+    "applicableTo": [
+      3
+    ],
+    "description": "SLs Required: 20\nThe armour loses the Weakpoints Flaw, can never be Damaged except by a Runic Flaw, and never reduces its AP due to Talents or effects such as the Penetrating Quality.",
+    "page": "p. 128"
+  },
+  {
+    "id": "6737a48a49960d000106de94",
+    "name": "Master Rune of Steel",
+    "applicableTo": [
+      3
+    ],
+    "description": "SLs Required: 20\nYou can only suffer a maximum of 10 Wounds from any single source when Damage is inflicted.",
+    "page": "p. 129"
+  },
+  {
+    "id": "6737a50249960d000106de95",
+    "name": "Rune of Clear Sight",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 8\nWhen the talisman is pressed to your eye, you ignore any penalties imposed by non-magical vapours such as fog, clouds, mist, etc. Two Runes of Clear Seeing also penetrate magical vapours. With three Runes of Clear Seeing you to see clearly in total darkness.",
+    "page": "p. 129"
+  },
+  {
+    "id": "6737a65b49960d000106de96",
+    "name": "Rune of Clear Sight - v2",
+    "applicableTo": [
+      5
+    ],
+    "description": "Perception Tests made using lens with this Rune are not affected by the rules for Visibility. It does not allow to see through illusions but reveals these as magical by tinting them greenish.",
+    "page": "p. 47"
+  },
+  {
+    "id": "6737a7e649960d000106de98",
+    "name": "Rune of Truth",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 8\nThe talisman glows brightly if pressed into contact with an item that has been faked, forged, counterfeited, or deliberately degraded in value. Two Runes of Disclosure also identify magical illusions or duplicates. Three Runes of Disclosure reveal the precise method of deception to the bearer.",
+    "page": "p. 129"
+  },
+  {
+    "id": "6738679549960d00017aac68",
+    "name": "Rune of Far Sight",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 10\nWhen the talisman is pressed to the user’s eye, it magnifies the vision. It allows to see clearly  up to a mile away. Two runes extend it to 2 miles and three rune to 4 miles.",
+    "page": "p. 47"
+  },
+  {
+    "id": "673868a049960d00017aac69",
+    "name": "Rune of the Furnace",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 10\nYou are immune to heat. You do not acquire the Ablaze Condition and reduce all incoming Damage from fire and flaming attacks by 4 for each Rune of the Furnace.",
+    "page": "p. 129"
+  },
+  {
+    "id": "673869a949960d00017aac6a",
+    "name": "Rune of Luck",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 10\nGain 1 Fortune point for each Rune of Luck. This can exceed your usual maximum Fortune. When you remove the talisman, you lose these extra points\n(to a minimum of 0), and cannot regain them until the following session.",
+    "page": "p. 129"
+  },
+  {
+    "id": "67386a1249960d00017aac6b",
+    "name": "Rune of Restoration",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 10\nAfter a good night’s sleep, regain Toughness Bonus in Wounds for\neach Rune of Restoration.",
+    "page": "p. 129"
+  },
+  {
+    "id": "67386a7b49960d00017aac6c",
+    "name": "Rune of Spellbreaking",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 10\nWhen using the Magic Resistance Talent, you can activate this rune to automatically count as rolling 01 on your WP Test. You can activate each Rune of\nSpellbreaking once per adventure, and must choose to activate it before you roll.",
+    "page": "p. 129"
+  },
+  {
+    "id": "67386b0d49960d00017aac6d",
+    "name": "Rune of Spelleating",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 10\nAfter a successful dispel with Magic Resistance Talent, the spellcaster cannot\ncast the spell again for number of Rounds equal to your WP Bonus. Two Runes of Spelleating extend the effect from Rounds to Hours and three runes extend it to weeks.",
+    "page": "p. 129"
+  },
+  {
+    "id": "67386c0349960d00017aac6e",
+    "name": "Rune of Warding",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 15\nAttack and spellcasting Tests targeting you suffer -10 penalty for each Rune of Warding.",
+    "page": "p. 129"
+  },
+  {
+    "id": "67386c7d49960d00017aac6f",
+    "name": "Master Rune of Balance",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 20\nWhen an enemy within line of sight casts a spell, you may either Reverse their Spellcasting Test, or Reverse your Opposed WP Test.",
+    "page": "p. 129"
+  },
+  {
+    "id": "67386ccb49960d00017aac70",
+    "name": "Master Rune of Industry",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 20\nYou may take an extra Endeavour between adventures.",
+    "page": "p. 129"
+  },
+  {
+    "id": "67386ced49960d00017aac71",
+    "name": "Master Rune of Kingship",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 24\nYou may Reverse any Charm, Intimidate, and Leadership Tests you make that target a Dwarf, or a group mostly consisting of Dwarfs.",
+    "page": "p. 129"
+  },
+  {
+    "id": "67386d5249960d00017aac72",
+    "name": "Master Rune of Passage",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 20\nWhen Moving at walking pace, you can Move through solid, immobile objects like trees, rock, and metal. You cannot Move through creatures (living or Undead). You have to finish your Move outside of the object.",
+    "page": "p. 130"
+  },
+  {
+    "id": "67386e1249960d00017aac73",
+    "name": "Master Rune of Spite",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 24\nEvery time you take any damage, the attacker suffers 2d10 Damage to a random location reduced by T Bonus and AP as usual.",
+    "page": "p. 130"
+  },
+  {
+    "id": "6738734149960d0001bb1b03",
+    "name": "Rune of Alarm",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 8\nItem with this rune emits a loud, blaring noise if any creature of Size Small or larger enters its range of effect. With 2 runes, it can emit a pre-recorded message instead. With 3 runes it can transmit a  telepathic message to the creator or their closest living descendant, over any distance.",
+    "page": "p. 130"
+  },
+  {
+    "id": "673873ca49960d0001bb1b04",
+    "name": "Rune of Battle",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 18\nAffected allies begin combat with 1 Advantage for each Rune of Battle.",
+    "page": "p. 130"
+  },
+  {
+    "id": "673873ea49960d0001bb1b05",
+    "name": "Rune of Courage",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 14\nAffected allies gain +10 on Psychology Tests for each Rune of Courage.",
+    "page": "p. 130"
+  },
+  {
+    "id": "6738cd0349960d0001db3963",
+    "name": "Rune of Discovery",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 8\nFor each Rune of Discovery, the crafter chooses a specific metal or gem (e.g. gold, diamond, gromril). The runic item glows brightly if that material is within its range of effect.",
+    "page": "p. 130"
+  },
+  {
+    "id": "6738cd7b49960d0001db3964",
+    "name": "Rune of Locking",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 6\nThis rune can be used to protect locks. One rune makes the lock immune to being picked or forced except by magic or the corresponding key. Two runes make it immune to magic effects as well. With three runes, the lock cannot be unlocked even with  the lock’s corresponding key.  Only the crafter, or their closest living descendant, can open the lock.",
+    "page": "p. 130"
+  },
+  {
+    "id": "6738ce2f49960d0001db3965",
+    "name": "Rune of Purification",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 10\nAffected allies gain +20 for each Rune of Purification on Tests to resist toxins in air and water.",
+    "page": "p. 130"
+  },
+  {
+    "id": "6738ce4949960d0001db3966",
+    "name": "Rune of Retribution",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 8\nAnything that violates the sanctity of dead bodies within range of effect (for example stealing from the dead or casting a necromantic spell), they immediately gain 1 Ablaze Condition for each Rune of Retribution.",
+    "page": "p. 130"
+  },
+  {
+    "id": "6738cf1149960d0001db3967",
+    "name": "Rune of Sanctuary",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 10\nAffected allies gain +10 per rune to WP Tests to dispel with Magic Resistance Talent.",
+    "page": "p. 130"
+  },
+  {
+    "id": "6738cf5a49960d0001db3968",
+    "name": "Rune of Slowness",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 12\nEnemies engaging affected allies reduce the distance they can Run by 4 yards per Rune of Slowness, to a minimum of equal to the enemy’s Walk distance.",
+    "page": "p. 131"
+  },
+  {
+    "id": "6738d04f49960d0001db3969",
+    "name": "Rune of Verminkill",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 10\nAll Rodents (Skaven, Rat Ogres, etc.) lose 2 Wounds (ignoring T Bonus and APs) for each Rune of Verminkill when they enter the area of effect, or start their Turn within it.",
+    "page": "p. 131"
+  },
+  {
+    "id": "6738d0fc49960d0001db396a",
+    "name": "Master Rune of Expel Chaos",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 20\nWhen fighting with a Daemonic enemy that has the Unstable Trait, affected allies have +2 Advantage when calculating Wounds lost for being Unstable.\nAllies withing the area of effect may Reverse any Test to resist corruption, Tests to avoid mutation from Corruption, and rolls on the Physical and Mental Corruption Tables.",
+    "page": "p. 131"
+  },
+  {
+    "id": "6738d1b849960d0001db396b",
+    "name": "Master Rune of Grimnir",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 22\nYou may Reverse any enemy spellcasting Tests made against affected allies.",
+    "page": "p. 131"
+  },
+  {
+    "id": "6738d1dc49960d0001db396c",
+    "name": "Master Rune of Stromni Redbeard",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 20\nAffected allies begin combat with 1 Advantage. The range of this rune is 12 yards, or 24 yards if forged upon a battle standard.",
+    "page": "p. 131"
+  },
+  {
+    "id": "6738d23649960d0001db396d",
+    "name": "Master Rune of Valaya",
+    "applicableTo": [
+      5
+    ],
+    "description": "SLs Required: 22\nAllies within the area of effect can use Magic Resistance Talent without limit restrictions, it can be used against any target in their line of sight. In addition, it can be used to dispel persistent spells and they may reverse any WP Test to Oppose spellcasting with it.",
+    "page": "p. 131"
+  },
+  {
+    "id": "67391d2549960d00010b5cbc",
+    "name": "Rune of Accuracy",
+    "applicableTo": [
+      1
+    ],
+    "description": "SLs Required: 14\nGain +10 to hit for each Rune of Accuracy.",
+    "page": "p. 131"
+  },
+  {
+    "id": "67391d9149960d00010b5cbd",
+    "name": "Rune of Burning",
+    "applicableTo": [
+      1
+    ],
+    "description": "SLs Required: 16\nAnything struck by this weapon gains 1 Ablaze Condition per Rune of Burning.",
+    "page": "p. 131"
+  },
+  {
+    "id": "67391dc249960d00010b5cbe",
+    "name": "Rune of Forging",
+    "applicableTo": [
+      1
+    ],
+    "description": "SLs Required: 10\nThe crew might activate this rune after Fumble and/or Misfire to negate the effects. Each Rune of Forging can be activated once per adventure.",
+    "page": "p. 131"
+  },
+  {
+    "id": "673922b849960d00010b5cbf",
+    "name": "Rune of Penetrating",
+    "applicableTo": [
+      1
+    ],
+    "description": "SLs Required: 14\nThe weapon inflicts +2 Damage for each Rune of Penetrating",
+    "page": "p. 131"
+  },
+  {
+    "id": "6739231949960d00010b5cc0",
+    "name": "Rune of Reloading",
+    "applicableTo": [
+      1
+    ],
+    "description": "SLs Required: 12\nEach rune reduces weapon's Reload Rating by 2. If this would reduce the Rating to 0 or below, the weapon loses the Reload Flaw. Weapons with the Salvo\nQuality cannot be reduced below Reload Rating 1.",
+    "page": "p. 131"
+  },
+  {
+    "id": "6739236149960d00010b5cc1",
+    "name": "Rune of Seeking",
+    "applicableTo": [
+      1
+    ],
+    "description": "SLs Required: 10\nGain +20 to hit for each Rune of Seeking when attacking a flying enemy.",
+    "page": "p. 131"
+  },
+  {
+    "id": "673923be49960d00010b5cc2",
+    "name": "Rune of the Stalwart",
+    "applicableTo": [
+      1
+    ],
+    "description": "SLs Required: 14\nWeapon's Dwarf crew starts combat with 1 Advantage for each Rune of the Stalwart. This extra Advantage is lost by any Characters that leave the crew, or become Engaged in melee.",
+    "page": "p. 131"
+  },
+  {
+    "id": "6739241d49960d00010b5cc3",
+    "name": "Rune of the Valiant",
+    "applicableTo": [
+      1
+    ],
+    "description": "SLs Required: 10\nDwarf crew of this weapon gain +10 WP for each Rune of the Valiant.",
+    "page": "p. 132"
+  },
+  {
+    "id": "6739245e49960d00010b5cc4",
+    "name": "Master Rune of Defence",
+    "applicableTo": [
+      1
+    ],
+    "description": "SLs Required: 20\nThe weapon's crew always count as being in hard cover. Ranged attacks against them suffer -30 penalty.",
+    "page": "p. 132"
+  },
+  {
+    "id": "673924b149960d00010b5cc5",
+    "name": "Master Rune of Disguise",
+    "applicableTo": [
+      1
+    ],
+    "description": "SLs Required: 20\nThe weapon is invisible to all enemies until it fires for the first time. It stays visible for the rest of the fight. The crew remain visible as normal, and moving the machine still causes noise.",
+    "page": "p. 132"
+  },
+  {
+    "id": "6739bb8849960d0001fd63b9",
+    "name": "Master Rune of Immolation",
+    "applicableTo": [
+      1
+    ],
+    "description": "SLs Required: 20\nAny Dwarf crew member can use Free Action to activate this rune and trigger self-destruction of the weapon. All creatures withing 6 yards take \nAll creatures within 6 yards  take 15 Damage (reduced by T Bonus and APs) to a random location and gain Ablaze Condition.",
+    "page": "p. 132"
+  },
+  {
+    "id": "6739bc7e49960d0001fd63ba",
+    "name": "Master Rune of Skewering",
+    "applicableTo": [
+      1
+    ],
+    "description": "SLs Required: 22\nYou can activate this rune to automatically roll 01 on the next attack. If the attack is successful it also counts as Critical and you may chose the location.\nIt can be activated once per adventure, and must decide to activate it before you roll.",
+    "page": "p. 132"
+  },
+  {
+    "id": "6739bdb349960d0001fd63bb",
+    "name": "Rune of Hearth and Home",
+    "applicableTo": [
+      5
+    ],
+    "description": "All Dwarfs within 25 yards of the Anvil of Doom automatically roll 01 on any Cool Tests they make until the end of the next Round.",
+    "page": "p. 132"
+  },
+  {
+    "id": "6739be1e49960d0001fd63bc",
+    "name": "Rune of Oath and Steel",
+    "applicableTo": [
+      5
+    ],
+    "description": "All Dwarfs within 25 yards of the Anvil of Doom gain +2 AP to the armour they are wearing, until the end of the next Round.",
+    "page": "p. 132"
+  },
+  {
+    "id": "6739be8c49960d0001fd63bd",
+    "name": "Rune of Wrath and Ruin",
+    "applicableTo": [
+      5
+    ],
+    "description": "Deals 12 Damage (reduced by T Bonus and APs) to a random location to all enemies within 25 yards of the Anvil of Doom.",
+    "page": "p. 132"
+  },
+  {
+    "id": "6739c2ff49960d0001005681",
+    "name": "Rune of Goblin Bane",
+    "applicableTo": [
+      0
+    ],
+    "description": "The weapon gains Impact quality against Orcs, Goblins, Snotlings, and Hobgoblins.  Goblins treat the bearer as having the Fear 1 Creature Trait.",
+    "page": "p. 160"
+  },
+  {
+    "id": "6739c31249960d0001005682",
+    "name": "Rune of Leaping",
+    "applicableTo": [
+      5
+    ],
+    "description": "Provides bearer with Bounce Creature Trait.",
+    "page": "p. 36"
+  },
+  {
+    "id": "673a0a6649960d00010cc678",
+    "name": "Rune of Spell-Breaking",
+    "applicableTo": [
+      0
+    ],
+    "description": "Any harmful spell that targets weapon's bearer, suffers -2 SL.",
+    "page": "p. 160"
+  },
+  {
+    "id": "673a0b7549960d00010cc679",
+    "name": "Rune of Stalwart - v2",
+    "applicableTo": [
+      0
+    ],
+    "description": "Bearer gains +2 SL to Cool Tests to resist Fear and Terror.",
+    "page": "p. 160"
+  },
+  {
+    "id": "673a0ba449960d00010cc67a",
+    "name": "Smednir's Master Rune of Head-Wrecking",
+    "applicableTo": [
+      0
+    ],
+    "description": "Add 40 to the score of any Critical Hits you make to the head.",
+    "page": "p. 160"
+  },
+  {
+    "id": "6873deeb49960d0001f7a998",
+    "name": "Rune of Preservation",
+    "applicableTo": [
+      3
+    ],
+    "description": "The armour loses the Weakpoints Flaw",
+    "page": "p. 7"
+  },
+  {
+    "id": "6873df3149960d0001f7a999",
+    "name": "Master Rune of Skaldour",
+    "applicableTo": [
+      3
+    ],
+    "description": "The armour reduces Damage from incoming blows by 4. Damage 0 blow does not cause Wounds.",
+    "page": "p. 7"
+  },
+  {
+    "id": "6873df8149960d0001f7a99a",
+    "name": "Giantbane Master Rune",
+    "applicableTo": [
+      0
+    ],
+    "description": "When fighting against Giants, the wielder may reverse the attack Test and any Critical Wound roll.",
+    "page": "p. 7"
+  },
+  {
+    "id": "6873e15749960d0001f7a99b",
+    "name": "Master Rune of Smiting",
+    "applicableTo": [
+      0
+    ],
+    "description": "If the hit deals damage, it inflicts double Wounds plus extra 4.",
+    "page": "p. 11, 13"
+  },
+  {
+    "id": "6873e20a49960d0001f7a99d",
+    "name": "Master Rune of Dismay",
+    "applicableTo": [
+      5
+    ],
+    "description": "After blowing the horn, enemies within 2x Toughness yards suffer -10 to all Tests unless they are immune to Psychology. Can be used once a day.",
+    "page": "p. 11"
+  },
+  {
+    "id": "6873e2d849960d0001f7a99f",
+    "name": "Rune of Parrying",
+    "applicableTo": [
+      0
+    ],
+    "description": "The wielder can reverse Tests to Oppose melee attacks with this weapon.",
+    "page": "p. 13"
+  },
+  {
+    "id": "6873e52349960d0001f7a9a3",
+    "name": "Master Rune of the Goblin Slayer",
+    "applicableTo": [
+      0
+    ],
+    "description": "When fighting against Goblins, the wielder may reverse the attack Test and any Critical Wound roll.",
+    "page": "p. 33"
+  }
+]

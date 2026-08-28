@@ -1,0 +1,1496 @@
+[
+  {
+    "id": "5f8e13e62b98839545650556",
+    "name": "Blessing of Breath",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "Target does not need to breathe and ignores suffocation rules.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f935588921c53cf2df4f962",
+    "name": "Stay Lucky",
+    "range": "You",
+    "target": "You",
+    "duration": "Special",
+    "description": "Miracle of Ranald. Gain +1 Fortune point and an extra +1 Fortune point for every +2 SL. The extra points can take your overall Fortune above you maximum.",
+    "page": "p. 224"
+  },
+  {
+    "id": "5f90af6b35c2e89b5b1b12a0",
+    "name": "Becalm",
+    "range": "Initiative Bonus Miles",
+    "target": "1 sailing vessel within Line of Sight",
+    "duration": "1 Hour",
+    "description": "Miracle of Manann. Steal wind from the sails of a boat.",
+    "page": "p. 222"
+  },
+  {
+    "id": "5f9352d55042d9bbac90715e",
+    "name": "Shield of Myrmidia",
+    "range": "Fellowship yards",
+    "target": "Intelligence Bonus allies",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Myrmidia.  All affected targets get +1 AP on all locations.",
+    "page": "p. 224"
+  },
+  {
+    "id": "5f90ad8d3d895d8423328d2a",
+    "name": "Blessing of Healing",
+    "range": "1 yards",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Target heals +1 Wound.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f8e13abd1949bb61bf0d3a5",
+    "name": "Blessing of Battle",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "Target gets +10 WS.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f90aea03d895d8423328d2c",
+    "name": "Blessing of Righteousness",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "Weapon counts as Magical.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f90af1535c2e89b5b1b129f",
+    "name": "Blessing of Wisdom",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "Target gets +10 Int.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f920811226f481f597a56bb",
+    "name": "Dooming",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Miracle of Morr. See target's Doom. After this Miracle is performed the target can acquire Talent Doom with XP.",
+    "page": "p. 223"
+  },
+  {
+    "id": "5f934fd763b8813ad5b4d091",
+    "name": "Stay Morr’s Hand",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Fellowship Bonus Hours (Special)",
+    "description": "Miracle of Morr. A willing target gains  Unconscious Condition and will not deteriorate until the Miracle ends. During this time, target ignore any existing critical wounds, poison etc.",
+    "page": "p. 223"
+  },
+  {
+    "id": "5f93581163b8813ad5b4d095",
+    "name": "Rhya's Succour",
+    "range": "Fellowship yards",
+    "target": "Fellowship Bonus allies",
+    "duration": "Instant",
+    "description": "Miracle of Rhya. Remove 1 Condition from affected targets. If that was the last Condition, they get +10 bonus to any tests on their next Turn.",
+    "page": "p. 225"
+  },
+  {
+    "id": "5f9414f65b4b5f9347adcda7",
+    "name": "Leaping Stag",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Taal and Ringil. Gain +1 Movement and +1 Strong Legs Talent. You automatically pass all Athletics Tests to jump with at least +0 SL.",
+    "page": "p. 227"
+  },
+  {
+    "id": "5f90aee035c2e89b5b1b129d",
+    "name": "Blessing of Savagery",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "When target of this blessing next inflicts Critical Wound, roll twice and chose the higher result.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f90acec3d895d8423328d29",
+    "name": "Blessing of Grace",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "Target gets +10 Ag.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f90ad7263028a6f2a6f7d24",
+    "name": "Blessing of Hardiness",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "Target gets +10 T.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f90b19d35c2e89b5b1b12a2",
+    "name": "Sea Legs",
+    "range": "Fellowship yards",
+    "target": "1",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Manann. Stuns the target by drenching it with saltwater.",
+    "page": "p. 223"
+  },
+  {
+    "id": "5f9362405042d9bbac907162",
+    "name": "Anchorite's Endurance",
+    "range": "Fellowship yards",
+    "target": "1",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Shallya. Target suffers not penalties caused by Conditions.",
+    "page": "p. 225"
+  },
+  {
+    "id": "5f9414885b4b5f9347adcda6",
+    "name": "King of the Wild",
+    "range": "Fellowship yards",
+    "target": "1",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Taal. Summon an animal appropriate for the surrounding area. The summoned animal act according to your will.",
+    "page": "p. 227"
+  },
+  {
+    "id": "5f9416a55b4b5f9347adcda9",
+    "name": "Tooth and Claw",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Taal. Gain Bite (SB+3) and Weapon (SB+4) Creature Traits. There attacks count as Magical.",
+    "page": "p. 227"
+  },
+  {
+    "id": "5f941f915b4b5f9347adcdac",
+    "name": "Sword of Justice",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Verena and Mabyn. Your swords becomes Magical and ignores Armor. Any criminal struck in combat must take an Average (+20) Endurance to avoid Unconscious Condition that lasts Fel Bonus Rounds.",
+    "page": "p. 228"
+  },
+  {
+    "id": "5f9420755b4b5f9347adcdad",
+    "name": "Wisdom of the Owl",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Verena. Gain +20 to all Int Tests, +1 Menacing and\nAcute Sense - Sight Talents.",
+    "page": "p. 228"
+  },
+  {
+    "id": "5f92062d226f481f597a56ba",
+    "name": "Death Mask",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Morr and Mabyn. You gain Fear 1.",
+    "page": "p. 223"
+  },
+  {
+    "id": "5f9353b65042d9bbac90715f",
+    "name": "An Invitation",
+    "range": "1 yard",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Miracle of Ranald and Evawn. Unlock one of the entries to a premises. For every +2 SL unlock another entry.",
+    "page": "p. 224"
+  },
+  {
+    "id": "5f935666921c53cf2df4f964",
+    "name": "Rhya's Children",
+    "range": "You",
+    "target": "Area of Effect",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Rhya. Sense the presence of all sentient creatures within Fel yards. Increase the radius by extra Fel yards for every +2 SL.",
+    "page": "p. 225"
+  },
+  {
+    "id": "5f9358f6921c53cf2df4f965",
+    "name": "Rhya's Union",
+    "range": "Touch",
+    "target": "Special",
+    "duration": "Fellowship Bonus Hours",
+    "description": "Miracle of Rhya. Target couple,  if biologically possible, will conceive a child.",
+    "page": "p. 225"
+  },
+  {
+    "id": "5f93634d921c53cf2df4f967",
+    "name": "Bitter Catharsis",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Miracle of Shallya. Removes a poison or disease from the target. You may remove extra poison or disease for every +2 SL. Each removed disease or poison cause you 1d10 - Fel Bonus Wounds, not modified by Toughness or Armor.",
+    "page": "p. 225"
+  },
+  {
+    "id": "5f9366505042d9bbac907165",
+    "name": "Heed Not the Witch",
+    "range": "You",
+    "target": "Area of Effect",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Sigmar. Any spells that target within Fel Bonus yards (plus extra Fel Bonus yards for every +2 SL) suffer -20 penalty to Language Magick Tests.",
+    "page": "p. 226"
+  },
+  {
+    "id": "5f90b1d735c2e89b5b1b12a3",
+    "name": "Waterwalk",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus minutes",
+    "description": "Miracle of Manann. You can walk on the water. Works only on larger bodies of water.",
+    "page": "p. 223"
+  },
+  {
+    "id": "5f934e81921c53cf2df4f95f",
+    "name": "Last Rites",
+    "range": "1 yard",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Miracle of Morr. Ensures that the corpse cannot be targeted by any Necromantic spells. If the target has Undead and Construct Creature Traits, it is destroyed.",
+    "page": "p. 223"
+  },
+  {
+    "id": "5f935440921c53cf2df4f961",
+    "name": "Cat's Eyes",
+    "range": "Fellowship yards",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Ranald. Sends a  Divine Servant in form of a cat. You can control the cat and sense through its senses.",
+    "page": "p. 224"
+  },
+  {
+    "id": "5f93548e63b8813ad5b4d093",
+    "name": "Ranald's Grace",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Agility Bonus Rounds",
+    "description": "Miracle of Ranald and Ringil. Target gains + 10 Ag, +10 Stealth, and +1 Catfall Talent.",
+    "page": "p. 224"
+  },
+  {
+    "id": "5f93679c63b8813ad5b4d099",
+    "name": "Soulfire",
+    "range": "You",
+    "target": "Area of Effect",
+    "duration": "Instant",
+    "description": "Miracle of Sigmar. Deal 1d10 Wounds to all targets within Fel Bonus yards. Targets with Undead and Daemon Traits gain Ablaze Condition. For every +2 SL, you can either increase the radius by +Fel Bonus or cause an extra +2 Damage to any Greenskins, Undead or servants\nof the Ruinous Powers.",
+    "page": "p. 226"
+  },
+  {
+    "id": "5f941f02cfc445903fad399b",
+    "name": "Shackles of Truth",
+    "range": "Fellowship yards",
+    "target": "1",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Verena. If the target committed a crime they gain  Entangled Condition that cannot be removed for the duration. If they did not commit a crime they you are accusing them of, you gain +1 Sin Point and must roll on The Wrath of the Gods table.",
+    "page": "p. 228"
+  },
+  {
+    "id": "5f90ae8663028a6f2a6f7d26",
+    "name": "Blessing of Recuperation",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Reduces the duration of 1 disease by 1 day. May only be used once per disease per person.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f8e1456b771fd6aa7342dec",
+    "name": "Blessing of Charisma",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "Target gets +10 Fel.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f9419e588af9b12a1ea0a53",
+    "name": "Ulric's Fury",
+    "range": "Fellowship yards",
+    "target": "1",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Ulric. Target gains the Frenzy psychology.",
+    "page": "p. 227"
+  },
+  {
+    "id": "5f90aef735c2e89b5b1b129e",
+    "name": "Blessing of Tenacity",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Remove 1 condition from the target.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f90b01763028a6f2a6f7d29",
+    "name": "Fair Winds",
+    "range": "Initiative Bonus Miles",
+    "target": "1 sailing vessel within Line of Sight",
+    "duration": "1 Hour",
+    "description": "Miracle of Manann. Target boat gets extra wind in its sails.",
+    "page": "p. 222"
+  },
+  {
+    "id": "5f9368625042d9bbac907166",
+    "name": "Twin-tailed Comet",
+    "range": "Fellowship yards",
+    "target": "Area of Effect",
+    "duration": "Instant",
+    "description": "Miracle of Sigmar. Comet strikes a point within Line of Sight. It causes 1d10 + SL Damage in the Fel Bonus radius. The damage ignores Toughness Bonus and Armor, and target gain Ablaze Condition.",
+    "page": "p. 226"
+  },
+  {
+    "id": "5f9355ed921c53cf2df4f963",
+    "name": "You Ain't Seen Me, Right?",
+    "range": "Fellowship yards",
+    "target": "1",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Ranald and Mabyn. Affected targets can pass unnoticed.",
+    "page": "p. 225"
+  },
+  {
+    "id": "5f94179388af9b12a1ea0a52",
+    "name": "Tanglefoot",
+    "range": "Fellowship yards",
+    "target": "Area of Effect",
+    "duration": "Instant",
+    "description": "Miracle of Taal. All targets within Fel Bonus of the target point gain Entangled Condition. For every +2 SL you can either increase radius by another Fel Bonus yards or add 1 extra Entangled Condition. For the purposes of breaking free, Tanglefoot has a Strength equal to your Willpower.",
+    "page": "p. 227"
+  },
+  {
+    "id": "5f94202688af9b12a1ea0a57",
+    "name": "Truth Will Out",
+    "range": "Fellowship Bonus yards",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Miracle of Verena. Target will answer your one question truthfully and fully. The target may try to resist the spell by taking an  Average (+20) Cool Test.",
+    "page": "p. 228"
+  },
+  {
+    "id": "5f90ac8963028a6f2a6f7d23",
+    "name": "Blessing of Finesse",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "Target gets + 10 Dex.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f90afb663028a6f2a6f7d28",
+    "name": "Drowned Man’s Face",
+    "range": "Fellowship yards",
+    "target": "1",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Manann. Target's lungs fill up with saltwater while this Miracle is lasts.",
+    "page": "p. 222"
+  },
+  {
+    "id": "5f934f2663b8813ad5b4d090",
+    "name": "Portal's Threshold",
+    "range": "Touch",
+    "target": "Area of Effect",
+    "duration": "Special",
+    "description": "Miracle of Morr. Creates a line (up to 8 yards). Creatures with Undead Trait must pass a Challenging (+0) WP Test to cross the line. Creatures with Undead and Construct Traits cannot cross the line. Lasts until dawn.",
+    "page": "p. 223"
+  },
+  {
+    "id": "5f9351b15042d9bbac90715c",
+    "name": "Eagle’s Eye",
+    "range": "Fellowship yards",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Myrmidia. Creates a spectral Eagle. You can control it and see through its eyes.",
+    "page": "p. 223"
+  },
+  {
+    "id": "5f9418015b4b5f9347adcdaa",
+    "name": "Hoarfrost's Chill",
+    "range": "You",
+    "target": "Area of Effect",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Ulric. You case Fear 1 and all enemies within Fel yards lose -1 Advantage at the start of each round.",
+    "page": "p. 227"
+  },
+  {
+    "id": "5f941dbd5b4b5f9347adcdab",
+    "name": "As Verena Is My Witness",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Verena. While the Miracle lasts, your listeners will believe you are speaking the truth. To work, you cannot be lying.",
+    "page": "p. 228"
+  },
+  {
+    "id": "5f90ac5c3d895d8423328d28",
+    "name": "Blessing of Conscience",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "Target takes an Average (+20) Willpower Test. If failed, they are overcome with Shame and do not take the action.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f90acd635c2e89b5b1b129b",
+    "name": "Blessing of Fortune",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "Target can reroll their next failed test.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f93524963b8813ad5b4d092",
+    "name": "Fury's Call",
+    "range": "Fellowship yards",
+    "target": "Intelligence Bonus allies",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Myrmidia. All affected targets get Hatred Psychology towards anyone they are fighting.",
+    "page": "p. 224"
+  },
+  {
+    "id": "5f935319921c53cf2df4f960",
+    "name": "Spear of Myrmidia",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Myrmidia. Your spear gains Impact Quality and counts as Magical.",
+    "page": "p. 224"
+  },
+  {
+    "id": "5f936295921c53cf2df4f966",
+    "name": "Balm to a Wounded Mind",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Fellowship Bonus Minutes",
+    "description": "Miracle of Shallya. Removes all Psychology Traits and puts the target into sleep until the next sunrise.",
+    "page": "p. 225"
+  },
+  {
+    "id": "5f9363cd921c53cf2df4f968",
+    "name": "Martyr",
+    "range": "Fellowship yards",
+    "target": "1",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Shallya. Damage done to the target is transferred to you. Your Toughness Bonus is doubled when calculating Wounds suffered from this Damage.",
+    "page": "p. 226"
+  },
+  {
+    "id": "5f93643a5042d9bbac907163",
+    "name": "Shallya's Tears",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Special",
+    "description": "Miracle of Shallya. After praying for 10 - Fel Bonus rounds, remove 1 Critical Wound from the target. Remove extra Critical Wound for every +2 SL.",
+    "page": "p. 226"
+  },
+  {
+    "id": "5f9366b363b8813ad5b4d098",
+    "name": "Sigmar's Fiery Hammer",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Sigmar. Your warhammer counts as Magical and deals + Fel Bonus Damage. Anyone struck with it receives  the Ablaze and Prone Conditions.",
+    "page": "p. 226"
+  },
+  {
+    "id": "5f941bafcfc445903fad399a",
+    "name": "The Snow King's Judgement",
+    "range": "Fellowship yards",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Miracle of Ulric. If the target is weak, cowardly, or deceitful they suffer 1d10 Wounds that ignore Toughness Bonus and Armor Points, otherwise you suffer those effects.",
+    "page": "p. 227"
+  },
+  {
+    "id": "5f941e5d88af9b12a1ea0a56",
+    "name": "Blind Justice",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Verena and Ringil. You can take a Challenging (+0) Perception Test to see through illusion or misdirection spells. You can take an Average (+20) Intuition Test to tell if someone is lying.",
+    "page": "p. 228"
+  },
+  {
+    "id": "5f90af2863028a6f2a6f7d27",
+    "name": "Blessing of Wit",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "Target gets +10 I.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f93570f63b8813ad5b4d094",
+    "name": "Rhya's Harvest",
+    "range": "Touch",
+    "target": "You",
+    "duration": "1 Round",
+    "description": "Miracle of Rhya. Grow enough food to feed 1 person for each round Miracle is in effect.",
+    "page": "p. 225"
+  },
+  {
+    "id": "5f9357a15042d9bbac907161",
+    "name": "Rhya's Shelter",
+    "range": "You",
+    "target": "You",
+    "duration": "Special",
+    "description": "Miracle of Rhya and Evawn. Discover a naturally occurring shelter near by. The shelter is big enough for 1 person plus 1 extra person for every +2 SL.",
+    "page": "p. 225"
+  },
+  {
+    "id": "5f94142688af9b12a1ea0a51",
+    "name": "Animal Instincts",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Fellowship Bonus Hours",
+    "description": "Miracle of Taal. Target gains +1 Acute Sense (you get to chose which one). If the targets rests, they will automatically wake up if there is a threat within Initiative yards.",
+    "page": "p. 227"
+  },
+  {
+    "id": "5f90ac7135c2e89b5b1b129a",
+    "name": "Blessing of Courage",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "Target gets +10 WP.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f90ada135c2e89b5b1b129c",
+    "name": "Blessing of The Hunt",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "Target gets +10 BS.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f90adbc63028a6f2a6f7d25",
+    "name": "Blessing of Might",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "Target gets +10 S.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f90ae243d895d8423328d2b",
+    "name": "Blessing of Protection",
+    "range": "6 yards",
+    "target": "1",
+    "duration": "6 rounds",
+    "description": "Enemies attacking target of this blessing, have to take an Average (+20) WP Test. If they fail they have to chose a different target or different Action.",
+    "page": "p. 221"
+  },
+  {
+    "id": "5f9350615042d9bbac90715b",
+    "name": "Blazing Sun",
+    "range": "You",
+    "target": "Area of Effect",
+    "duration": "Instant",
+    "description": "Miracle of Myrmidia. All non-Myrmidians looking at you  receive 1 Blinded Condition. They receive extra +1 Blinded Condition for every +2 SL.",
+    "page": "p. 223"
+  },
+  {
+    "id": "5f93527b5042d9bbac90715d",
+    "name": "Inspiring",
+    "range": "Fellowship yards",
+    "target": "Intelligence Bonus allies",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Myrmidia. All affected targets get +1 Drilled Talent.",
+    "page": "p. 224"
+  },
+  {
+    "id": "5f93588363b8813ad5b4d096",
+    "name": "Rhya’s Touch",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Special",
+    "description": "Miracle of Rhya. Heal Fellowship Bonus wounds or cure 1 natural disease. You can chose another effect (including the same effect) for every +2 SL.",
+    "page": "p. 225"
+  },
+  {
+    "id": "5f93689a63b8813ad5b4d09a",
+    "name": "Vanquish the Unrighteous",
+    "range": "Fellowship yards",
+    "target": "Fellowship Bonus allies",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Sigmar. All targets gain Hatred Psychology towards Greenskins, Undead, and any associated with Chaos.",
+    "page": "p. 227"
+  },
+  {
+    "id": "5f9355115042d9bbac907160",
+    "name": "Rich Man, Poor Man, Beggar Man, Thief",
+    "range": "1 yard",
+    "target": "1",
+    "duration": "Fellowship Bonus Minutes",
+    "description": "Miracle of Ranald and Evawn. Change the appearance of targets purse or attire.",
+    "page": "p. 224"
+  },
+  {
+    "id": "5f9365c95042d9bbac907164",
+    "name": "Beacon of Righteous Virtue",
+    "range": "You",
+    "target": "Area of Effect",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Sigmar. All allies with Line of Sight to you remove all Broken Conditions and gain Fearless Talent while they remain in sight. All Greenskins with Line of Sight receive Fear 1.",
+    "page": "p. 226"
+  },
+  {
+    "id": "5f9416215b4b5f9347adcda8",
+    "name": "Lord of the Hunt",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Hours",
+    "description": "Miracle of Taal. While active, you cannot lose the track of target you are pursuing. Works outside of settlements and only on known animals/individuals. You also gain +10 to all Tests regarding your prey.",
+    "page": "p. 227"
+  },
+  {
+    "id": "5f9419a2cfc445903fad3999",
+    "name": "Howl of the Wolf",
+    "range": "Fellowship yards",
+    "target": "Special",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Ulric. Summons a Divine Servant in the form of a White Wolf that fight your enemies. It has stats of a Wolf and Frenzy, Magical, and Size - Large Creature Traits.",
+    "page": "p. 227"
+  },
+  {
+    "id": "5f90b12535c2e89b5b1b12a1",
+    "name": "Manann's Bounty",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Miracle of Manann. After touching a body of water, it provide enough fish to feed 1 person. If the body of water is a sea, provides enough for 2 people.",
+    "page": "p. 222"
+  },
+  {
+    "id": "5f9207898d7a4ff53f5ff3a4",
+    "name": "Destroy Undead",
+    "range": "You",
+    "target": "Area of Effect",
+    "duration": "Instant",
+    "description": "Miracle of Morr. Deal damage to all targets with Undead Trait around you.",
+    "page": "p. 223"
+  },
+  {
+    "id": "5f9364f563b8813ad5b4d097",
+    "name": "Unblemished Innocence",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Miracle of Shallya. Removes 1 Corruption point and 1 extra Corruption  point for every +2 SL. If the Miracle Fumble, both you and the target gain 1d10 Corruption points. Must be case within 1 hour of gaining Corruption.",
+    "page": "p. 225"
+  },
+  {
+    "id": "5f941b1888af9b12a1ea0a54",
+    "name": "Pelt of the Winter Wolf",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Fellowship Bonus Hours",
+    "description": "Miracle of Ulric. Target suffers no penalties due to cold weather.",
+    "page": "p. 227"
+  },
+  {
+    "id": "5f941cd388af9b12a1ea0a55",
+    "name": "Winter's Bite",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Ulric. Your axe becomes Magical and causes +SL Damage. Any living target that gets struck, must make a Challenging (+0) Endurance Test or gain a Stunned Condition. Your axe cannot cause Bleeding Condition, and removes any existing Bleeding Condition from struck targets.",
+    "page": "p. 228"
+  },
+  {
+    "id": "63bae0964a012bd3a878aa52",
+    "name": "Command the Legion",
+    "range": "Line of sight",
+    "target": "Allies within AoE",
+    "duration": "1 Round",
+    "description": "Miracle of Myrmidia. You can issue a command to any ally within line of sight. If the command results in a Leadership Test, gain +10 bonus to that Test.",
+    "page": "p. 79"
+  },
+  {
+    "id": "63bae0fcc656841ea3364bad",
+    "name": "Dismay Foe",
+    "range": "You",
+    "target": "You",
+    "duration": "1 Round",
+    "description": "Miracle of Myrmidia. Gain Terror 1 Creature Trait.",
+    "page": "p. 79"
+  },
+  {
+    "id": "63bae199c656841ea3364bae",
+    "name": "In Good Order",
+    "range": "Willpower yards",
+    "target": "Allies within AoE",
+    "duration": "Willpower Bonus Rounds",
+    "description": "Miracle of Myrmidia. Affected allies can disengage from the fight without enemies gaining advantage or making free attacks.",
+    "page": "p. 79"
+  },
+  {
+    "id": "63bae219c656841ea3364baf",
+    "name": "Know Your Enemy",
+    "range": "Willpower Yards",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Miracle of Myrmidia. You can see enemy's profile, traits, skills, and talents.",
+    "page": "p. 79"
+  },
+  {
+    "id": "63bae2d3c656841ea3364bb0",
+    "name": "On Deadly Ground",
+    "range": "Willpower yards",
+    "target": "Allies within AoE",
+    "duration": "Willpower Bonus Rounds",
+    "description": "Miracle of Myrmidia. Affected allies cannot receive Broken Condition.",
+    "page": "p. 79"
+  },
+  {
+    "id": "63bae3994a012bd3a878aa53",
+    "name": "Quick Strike",
+    "range": "You",
+    "target": "You",
+    "duration": "3 Rounds",
+    "description": "Miracle of Myrmidia. At the start of every round you may take a Challenging (+0) Initiative Test. If successful you gain an immediate free attack outside the normal turn sequence.",
+    "page": "p. 79"
+  },
+  {
+    "id": "63bae5384a012bd3a878aa54",
+    "name": "Shieldmaiden's Devotion",
+    "range": "36 yds",
+    "target": "Allies within AoE",
+    "duration": "4 Rounds",
+    "description": "Miracle of Myrmidia. All Myrmidians within range gain the Fearless (Enemy) Talent. This enemy may either be a particular individual,\nor a particular species.",
+    "page": "p. 79"
+  },
+  {
+    "id": "63bae7edc656841ea3364bb1",
+    "name": "Skill of Combat",
+    "range": "24 yds",
+    "target": "Allies within AoE",
+    "duration": "4 Rounds",
+    "description": "Miracle of Myrmidia. All allies in range get + 10 WS and +10 BS.",
+    "page": "p. 79"
+  },
+  {
+    "id": "63bae8774a012bd3a878aa55",
+    "name": "Vengeful Wrath",
+    "range": "You",
+    "target": "You",
+    "duration": "6 Rounds",
+    "description": "Miracle of Myrmidia. You must charge and attack nearest enemy. You can re-roll and Melee Test you make under while under effect of this Prayer.",
+    "page": "p. 79"
+  },
+  {
+    "id": "63f9355cd7c1277feb202d93",
+    "name": "A Deal's a Deal",
+    "range": "You",
+    "target": "You",
+    "duration": "Instant",
+    "description": "Miracle of Handrich. You may add +2 SL to a successful Haggle Test. This raises by 1 for each +2 SL on the Pray Test.",
+    "page": "p. 47"
+  },
+  {
+    "id": "63f935f4d7c1277feb202d94",
+    "name": "Carry My Burdens",
+    "range": "1 yard",
+    "target": "1 non-monstrous creature",
+    "duration": "Until the journey's completion",
+    "description": "Miracle of Handrich. After a successful Animal Training Test, the createure will carry anything you wish. It will not attack or follow your others oder than to carry your goods.",
+    "page": "p. 47"
+  },
+  {
+    "id": "63f93b2ed7c1277feb202d95",
+    "name": "Shake On It",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Fellowship Bonus rounds",
+    "description": "Miracle of Handrich. The target cannot break the deal for at least Fel Bonus rounds. If they want act against the deal, they must pass  Average (+20) Cool Test contesting your SL. For each additional 2 SL they achive, the may take 1 additional action in opposition to the deal. If you break the deal, you suffer +1 Sin point.",
+    "page": "p. 47"
+  },
+  {
+    "id": "63f93c65d7c1277feb202d96",
+    "name": "Supply and Demand",
+    "range": "Fellowship yards",
+    "target": "One batch of trade goods in line of sight",
+    "duration": "1 hour",
+    "description": "Miracle of Handrich. After identyfying a trader of some goods through a Difficult (-10) Gossip Test, you may increase or decrease available stock of that goods. You can change item's Availability by 1 to affect its bartering Ratio.",
+    "page": "p. 47"
+  },
+  {
+    "id": "63f93d9cd7c1277feb202d97",
+    "name": "Trickle Down",
+    "range": "Fellowship yards",
+    "target": "Fellowship Bonus people",
+    "duration": "Fellowship Bonus rounds",
+    "description": "Miracle of Handrich. You introduce people to the generosity of Handrich by offering them a gold coin and the assurance of future prosperity, thereby establishing friendly relations with them. A successful Charm Test while speaking to people of lower Status gains +1 SL for every SL of the Pray Test.",
+    "page": "p. 47"
+  },
+  {
+    "id": "63f93e2bd7c1277feb202d98",
+    "name": "Twist of Fortune",
+    "range": "Fellowship yards",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Miracle of Handrich. You may spend target's 1 Fortune point as if it was yours. They may contest it by making  a Challenging (+0) Fellowship Test against your SL. If they achieve +4 SL or more, they can spend your 1 point instead.",
+    "page": "p. 47"
+  },
+  {
+    "id": "63f9d60dcebb017ae9e75a08",
+    "name": "Absolute Purity",
+    "range": "You",
+    "target": "Area of Effect (Fellowship Bonus yards)",
+    "duration": "Instant",
+    "description": "Miracle of Solkan. A wave of cleansing fire deals 1d0 Wounds (ignores TB and AP) to anyone with: Undead, Daemon, or Spellcaster Traits, any Sin or Corruption Points, Arcane Magic, Chaos Magic, or Petty Magic Talent.",
+    "page": "p. 55"
+  },
+  {
+    "id": "63f9d6a4cebb017ae9e75a09",
+    "name": "Fist of Vengeance",
+    "range": "Fellowship Bonus yards",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Miracle of Solkan. The target is hit with a concussive blast that deals 1d10 + WP Bonus Damage, ignoring AP.",
+    "page": "p. 55"
+  },
+  {
+    "id": "63f9d73bcebb017ae9e75a0a",
+    "name": "Flaming Blade",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Solkan. Solkan covers your sword with white flames. It becomes a Magic weapon with +6 Damage. Anyone successfuly struck with it gains +1 Ablaze Condition.",
+    "page": "p. 55"
+  },
+  {
+    "id": "63f9d8abcebb017ae9e75a0b",
+    "name": "Fury of the Righteous Sun",
+    "range": "Fellowship Bonus yards",
+    "target": "Area of Effect (Fellowship Bonus yards)",
+    "duration": "Instant",
+    "description": "Miracle of Solkan. Blinding light pours from the sun. All targets in the AoE receive Fel Bonus number of Blinded Conditions. In addition, the light causes magic missile hit with Damage +2 to all affected targets.",
+    "page": "p. 55"
+  },
+  {
+    "id": "63f9d9df28507423fc6289de",
+    "name": "Light of Stasis",
+    "range": "4 yards",
+    "target": "3",
+    "duration": "Fellowship Bonus rounds",
+    "description": "Miracle of Solkan. The area around you is lighten up with pale light. Tee affected targets cannot move or act in any way.",
+    "page": "p. 55"
+  },
+  {
+    "id": "63f9dab3cebb017ae9e75a0c",
+    "name": "Still the Winds",
+    "range": "Fellowship Bonus yards",
+    "target": "Area of Effect (Fellowship Bonus yards)",
+    "duration": "Fellowship Bonus rounds",
+    "description": "Miracle of Solkan. Suppress Winds of Magic in AoE. All spells are dispelled, magic items lose their qualities and Channeling and Casting Tests automatically fail.",
+    "page": "p. 55"
+  },
+  {
+    "id": "640126b67a679bfba931db85",
+    "name": "Rhya's Abundance",
+    "range": "Touch",
+    "target": "You",
+    "duration": "Permanent",
+    "description": "Miracle of Rhya. You touch a container with food (for example a barrel or crate). All food and ingredients double. Spoiled food becomes fresh again.",
+    "page": "p. 74"
+  },
+  {
+    "id": "640127bb7a679bfba931db86",
+    "name": "Rhya's Demand",
+    "range": "You",
+    "target": "Area of Effect (Fellowship Bonus Yards)",
+    "duration": "Instant",
+    "description": "Miracle of Rhya. Anyone (humanoid) who did not make a sacrifice to Rhya since the last equinox loses 1 Wound (+1 for every SL) and gains a Fatigued Condition. If 5 of more persons are affected, the ground in the AoE becomes infertile for 1d10 years.",
+    "page": "p. 74"
+  },
+  {
+    "id": "640128397a679bfba931db87",
+    "name": "Rhya's Dominion",
+    "range": "4 yards",
+    "target": "1",
+    "duration": "Until sunrise or sunset, whichever comes sooner",
+    "description": "Miracle of Rhya. You summon a nature spirit that will complete 1 task in the name of Rhya.",
+    "page": "p. 74"
+  },
+  {
+    "id": "640128ca7a679bfba931db88",
+    "name": "Rhya's Flock",
+    "range": "Fellowship yards",
+    "target": "Special",
+    "duration": "Fellowship Bonus rounds",
+    "description": "Miracle of Rhya. You command a flock, herd, or a pack of domesticated animals. You can make them do anything within creatures' natural behavioural range.",
+    "page": "p. 74"
+  },
+  {
+    "id": "640129727a679bfba931db89",
+    "name": "Rhya's Taming",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Until the next sunset",
+    "description": "Miracle of Rhya. After you pass an Average (+20) Charm Animal Test, you domesticate any uncorrupted, animal of Size Large or smaller.",
+    "page": "p. 74"
+  },
+  {
+    "id": "64012a5e7a679bfba931db8a",
+    "name": "Rhya's Rage",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus rounds",
+    "description": "Miracle of Rhya. You can only cast it to defend children, home or similar. You gain +2 SL to all Melee, Strength, and Toughness Tests. You also gain Immune to Psychology and Painless Traits.",
+    "page": "p. 74"
+  },
+  {
+    "id": "64450889299189654234bd67",
+    "name": "Blessed Voyage",
+    "range": "Touch",
+    "target": "1 ship",
+    "duration": "Instant",
+    "description": "Miracle of Manann. Improve Manann mood by 2d10 - 1 for each Sinn point you have.",
+    "page": "p. 87"
+  },
+  {
+    "id": "6445097d299189654234bd68",
+    "name": "Blessing of the Albatross",
+    "range": "Touch",
+    "target": "1 ship",
+    "duration": "Willpower Bonus days",
+    "description": "Miracle of Manann. Summon an albatross that follows the ship. As long as it is alive, the ship cannot sink. If the albatross is killed, the\nship suffers from -d10 Morale and -2d10 for Manann's Mood.",
+    "page": "p. 87"
+  },
+  {
+    "id": "644509f6299189654234bd69",
+    "name": "Blessing of the Mariner",
+    "range": "Touch",
+    "target": "1",
+    "duration": "1 day",
+    "description": "Miracle of Manann. Character receiving this bonus gains +1 SL to any Row, Sail, or Swim Tests.",
+    "page": "p. 87"
+  },
+  {
+    "id": "64450a39299189654234bd6a",
+    "name": "Breathe Water",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Fellowship Bonus minutes",
+    "description": "Miracle of Manann. Character receiving this blessing can breath under water.",
+    "page": "p. 87"
+  },
+  {
+    "id": "64450a86299189654234bd6b",
+    "name": "Quell Waters",
+    "range": "Fellowship yards x 10",
+    "target": "1 strait or whirlpool",
+    "duration": "Fellowship Bonus rounds",
+    "description": "Miracle of Manann. Reduce the M rating of a strait or whirlpool to 0.",
+    "page": "p. 87"
+  },
+  {
+    "id": "64450ae5299189654234bd6c",
+    "name": "Sea Curse",
+    "range": "Fellowship yards x 10",
+    "target": "1 ship",
+    "duration": "Fellowship Bonus rounds",
+    "description": "Miracle of Manann. Call a cure upon a crew that does not warrant\nthe respect of Manann (Chaos, followers of Stromfels, Orcs and Goblins, Skaven, crews who have a negative Manann’s Mood score). All Damage to them is increased by 2.",
+    "page": "p. 87"
+  },
+  {
+    "id": "64450bab299189654234bd6d",
+    "name": "Repel Sea Beast",
+    "range": "Fellowship yards x 10",
+    "target": "1 creature with the Aquatic or Marine Creature Trait",
+    "duration": "Fellowship Bonus rounds",
+    "description": "Miracle of Manann. You calm down a water creature. It will not be hostile unless it suffers damage or adverse Conditions.",
+    "page": "p. 87"
+  },
+  {
+    "id": "64450c22299189654234bd6e",
+    "name": "Rip Tides",
+    "range": "Fellowship yards x 10",
+    "target": "1 ship",
+    "duration": "Fellowship Bonus rounds",
+    "description": "Miracle of Manann. Target ship suffers -1 M and -1 SL to Man.",
+    "page": "p. 87"
+  },
+  {
+    "id": "64450cc4299189654234bd6f",
+    "name": "Blood Trail",
+    "range": "You",
+    "target": "You",
+    "duration": "1 hour",
+    "description": "Miracle of Stromfels. You can more easily follow some who is bleeding. To successfully follow them you must pass an Easy (+40) Track Test.",
+    "page": "p. 91"
+  },
+  {
+    "id": "64450d64299189654234bd70",
+    "name": "Curse of the Harsh Mistress",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Strength Bonus days",
+    "description": "Miracle of Stromfels. Inflict nightmares upon the target. Whenever they take a rest test to recover from Fatigued Condition, they must pass a Difficult (-10) Cool Test. If they fail, the Condition remains.",
+    "page": "p. 91"
+  },
+  {
+    "id": "64450dfd299189654234bd71",
+    "name": "Manann's Mood Made Meaningless",
+    "range": "Special",
+    "target": "Special",
+    "duration": "Strength Bonus days",
+    "description": "Miracle of Stromfels. Roll 1d10 to change Manann's Mood, add +1 for each Sin Point. 1-4: Manann's mood is 0; 5-8: roll 5d10 and add it to Mannan's Mood if currently negative or subtract if positive; 9: no effect; 10+: roll 5d10 and subtract it from Mannan's Mood.",
+    "page": "p. 91"
+  },
+  {
+    "id": "64450f2a299189654234bd73",
+    "name": "Raging Seas",
+    "range": "Strength yards x 10",
+    "target": "Special",
+    "duration": "Instant",
+    "description": "Miracle of Stromfels. Create a massive wave that can crash into boat, shore, etc. The wave has CR of 15.",
+    "page": "p. 91"
+  },
+  {
+    "id": "64450f7b299189654234bd74",
+    "name": "Seasickness",
+    "range": "Strength yards x 10",
+    "target": "1",
+    "duration": "Strength Bonus hours",
+    "description": "Miracle of Stromfels. Target suffers from seasickness.",
+    "page": "p. 91"
+  },
+  {
+    "id": "64450fbb299189654234bd75",
+    "name": "Send'em to Stromfels",
+    "range": "Strength yards x 10",
+    "target": "1 ship with a Holed Rating",
+    "duration": "Instant",
+    "description": "Miracle of Stromfels. Double the target ship's Holed Rating.",
+    "page": "p. 91"
+  },
+  {
+    "id": "64451000299189654234bd76",
+    "name": "Storm Winds",
+    "range": "Strength yards x 10",
+    "target": "1 ship",
+    "duration": "Strength minutes",
+    "description": "Miracle of Stromfels. Increase intensity of the wind by 1.",
+    "page": "p. 91"
+  },
+  {
+    "id": "650a0e7649960d0001a8c5fe",
+    "name": "Wolf's Bite",
+    "range": "Touch (You)",
+    "target": "1",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Ulric. Add +20 to severity roll for any Critical Wounds you inflict.",
+    "page": "p. 50"
+  },
+  {
+    "id": "650a0f8249960d0001a8c5ff",
+    "name": "Howl of Battle",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Ulric. Gain Berserk Charge Talent. If you already have it, gain an extra rank ignoring the usual max rank rules.",
+    "page": "p. 50"
+  },
+  {
+    "id": "650a0ff249960d0001a8c600",
+    "name": "Crush the Weak",
+    "range": "Touch (You)",
+    "target": "1",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Ulric. Once per Round, you may re-roll one missed attack.",
+    "page": "p. 50"
+  },
+  {
+    "id": "650a118b49960d0001a8c601",
+    "name": "Frostbite",
+    "range": "Fellowship yards",
+    "target": "1",
+    "duration": "Special",
+    "description": "Miracle of Ulric. The target loses 1d10 Wounds. It also has to pass a Challenging (+0) Endurance Test or become unable to perform any action next turn. The only allowed actions are defensive ones to avoid an attack.",
+    "page": "p. 50"
+  },
+  {
+    "id": "650a128249960d0001a8c602",
+    "name": "Heart of the Wolf",
+    "range": "You",
+    "target": "AoE (Fellowship Bonus yards",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Ulric. Affected allies lose all Broken Conditions. They become immune to Fear, Terror, and effects of Intimidate (Skill), Frightening (Talent) and similar.",
+    "page": "p. 50"
+  },
+  {
+    "id": "650a132749960d0001a8c603",
+    "name": "Hoarfrost Thews",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus hours",
+    "description": "Miracle of Ulric. Gain cold immunity.",
+    "page": "p. 50"
+  },
+  {
+    "id": "650a135349960d0001a8c604",
+    "name": "Ice Storm",
+    "range": "Fellowship yards",
+    "target": "AoE (Fellowship Bonus yards)",
+    "duration": "Instant",
+    "description": "Miracle of Ulric. Affected targets take Damage +5 hit and must pass  a Challenging (+0) Willpower Test or gain 1 Stunned Condition.",
+    "page": "p. 50"
+  },
+  {
+    "id": "650b5a4849960d0001c52285",
+    "name": "Zone of Sanctuary",
+    "range": "Fellowship yards",
+    "target": "Area of Effect",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Sigmar. Affected allies get +20 to Fear and Terror. Undead and Daemonic creatures cannot get inside the AoE or attack anyone in there.",
+    "page": "p. 78"
+  },
+  {
+    "id": "6525b44349960d00019a7fc8",
+    "name": "Waterlungs",
+    "range": "Fellowship yards",
+    "target": "1",
+    "duration": "Fellowship Bonus Hours",
+    "description": "Miracle of Mathlann. Targets can breathe under water. Without water they are subject to Suffocation and Drowning. You may add 1 extra target per +2 SL.",
+    "page": "p. 81"
+  },
+  {
+    "id": "6525b4d949960d00019a7fc9",
+    "name": "Cloak of Mathlann",
+    "range": "Fellowship yards",
+    "target": "1 boat or ship",
+    "duration": "Fellowship minutes",
+    "description": "Miracle of Mathlann. Turn the whole ship invisible. Ships with more than 1 mast, require +2 SL  per extra mast. The ship leaves a trace on the water that can be noticed with a Challenging (+0) Perception Test.",
+    "page": "p. 81"
+  },
+  {
+    "id": "6559dd5349960d0001acc29b",
+    "name": "Kiss of da Black Pit",
+    "range": "Fellowship yards",
+    "target": "Area of Effect",
+    "duration": "Instant",
+    "description": "Miracle of the Spider-God. Covers everything with a mystic poison causing Poisoned Condition and 1d10+SL damage which ignores Armour Points.",
+    "page": "p. 15"
+  },
+  {
+    "id": "6559dd5649960d0001acc29c",
+    "name": "Plague of Scuttlin'",
+    "range": "Fellowship Bonus yards",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of the Spider-God. All targets in range suffer 1 Wound which ignores Toughness Bonus and AP. Causes 1 additional Wound for each +2 SL. In addition, affected targets suffer -10 penalty to all Tests.",
+    "page": "p. 15"
+  },
+  {
+    "id": "6559de6049960d0001acc29d",
+    "name": "Snare 'Em Good",
+    "range": "Fellowship yards",
+    "target": "Area of Effect",
+    "duration": "Instant",
+    "description": "Miracle of the Spider-God. All targets within Fel Bonus of the target point gain Entangled Condition. For every +2 SL you can either increase radius by another Fel Bonus yards or add 1 extra Entangled Condition. For the purposes of breaking free, it has a Strength equal to your Willpower.",
+    "page": "p. 15"
+  },
+  {
+    "id": "676d36c049960d000170fafd",
+    "name": "Distant Sounds",
+    "range": "Fellowship Yards",
+    "target": "1",
+    "duration": "Fellowship Bonus Minutes",
+    "description": "Miracle of the Night Prowler (Ranald aspect). You must have a specific target in mind and it has to be within spell's range. You hear target's conversation and you you can whisper words to them.",
+    "page": "p. 18"
+  },
+  {
+    "id": "676d8eba49960d0001971bba",
+    "name": "Long Reach",
+    "range": "Fellowship Bonus Yards",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of the Night Prowler (Ranald aspect). You can reach everything within Fellowship Bonus Yards with your hands, including items with Enc 2 or less.",
+    "page": "p. 18"
+  },
+  {
+    "id": "676d8f3849960d0001971bbb",
+    "name": "Lose the Loot",
+    "range": "Fellowship Bonus Miles",
+    "target": "Area of Effect",
+    "duration": "Fellowship Bonus Hours",
+    "description": "Miracle of the Night Prowler (Ranald aspect). Touch and illegally obtained item. Receive location of nearest Fence in settlements. Fence's disposition depends on GM, but will trade if you have 0 Sin Points.",
+    "page": "p. 18"
+  },
+  {
+    "id": "676d904c49960d0001971bbd",
+    "name": "Silence Reigns",
+    "range": "Agility Bonus yards",
+    "target": "Area of Effect",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of the Night Prowler (Ranald aspect). Creates zone of silence where only ambient noise is heard, masking sudden sounds like footsteps or barking.",
+    "page": "p. 18"
+  },
+  {
+    "id": "676d90b449960d0001971bbe",
+    "name": "Poor Man's Face",
+    "range": "Touch",
+    "target": "You",
+    "duration": "SL Hours (minimum 1)",
+    "description": "Miracle of the Night Prowler (Ranald aspect). Hides valuables as worthless items during searches. There is 1% chance per hour that Ranald permanently keeps each hidden valuable.",
+    "page": "p. 18"
+  },
+  {
+    "id": "676d913149960d0001971bbf",
+    "name": "Talk Your Way Out",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Minutes",
+    "description": "Miracle of the Night Prowler (Ranald aspect). Gain +8 SL to one Charm Test when caught red-handed.",
+    "page": "p. 18"
+  },
+  {
+    "id": "676d91c449960d0001971bc0",
+    "name": "The Heat Is Of",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Hours",
+    "description": "Miracle of the Night Prowler (Ranald aspect). For next few hours after committing crime: People ignore you.  All Fellowship Tests -3 SL. Effect ends if you commit another crime.",
+    "page": "p. 18"
+  },
+  {
+    "id": "676d975349960d0001971bc2",
+    "name": "Bountiful Fortune",
+    "range": "Fellowship Bonus Yards",
+    "target": "Fellowship Bonus Allies",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of the Gamester (Ranald aspect). Affected targets can reverse percentile dice roll on next Test. Has to be used within Fellowship Bonus Rounds.",
+    "page": "p. 19"
+  },
+  {
+    "id": "676d982249960d0001971bc3",
+    "name": "Crisis of Confidence",
+    "range": "Fellowship Bonus Yards",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Miracle of the Gamester (Ranald aspect). The target in range must abandon planned Fellowship Test. If forced to take test anyway, they suffer -20 penalty.",
+    "page": "p. 19"
+  },
+  {
+    "id": "676d993b49960d0001971bc4",
+    "name": "Force the Hand of Chance",
+    "range": "You",
+    "target": "You",
+    "duration": "Instant",
+    "description": "Miracle of the Gamester (Ranald aspect). Gain bonus SL to your next Test:\nStart with +1 SL. Roll d10. For 6 and less gain extra +1SL and ability to roll again. If you roll 7 or more lose all accrued bonus SL, and suffer -1SL to the Test instead.",
+    "page": "p. 19"
+  },
+  {
+    "id": "676d9a6049960d0001971bc5",
+    "name": "Perfect Empathy",
+    "range": "Fellowship Bonus Yards",
+    "target": "1",
+    "duration": "Fellowship Bonus Minutes",
+    "description": "Miracle of the Gamester (Ranald aspect). Fully understand target's meaning, intentions and thoughts during conversation, regardless of language.",
+    "page": "p. 19"
+  },
+  {
+    "id": "676d9a9949960d0001971bc6",
+    "name": "The Gamemaster",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Hours",
+    "description": "Miracle of the Gamester (Ranald aspect). When observing games you learn all rules and optimal strategies instantly and gain +4 SL on Tests for mental skill-based games. Only rules knowledge remains after effect ends.",
+    "page": "p. 19"
+  },
+  {
+    "id": "676d9b5c49960d0001971bc7",
+    "name": "Up the Stakes",
+    "range": "Fellowship Bonus Yards",
+    "target": "1",
+    "duration": "Instant",
+    "description": "Miracle of the Gamester (Ranald aspect). All Test results become either Astounding Success or Impressive Failure.",
+    "page": "p. 19"
+  },
+  {
+    "id": "676da61849960d0001cf1caa",
+    "name": "A Suitable Sucker",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of the Deceiver (Ranald aspect). May reroll results on Purse Contents and Victim Quirk tables, must keep second roll.",
+    "page": "p. 24"
+  },
+  {
+    "id": "676dacc449960d0001cf1cab",
+    "name": "Bamboozle",
+    "range": "24 yards",
+    "target": "1",
+    "duration": "1 Round",
+    "description": "Miracle of the Deceiver (Ranald aspect). Target must pass Hard (-20) Cool Test or follow your non-self-harming command next round. Doesn't affect Undead/Daemonic.",
+    "page": "p. 24"
+  },
+  {
+    "id": "676dad2b49960d0001cf1cac",
+    "name": "One Almighty Lie",
+    "range": "You",
+    "target": "You",
+    "duration": "Instant",
+    "description": "Miracle of the Deceiver (Ranald aspect). Add bonus SL to Charm Test for telling lie equal to d10 roll + Prayer Test SL. GM may grant extra SL for entertaining (not plausible) lies.",
+    "page": "p. 24"
+  },
+  {
+    "id": "676dadf149960d0001cf1cad",
+    "name": "Ranald's Mischief",
+    "range": "12 yards",
+    "target": "1",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of the Deceiver (Ranald aspect). For one Opposed Test you change two Characteristics to be the same as an opponent. Roll d10 twice (re-roll on duplicate): 1-2: WS, 3-4: Int, 5-6: Fel, 7-8: Initiative, 9-0: Your choice",
+    "page": "p. 24"
+  },
+  {
+    "id": "676daedb49960d0001cf1cae",
+    "name": "Unremembered Face",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Hours",
+    "description": "Miracle of the Deceiver (Ranald aspect). Any creature you pass must pass Hard (-20) Cool Test to remember more than 2 of yours appearance details. You chose what they remember.",
+    "page": "p. 24"
+  },
+  {
+    "id": "676db12149960d0001cf1cb0",
+    "name": "Back At You",
+    "range": "24 Yards",
+    "target": "1",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of the Protector (Ranald aspect). Any Wounds inflicted by the strongest participant during a single attack may be added to the Wounds inflicted the next time the weaker participant causes Damage to the strongest participant. Stronger opponent is determined by having higher values in at least 2 of: S, T, WS. Cannot be used in combat you're engaged in.",
+    "page": "p. 25"
+  },
+  {
+    "id": "676db27f49960d0001cf1cb1",
+    "name": "Class War",
+    "range": "24 Yards",
+    "target": "1",
+    "duration": "Gold Tier Days + SL",
+    "description": "Miracle of the Protector (Ranald aspect). Curse a target with Gold Status with Curse of Ill-Fortune (WFRP p. 255). It lasts number of days equal to target's Gold Standing + Prayer Test SL. No effect on Ranald followers.",
+    "page": "p. 25"
+  },
+  {
+    "id": "676db37849960d0001cf1cb2",
+    "name": "Free Your Mind",
+    "range": "24 Yards",
+    "target": "1",
+    "duration": "Fellowship Bonus Hours",
+    "description": "Miracle of the Protector (Ranald aspect). Target automatically resists Charm and Leadership Tests from higher status characters.",
+    "page": "p. 25"
+  },
+  {
+    "id": "676db3c549960d0001cf1cb3",
+    "name": "Moment of Clarity",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of the Protector (Ranald aspect). Gain Immunity to Psychology Trait for the duration.",
+    "page": "p. 25"
+  },
+  {
+    "id": "676db49849960d0001cf1cb4",
+    "name": "Rally Round",
+    "range": "You",
+    "target": "Area of Effect (Fellowship yards)",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of the Protector (Ranald aspect). Allies gain +2 SL to Endurance and Cool Tests, +1 additional SL per 10 people in crowd. Does not affect Silver/Gold Status characters.",
+    "page": "p. 25"
+  },
+  {
+    "id": "676db4df49960d0001cf1cb5",
+    "name": "Under my Protection",
+    "range": "Sight",
+    "target": "1",
+    "duration": "Fellowship Bonus Months",
+    "description": "Miracle of the Protector (Ranald aspect). Target must pass Challenging (+0) Cool Test each morning after sleep or gain Fatigued Condition. Can only affects those who have persecuted others. Effect ends when target makes amends.",
+    "page": "p. 25"
+  },
+  {
+    "id": "676db71549960d0001cf1cb6",
+    "name": "Auroch’s Heart",
+    "range": "Touch",
+    "target": "1",
+    "duration": "Fellowship Bonus +3 rounds",
+    "description": "Miracle of Taal. Target gains + Fellowship Bonus SL to Toughness Tests for the duration.",
+    "page": "p. 88"
+  },
+  {
+    "id": "676db75549960d0001cf1cb7",
+    "name": "Earthshudder",
+    "range": "Fellowship yards",
+    "target": "Area of Effect",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Taal. All targets within Fellowship yards must pass Difficult (-10) Athletics Test or become Prone. Built structures take d10+SL damage.",
+    "page": "p. 88"
+  },
+  {
+    "id": "676db7c949960d0001cf1cb8",
+    "name": "Nature's Repast",
+    "range": "Touch",
+    "target": "Special",
+    "duration": "Permanent",
+    "description": "Miracle of Taal. Food from wild becomes more nourishing. Can affect up to 6 meals. Each meal sustains one person for 4 days without starvation Endurance Tests.",
+    "page": "p. 88"
+  },
+  {
+    "id": "676db82c49960d0001cf1cb9",
+    "name": "Pax of Taal",
+    "range": "Fellowship yards",
+    "target": "Area of Effect",
+    "duration": "Fellowship Bonus Rounds",
+    "description": "Miracle of Taal. Natural animals (Int ≤ 25) become passive, won't attack. Does not affect bipedal and Chaos creatures. Effect breaks if animal is attacked.",
+    "page": "p. 88"
+  },
+  {
+    "id": "676db8b749960d0001cf1cba",
+    "name": "Rending Paw",
+    "range": "Fellowship Bonus yards",
+    "target": "1",
+    "duration": "Fellowship Bonus rounds",
+    "description": "Miracle of Taal. Target gains +20 Strength until the end of the miracle.",
+    "page": "p. 88"
+  },
+  {
+    "id": "676db90b49960d0001cf1cbb",
+    "name": "River's Blessing",
+    "range": "You",
+    "target": "You",
+    "duration": "Fellowship rounds",
+    "description": "Miracle of Taal. Gain +4 SL to Swim Tests and move at full Movement rate in fresh water.",
+    "page": "p. 88"
+  },
+  {
+    "id": "676db99549960d0001cf1cbc",
+    "name": "Wild Wind",
+    "range": "You",
+    "target": "Area of Effect",
+    "duration": "Fellowship Bonus rounds",
+    "description": "Miracle of Taal. All targets in the AoE suffer -2 SL to WS/Agi Tests. Targets must pass Difficult (-10) Toughness Test each round or become Prone. No ranged attacks can be used except gunpowder/artillery. The caster is unaffected.",
+    "page": "p. 88"
+  },
+  {
+    "id": "676dba3749960d0001cf1cbd",
+    "name": "Wilderness Way",
+    "range": "You",
+    "target": "You",
+    "duration": "See Text",
+    "description": "Miracle of Taal. Perform this miracle before travelling.  The prayer Test SL can be used to reroll for Planning, Travel, or Camp Endeavours during journey. Unused rerolls are lost if journey interrupted by an encounter.",
+    "page": "p. 88"
+  }
+]

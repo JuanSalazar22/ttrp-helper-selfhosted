@@ -1,0 +1,3478 @@
+[
+ {
+  "id": "5f94999d462037beb9a18ace",
+  "name": "Forma bestial",
+  "range": "Tú",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "5f957c80491738fe840af969",
+  "name": "Arco de T'Essla",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f9585e4b43ad7465e4b1a3c",
+  "name": "Oro de mentira",
+  "range": "Toque",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "5f95c445bacf7ab6007ad403",
+  "name": "Destierro",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f95e65ad1e7dea805a6bdaf",
+  "name": "Luz cegadora",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f942c0288af9b12a1ea0a59",
+  "name": "Conservar",
+  "range": "1 metros",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "5f942cd35b4b5f9347adcdb0",
+  "name": "Espiar",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Iniciativa minutos"
+ },
+ {
+  "id": "5f94808a0e130e93b1370645",
+  "name": "Escudo mágico",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f94832d9a20e218439ce27a",
+  "name": "Amparo",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95ad658af534343257ed1f",
+  "name": "Sangre de tierra",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f942c98cfc445903fad399e",
+  "name": "Drenar",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f94352088af9b12a1ea0a65",
+  "name": "Crispación",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f944421cfc445903fad39a3",
+  "name": "Estallido",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f9449105b4b5f9347adcdb5",
+  "name": "Visión nocturna",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f94493b5b4b5f9347adcdb6",
+  "name": "Distracción",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95609cb43ad7465e4b1a35",
+  "name": "Cauterizar",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f9562c96344679256ee7165",
+  "name": "Corona de llamas",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95b48fb88c85718ee2282c",
+  "name": "Conocer la tierra",
+  "range": "Bonificación de Iniciativa millas",
+  "duration": "Especial"
+ },
+ {
+  "id": "5f95f2bfbc37c4be2cf99c68",
+  "name": "Desliz mental",
+  "range": "1 metros",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "5f96bc2e47e5138b3d538de7",
+  "name": "Maldición de dolor lacerante",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f96c13747e5138b3d538de9",
+  "name": "Manifestar demonio menor",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f96c9989ab7ceffe01f6db7",
+  "name": "Reanimar",
+  "range": "Voluntad metros",
+  "duration": "Hasta el amanecer"
+ },
+ {
+  "id": "5f942b4ccfc445903fad399d",
+  "name": "Paso cauteloso",
+  "range": "Tú",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "5f942e7488af9b12a1ea0a5a",
+  "name": "Ráfaga",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f942ef688af9b12a1ea0a5b",
+  "name": "Luz",
+  "range": "Tú",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "5f94309088af9b12a1ea0a5e",
+  "name": "Susurro murmurado",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f94354dcfc445903fad39a2",
+  "name": "Advertencia",
+  "range": "1 metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f94453d88af9b12a1ea0a68",
+  "name": "Aliento",
+  "range": "1 metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f9482fa9a20e218439ce279",
+  "name": "Aterrador",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f949be8b0a15c191b9db38a",
+  "name": "Bandada de la perdición",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95b55db88c85718ee2282d",
+  "name": "Regenerar",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95e718d1e7dea805a6bdb0",
+  "name": "Claridad de pensamiento",
+  "range": "Toque",
+  "duration": "Inteligencia minutos"
+ },
+ {
+  "id": "5f942adacfc445903fad399c",
+  "name": "Deslumbrar",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f942fed88af9b12a1ea0a5d",
+  "name": "Luces del pantano",
+  "range": "Voluntad metros",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "5f9444a25b4b5f9347adcdb3",
+  "name": "Rayo",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f9445dd5b4b5f9347adcdb4",
+  "name": "Ataque encadenado",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f94498ccfc445903fad39a4",
+  "name": "Cúpula",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f94804810b62624d33a819d",
+  "name": "Vuelo",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos+"
+ },
+ {
+  "id": "5f949c53462037beb9a18acf",
+  "name": "Piel de cazador",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95636fb43ad7465e4b1a36",
+  "name": "Corazones llameantes",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f957c036344679256ee7168",
+  "name": "Dedos caprichosos del destino",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95850eb43ad7465e4b1a3b",
+  "name": "Encantar arma",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f9588526344679256ee716b",
+  "name": "Metal mutable",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95ea68bc37c4be2cf99c66",
+  "name": "Protección de Pha",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95ef83bc37c4be2cf99c67",
+  "name": "Sombras asfixiantes",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f96bc945b89efa8e3cd167e",
+  "name": "Maldición de mala fortuna",
+  "range": "Bonificación de Voluntad millas",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "5f96ca8b9ab7ceffe01f6db8",
+  "name": "Calavera chillona",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f942f3d88af9b12a1ea0a5c",
+  "name": "Llama mágica",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f94333c88af9b12a1ea0a62",
+  "name": "Dormir",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f94800b10b62624d33a819c",
+  "name": "Atemorizante",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f957acc491738fe840af968",
+  "name": "Escudo cerúleo",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95b2db8af534343257ed21",
+  "name": "Grasa de la tierra",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "5f95b509bacf7ab6007ad402",
+  "name": "Floración vital",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Especial"
+ },
+ {
+  "id": "5f95e8b4d1e7dea805a6bdb1",
+  "name": "Luz curativa",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f95f393b80f769106b8db1d",
+  "name": "Miasma mistificador",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f96a90e7b99e934779ed2bd",
+  "name": "Amuleto protector",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "5f96cb205b89efa8e3cd1681",
+  "name": "Llamada de Vanhel",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f94340988af9b12a1ea0a63",
+  "name": "Descarga",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f949ad9f8783bb63fafc8f8",
+  "name": "Lengua bestial",
+  "range": "Tú",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "5f9565566344679256ee7166",
+  "name": "Las grandes llamas de U'Zhul",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f9566b8b43ad7465e4b1a37",
+  "name": "Espada llameante de Rhuin",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95b2a08af534343257ed20",
+  "name": "Charco de tierra",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f96bace47e5138b3d538de6",
+  "name": "Plaga",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Especial"
+ },
+ {
+  "id": "5f96bf3d5b89efa8e3cd167f",
+  "name": "Destruir demonio menor",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f96c8aa5b89efa8e3cd1680",
+  "name": "Levantar muertos",
+  "range": "Voluntad metros",
+  "duration": "Hasta el amanecer"
+ },
+ {
+  "id": "5f9430ab88af9b12a1ea0a5f",
+  "name": "Abrir cerradura",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f943294cfc445903fad399f",
+  "name": "Podredumbre",
+  "range": "1 metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f94339acfc445903fad39a0",
+  "name": "Saltar",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f949d91b0a15c191b9db38b",
+  "name": "Forma salvaje de Wyssan",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f957d586344679256ee716a",
+  "name": "El tercer presagio de Amul",
+  "range": "Tú",
+  "duration": "Bonificación de Iniciativa asaltos"
+ },
+ {
+  "id": "5f95865ab43ad7465e4b1a3d",
+  "name": "Forja de Chamon",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "5f95f1b0b80f769106b8db1c",
+  "name": "Ilusión",
+  "range": "Voluntad metros",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "5f96a6487b99e934779ed2ba",
+  "name": "Buena voluntad",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f94211c88af9b12a1ea0a58",
+  "name": "Orientación",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f94315f5b4b5f9347adcdb1",
+  "name": "Protección contra la lluvia",
+  "range": "0",
+  "duration": "Tú"
+ },
+ {
+  "id": "5f944a16cfc445903fad39a5",
+  "name": "Soltar",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f94824e10b62624d33a819e",
+  "name": "Empujar",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f949cca462037beb9a18ad0",
+  "name": "La lanza de ámbar",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f957cde491738fe840af96a",
+  "name": "El primer presagio de Amul",
+  "range": "Tú",
+  "duration": "Bonificación de Iniciativa asaltos"
+ },
+ {
+  "id": "5f95858a491738fe840af96b",
+  "name": "Pluma de plomo",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95ea8fd1e7dea805a6bdb3",
+  "name": "Velocidad de pensamiento",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95f4e0d1e7dea805a6bdb6",
+  "name": "Manto de invisibilidad",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f96be4b9ab7ceffe01f6db5",
+  "name": "El mal de ojo",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f96cb965b89efa8e3cd1682",
+  "name": "Torrente de corrupción",
+  "range": "Especial",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f96cc2e9ab7ceffe01f6db9",
+  "name": "Aquiescencia",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f9420f65b4b5f9347adcdae",
+  "name": "Amigo de los animales",
+  "range": "1 metros",
+  "duration": "1 hora"
+ },
+ {
+  "id": "5f94321c88af9b12a1ea0a61",
+  "name": "Purificar agua",
+  "range": "1 metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f94345488af9b12a1ea0a64",
+  "name": "Manos hábiles",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f96a72a7b99e934779ed2bb",
+  "name": "Cabalgata oscura",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "5f96bbca9ab7ceffe01f6db3",
+  "name": "Amenaza reptante",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f96cc8847e5138b3d538dea",
+  "name": "Traición de Tzeentch",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f9448e488af9b12a1ea0a69",
+  "name": "Sangre corrosiva",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f957b686344679256ee7167",
+  "name": "Cometa de Casandora",
+  "range": "Iniciativa metros",
+  "duration": "Especial"
+ },
+ {
+  "id": "5f95f460d1e7dea805a6bdb5",
+  "name": "Paso en las sombras",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f96a7a37b99e934779ed2bc",
+  "name": "Nepenthe",
+  "range": "Toque",
+  "duration": "Permanente"
+ },
+ {
+  "id": "5f96a86956b1fee83909f68e",
+  "name": "Nostromo",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f96bf9b47e5138b3d538de8",
+  "name": "Detectar demonio",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f9481120e130e93b1370646",
+  "name": "Mover objeto",
+  "range": "Voluntad metros",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "5f94817a0e130e93b1370647",
+  "name": "Aura mundana",
+  "range": "Tú",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "5f949a45b0a15c191b9db389",
+  "name": "Domador de bestias",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "5f94a28c462037beb9a18ad2",
+  "name": "Santificar",
+  "range": "Toque",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "5f956429491738fe840af967",
+  "name": "Cortafuego",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f957d20b43ad7465e4b1a39",
+  "name": "El segundo presagio de Amul",
+  "range": "Tú",
+  "duration": "Bonificación de Iniciativa asaltos"
+ },
+ {
+  "id": "5f9587bbb43ad7465e4b1a3e",
+  "name": "Túnica centelleante",
+  "range": "Tú",
+  "duration": "Bonificación de Resistencia asaltos"
+ },
+ {
+  "id": "5f96a8a09423af180d038f75",
+  "name": "Abrir paso entre las ramas",
+  "range": "Tú",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "5f94312888af9b12a1ea0a60",
+  "name": "Producir animal pequeño",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f949953462037beb9a18acd",
+  "name": "Garras de ámbar",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f94a1f0b0a15c191b9db38d",
+  "name": "Palio púrpura de Shyish",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f94a304b0a15c191b9db38e",
+  "name": "Guadaña de Shyish",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f957c376344679256ee7169",
+  "name": "De mal agüero",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Iniciativa asaltos"
+ },
+ {
+  "id": "5f957e38b43ad7465e4b1a3a",
+  "name": "Crisol de Chamon",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f958945491738fe840af96c",
+  "name": "Transmutación de Chamon",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f9434becfc445903fad39a1",
+  "name": "Sonidos",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f94435e88af9b12a1ea0a67",
+  "name": "Escudo de flechas",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos+"
+ },
+ {
+  "id": "5f947fd110b62624d33a819b",
+  "name": "Enredar",
+  "range": "Voluntad metros",
+  "duration": "Especial"
+ },
+ {
+  "id": "5f9482af9a20e218439ce278",
+  "name": "Teletransportar",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f94a10cb0a15c191b9db38c",
+  "name": "Caricia de Laniph",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f94a482b0a15c191b9db390",
+  "name": "Paso fugaz",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f95677db43ad7465e4b1a38",
+  "name": "Purgar",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95e971d1e7dea805a6bdb2",
+  "name": "Red de Amyntok",
+  "range": "Bonificación de Inteligencia metros",
+  "duration": "Bonificación de Inteligencia del objetivo en asaltos"
+ },
+ {
+  "id": "5f95f3fdd1e7dea805a6bdb4",
+  "name": "Corcel de sombras",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Hasta el próximo amanecer"
+ },
+ {
+  "id": "5f96bd279ab7ceffe01f6db4",
+  "name": "Horror acechante",
+  "range": "Toque",
+  "duration": "Voluntad días"
+ },
+ {
+  "id": "5f94421f88af9b12a1ea0a66",
+  "name": "Armadura etérea",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos+"
+ },
+ {
+  "id": "5f94a41db0a15c191b9db38f",
+  "name": "Robar vida",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f956038b43ad7465e4b1a34",
+  "name": "Égida de Aqshy",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95b3a8b88c85718ee2282b",
+  "name": "Bosque de espinas",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95e7f2bc37c4be2cf99c65",
+  "name": "Ruina de demonios",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f942c345b4b5f9347adcdaf",
+  "name": "Dardo",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f9442735b4b5f9347adcdb2",
+  "name": "Armas etéreas",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos+"
+ },
+ {
+  "id": "5f94a192462037beb9a18ad1",
+  "name": "Últimas palabras",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f94a390f8783bb63fafc8f9",
+  "name": "Vórtice de almas",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "5f95ac9c8af534343257ed1e",
+  "name": "Corteza de árbol",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "5f95f0ecb80f769106b8db1b",
+  "name": "Doppelgänger",
+  "range": "Tú",
+  "duration": "Bonificación de Inteligencia minutos"
+ },
+ {
+  "id": "5f96c1b39ab7ceffe01f6db6",
+  "name": "Octograma",
+  "range": "Toque",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "63c2998734cf17dabd57881c",
+  "name": "Belicosidad del pantano sangriento",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63c2f9ae34cf17dabd578824",
+  "name": "Colapsar constructo",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63c2fb1f34cf17dabd578825",
+  "name": "Descifrar maldición",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63c30e8a4d790bfc2ac785cd",
+  "name": "Interrumpir magia",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63c30eda34cf17dabd578826",
+  "name": "Mala hierba infestada de moscas",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63c30fb534cf17dabd578827",
+  "name": "Limo floreciente",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63c310cd4d790bfc2ac785ce",
+  "name": "Silencio",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63c313664d790bfc2ac785cf",
+  "name": "Socorrer al servidor mágico",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63c3384234cf17dabd578829",
+  "name": "Atar bestia monstruosa",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "63c3398d34cf17dabd57882a",
+  "name": "Atar espíritu en piedra de poder",
+  "range": "Especial",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63c33b178c454b5651d47425",
+  "name": "Tallar piedra ógham",
+  "range": "Especial",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63c33b838c454b5651d47427",
+  "name": "Crear piedra de poder",
+  "range": "Especial",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63cd4f02bb6e29bbe8b44942",
+  "name": "Conjuración del sangriento desollador",
+  "range": "Especial",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63cd4fd9f8cbe95a65d3b5b8",
+  "name": "Conjuración del elemental encarnado de la muerte",
+  "range": "Especial",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63cd5050bb6e29bbe8b44943",
+  "name": "Conjuración del Jack O' Cinders",
+  "range": "Especial",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63cd50f3bb6e29bbe8b44944",
+  "name": "Corromper piedra etérea",
+  "range": "Especial",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63cd523fbb6e29bbe8b44945",
+  "name": "Crear constructo",
+  "range": "Especial",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63cd558df8cbe95a65d3b5bb",
+  "name": "Crear familiar",
+  "range": "Especial",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63cd5b03bb6e29bbe8b44946",
+  "name": "Crear propiedad de piedra etérea",
+  "range": "Especial",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63cd5bfaf8cbe95a65d3b5bc",
+  "name": "Arte de maldiciones",
+  "range": "Especial",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63cd5f84bb6e29bbe8b44948",
+  "name": "Imbuir báculo",
+  "range": "Especial",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63cd60eebb6e29bbe8b44949",
+  "name": "Invocar demonio",
+  "range": "Especial",
+  "duration": "Bonificación de Inteligencia días"
+ },
+ {
+  "id": "63cd61c4bb6e29bbe8b4494a",
+  "name": "Materializar el pantano viviente",
+  "range": "Especial",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "63cd6243bb6e29bbe8b4494b",
+  "name": "Eliminar maldición",
+  "range": "Especial",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63cd6431bb6e29bbe8b4494d",
+  "name": "Las guadañas cruzadas",
+  "range": "Especial",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63ceda1b2887064006b72f9f",
+  "name": "Trampa de Abulla",
+  "range": "Iniciativa metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63cedc92b4a13dd03d7eba8c",
+  "name": "Asalto de piedra",
+  "range": "Voluntad metros",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63cedf7e2887064006b72fa0",
+  "name": "Sima",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63cfdeeb149a68932e0b10b3",
+  "name": "Brillo deslumbrante",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63cfdf98149a68932e0b10b4",
+  "name": "Intención directriz",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "63cfe177149a68932e0b10b5",
+  "name": "Erigir el edificio",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Especial"
+ },
+ {
+  "id": "63cfe32a149a68932e0b10b7",
+  "name": "Ojos de Volans",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63cfe44c149a68932e0b10b8",
+  "name": "Manos de Karkora",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63cffff8149a68932e0b10bb",
+  "name": "Iluminar el edificio",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "63d000dc149a68932e0b10bc",
+  "name": "Luz de pureza",
+  "range": "Especial",
+  "duration": "Especial"
+ },
+ {
+  "id": "63d00193149a68932e0b10bd",
+  "name": "Bibliotecario instantáneo de Meissner",
+  "range": "Área (Inteligencia metros)",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63d0031c876a1a92f8a0543d",
+  "name": "Orbe de Hysh",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63d00c0d876a1a92f8a0543e",
+  "name": "Comprensión perfecta",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63d00d3f876a1a92f8a0543f",
+  "name": "Traspasar el velo",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63d00deb876a1a92f8a05440",
+  "name": "Tiempo caótico",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63d012ec149a68932e0b10c1",
+  "name": "Puente",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos+"
+ },
+ {
+  "id": "63d06c71851977f2224e804f",
+  "name": "Armadura de hojalata",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63d06d57851977f2224e8050",
+  "name": "Traspasar lo desconocido",
+  "range": "Iniciativa metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63d06f2ca494869f5f040c78",
+  "name": "Maldición de la herrumbre",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63d1b02b2b367523f94372c8",
+  "name": "Defecto de forma",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Iniciativa asaltos"
+ },
+ {
+  "id": "63d1b0d3e805f2cf230bfece",
+  "name": "Globo dorado de Gehenna",
+  "range": "Vórtice aleatorio",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63d1b25c2b367523f94372c9",
+  "name": "Jaula dorada",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "63d1b52c2b367523f94372ca",
+  "name": "Toque de oro",
+  "range": "Toque",
+  "duration": "Voluntad x 1d10 minutos"
+ },
+ {
+  "id": "63d1b6c5e805f2cf230bfed1",
+  "name": "Protección de acero dorado",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "63d1b7abe805f2cf230bfed2",
+  "name": "Inscripción",
+  "range": "1 metros",
+  "duration": "Especial"
+ },
+ {
+  "id": "63d1b822e805f2cf230bfed3",
+  "name": "Nudo desatado",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63d1b8dbe805f2cf230bfed4",
+  "name": "Metal reparado",
+  "range": "Toque",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63d1b9532b367523f94372cb",
+  "name": "Acorazado meteórico",
+  "range": "Voluntad metros",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "63d1bc75e805f2cf230bfed5",
+  "name": "Refracción prismática de Habermas",
+  "range": "Área (Voluntad metros)",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "63d1bcc0e805f2cf230bfed6",
+  "name": "Brújula de plata de Puchta",
+  "range": "Área (Voluntad metros)",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "63d1be042b367523f94372cc",
+  "name": "Replicación de Levorg",
+  "range": "Tú",
+  "duration": "1d10 horas"
+ },
+ {
+  "id": "63d1beb1e805f2cf230bfed7",
+  "name": "Prueba y error",
+  "range": "Inteligencia metros",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63d2c3fc1bb7849aaf29ffa6",
+  "name": "Almanaque",
+  "range": "Tú",
+  "duration": "1 día"
+ },
+ {
+  "id": "63d2c51a1bb7849aaf29ffa7",
+  "name": "Moradores subterráneos",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63d2f77f1bb7849aaf29ffaa",
+  "name": "Carne de piedra",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "63d2f8c21bb7849aaf29ffab",
+  "name": "Grito de guerra del jardinero",
+  "range": "Voluntad metros",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63d2f99f1bb7849aaf29ffac",
+  "name": "Géiser",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63d2fa9c1bb7849aaf29ffad",
+  "name": "Canto vigorizante",
+  "range": "2 x Bonificación de Empatía metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63d2fb731bb7849aaf29ffae",
+  "name": "Féretro de jade",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "63d2fc1b1bb7849aaf29ffaf",
+  "name": "Caída de hojas",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63d2ffd31bb7849aaf29ffb0",
+  "name": "Búsqueda de líneas de ley",
+  "range": "Bonificación de Iniciativa millas",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "63d300f21bb7849aaf29ffb1",
+  "name": "Susurro de la naturaleza",
+  "range": "Tú",
+  "duration": "Bonificación de Empatía minutos"
+ },
+ {
+  "id": "63d3021d1bb7849aaf29ffb2",
+  "name": "Senda de Paranoth",
+  "range": "Área (Bonificación de Voluntad metros)",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "63d302ff1bb7849aaf29ffb3",
+  "name": "Escalera en espiral",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63d303931bb7849aaf29ffb4",
+  "name": "Venerada transmogrifización de Colchis",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63d304911bb7849aaf29ffb5",
+  "name": "Apoteosis verde",
+  "range": "Línea de visión",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63d305951bb7849aaf29ffb6",
+  "name": "Crecimiento vital",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63d30617931660e6a37bfd98",
+  "name": "Moldear madera",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "63d4ffdb24389ab98475032a",
+  "name": "Hojas de acero azul",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63d5022324389ab98475032b",
+  "name": "Maldición del destino",
+  "range": "Mitad de Voluntad metros",
+  "duration": "1 día"
+ },
+ {
+  "id": "63d50299280e64e247b082be",
+  "name": "Adivinación",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63d502d7280e64e247b082bf",
+  "name": "Enemigo previsto",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63d5035b280e64e247b082c1",
+  "name": "Presciencia fantástica",
+  "range": "Área (Voluntad metros)",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "63d503e1280e64e247b082c2",
+  "name": "Confusión de Solmann",
+  "range": "Área (Voluntad metros)",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "63d504c5280e64e247b082c3",
+  "name": "Destino iluminado",
+  "range": "Mitad de Inteligencia metros o Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63d5a2a8a55f258591c4ebc0",
+  "name": "Lente al cielo",
+  "range": "Tú",
+  "duration": "Bonificación de Iniciativa minutos"
+ },
+ {
+  "id": "63d5a467987a3cc222d9c1d4",
+  "name": "¡Que soplen los cuatro vientos!",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63d5a625a55f258591c4ebc1",
+  "name": "Céfiro de la estratosfera",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63d5a73ba55f258591c4ebc2",
+  "name": "Espejo místico",
+  "range": "Voluntad millas",
+  "duration": "Bonificación de Empatía asaltos"
+ },
+ {
+  "id": "63d5a824a55f258591c4ebc3",
+  "name": "Pulir y escudriñar",
+  "range": "Toque",
+  "duration": "Bonificación de Iniciativa minutos"
+ },
+ {
+  "id": "63d5a967a55f258591c4ebc4",
+  "name": "Proyectar espíritu",
+  "range": "Tú",
+  "duration": "Bonificación de Resistencia horas"
+ },
+ {
+  "id": "63d5aa76a55f258591c4ebc5",
+  "name": "Arco de zafiro",
+  "range": "Mitad de Voluntad metros",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "63d5ab68987a3cc222d9c1d5",
+  "name": "Luz de estrellas",
+  "range": "Área (Voluntad metros)",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63d5acf1a55f258591c4ebc6",
+  "name": "Tormenta de Shemtek",
+  "range": "Mitad de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63d5ae32a55f258591c4ebc7",
+  "name": "Tormenta de truenos de Thorsen",
+  "range": "Vórtice aleatorio",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63d67e5b3e2bd272a6d33a87",
+  "name": "Desconcertar",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63d67f3d3e2bd272a6d33a88",
+  "name": "Horrores negros",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "63d681953e2bd272a6d33a8c",
+  "name": "Puente de sombras",
+  "range": "Voluntad metros",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "63d6849d3e2bd272a6d33a8d",
+  "name": "Danza de la desesperación",
+  "range": "Área (Voluntad metros)",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63d6f35a3e2bd272a6d33a98",
+  "name": "Bolsillos profundos",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "63d6f47a3e2bd272a6d33a99",
+  "name": "Gran ilusión",
+  "range": "Voluntad metros",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "63d6f5603e2bd272a6d33a9a",
+  "name": "Alas grises",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63d6f5d23e2bd272a6d33a9c",
+  "name": "Cuerno de Andar",
+  "range": "Área (Empatía metros)",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "63d6f6e83e2bd272a6d33a9d",
+  "name": "Silencio",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63d8400a7fca3f3924c45203",
+  "name": "Semblante mutable",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "63d841ad01381c34e91d8dff",
+  "name": "Foso de Tarnus",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63d8435101381c34e91d8e00",
+  "name": "Ilusión retroactiva de Ribauld",
+  "range": "Voluntad metros",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63d844ec7fca3f3924c45205",
+  "name": "Arboleda de sombras",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "63d846f07fca3f3924c45206",
+  "name": "Sustancia de sombra",
+  "range": "Toque",
+  "duration": "Especial"
+ },
+ {
+  "id": "63d847d17fca3f3924c45207",
+  "name": "Traidor de Tarn",
+  "range": "Voluntad metros",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "63d849397fca3f3924c45208",
+  "name": "Sombra errante",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63d95e997d792689c5c53038",
+  "name": "Aceptación del destino",
+  "range": "Área (2 x Bonificación de Voluntad metros)",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63d991717d792689c5c53039",
+  "name": "Amaranto",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63d9925e9617bef8077de9cb",
+  "name": "Ánima aprisionada",
+  "range": "Toque",
+  "duration": "Especial"
+ },
+ {
+  "id": "63d993607d792689c5c5303a",
+  "name": "Cenizas y polvo",
+  "range": "Vórtice aleatorio",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63d9946b7d792689c5c5303b",
+  "name": "Compeler espíritus",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Hasta el amanecer"
+ },
+ {
+  "id": "63d9958e7d792689c5c5303c",
+  "name": "Laberinto de cristal",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63d996027d792689c5c5303d",
+  "name": "Liberación de la muerte",
+  "range": "Mitad de Iniciativa metros",
+  "duration": "3 asaltos"
+ },
+ {
+  "id": "63d9977f7d792689c5c5303e",
+  "name": "Destino de Bjuna",
+  "range": "Mitad de Voluntad metros",
+  "duration": "Bonificación de Empatía asaltos"
+ },
+ {
+  "id": "63d99e877d792689c5c5303f",
+  "name": "Abrazo de Iyrtu",
+  "range": "Tú",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "63d99fe3ede847775dc262bc",
+  "name": "Marchitar miembros",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad minutos o días"
+ },
+ {
+  "id": "63d9a1557d792689c5c53040",
+  "name": "Shyish al descubierto",
+  "range": "Área (Bonificación de Voluntad metros)",
+  "duration": "Bonificación de Iniciativa minutos"
+ },
+ {
+  "id": "63d9a229ede847775dc262bd",
+  "name": "Velocidad de Lykos",
+  "range": "Mitad de Iniciativa metros",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "63dab4eed5b6218a23d7fee7",
+  "name": "Sabor a muerte",
+  "range": "Mitad de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63dab69bd5b6218a23d7fee8",
+  "name": "Telepatía",
+  "range": "100 metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63dab7f8d5b6218a23d7fee9",
+  "name": "Marea de los años",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63dab8e5d5b6218a23d7feea",
+  "name": "Parientes salvajes de Zandox",
+  "range": "Especial",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63dae7fe16fbf65769a352c1",
+  "name": "Cuerpo de fuego",
+  "range": "Tú",
+  "duration": "Bonificación de Resistencia minutos"
+ },
+ {
+  "id": "63dae907d5b6218a23d7feec",
+  "name": "Sangre hirviente",
+  "range": "Toque",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "63daea1bd5b6218a23d7feed",
+  "name": "Cabeza ardiente",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63daeaf8d5b6218a23d7feee",
+  "name": "Llama cautivadora",
+  "range": "Mitad de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63daecf9d5b6218a23d7feef",
+  "name": "Colérico",
+  "range": "Mitad de Iniciativa metros",
+  "duration": "Bonificación de Voluntad horas, días, o semanas"
+ },
+ {
+  "id": "63daef2116fbf65769a352c3",
+  "name": "Tormenta de llamas",
+  "range": "Voluntad metros",
+  "duration": "Hasta el próximo amanecer"
+ },
+ {
+  "id": "63dc37e715a7731997426b68",
+  "name": "Forja de Tarnus",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "63dc395215a7731997426b69",
+  "name": "Encender",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63dc3a6715a7731997426b6a",
+  "name": "Llama inextinguible",
+  "range": "Mitad de Iniciativa metros",
+  "duration": "Bonificación de Voluntad horas, días, semanas, o meses"
+ },
+ {
+  "id": "63dc3b0a15a7731997426b6b",
+  "name": "Encender fuego",
+  "range": "Voluntad metros",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "63dc3f6615a7731997426b6c",
+  "name": "Parentesco del hogar",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63dc40b015a7731997426b6d",
+  "name": "Tormenta de magma",
+  "range": "Vórtice aleatorio",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63dc42bd15a7731997426b6e",
+  "name": "Espadas sanguinarias",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63dc436b15a7731997426b6f",
+  "name": "Sabor a fuego",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63dc449815a7731997426b70",
+  "name": "Calor marchitante",
+  "range": "Área (Voluntad metros)",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63dc457d15a7731997426b71",
+  "name": "Tormenta de nieve llameante de Ygethmor",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63dd851057a5f0bff8aa1e97",
+  "name": "Trance de ámbar",
+  "range": "Iniciativa metros",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63dd85d357a5f0bff8aa1e98",
+  "name": "Despertar del bosque",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63dd8df057a5f0bff8aa1e99",
+  "name": "Bestia inquebrantable",
+  "range": "Toque",
+  "duration": "Permanente"
+ },
+ {
+  "id": "63dd8f98d80de673a99862ff",
+  "name": "Maldición de Anraheir",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63dd918b57a5f0bff8aa1e9a",
+  "name": "Ojos de la manada",
+  "range": "Toque",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "63dd99f8e1f53bede629c078",
+  "name": "Seguir el rastro",
+  "range": "Tú",
+  "duration": "Iniciativa minutos"
+ },
+ {
+  "id": "63dd9ac257a5f0bff8aa1e9b",
+  "name": "Lunas del cazador",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63dd9b5257a5f0bff8aa1e9c",
+  "name": "Regimiento monstruoso de Merciw",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Fuerza asaltos"
+ },
+ {
+  "id": "63dd9ce357a5f0bff8aa1e9d",
+  "name": "Rociado de almizcle",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "1 día"
+ },
+ {
+  "id": "63dd9daee1f53bede629c079",
+  "name": "Paso rápido",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "63dd9e0b57a5f0bff8aa1e9e",
+  "name": "Invocar montura",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "63de7aaa57a5f0bff8aa1ea7",
+  "name": "El buey se mantiene firme",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63de7b8f6b203d85942d5e2e",
+  "name": "Transformación de Kadon",
+  "range": "Tú o Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63de7cb457a5f0bff8aa1ea8",
+  "name": "Capucha vengativa",
+  "range": "Tú",
+  "duration": "2 x Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63de7d3957a5f0bff8aa1ea9",
+  "name": "Abrigo invernal",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "63de7e4257a5f0bff8aa1eaa",
+  "name": "Gusano retorcido",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63ed54c3faf599706ace0f86",
+  "name": "Rompehuesoscos",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63ed5701faf599706ace0f87",
+  "name": "Atracón brutal",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63ed57acfaf599706ace0f88",
+  "name": "Destructor de mentes",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63ed5ae9faf599706ace0f8a",
+  "name": "Saborear la muerte",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "63ed5c4ffaf599706ace0f8c",
+  "name": "Tripas de trol",
+  "range": "Bonificación de Resistencia metros",
+  "duration": "Bonificación de Resistencia asaltos"
+ },
+ {
+  "id": "63ed5dcdfaf599706ace0f8d",
+  "name": "Las fauces",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63ed5f0afaf599706ace0f8e",
+  "name": "Festín de los caídos",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63fb2888cebb017ae9e75a1a",
+  "name": "Daga del arte",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63fb2a92cebb017ae9e75a1b",
+  "name": "Fellstave - Hombres bestia",
+  "range": "Especial",
+  "duration": "1 mes"
+ },
+ {
+  "id": "63fb2ab40c82f2985ef3bc5c",
+  "name": "Fellstave - Demonios",
+  "range": "Especial",
+  "duration": "1 mes"
+ },
+ {
+  "id": "63fb2b030c82f2985ef3bc5d",
+  "name": "Fellstave - Orcos y goblins",
+  "range": "Especial",
+  "duration": "1 mes"
+ },
+ {
+  "id": "63fb2b4b0c82f2985ef3bc5e",
+  "name": "Fellstave - Ogros",
+  "range": "Especial",
+  "duration": "1 mes"
+ },
+ {
+  "id": "63fb2b650c82f2985ef3bc5f",
+  "name": "Fellstave - Fimir",
+  "range": "Especial",
+  "duration": "1 mes"
+ },
+ {
+  "id": "63fb2b7a0c82f2985ef3bc60",
+  "name": "Fellstave - Trols",
+  "range": "Especial",
+  "duration": "1 mes"
+ },
+ {
+  "id": "63fb2b980c82f2985ef3bc61",
+  "name": "Fellstave - No muertos",
+  "range": "Especial",
+  "duration": "1 mes"
+ },
+ {
+  "id": "63fb6ae0cebb017ae9e75a1d",
+  "name": "Buena voluntad",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63fb6b17cf98108d0b1553ce",
+  "name": "Vigorizar",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "63fb6bc2cebb017ae9e75a1e",
+  "name": "Mechón de amor",
+  "range": "Toque",
+  "duration": "Hasta la medianoche"
+ },
+ {
+  "id": "63fb7258cebb017ae9e75a20",
+  "name": "Bolsita protectora",
+  "range": "Toque",
+  "duration": "1 semana + 1 semana por NE"
+ },
+ {
+  "id": "63fb74becebb017ae9e75a21",
+  "name": "Marea de plata",
+  "range": "Tú",
+  "duration": "1d10 horas"
+ },
+ {
+  "id": "63fb950e85eef88ef91aca37",
+  "name": "El destierro",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "1d10 años"
+ },
+ {
+  "id": "63fb9612cebb017ae9e75a24",
+  "name": "Protección wyrda",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "64499a33e9a5f74b03243c49",
+  "name": "Ciénaga viviente",
+  "range": "Voluntad metros x 10",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "64499a3fbc8fc6ac5c43be62",
+  "name": "Agua, agua por doquier",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "64499aa7bc8fc6ac5c43be65",
+  "name": "Torbellino",
+  "range": "Voluntad metros x 10",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "64499dd6e9a5f74b03243c4a",
+  "name": "Bendiciones de Bel Shanaar",
+  "range": "Tú",
+  "duration": "1 día"
+ },
+ {
+  "id": "64499e4ee9a5f74b03243c4b",
+  "name": "Solución de tiro óptima de Niezlib",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "64499ea8e9a5f74b03243c4c",
+  "name": "Mar de cristal",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "64ecb2a249960d0001e67a86",
+  "name": "Estallido de corrupción",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "64ecb35e49960d0001e67a87",
+  "name": "Rayo de corrupción",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "64ecb37b49960d0001e67a88",
+  "name": "Semblante demoníaco",
+  "range": "Tú",
+  "duration": "Bonificación de Empatía asaltos"
+ },
+ {
+  "id": "64ecb51349960d0001e67a89",
+  "name": "Mensajero inmundo",
+  "range": "Empatía millas",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "64ecb5c249960d0001e67a8a",
+  "name": "Aspecto gozoso",
+  "range": "Toque",
+  "duration": "Bonificación de Empatía asaltos"
+ },
+ {
+  "id": "64ecb6b949960d0001e67a8b",
+  "name": "Obsesión",
+  "range": "Bonificación de Iniciativa millas",
+  "duration": "SL días"
+ },
+ {
+  "id": "64ecb8cc49960d0001e67a8c",
+  "name": "Poder del caos",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "64ecba0449960d0001e67a8d",
+  "name": "Rasgar el éter",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "64ecbb3249960d0001e67a8e",
+  "name": "Esclavo de la oscuridad",
+  "range": "Toque",
+  "duration": "Especial"
+ },
+ {
+  "id": "64ecbf3a49960d0001e67a8f",
+  "name": "Don de Tzeentch",
+  "range": "Tú",
+  "duration": "Bonificación de Iniciativa días"
+ },
+ {
+  "id": "64ecc04749960d0001e67a90",
+  "name": "La mano púrpura",
+  "range": "Inteligencia metros",
+  "duration": "Variable"
+ },
+ {
+  "id": "64ecd07449960d0001e67a95",
+  "name": "Maldición de Tzeentch",
+  "range": "Inteligencia metros",
+  "duration": "Variable"
+ },
+ {
+  "id": "64ecd1b949960d0001e67a96",
+  "name": "Fuego azul de Tzeentch",
+  "range": "Inteligencia metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "64ecd51849960d0001e67a97",
+  "name": "Rayo del cambio",
+  "range": "Inteligencia metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "64ecd66b49960d0001e67a98",
+  "name": "Las llamas parpadeantes del destino caprichoso",
+  "range": "Inteligencia metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "64ecd77549960d0001e67a99",
+  "name": "Maestro de la fortuna",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "64ecde7849960d0001e67a9a",
+  "name": "Fuego mental",
+  "range": "Inteligencia metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "64ed0a2a49960d0001e67a9c",
+  "name": "Fuego rosa de Tzeentch",
+  "range": "Inteligencia metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "64ed0b1649960d0001e67a9d",
+  "name": "Percibir el tejido",
+  "range": "Tú",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "64ed0d1b49960d0001e67a9e",
+  "name": "Transformación de Tzeentch",
+  "range": "Bonificación de Iniciativa metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "64ed0dfa49960d0001e67a9f",
+  "name": "Tormenta de fuego de Tzeentch",
+  "range": "Inteligencia metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "64ed0eef49960d0001e67aa0",
+  "name": "Aura dorada de Tzeentch",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "64ed0f5049960d0001e67aa1",
+  "name": "Palabra de Tzeentch",
+  "range": "Bonificación de Fuerza metros",
+  "duration": "Bonificación de Inteligencia asaltos"
+ },
+ {
+  "id": "64f4afd249960d0001d69bd8",
+  "name": "Lengua bestial",
+  "range": "Tú",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "64f4b19c49960d0001d69bda",
+  "name": "Ojos de la bestia",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "64f4b1dd49960d0001d69bdb",
+  "name": "Señal de la bestia",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "64f4b3b949960d0001d69bdc",
+  "name": "Beneplácito de Tzeentch",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "64f4b41d49960d0001d69bdd",
+  "name": "Furia bestial",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "64f4b47749960d0001d69bde",
+  "name": "Trepar",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "64f4b59349960d0001d69bdf",
+  "name": "Enfurecer bestia",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "64f4b73349960d00010ac360",
+  "name": "Esclavo del caos",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "64f4b87c49960d00010ac361",
+  "name": "Don de la bestia",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "64f4cc0749960d00010ac363",
+  "name": "Subvertir la fuerza",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "64f4ccd349960d00010ac364",
+  "name": "Transformación de la bestia",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "64f4cdcc49960d00010ac366",
+  "name": "Temblor",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "650625ae49960d0001bf7115",
+  "name": "Confundir",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "650625b449960d0001bf7116",
+  "name": "Bendición de Slaanesh",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "650628d749960d0001bf7119",
+  "name": "Soportar el exceso",
+  "range": "Tú",
+  "duration": "Especial"
+ },
+ {
+  "id": "65062eac49960d0001bf711b",
+  "name": "Mirada lasciva",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Especial"
+ },
+ {
+  "id": "65062f0549960d0001bf711c",
+  "name": "Atraer",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "65062fa049960d0001bf711d",
+  "name": "Pavonearse",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6506306749960d0001bf711e",
+  "name": "Percibir el vicio",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6507737749960d000167847c",
+  "name": "Aquiescencia",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6507739449960d000167847d",
+  "name": "Aura de aquiescencia",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6507741749960d000167847e",
+  "name": "Lazos de Slaanesh",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6507751749960d000167847f",
+  "name": "Aliento de inspiración",
+  "range": "1 metros",
+  "duration": "Up to Voluntad días"
+ },
+ {
+  "id": "650776b049960d0001678480",
+  "name": "Agonía dichosa",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato, Especial"
+ },
+ {
+  "id": "6507779f49960d0001678481",
+  "name": "Caricia cacofónica",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "650777f849960d0001678482",
+  "name": "Susurros descuidados",
+  "range": "1 millas",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6508c3a149960d000167848c",
+  "name": "Espiga del caos",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6508c43549960d000167848e",
+  "name": "Caricia maldita",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6508c4d849960d000167848f",
+  "name": "Ingenio hiriente",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6508c52449960d0001678490",
+  "name": "Excrucio delicioso",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6508c67849960d0001678491",
+  "name": "Maldición carnal",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6509873949960d0001e63f19",
+  "name": "Marioneta de carne",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "65098a9249960d0001e63f1b",
+  "name": "Del dolor, el placer",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "65098b2049960d0001e63f1c",
+  "name": "Látigo de Slaanesh",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "650a044a49960d0001823eff",
+  "name": "Don de Slaanesh",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "650a052e49960d0001a8c5f6",
+  "name": "Tormento lujurioso",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "650a061f49960d0001a8c5f7",
+  "name": "Máscara del deseo",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "650a06cb49960d0001a8c5f8",
+  "name": "Pavana de Slaanesh",
+  "range": "Tú",
+  "duration": "Voluntad asaltos"
+ },
+ {
+  "id": "650a078949960d0001a8c5f9",
+  "name": "Fantasmagoría",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "650a089049960d0001a8c5fa",
+  "name": "Caricia de la súcubo",
+  "range": "Empatía metros",
+  "duration": "Bonificación de Empatía horas"
+ },
+ {
+  "id": "650a0a8149960d0001a8c5fb",
+  "name": "Invocar daemonette",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "650a0c4049960d0001a8c5fc",
+  "name": "Invocar manada de daemonettes",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "650a0cab49960d0001a8c5fd",
+  "name": "Ilusiones titilantes",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "650b582749960d0001c52283",
+  "name": "Soplón",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "650f083d49960d00012b6600",
+  "name": "Favor de la Rata Cornuda",
+  "range": "Tú",
+  "duration": "13 horas"
+ },
+ {
+  "id": "650ff7a449960d0001c741c6",
+  "name": "Llama fantasmal",
+  "range": "Voluntad metros",
+  "duration": "Especial"
+ },
+ {
+  "id": "650ff87549960d0001c741c7",
+  "name": "Marca de la Rata Cornuda",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "1d10 horas"
+ },
+ {
+  "id": "650ff8ee49960d0001c741c8",
+  "name": "Esclavo rata",
+  "range": "Voluntad metros",
+  "duration": "1d10 horas"
+ },
+ {
+  "id": "650ffb6349960d0001c741c9",
+  "name": "Vector",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "24 horas"
+ },
+ {
+  "id": "650ffbdd49960d0001c741ca",
+  "name": "Maldición de la Rata Cornuda",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "6510558b49960d0001c741ce",
+  "name": "Frenesí de muerte",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos+"
+ },
+ {
+  "id": "651056d149960d0001c741d0",
+  "name": "Almizcle del terror",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos+"
+ },
+ {
+  "id": "6510579049960d0001c741d1",
+  "name": "Salto skaven",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6510587e49960d0001c741d2",
+  "name": "Marea de vermin",
+  "range": "Tú",
+  "duration": "2 x Bonificación de Voluntad asaltos+"
+ },
+ {
+  "id": "6511740849960d0001a2691f",
+  "name": "Llamada de la grieta",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "651174c249960d0001a26920",
+  "name": "Condena crepitante",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6511fefb49960d00012f4cc5",
+  "name": "Ruina desolladora",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6511ff4549960d00012f4cc6",
+  "name": "Tormenta de warpa aullante",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos+"
+ },
+ {
+  "id": "6511ffc749960d00012f4cc7",
+  "name": "Quemar",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6512014349960d00012f4cc8",
+  "name": "Rayo de warpa",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6512019a49960d00012f4cc9",
+  "name": "Escudo de warpa",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos+"
+ },
+ {
+  "id": "6512027f49960d00012f4cca",
+  "name": "Tormenta de warpa",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "65127b5349960d000168013a",
+  "name": "Aliento pestilente",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "65127c8949960d000168013b",
+  "name": "Pústula venenosa",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "6512807849960d000168013c",
+  "name": "Bendecir con inmundicia",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad minutos+"
+ },
+ {
+  "id": "651281cb49960d000168013e",
+  "name": "Bendecir con inmundicia - v2",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6512826249960d000168013f",
+  "name": "Nube de corrupción",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "651282fe49960d0001680140",
+  "name": "Manto de contagio",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "6517f5f949960d00019f14cf",
+  "name": "Pudrir",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6517f71c49960d00019f14d0",
+  "name": "Lluvia tóxica",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos+"
+ },
+ {
+  "id": "6517f85849960d00019f14d1",
+  "name": "Velo de moscas",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos+"
+ },
+ {
+  "id": "6517f9dc49960d00019f14d2",
+  "name": "Herida llorosa",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6517fa8c49960d00019f14d3",
+  "name": "Marchitar",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6518330049960d00019f14d6",
+  "name": "Escabulle rápido",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad + SL asaltos"
+ },
+ {
+  "id": "6518340249960d00019f14d7",
+  "name": "Armadura de la oscuridad",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "651837bb49960d00019f14d8",
+  "name": "Torbellino negro",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos+"
+ },
+ {
+  "id": "651838cb49960d00019f14d9",
+  "name": "Pasaje boyante",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "651839f249960d00019f14da",
+  "name": "Destello cegador",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "65183af049960d00019f14db",
+  "name": "Pellejo del asesino",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos+"
+ },
+ {
+  "id": "65183b5649960d00019f14dc",
+  "name": "Pezuñas pegajosas",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "65183c1849960d00019f14dd",
+  "name": "Muerte sin rastro",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "65183d5149960d00019f14de",
+  "name": "Infusión de estrella de warpa",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos+"
+ },
+ {
+  "id": "651e8d9949960d00017d8747",
+  "name": "Caminar en espíritu",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "651e938949960d00017d874a",
+  "name": "Palabras astutas",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "651e939049960d00017d874b",
+  "name": "¡Gork lo arreglará!",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "651e93f049960d00017d874c",
+  "name": "Manto de noche",
+  "range": "Bonificación de Fuerza metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "651e94ec49960d00017d874d",
+  "name": "Apuñalamiento furtivo",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "651e955b49960d00017d874e",
+  "name": "Mirada vengativa",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "651eadbd49960d00017c94ed",
+  "name": "Revelar la belleza interior",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "651eb97149960d00017c94fa",
+  "name": "Ritual de vínculo espiritual",
+  "range": "Especial",
+  "duration": "Permanente"
+ },
+ {
+  "id": "6520082349960d0001346eae",
+  "name": "Un bocado de mosquitos",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6520082c49960d0001346eaf",
+  "name": "Descamación abatida",
+  "range": "Voluntad metros",
+  "duration": "Especial"
+ },
+ {
+  "id": "65200bd949960d0001346eb0",
+  "name": "Inculcar niebla",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "6520100449960d0001346eb2",
+  "name": "Niebla mística",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6520106449960d0001346eb3",
+  "name": "¡Oh, que haya más mar!",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad años"
+ },
+ {
+  "id": "652010d549960d0001346eb4",
+  "name": "Desorientado",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "652586de49960d00019a7fb7",
+  "name": "Apoteosis",
+  "range": "Mitad de Voluntad metros",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "6525870349960d00019a7fb8",
+  "name": "Deshacer arcano",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6525894249960d00019a7fb9",
+  "name": "Drenar magia",
+  "range": "Mitad de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "652589dc49960d00019a7fba",
+  "name": "Desarraigar las montañas",
+  "range": "Línea de visión",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "65258aa049960d00019a7fbb",
+  "name": "Caminar entre mundos",
+  "range": "Voluntad metros",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "65258b5649960d00019a7fbc",
+  "name": "Línea de tierra",
+  "range": "Línea de visión",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "65258c2649960d00019a7fbd",
+  "name": "Ruina de ciudades",
+  "range": "Línea de visión",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "65258c9849960d00019a7fbe",
+  "name": "Explosión mental",
+  "range": "Línea de visión",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6525b0fb49960d00019a7fc3",
+  "name": "¡A por ellos, muchachos!",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6525b1c949960d00019a7fc4",
+  "name": "¡Cabezazo!",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6525b26549960d00019a7fc5",
+  "name": "Puños de Gork",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6525b2c849960d00019a7fc6",
+  "name": "¡Mork nos salve!",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6525b3be49960d00019a7fc7",
+  "name": "Manto de niebla",
+  "range": "Tú",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "6550cdfa49960d00016b3ae8",
+  "name": "Plaga molesta",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6550ce8d49960d00016b3ae9",
+  "name": "Apuñalamiento furtivo - v2",
+  "range": "Voluntad metros",
+  "duration": "Especial"
+ },
+ {
+  "id": "6647948e49960d0001694c81",
+  "name": "Llama incesante",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "664794db49960d0001694c82",
+  "name": "Consuelo",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "6647956549960d0001694c83",
+  "name": "Cocción rápida",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "664797a849960d0001694c84",
+  "name": "Hablar con pájaros",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "6647987149960d0001694c85",
+  "name": "Veleta",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6647991149960d0001694c86",
+  "name": "Vendaval",
+  "range": "Voluntad metros",
+  "duration": "Especial (Bonificación de Voluntad asaltos/horas)"
+ },
+ {
+  "id": "6648fc7749960d0001782b04",
+  "name": "Rigor del acero",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "6648fe4749960d0001782b06",
+  "name": "Percibir el metal",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6648ff3a49960d0001782b07",
+  "name": "Historia del metal",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "66490b2449960d000108bccf",
+  "name": "Bestia curada",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "66490c5849960d000108bcd0",
+  "name": "Merecidos castigos de la crueldad",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "66490f0b49960d000108bcd2",
+  "name": "Aliado de Wyssan",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6649107749960d000108bcd3",
+  "name": "Llamada salvaje",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6649139949960d000108bcd4",
+  "name": "Fermentar",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6649144749960d000108bcd5",
+  "name": "Bóveda de madera",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "664915b049960d000108bcd6",
+  "name": "El rastro contado",
+  "range": "Tú",
+  "duration": "Especial"
+ },
+ {
+  "id": "66492bb249960d000130fe38",
+  "name": "Resplandor purificador",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "66492cd549960d000130fe3a",
+  "name": "Disgusto",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "66492d6d49960d000130fe3b",
+  "name": "Iluminar",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6649b9a949960d0001d12df5",
+  "name": "Detener la mano de la muerte",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6649bbc449960d0001d12df6",
+  "name": "Vista de la muerte",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6649bc9149960d0001d12df7",
+  "name": "Preservación",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "6649bdbd49960d0001d12df8",
+  "name": "Sombras de esplendor",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "6649be9d49960d0001d12df9",
+  "name": "Ocultar actividad",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "6649c03849960d0001d12dfb",
+  "name": "Manto de oscuridad",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "664e252949960d0001f6c795",
+  "name": "Mala voluntad",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "664e526949960d0001f6c797",
+  "name": "Recolocador de huesos",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "664e52ca49960d0001f6c798",
+  "name": "Pizarra limpia",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "664e538f49960d0001f6c799",
+  "name": "Fertilizar",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "664e544d49960d0001f6c79a",
+  "name": "Trampa de almas",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "664e557f49960d0001f6c79b",
+  "name": "Ruina de espectros",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "664e577049960d0001f6c79c",
+  "name": "Encender",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "664e586c49960d0001f6c79d",
+  "name": "Onerion",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "664e596649960d0001f6c79e",
+  "name": "Espíritu robusto",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "664e59ed49960d0001f6c79f",
+  "name": "Trankraft",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "664e5e9549960d00018d5e6c",
+  "name": "Encanto de pena",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "664e604049960d00018d5e6d",
+  "name": "Godspakt",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "665102df49960d00011c66ab",
+  "name": "Destierro de Böl",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "665103c449960d00011c66ac",
+  "name": "Rompehuesos",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "665105d749960d00011c66ad",
+  "name": "Congelar",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "665106d849960d00011c66ae",
+  "name": "Maldición de la lengua traicionera",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6651075449960d00011c66af",
+  "name": "Ladrón de destinos",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "665107f449960d00011c66b0",
+  "name": "Piedra imán",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "665241d249960d0001a61c07",
+  "name": "Abismo en espejo",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "665242d549960d0001a61c08",
+  "name": "Maldición del proscrito",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad días"
+ },
+ {
+  "id": "6652451349960d0001a61c09",
+  "name": "Ligar pactos",
+  "range": "Tú",
+  "duration": "Hasta la Muerte o el Cumplimiento"
+ },
+ {
+  "id": "665248be49960d0001a61c0a",
+  "name": "Tarro del dolor",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "665249ac49960d0001a61c0b",
+  "name": "Senda extraviada",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "66524a4d49960d0001a61c0c",
+  "name": "Invocación sin nombre",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Especial"
+ },
+ {
+  "id": "6664c20849960d0001d7d1ea",
+  "name": "Brebaje bilioso",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6664c51549960d0001d7d1eb",
+  "name": "Papilla de sangre",
+  "range": "Tú",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6664c60549960d0001d7d1ec",
+  "name": "Agárrate los higadillos",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6664c65549960d0001d7d1ed",
+  "name": "Rompedientes",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6664c76d49960d0001d7d1ee",
+  "name": "Duro como clavos",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6664c89449960d0001d7d1ef",
+  "name": "Reventacabezas",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6664d50d49960d0001e67ef4",
+  "name": "¡Ahora marchamos!",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6664d58f49960d0001e67ef5",
+  "name": "El sol maligno",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "666563b749960d000100a9d6",
+  "name": "Pie de Gork",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "666564ad49960d000100a9d7",
+  "name": "Mirada de Mork",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6665661d49960d000100a9d8",
+  "name": "La mano de Gork",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "666566f649960d000100a9d9",
+  "name": "¡Mork nos salve!",
+  "range": "Voluntad metros metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6665679849960d000100a9da",
+  "name": "¡WAAAGH!",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6665694d49960d000100a9db",
+  "name": "¡Compórtate!",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "66656b9b49960d000100a9dd",
+  "name": "Maldición de la Luna Oscura",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "66656c2949960d000100a9de",
+  "name": "Don del Dios Araña",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "66656dbc49960d000100a9e1",
+  "name": "¡Gork lo arreglará! - v2",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "66656e6949960d000100a9e3",
+  "name": "El gran despecho verde",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "66656f4349960d000100a9e4",
+  "name": "Plaga molesta - v2",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "66656fcd49960d000100a9e5",
+  "name": "¡Mork te quiere!",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6665714749960d000100a9e6",
+  "name": "¡Chivato!",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "6665720c49960d000100a9e7",
+  "name": "Apuñalamiento furtivo - v3",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "6665729749960d000100a9e8",
+  "name": "Mirada vengativa - v2",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e2e6f449960d00011b8872",
+  "name": "Coruscación de Finreir",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "67e2e7ae49960d00011b8873",
+  "name": "Maldición de atracción de flechas",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "67e3277b3d1873ce53f03c39",
+  "name": "Punto muerto",
+  "range": "Mitad de Resistencia metros",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "67e3277b3d1873ce53f03c3a",
+  "name": "Convocación ígnea",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "67e3277b3d1873ce53f03c3b",
+  "name": "Drenar magia",
+  "range": "Mitad de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e3277b3d1873ce53f03c3c",
+  "name": "La fortuna es caprichosa",
+  "range": "Empatía metros",
+  "duration": "Bonificación de Empatía asaltos"
+ },
+ {
+  "id": "67e3277b3d1873ce53f03c3d",
+  "name": "Glamour de Teclis",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Inteligencia asaltos"
+ },
+ {
+  "id": "67e3277b3d1873ce53f03c3e",
+  "name": "Mano de gloria",
+  "range": "Tú",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "67e3277b3d1873ce53f03c3f",
+  "name": "Gran destierro",
+  "range": "Tú",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "67e3277b3d1873ce53f03c40",
+  "name": "Ojo invisible",
+  "range": "Bonificación de Inteligencia metros",
+  "duration": "Bonificación de Inteligencia horas"
+ },
+ {
+  "id": "67e3277b3d1873ce53f03c41",
+  "name": "Escudo de Saphery",
+  "range": "Tú",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "67e3277b3d1873ce53f03c42",
+  "name": "Callar el alma",
+  "range": "Mitad de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e3277b3d1873ce53f03c43",
+  "name": "Tempestad",
+  "range": "Voluntad metros",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "67e3277b3d1873ce53f03c44",
+  "name": "Caminar entre mundos",
+  "range": "Voluntad metros",
+  "duration": "1 asalto"
+ },
+ {
+  "id": "67e336f316ba992aa19d5c9e",
+  "name": "Gracia de Vaul",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e336f316ba992aa19d5c9f",
+  "name": "Furia de Vaul",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e336f316ba992aa19d5ca0",
+  "name": "Adivinación de llamas",
+  "range": "Bonificación de Iniciativa metros (maximum)",
+  "duration": "Bonificación de Inteligencia horas"
+ },
+ {
+  "id": "67e336f316ba992aa19d5ca1",
+  "name": "Toque del artista",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e336f316ba992aa19d5ca2",
+  "name": "Paciencia de Vaul",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e336f316ba992aa19d5ca3",
+  "name": "Adivinación de piedras",
+  "range": "Bonificación de Inteligencia millas",
+  "duration": "Bonificación de Inteligencia horas"
+ },
+ {
+  "id": "67e336f316ba992aa19d5ca4",
+  "name": "Fuegos de la perfección",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e336f316ba992aa19d5ca5",
+  "name": "Sabiduría del acero celeste",
+  "range": "Toque",
+  "duration": "1 Empresa"
+ },
+ {
+  "id": "67e336f316ba992aa19d5ca6",
+  "name": "Fortaleza de Hotek",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "67e554052e98625f93291cfe",
+  "name": "Vínculo con el pez",
+  "range": "Voluntad metros",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "67e554052e98625f93291cff",
+  "name": "Sentir la tormenta",
+  "range": "Iniciativa millas",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e554052e98625f93291d00",
+  "name": "Furia del océano",
+  "range": "Voluntad metros",
+  "duration": "3 x Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "67e554052e98625f93291d01",
+  "name": "Espíritus de las olas",
+  "range": "2 x Empatía metros",
+  "duration": "Bonificación de Empatía minutos"
+ },
+ {
+  "id": "67e554052e98625f93291d02",
+  "name": "Armadura de Mathlann",
+  "range": "Voluntad metros",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "67e554052e98625f93291d03",
+  "name": "Llamada de los mares",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "67e554052e98625f93291d04",
+  "name": "Capa de Mathlann",
+  "range": "Voluntad metros",
+  "duration": "Voluntad minutos"
+ },
+ {
+  "id": "67e554052e98625f93291d05",
+  "name": "Pulmones acuáticos",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "67e554052e98625f93291d06",
+  "name": "Señora de las profundidades",
+  "range": "Empatía metros",
+  "duration": "Bonificación de Empatía asaltos"
+ },
+ {
+  "id": "67e554052e98625f93291d07",
+  "name": "Nieblas retorcidas",
+  "range": "Voluntad metros",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "67e55c7e283bc5efa9c24ba9",
+  "name": "Estilo divino",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "67e55c7e283bc5efa9c24baa",
+  "name": "Iluminación",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Inteligencia minutos"
+ },
+ {
+  "id": "67e55c7e283bc5efa9c24bab",
+  "name": "Perspicacia arcana",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e55c7e283bc5efa9c24bac",
+  "name": "Gran vínculo espiritual",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad minutos"
+ },
+ {
+  "id": "67e55c7e283bc5efa9c24bad",
+  "name": "Crisol de luz",
+  "range": "Toque",
+  "duration": "Bonificación de Inteligencia minutos"
+ },
+ {
+  "id": "67e55c7e283bc5efa9c24bae",
+  "name": "Control mnémico",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e55c7e283bc5efa9c24baf",
+  "name": "Envío psíquico",
+  "range": "Voluntad millas",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e55c7e283bc5efa9c24bb0",
+  "name": "Protecciones sagradas",
+  "range": "Toque",
+  "duration": "Bonificación de Inteligencia horas"
+ },
+ {
+  "id": "67e55c7e283bc5efa9c24bb1",
+  "name": "Arte del alma",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e55c7e283bc5efa9c24bb2",
+  "name": "Las palabras primarias",
+  "range": "Tú",
+  "duration": "Bonificación de Inteligencia horas"
+ },
+ {
+  "id": "67e8723cd54742722191065b",
+  "name": "Bendecir flecha",
+  "range": "Toque",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "67e8723cd54742722191065c",
+  "name": "Calma",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e8723cd54742722191065d",
+  "name": "Mano verde",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e8723cd54742722191065e",
+  "name": "Identificar enfermedad",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e8723cd54742722191065f",
+  "name": "Eliminar suciedad",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e8723cd547427221910660",
+  "name": "Revelar magia",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad asaltos"
+ },
+ {
+  "id": "67e87d403f37e201b2141b7c",
+  "name": "Encantar planta",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e87d403f37e201b2141b7d",
+  "name": "Destierro menor",
+  "range": "Voluntad metros",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e87d403f37e201b2141b7e",
+  "name": "Alarma mágica",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "67e87d403f37e201b2141b7f",
+  "name": "Enmascarar la mente",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad horas"
+ },
+ {
+  "id": "67e87d403f37e201b2141b80",
+  "name": "Purificar el cuerpo",
+  "range": "Toque",
+  "duration": "Inmediato"
+ },
+ {
+  "id": "67e87d403f37e201b2141b81",
+  "name": "Hablar con animales",
+  "description": "Puedes comunicarte con los animales",
+  "page": "p. 81",
+  "range": "Bonificación de Voluntad metros",
+  "duration": "Inteligencia minutos"
+ },
+ {
+  "id": "67e87d403f37e201b2141b82",
+  "name": "Voz de hierro",
+  "range": "Tú",
+  "duration": "Empatía minutos"
+ },
+ {
+  "id": "67e87d403f37e201b2141b83",
+  "name": "Zona de confort",
+  "range": "Tú",
+  "duration": "Bonificación de Voluntad horas"
+ }
+]

@@ -1,0 +1,250 @@
+{
+  "classKeys": [
+    "academics",
+    "burghers",
+    "courtiers",
+    "peasants",
+    "rangers",
+    "riverfolk",
+    "rogues",
+    "warriors"
+  ],
+  "byClass": {
+    "academics": [
+      {
+        "name": "Clothing",
+        "qty": 1,
+        "enc": 1
+      },
+      {
+        "name": "Dagger",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Pouch",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Writing Kit",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Parchment",
+        "qty": 1,
+        "enc": 0,
+        "notes": "×1d10"
+      }
+    ],
+    "burghers": [
+      {
+        "name": "Cloak",
+        "qty": 1,
+        "enc": 1
+      },
+      {
+        "name": "Clothing",
+        "qty": 1,
+        "enc": 1
+      },
+      {
+        "name": "Dagger",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Hat",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Pouch",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Lunch",
+        "qty": 1,
+        "enc": 0
+      }
+    ],
+    "courtiers": [
+      {
+        "name": "Dagger",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Fine Clothing",
+        "qty": 1,
+        "enc": 1
+      },
+      {
+        "name": "Tweezers",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Ear Pick",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Comb",
+        "qty": 1,
+        "enc": 0
+      }
+    ],
+    "peasants": [
+      {
+        "name": "Cloak",
+        "qty": 1,
+        "enc": 1
+      },
+      {
+        "name": "Clothing",
+        "qty": 1,
+        "enc": 1
+      },
+      {
+        "name": "Dagger",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Pouch",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Rations",
+        "qty": 1,
+        "enc": 0,
+        "notes": "1 day(s) rations"
+      }
+    ],
+    "rangers": [
+      {
+        "name": "Cloak",
+        "qty": 1,
+        "enc": 1
+      },
+      {
+        "name": "Clothing",
+        "qty": 1,
+        "enc": 1
+      },
+      {
+        "name": "Dagger",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Pouch",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Tinderbox",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Blanket",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Rations",
+        "qty": 1,
+        "enc": 0,
+        "notes": "1 day(s) rations"
+      }
+    ],
+    "riverfolk": [
+      {
+        "name": "Cloak",
+        "qty": 1,
+        "enc": 1
+      },
+      {
+        "name": "Clothing",
+        "qty": 1,
+        "enc": 1
+      },
+      {
+        "name": "Dagger",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Pouch",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Flask of Spirits",
+        "qty": 1,
+        "enc": 0
+      }
+    ],
+    "rogues": [
+      {
+        "name": "Clothing",
+        "qty": 1,
+        "enc": 1
+      },
+      {
+        "name": "Dagger",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Pouch",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Candles",
+        "qty": 2,
+        "enc": 0
+      },
+      {
+        "name": "Matches",
+        "qty": 1,
+        "enc": 0,
+        "notes": "×1d10"
+      },
+      {
+        "name": "Hood or Mask",
+        "qty": 1,
+        "enc": 0,
+        "notes": "choose one"
+      }
+    ],
+    "warriors": [
+      {
+        "name": "Clothing",
+        "qty": 1,
+        "enc": 1
+      },
+      {
+        "name": "Hand Weapon",
+        "qty": 1,
+        "enc": 1
+      },
+      {
+        "name": "Dagger",
+        "qty": 1,
+        "enc": 0
+      },
+      {
+        "name": "Pouch",
+        "qty": 1,
+        "enc": 0
+      }
+    ]
+  }
+}

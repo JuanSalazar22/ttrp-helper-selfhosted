@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "TTRP Helper",
+    "slug": "ttrp-helper",
+    "version": "1.0.0",
+    "scheme": "ttrphelper",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.juanjose220397.ttrphelper"
+    },
+    "android": {
+      "package": "com.juanjose220397.ttrphelper",
+      "adaptiveIcon": {
+        "backgroundColor": "#1A1612",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-sharing",
+      "expo-secure-store"
+    ],
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png"
+    },
+    "experiments": {
+      "tsconfigPaths": true
+    }
+  }
+}

@@ -1,0 +1,662 @@
+{
+  "species": [
+    {
+      "id": "human",
+      "name": "Human",
+      "attributes": {
+        "WS": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "BS": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "S": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "T": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "I": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "Ag": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "Dex": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "Int": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "WP": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "Fel": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        }
+      },
+      "derived": {
+        "woundsFormula": "SB+(2*TB)+WPB",
+        "fate": 2,
+        "resilience": 1,
+        "extraPoints": 3,
+        "movement": 4
+      },
+      "skills": [
+        "animal_care",
+        "charm",
+        "cool",
+        "evaluate",
+        "gossip",
+        "haggle",
+        "language_bretonnian",
+        "language_wastelander",
+        "leadership",
+        "lore_reikland",
+        "melee_basic",
+        "ranged_bow"
+      ],
+      "talents": {
+        "fixed": [
+          "doomed"
+        ],
+        "choice": [
+          "savvy",
+          "suave"
+        ],
+        "random": 3
+      }
+    },
+    {
+      "id": "dwarf",
+      "name": "Dwarf",
+      "attributes": {
+        "WS": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "BS": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "S": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "T": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "I": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "Ag": {
+          "dice": 2,
+          "sides": 10,
+          "base": 10
+        },
+        "Dex": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "Int": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "WP": {
+          "dice": 2,
+          "sides": 10,
+          "base": 40
+        },
+        "Fel": {
+          "dice": 2,
+          "sides": 10,
+          "base": 10
+        }
+      },
+      "derived": {
+        "woundsFormula": "SB+(2*TB)+WPB",
+        "fate": 0,
+        "resilience": 2,
+        "extraPoints": 2,
+        "movement": 3
+      },
+      "skills": [
+        "consume_alcohol",
+        "cool",
+        "endurance",
+        "entertain_storytelling",
+        "evaluate",
+        "intimidate",
+        "language_khazalid",
+        "lore_dwarfs",
+        "lore_geology",
+        "lore_metallurgy",
+        "melee_basic",
+        "trade_any"
+      ],
+      "talents": {
+        "fixed": [
+          "magic_resistance",
+          "sturdy"
+        ],
+        "choice": [
+          "night_vision",
+          "read_write",
+          "relentless",
+          "resolute",
+          "strong_minded"
+        ],
+        "random": 0
+      }
+    },
+    {
+      "id": "halfling",
+      "name": "Halfling",
+      "attributes": {
+        "WS": {
+          "dice": 2,
+          "sides": 10,
+          "base": 10
+        },
+        "BS": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "S": {
+          "dice": 2,
+          "sides": 10,
+          "base": 10
+        },
+        "T": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "I": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "Ag": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "Dex": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "Int": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "WP": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "Fel": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        }
+      },
+      "derived": {
+        "woundsFormula": "(2*TB)+WPB",
+        "fate": 0,
+        "resilience": 2,
+        "extraPoints": 3,
+        "movement": 3
+      },
+      "skills": [
+        "charm",
+        "consume_alcohol",
+        "dodge",
+        "gamble",
+        "haggle",
+        "intuition",
+        "language_mootish",
+        "lore_reikland",
+        "perception",
+        "sleight_of_hand",
+        "stealth_any",
+        "trade_cook"
+      ],
+      "talents": {
+        "fixed": [
+          "acute_sense_taste",
+          "night_vision",
+          "resistance_chaos",
+          "small"
+        ],
+        "choice": [],
+        "random": 2
+      }
+    },
+    {
+      "id": "high_elf",
+      "name": "High Elf",
+      "attributes": {
+        "WS": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "BS": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "S": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "T": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "I": {
+          "dice": 2,
+          "sides": 10,
+          "base": 40
+        },
+        "Ag": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "Dex": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "Int": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "WP": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "Fel": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        }
+      },
+      "derived": {
+        "woundsFormula": "SB+(2*TB)+WPB",
+        "fate": 0,
+        "resilience": 0,
+        "extraPoints": 2,
+        "movement": 5
+      },
+      "skills": [
+        "cool",
+        "entertain_sing",
+        "evaluate",
+        "language_eltharin",
+        "leadership",
+        "melee_basic",
+        "navigation",
+        "perception",
+        "play_any",
+        "ranged_bow",
+        "sail",
+        "swim"
+      ],
+      "talents": {
+        "fixed": [
+          "night_vision",
+          "read_write"
+        ],
+        "choice": [
+          "acute_sense_sight",
+          "coolheaded",
+          "savvy",
+          "second_sight",
+          "sixth_sense"
+        ],
+        "random": 0
+      }
+    },
+    {
+      "id": "wood_elf",
+      "name": "Wood Elf",
+      "attributes": {
+        "WS": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "BS": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "S": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "T": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        },
+        "I": {
+          "dice": 2,
+          "sides": 10,
+          "base": 40
+        },
+        "Ag": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "Dex": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "Int": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "WP": {
+          "dice": 2,
+          "sides": 10,
+          "base": 30
+        },
+        "Fel": {
+          "dice": 2,
+          "sides": 10,
+          "base": 20
+        }
+      },
+      "derived": {
+        "woundsFormula": "SB+(2*TB)+WPB",
+        "fate": 0,
+        "resilience": 0,
+        "extraPoints": 2,
+        "movement": 5
+      },
+      "skills": [
+        "athletics",
+        "climb",
+        "endurance",
+        "entertain_sing",
+        "intimidate",
+        "language_eltharin",
+        "melee_basic",
+        "outdoor_survival",
+        "perception",
+        "ranged_bow",
+        "stealth_rural",
+        "track"
+      ],
+      "talents": {
+        "fixed": [
+          "night_vision",
+          "read_write",
+          "rover"
+        ],
+        "choice": [
+          "acute_sense_sight",
+          "hardy",
+          "second_sight",
+          "very_resilient"
+        ],
+        "random": 0
+      }
+    }
+  ],
+  "randomTalentTable": [
+    {
+      "roll": "01-03",
+      "talent": "acute_sense_any"
+    },
+    {
+      "roll": "04-06",
+      "talent": "ambidextrous"
+    },
+    {
+      "roll": "07-09",
+      "talent": "animal_affinity"
+    },
+    {
+      "roll": "10-12",
+      "talent": "artistic"
+    },
+    {
+      "roll": "13-15",
+      "talent": "attractive"
+    },
+    {
+      "roll": "16-18",
+      "talent": "coolheaded"
+    },
+    {
+      "roll": "19-21",
+      "talent": "craftsman_any"
+    },
+    {
+      "roll": "22-24",
+      "talent": "flee"
+    },
+    {
+      "roll": "25-28",
+      "talent": "hardy"
+    },
+    {
+      "roll": "29-31",
+      "talent": "lightning_reflexes"
+    },
+    {
+      "roll": "32-34",
+      "talent": "linguistics"
+    },
+    {
+      "roll": "35-38",
+      "talent": "luck"
+    },
+    {
+      "roll": "39-41",
+      "talent": "marksman"
+    },
+    {
+      "roll": "42-44",
+      "talent": "mimic"
+    },
+    {
+      "roll": "45-47",
+      "talent": "night_vision"
+    },
+    {
+      "roll": "48-50",
+      "talent": "nimble_fingered"
+    },
+    {
+      "roll": "51-52",
+      "talent": "noble_blood"
+    },
+    {
+      "roll": "53-55",
+      "talent": "orientation"
+    },
+    {
+      "roll": "56-58",
+      "talent": "perfect_pitch"
+    },
+    {
+      "roll": "59-62",
+      "talent": "pure_soul"
+    },
+    {
+      "roll": "63-65",
+      "talent": "read_write"
+    },
+    {
+      "roll": "66-68",
+      "talent": "resistance_any"
+    },
+    {
+      "roll": "69-71",
+      "talent": "savvy"
+    },
+    {
+      "roll": "72-74",
+      "talent": "sharp"
+    },
+    {
+      "roll": "75-78",
+      "talent": "sixth_sense"
+    },
+    {
+      "roll": "79-81",
+      "talent": "strong_legs"
+    },
+    {
+      "roll": "82-84",
+      "talent": "sturdy"
+    },
+    {
+      "roll": "85-87",
+      "talent": "suave"
+    },
+    {
+      "roll": "88-91",
+      "talent": "super_numerate"
+    },
+    {
+      "roll": "92-94",
+      "talent": "very_resilient"
+    },
+    {
+      "roll": "95-97",
+      "talent": "very_strong"
+    },
+    {
+      "roll": "98-00",
+      "talent": "warrior_born"
+    }
+  ],
+  "classTrappings": {
+    "academics": [
+      "clothing",
+      "dagger",
+      "pouch",
+      "writing_kit",
+      {
+        "item": "parchment",
+        "quantity": "1d10"
+      }
+    ],
+    "burghers": [
+      "cloak",
+      "clothing",
+      "dagger",
+      "hat",
+      "pouch",
+      "lunch"
+    ],
+    "courtiers": [
+      "dagger",
+      "fine_clothing",
+      "tweezers",
+      "ear_pick",
+      "comb"
+    ],
+    "peasants": [
+      "cloak",
+      "clothing",
+      "dagger",
+      "pouch",
+      {
+        "item": "rations",
+        "days": 1
+      }
+    ],
+    "rangers": [
+      "cloak",
+      "clothing",
+      "dagger",
+      "pouch",
+      "tinderbox",
+      "blanket",
+      {
+        "item": "rations",
+        "days": 1
+      }
+    ],
+    "riverfolk": [
+      "cloak",
+      "clothing",
+      "dagger",
+      "pouch",
+      "flask_of_spirits"
+    ],
+    "rogues": [
+      "clothing",
+      "dagger",
+      "pouch",
+      {
+        "item": "candles",
+        "quantity": 2
+      },
+      {
+        "item": "matches",
+        "quantity": "1d10"
+      },
+      {
+        "choice": [
+          "hood",
+          "mask"
+        ]
+      }
+    ],
+    "warriors": [
+      "clothing",
+      "hand_weapon",
+      "dagger",
+      "pouch"
+    ]
+  }
+}

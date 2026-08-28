@@ -1,0 +1,4854 @@
+{
+  "data": [
+    {
+      "canEdit": false,
+      "id": "5f8dc03f5c5ff9fd411f0311",
+      "object": {
+        "description": "Extra mouth somewhere on your head. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Extra Mouth - Head",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dc427d2dfb95cda117bb2",
+      "object": {
+        "description": "Roll on the Hit Location table twice to see where.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Patchy Feathers",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dbfefd2dfb95cda117bae",
+      "object": {
+        "description": "Gain +10 Dex. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 10,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Distended Digits",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dc0245c5ff9fd411f0310",
+      "object": {
+        "description": "Gain +5 Ag. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 5,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Extra Leg Joints",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dc61c5c5ff9fd411f0315",
+      "object": {
+        "description": "Gain +10 Track. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Whiskered Snout",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 68"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dc0e7d2dfb95cda117bb1",
+      "object": {
+        "description": "Suffer -20 to Fellowship Tests.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Inverted Face",
+        "shared": true,
+        "source": {
+          "1": "p. 184"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dc0f55c5ff9fd411f0313",
+      "object": {
+        "description": "Gain +2 Armour Points to all locations. Reduce Ag by -10.",
+        "modifiers": {
+          "attributes": {
+            "Ag": -10,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Iron Skin",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e1281d1949bb61bf0d3a2",
+      "object": {
+        "description": "Suffer -10 I.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": -10,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Tortured Visions",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e1259d1949bb61bf0d3a1",
+      "object": {
+        "description": "Every time you fail a Test derived from Willpower, get the Broken condition.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Shaky Morale",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dc5e3c513c07c621a9e96",
+      "object": {
+        "description": "Gain +1 Armour Points to all locations.Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Thorny Scales",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e11e8d1949bb61bf0d3a0",
+      "object": {
+        "description": "Gain +10 WP. Suffer -10 Fel.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": -10,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 10,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Hollow Heart",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e11d82b9883954565054f",
+      "object": {
+        "description": "Gain Animosity towards all species different than your own.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Hateful Impulses",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e126b2b98839545650553",
+      "object": {
+        "description": "Suffer -5 I and -5 Int.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": -5,
+            "Int": -5,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Suspicious Mind",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e13552b98839545650555",
+      "object": {
+        "description": "Gain +5 Ag. Suffer -5 Fel.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 5,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": -5,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Worried Jitters",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e119fb771fd6aa7342de9",
+      "object": {
+        "description": "Suffer -5 I and -5 WP.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": -5,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": -5,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Erratic Fantasist",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e11ac2b9883954565054e",
+      "object": {
+        "description": "Suffer -10 WP.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": -10,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Fearful Concern",
+        "shared": true,
+        "source": {
+          "1": "p. 185"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e11432b9883954565054c",
+      "object": {
+        "description": "Gain +10 WP. Suffer -5 Fel and -5 Int.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": -5,
+            "I": -5,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 10,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Beast Within",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e12902b98839545650554",
+      "object": {
+        "description": "Suffer -20 Fel. Gain +10 WP.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": -20,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 10,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Totally Unhinged",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dcc80d2dfb95cda117bb5",
+      "object": {
+        "description": "Suffer -5 Fel and -5 WP.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": -5,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": -5,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Awful Cravings",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dbfb6d2dfb95cda117bac",
+      "object": {
+        "description": "Gain +1 Movement. Can only be hidden by clothing. Requires difficult (-10) Athletics Test to walk with a normal gait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 1,
+          "size": 0
+        },
+        "name": "Animalistic Legs",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e1346d1949bb61bf0d3a4",
+      "object": {
+        "description": "Gain Frenzy trait. Gain +10 WS.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 10
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Unholy Rage",
+        "shared": true,
+        "source": {
+          "1": "p. 185"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dc005d2dfb95cda117baf",
+      "object": {
+        "description": "Gain -10 S, +5 Ag.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 5,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": -10,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Emaciated",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dc05a5c5ff9fd411f0312",
+      "object": {
+        "description": "Gain the Tentacles Creature Trait. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Fleshy Tentacle",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e12d2d1949bb61bf0d3a3",
+      "object": {
+        "description": "Gain +10 to all Tests that involve hurting others. Suffer -10 to all Tests that do not involve hurting others.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Unending Malice",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dbfc9d2dfb95cda117bad",
+      "object": {
+        "description": "Gain -1 Movement, +5 S, +5 T.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 5,
+            "T": 5,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": -1,
+          "size": 0
+        },
+        "name": "Corpulent",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dc0ccd2dfb95cda117bb0",
+      "object": {
+        "description": "Gain +10 Fel. Skin does not scar any more.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 10,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Inhuman Beauty",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dc433d2dfb95cda117bb3",
+      "object": {
+        "description": "Suffer -1 Movement. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": -1,
+          "size": 0
+        },
+        "name": "Short Legs",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e11f22b98839545650550",
+      "object": {
+        "description": "Suffer -10 Fel.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": -10,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Jealous Thoughts",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e12212b98839545650551",
+      "object": {
+        "description": "Suffer -10 Int.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": -10,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Mental Blocks",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dc09bc513c07c621a9e95",
+      "object": {
+        "description": "Skin emits as much light as a candle. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Glowing Skin",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dc10c5c5ff9fd411f0314",
+      "object": {
+        "description": "Subtract -10 from all Language Tests when speaking. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Lolling Tongue",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e117dd1949bb61bf0d39f",
+      "object": {
+        "description": "Every day, you get the Fatigued Condition for the first two hours of that day.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Chaotic Dreams",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e122f2b98839545650552",
+      "object": {
+        "description": "Suffer -10 WP. Gain +10 Ag.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 10,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": -10,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Panicked Urgency",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dc608d2dfb95cda117bb4",
+      "object": {
+        "description": "Gain +1 Armour Points to the Head. Counts as a Creature Weapon of Damage equal to SB. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Uneven Horns",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 68"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e1217b771fd6aa7342dea",
+      "object": {
+        "description": "If alone, you suffer -10 to all Tests.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Lonely Spirit",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e1278b771fd6aa7342deb",
+      "object": {
+        "description": "Gain +10 WP. Suffer -10 I.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": -10,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 10,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Thrill Seeker",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dc0155c5ff9fd411f030f",
+      "object": {
+        "description": "Gain +10 on Perception Tests involving sight.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Enormous Eye",
+        "shared": true,
+        "source": {
+          "1": "p. 184"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8dc613c513c07c621a9e97",
+      "object": {
+        "description": "Pus is coming from your body region.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Weeping Pus - Body",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 68"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "5f8e118f2b9883954565054d",
+      "object": {
+        "description": "Suffer -5 Int and -5 Dex.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": -5,
+            "Fel": 0,
+            "I": 0,
+            "Int": -5,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Crawling Skin",
+        "shared": true,
+        "source": {
+          "1": "p. 185",
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64576882b7eed4e269afbdaa",
+      "object": {
+        "description": "You can drink salt water without harm. In addition, you can spew a salty Vomit attack. The target takes no damage but must pass a Difficult (-10) Endurance Test or gain one Blinded Condition, and any metal armour they are wearing has its Armour Rating halved.\nYou skin is permanently covered with salty wet crust, and you must drink a pint of sea water every day or you gain a  a Fatigued Condition.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Brine Drinker",
+        "shared": true,
+        "source": {
+          "10": "p. 55"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e75a5049960d000150e9d6",
+      "object": {
+        "description": "Gain the Corrosive Blood Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Acid Blood",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e75adb49960d000150e9d7",
+      "object": {
+        "description": "Gain the Bite +3 Creature Trait. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Beaked Face",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e75b8f49960d000150e9d8",
+      "object": {
+        "description": "+1 Armour Point to the Head. Gain the Bite +9 Creature Trait. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Bear Head",
+        "shared": true,
+        "source": {
+          "12": "p. 66, 69"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e75b9e49960d000150e9d9",
+      "object": {
+        "description": "+1 Armour Point to the Head. Gain the Horns (Tusks) Creature Trait. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Boar Head",
+        "shared": true,
+        "source": {
+          "12": "p. 66, 69"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e75b9f49960d000150e9da",
+      "object": {
+        "description": "+1 Armour Point to the Head. Gain the Horns Creature Trait. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Bull Head",
+        "shared": true,
+        "source": {
+          "12": "p. 66, 69"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e75ba049960d000150e9db",
+      "object": {
+        "description": "Gain the Bite +5 Creature Trait. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Dog Head",
+        "shared": true,
+        "source": {
+          "12": "p. 66, 69"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e75ba149960d000150e9dc",
+      "object": {
+        "description": "Gain the Bite +4 Creature Trait. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Eagle Head",
+        "shared": true,
+        "source": {
+          "12": "p. 66, 69"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e75ba149960d000150e9dd",
+      "object": {
+        "description": "Gain the Bite +4 and Infected Creature Traits. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Rat Head",
+        "shared": true,
+        "source": {
+          "12": "p. 66, 69"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e75ba249960d000150e9de",
+      "object": {
+        "description": "Gain the Bite +3 and Venom (Average) Creature Traits. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Giant Spider Head",
+        "shared": true,
+        "source": {
+          "12": "p. 66, 69"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e75ba649960d000150e9df",
+      "object": {
+        "description": "+1 Armour Point to the Head. Gain the Bite +6 Creature Trait. Gain the Acute Senses - Smell Talent. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Wolf Head",
+        "shared": true,
+        "source": {
+          "12": "p. 66, 69"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e75ba749960d000150e9e0",
+      "object": {
+        "description": "+1 Armour Point to the Head. Gain the Bite +3 and Venom (Average) Creature Traits. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Snake Head",
+        "shared": true,
+        "source": {
+          "12": "p. 66, 69"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e75bb149960d000150e9e1",
+      "object": {
+        "description": "Gain the Horns Creature Trait. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Goat Head",
+        "shared": true,
+        "source": {
+          "12": "p. 66, 69"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e75f5649960d000150e9e2",
+      "object": {
+        "description": "Permanently reduce Dexterity to 0. You cannot be disarmed. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Beweaponed Extremities",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e75f9f49960d000150e9e3",
+      "object": {
+        "description": "Gain the Acute Sense - Hearing Talent. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Big Ears",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e75fe349960d000150e9e4",
+      "object": {
+        "description": "Gain the Arboreal Creature Trait. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Bird's Feet",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7605249960d000150e9e5",
+      "object": {
+        "description": "Gain the Fear 2 Creature Trait. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Blank Face",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7607449960d00018761cb",
+      "object": {
+        "description": "Gain the Breath 5 (Fire) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Breathe Fire",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e760ba49960d000150e9e6",
+      "object": {
+        "description": "Gain +10 Initiative. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 10,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Bulging Eyes",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7612749960d000150e9e7",
+      "object": {
+        "description": "Anything that physically touch you must pass an Athletics Test or gain 1 Ablaze Condition. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Burning Skin",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e761db49960d000150e9e8",
+      "object": {
+        "description": "+1 Armour Point on arms and body. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Carapace - Arms and Body",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e761df49960d000150e9e9",
+      "object": {
+        "description": "+1 Armour Point on arms and legs. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Carapace - Arms and Legs",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e761e249960d000150e9ea",
+      "object": {
+        "description": "+1 Armour Point on arms and head. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Carapace - Arms and Head",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e761e449960d000150e9eb",
+      "object": {
+        "description": "+1 Armour Point on legs and body. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Carapace - Legs and Body",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e761e449960d000150e9ec",
+      "object": {
+        "description": "+1 Armour Point on head and body. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Carapace - Head and Body",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e761e549960d000150e9ed",
+      "object": {
+        "description": "+1 Armour Point on legs and head. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Carapace - Legs and Head",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7628549960d000150e9ee",
+      "object": {
+        "description": "Hands count as a Creature Weapon of Damage equal to your SB. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Claws",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e762a849960d000150e9ef",
+      "object": {
+        "description": "Gain the Distracting Creature Trait. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Cloud of Flies",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e762f849960d000150e9f0",
+      "object": {
+        "description": "Gain the Attractive Talent when dealing with Mutants and Beastmen. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Crested Head",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7631849960d000150e9f1",
+      "object": {
+        "description": "Gain the Distracting Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Deafening Cry",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7637449960d000150e9f2",
+      "object": {
+        "description": "You may count any melee weapon as having a Reach up to 2 steps longer.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Elastic Arms",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7646649960d000150e9f3",
+      "object": {
+        "description": "You may cast the Evil Eye Spell without performing a Test by\nspending a Fortune Point. Every time yo do it, you immediately suffer a Minor Miscast. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Evil Eye",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7653549960d000150e9f4",
+      "object": {
+        "description": "Extra mouth somewhere on your left arm. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Extra Mouth - Left Arm",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7653649960d000150e9f5",
+      "object": {
+        "description": "Extra mouth somewhere on your right arm. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Extra Mouth - Right Arm",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7653749960d000150e9f6",
+      "object": {
+        "description": "Extra mouth somewhere on your left leg. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Extra Mouth - Left Leg",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7653749960d000150e9f7",
+      "object": {
+        "description": "Extra mouth somewhere on your right leg. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Extra Mouth - Right Leg",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7653849960d000150e9f8",
+      "object": {
+        "description": "Extra mouth somewhere on your body. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Extra Mouth - Body",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e765e849960d000150e9f9",
+      "object": {
+        "description": "See over/around obstacles. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Eyestalks",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7679949960d000150e9fb",
+      "object": {
+        "description": "Gain the Distracting Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Foul Odour",
+        "shared": true,
+        "source": {
+          "12": "p. 66"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7ce6b49960d0001b76573",
+      "object": {
+        "description": "You no longer suffer the effects of Exposure in cold climates. The\neffects of Exposure in hot climates are doubled. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Furred Skin",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7cea049960d0001b76574",
+      "object": {
+        "description": "You can breathe underwater. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Gills",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7cef049960d0001b76575",
+      "object": {
+        "description": "Gain the Fear 2 Creature Trait. All head hits count as misses. Cannot be hidden",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Headless",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7cf5649960d0001b76576",
+      "object": {
+        "description": "Gain the Bounce Creature Trait but reduce movement to 2. It cannot be increased. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Hopper",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d08849960d0001b76577",
+      "object": {
+        "description": "If your opponent has melee weapon with the same Reach as yours, yours counts a longer. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Long Arms",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d0e149960d0001b76578",
+      "object": {
+        "description": "Gain +2 Movement. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 2,
+          "size": 0
+        },
+        "name": "Long Legs",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d15c49960d0001b76579",
+      "object": {
+        "description": "Half of all body hits become head hits. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Long Neck",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d18149960d0001b7657a",
+      "object": {
+        "description": "Gain one Free Attack. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Multiple Arms",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d19d49960d0001b7657b",
+      "object": {
+        "description": "Gain +1 Movement. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 1,
+          "size": 0
+        },
+        "name": "Multiple Legs",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d1d749960d0001b7657c",
+      "object": {
+        "description": "Subtract -20 from BS. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": -20,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "One Eye",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d24149960d0001b7657d",
+      "object": {
+        "description": "Gain the Stupid Creature Trait. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Pin Head",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d27749960d0001b7657e",
+      "object": {
+        "description": "Gain the Stupid Creature Trait. You cannot wear a helmet. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Pointed Head",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d2cb49960d0001b7657f",
+      "object": {
+        "description": "Gain the Fear 1 Creature Trait. Anyone trying to see if you are lying suffer -20 penalty to Intuition. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Rearranged Face",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d2ee49960d0001b76580",
+      "object": {
+        "description": "Gain the Fear 2 and Infected Creature Traits.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Rotting Flesh",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d31d49960d0001b76581",
+      "object": {
+        "description": "Gain the Distracting Creature Trait. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Shifting Colours",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d37249960d0001b76582",
+      "object": {
+        "description": "Gain the Fear 2 Creature Trait. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Skull Face",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d46e49960d0001b76583",
+      "object": {
+        "description": "Gain +1 Armour Points on all locations. Gain a Free Attack (Weapon +4 Creature Trait) when Charging. You can no longer wear armour. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Spiked Skin",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d4ac49960d0001b76584",
+      "object": {
+        "description": "Gain the Wallcrawler Creature Trait. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Suckered Hands and Feet",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d4c849960d0001b76585",
+      "object": {
+        "description": "Gain the Tail Attack +3 Creature Trait. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Tail",
+        "shared": true,
+        "source": {
+          "12": "p. 67"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d51a49960d0001b76586",
+      "object": {
+        "description": "Gain the Acute Sense - Vision Talent. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Three Eyes",
+        "shared": true,
+        "source": {},
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d5c749960d0001b76587",
+      "object": {
+        "description": "Gain the Fear 2 Creature Trait. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Transparent Skin",
+        "shared": true,
+        "source": {
+          "12": "p. 68"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d5e049960d0001b76588",
+      "object": {
+        "description": "Gain the Ambidextrous Talent. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Two Heads",
+        "shared": true,
+        "source": {
+          "12": "p. 68"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d63b49960d0001b76589",
+      "object": {
+        "description": "Your skin has a strange colour or texture. Cannot be hidden.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Unusual Skin",
+        "shared": true,
+        "source": {
+          "12": "p. 68"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d69749960d0001b7658a",
+      "object": {
+        "description": "Gain the Frenzy Creature Trait. Anytime you are under influence of Frenzy, temporarily gain another random physical mutation.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Warp Frenzy",
+        "shared": true,
+        "source": {
+          "12": "p. 68"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d6b749960d0001b7658b",
+      "object": {
+        "description": "Gain the Amphibious Creature Trait. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Webbed Feet",
+        "shared": true,
+        "source": {
+          "12": "p. 68"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d70549960d0001b7658c",
+      "object": {
+        "description": "Pus is coming from your head.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Weeping Pus - Head",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 68"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d70549960d0001b7658d",
+      "object": {
+        "description": "Pus is coming from your left arm.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Weeping Pus - Left Arm",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 68"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d70649960d0001b7658e",
+      "object": {
+        "description": "Pus is coming from your right arm.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Weeping Pus - Right Arm.",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 68"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d70849960d0001b7658f",
+      "object": {
+        "description": "Pus is coming from your left leg.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Weeping Pus - Left Leg",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 68"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d70949960d0001b76590",
+      "object": {
+        "description": "Pus is coming from your right leg.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Weeping Pus - Right Leg",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 68"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64e7d7ac49960d0001b76591",
+      "object": {
+        "description": "Gain the Flight 60 Creature Trait. Can only be hidden by clothing.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Wings",
+        "shared": true,
+        "source": {
+          "12": "p. 68"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64eb124949960d000141a369",
+      "object": {
+        "description": "Gain the Witch! Talent. Suffer -5 Fel and -5 Int.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": -5,
+            "I": 0,
+            "Int": -5,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Aethyric Leak",
+        "shared": true,
+        "source": {
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64eb129b49960d000141a36a",
+      "object": {
+        "description": "Gain the Bestial Creature Trait for 1d10 hours if you fail a WP related test.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Animalistic Psyche",
+        "shared": true,
+        "source": {
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64eb130e49960d000141a36b",
+      "object": {
+        "description": "Whenever subject to Psychology, gain the Corruption (Minor)\nCreature Trait. Suffer -10 Fel.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": -10,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Beacon of Corruption",
+        "shared": true,
+        "source": {
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64eb139849960d000141a36c",
+      "object": {
+        "description": "Gain the Painless Creature Trait. Suffer -20 I and -20 Int.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": -20,
+            "Int": -20,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Beyond Pain",
+        "shared": true,
+        "source": {
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64eb13ca49960d000141a36d",
+      "object": {
+        "description": "Gain the Hatred (Religion) Creature Trait. Gain +10 WP.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 10,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Blasphemous Soul",
+        "shared": true,
+        "source": {
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64eb148149960d000141a36e",
+      "object": {
+        "description": "Every time you would take a Broken Condition, gain Immunity to Psychology Creature Trait for 1d10 Rounds instead. Afterwards take 1d10 Broken Conditions.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Blasted Mind",
+        "shared": true,
+        "source": {
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64eb1a2b49960d000141a36f",
+      "object": {
+        "description": "Gain the Hatred (Target) Creature Trait. Once a day, roll on the Fixations Table (Enemy in Shadows Companion p. 69) to determine target for that day.\n",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Fitful Hatred",
+        "shared": true,
+        "source": {
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64eb1af849960d000141a370",
+      "object": {
+        "description": "Gain a Fatigued Condition every week you do not gain a Corruption Point or are not responsible for someone else gaining it. Lose all Fatigued Conditions if either situation occurs.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Glorious Corruption",
+        "shared": true,
+        "source": {
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64eb1b6f49960d000141a371",
+      "object": {
+        "description": "Every time you fail a WP related Test, gain the Malaise Symptom for 1d10 hours.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Hounds of Despair",
+        "shared": true,
+        "source": {
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64eb1ba349960d000141a372",
+      "object": {
+        "description": "Gain the Belligerent Creature Trait. You cannot Flee voluntarily.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Hurried Masochism",
+        "shared": true,
+        "source": {
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64eb1c1649960d000141a373",
+      "object": {
+        "description": "Every time you interact with filth, gain the Nausea Symptom for 1d10 hours.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Lingering Foulness",
+        "shared": true,
+        "source": {
+          "12": "p. 70"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc37149960d000141a37e",
+      "object": {
+        "description": "Suffer -10 Int. Gain +10 WP. When alone, Gain the Stupid Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": -10,
+            "S": 0,
+            "T": 0,
+            "WP": 10,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Mindless Wandering",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc3a649960d000141a37f",
+      "object": {
+        "description": "Gain + 10 I. Gain the Skittish Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 10,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Monstrous Paranoia",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc40549960d000141a380",
+      "object": {
+        "description": "Suffer -10 WP. Gain +10 Ag.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 10,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": -10,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Panicked Urgency",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc42449960d000141a381",
+      "object": {
+        "description": "Gain the Hungry Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Ravenous Hunger",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc4c149960d000141a382",
+      "object": {
+        "description": "Every time you fail a Willpower related Test, gain the Convulsions Symptom for 1d10 hours.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Soul Sickness",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc53549960d000141a383",
+      "object": {
+        "description": "Gain the Afraid (Inanimate Objects) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Inanimate Objects",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc54d49960d000141a384",
+      "object": {
+        "description": "Gain the Afraid (Poverty) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Poverty",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc54e49960d000141a385",
+      "object": {
+        "description": "Gain the Afraid (Fire) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Fire",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc54f49960d000141a386",
+      "object": {
+        "description": "Gain the Afraid (Figures/Symbols of War) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Figures/Symbols of War",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc54f49960d000141a387",
+      "object": {
+        "description": "Gain the Afraid (Figures/Symbols of Authority) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Figures/Symbols of Authority",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc55049960d000141a388",
+      "object": {
+        "description": "Gain the Afraid (Figures/Symbols of Religion) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Figures/Symbols of Religion",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc55149960d000141a389",
+      "object": {
+        "description": "Gain the Afraid (Monsters) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Monsters",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc55149960d000141a38a",
+      "object": {
+        "description": "Gain the Afraid (Mutants) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Mutants",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc55249960d000141a38b",
+      "object": {
+        "description": "Gain the Afraid (Halflings) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Halflings",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc55349960d000141a38c",
+      "object": {
+        "description": "Gain the Afraid (Humans) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Humans",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc55349960d000141a38d",
+      "object": {
+        "description": "Gain the Afraid (Dwarfs) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Dwarfs",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc55449960d000141a38e",
+      "object": {
+        "description": "Gain the Afraid (Elves) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Elves",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc55549960d000141a38f",
+      "object": {
+        "description": "Gain the Afraid (Wild Animals) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Wild Animals",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc55549960d000141a390",
+      "object": {
+        "description": "Gain the Afraid (Domestic Animals) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Domestic Animals",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc55649960d000141a391",
+      "object": {
+        "description": "Gain the Afraid (Magic) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Magic",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc55649960d000141a392",
+      "object": {
+        "description": "Gain the Afraid (Sickness) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Sickness",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc55749960d000141a393",
+      "object": {
+        "description": "Gain the Afraid (Water) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Water",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc55a49960d000141a394",
+      "object": {
+        "description": "Gain the Afraid (Affluence) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Affluence",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64ebc55a49960d000141a395",
+      "object": {
+        "description": "Gain the Afraid (Happiness) Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Terrible Phobia - Happiness",
+        "shared": true,
+        "source": {
+          "12": "p. 71"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64f3b09a49960d0001621aab",
+      "object": {
+        "description": "Your legs now resemble the hind legs of a goat. Gain +1 Movement. Can only be hidden by clothing. Requires difficult (-10) Athletics Test to walk with a normal gait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 1,
+          "size": 0
+        },
+        "name": "Animalistic Legs - Goat",
+        "shared": true,
+        "source": {
+          "1": "p. 184",
+          "12": "p. 66",
+          "14": "p. 147"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64f3b15049960d0001621aac",
+      "object": {
+        "description": "Lose 20 Fel and 10 Int. Gain the Acute Sense - Smell Talent.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": -20,
+            "I": 0,
+            "Int": -10,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Bestial Face - Dog",
+        "shared": true,
+        "source": {
+          "14": "p. 147"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64f3b1f949960d0001621aad",
+      "object": {
+        "description": "Gain the Fear 3 Creature Trait. Lose -20 Fel.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": -20,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Rotting Flesh - v2",
+        "shared": true,
+        "source": {
+          "14": "p. 147"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64f3b24b49960d0001621aae",
+      "object": {
+        "description": "Lose -40 Int, to a minimum of 10. Gain the Stupid Creature Trait.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Pin Head - v2",
+        "shared": true,
+        "source": {
+          "14": "p. 147"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64f3b29a49960d0001621aaf",
+      "object": {
+        "description": "Lose -5 Int and -10 Fel. Gain +1 Armour point to\nyour Head Hit Location. Headwear only fits if specially crafted.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": -10,
+            "I": 0,
+            "Int": -5,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Pointed Head - v2",
+        "shared": true,
+        "source": {
+          "14": "p. 147"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64f3b30449960d0001621ab0",
+      "object": {
+        "description": "Lose -5 Int and -10 Fel. Gain +1 Armour point to\nyour Head Hit Location. Headwear only fits if specially crafted.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": -10,
+            "I": 0,
+            "Int": -5,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Pointed Head - v2 - copy",
+        "shared": true,
+        "source": {
+          "14": "p. 147"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "64f3b32649960d0001621ab1",
+      "object": {
+        "description": "Lose -10 Dex and -10 Fel. Gain +1 Armour Points to all locations. This AP may not be used for Critical Deflection.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": -10,
+            "Fel": -10,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Thorny Scales - v2",
+        "shared": true,
+        "source": {
+          "14": "p. 147"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "6550cb6849960d00016b3ae4",
+      "object": {
+        "description": "You have new eyes. Roll 1d100 to determine their Hit Location. Gain +1d10 I. If you have no I Characteristic, gain +3d10 I instead. All hits the the Hit Location with your new eyes inflict a Blinded Condition.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Clutch of Eyes",
+        "shared": true,
+        "source": {
+          "27": "p. 46"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "6550cb7149960d00016b3ae5",
+      "object": {
+        "description": "Your head to stretches in wide translucent folds around your swollen, glowing brain. Gain +1d10 Int.  If you have no Int Characteristic, gain +3d10 I instead.  All Head Hits cause a Critical Wound.\n",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Massive Intelect",
+        "shared": true,
+        "source": {
+          "27": "p. 46"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "6550cc0d49960d00016b3ae6",
+      "object": {
+        "description": "You suffer -20 to all Tests requiring you to hold something and -20 to Fel Tests. When escaping Grapple, if you succeed, you can use unit die number as SL.\n",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Slippery Skin",
+        "shared": true,
+        "source": {
+          "27": "p. 46"
+        },
+        "type": 0
+      },
+      "ownerId": "admin"
+    },
+    {
+      "canEdit": false,
+      "id": "6550cd0149960d00016b3ae7",
+      "object": {
+        "description": "With a successful Willpower Test, you can mentally communicate with any sentient creature within WP yards. If you succeed an Opposed Willpower Test, you can read creature's surface thoughts.",
+        "modifiers": {
+          "attributes": {
+            "Ag": 0,
+            "BS": 0,
+            "Dex": 0,
+            "Fel": 0,
+            "I": 0,
+            "Int": 0,
+            "S": 0,
+            "T": 0,
+            "WP": 0,
+            "WS": 0
+          },
+          "effects": [],
+          "movement": 0,
+          "size": 0
+        },
+        "name": "Telepathy",
+        "shared": true,
+        "source": {
+          "27": "p. 46"
+        },
+        "type": 1
+      },
+      "ownerId": "admin"
+    }
+  ]
+}

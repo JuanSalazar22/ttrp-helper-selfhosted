@@ -1,0 +1,415 @@
+[
+  {
+    "name": "Human",
+    "modifiers": {
+      "ws": 20,
+      "bs": 20,
+      "s": 20,
+      "t": 20,
+      "i": 20,
+      "ag": 20,
+      "dex": 20,
+      "int": 20,
+      "wp": 20,
+      "fel": 20
+    },
+    "woundsCoeffs": {
+      "sb": 1,
+      "tb": 2,
+      "wpb": 1
+    },
+    "fate": 2,
+    "resilience": 1,
+    "extraPoints": 3,
+    "movement": 4,
+    "skills": [
+      {
+        "name": "Animal Care",
+        "characteristic": "int"
+      },
+      {
+        "name": "Charm",
+        "characteristic": "fel"
+      },
+      {
+        "name": "Cool",
+        "characteristic": "wp"
+      },
+      {
+        "name": "Evaluate",
+        "characteristic": "int"
+      },
+      {
+        "name": "Gossip",
+        "characteristic": "fel"
+      },
+      {
+        "name": "Haggle",
+        "characteristic": "fel"
+      },
+      {
+        "name": "Language - Bretonnian",
+        "characteristic": "int"
+      },
+      {
+        "name": "Language - Wastelander",
+        "characteristic": "int"
+      },
+      {
+        "name": "Leadership",
+        "characteristic": "fel"
+      },
+      {
+        "name": "Lore - Local - Reikland",
+        "characteristic": "int"
+      },
+      {
+        "name": "Melee - Basic",
+        "characteristic": "ws"
+      },
+      {
+        "name": "Ranged - Bow",
+        "characteristic": "bs"
+      }
+    ],
+    "talents": [
+      "Doomed",
+      "Savvy",
+      "Suave"
+    ],
+    "randomTalents": 3
+  },
+  {
+    "name": "Dwarf",
+    "modifiers": {
+      "ws": 30,
+      "bs": 20,
+      "s": 20,
+      "t": 30,
+      "i": 20,
+      "ag": 10,
+      "dex": 30,
+      "int": 20,
+      "wp": 40,
+      "fel": 10
+    },
+    "woundsCoeffs": {
+      "sb": 1,
+      "tb": 2,
+      "wpb": 1
+    },
+    "fate": 0,
+    "resilience": 2,
+    "extraPoints": 2,
+    "movement": 3,
+    "skills": [
+      {
+        "name": "Consume Alcohol",
+        "characteristic": "t"
+      },
+      {
+        "name": "Cool",
+        "characteristic": "wp"
+      },
+      {
+        "name": "Endurance",
+        "characteristic": "t"
+      },
+      {
+        "name": "Entertain - Storytelling",
+        "characteristic": "fel"
+      },
+      {
+        "name": "Evaluate",
+        "characteristic": "int"
+      },
+      {
+        "name": "Intimidate",
+        "characteristic": "s"
+      },
+      {
+        "name": "Language - Khazalid",
+        "characteristic": "int"
+      },
+      {
+        "name": "Lore - Dwarfs",
+        "characteristic": "int"
+      },
+      {
+        "name": "Lore - Geology",
+        "characteristic": "int"
+      },
+      {
+        "name": "Lore - Metallurgy",
+        "characteristic": "int"
+      },
+      {
+        "name": "Melee - Basic",
+        "characteristic": "ws"
+      },
+      {
+        "name": "Trade",
+        "characteristic": "dex"
+      }
+    ],
+    "talents": [
+      "Magic Resistance",
+      "Sturdy",
+      "Night Vision",
+      "Read/Write",
+      "Relentless",
+      "Resolute",
+      "Strong-minded"
+    ],
+    "randomTalents": 0
+  },
+  {
+    "name": "Halfling",
+    "modifiers": {
+      "ws": 10,
+      "bs": 30,
+      "s": 10,
+      "t": 20,
+      "i": 20,
+      "ag": 20,
+      "dex": 30,
+      "int": 20,
+      "wp": 30,
+      "fel": 30
+    },
+    "woundsCoeffs": {
+      "sb": 0,
+      "tb": 2,
+      "wpb": 1
+    },
+    "fate": 0,
+    "resilience": 2,
+    "extraPoints": 3,
+    "movement": 3,
+    "skills": [
+      {
+        "name": "Charm",
+        "characteristic": "fel"
+      },
+      {
+        "name": "Consume Alcohol",
+        "characteristic": "t"
+      },
+      {
+        "name": "Dodge",
+        "characteristic": "ag"
+      },
+      {
+        "name": "Gamble",
+        "characteristic": "int"
+      },
+      {
+        "name": "Haggle",
+        "characteristic": "fel"
+      },
+      {
+        "name": "Intuition",
+        "characteristic": "i"
+      },
+      {
+        "name": "Language - Mootish",
+        "characteristic": "int"
+      },
+      {
+        "name": "Lore - Local - Reikland",
+        "characteristic": "int"
+      },
+      {
+        "name": "Perception",
+        "characteristic": "i"
+      },
+      {
+        "name": "Sleight of Hand",
+        "characteristic": "dex"
+      },
+      {
+        "name": "Stealth",
+        "characteristic": "ag"
+      },
+      {
+        "name": "Trade - Cook",
+        "characteristic": "dex"
+      }
+    ],
+    "talents": [
+      "Acute Sense - Taste",
+      "Night Vision",
+      "Resistance - Chaos",
+      "Small"
+    ],
+    "randomTalents": 2
+  },
+  {
+    "name": "High Elf",
+    "modifiers": {
+      "ws": 30,
+      "bs": 30,
+      "s": 20,
+      "t": 20,
+      "i": 40,
+      "ag": 30,
+      "dex": 30,
+      "int": 30,
+      "wp": 30,
+      "fel": 20
+    },
+    "woundsCoeffs": {
+      "sb": 1,
+      "tb": 2,
+      "wpb": 1
+    },
+    "fate": 0,
+    "resilience": 0,
+    "extraPoints": 2,
+    "movement": 5,
+    "skills": [
+      {
+        "name": "Cool",
+        "characteristic": "wp"
+      },
+      {
+        "name": "Entertain - Singing",
+        "characteristic": "fel"
+      },
+      {
+        "name": "Evaluate",
+        "characteristic": "int"
+      },
+      {
+        "name": "Language - Eltharin",
+        "characteristic": "int"
+      },
+      {
+        "name": "Leadership",
+        "characteristic": "fel"
+      },
+      {
+        "name": "Melee - Basic",
+        "characteristic": "ws"
+      },
+      {
+        "name": "Navigation",
+        "characteristic": "i"
+      },
+      {
+        "name": "Perception",
+        "characteristic": "i"
+      },
+      {
+        "name": "Play",
+        "characteristic": "dex"
+      },
+      {
+        "name": "Ranged - Bow",
+        "characteristic": "bs"
+      },
+      {
+        "name": "Sail",
+        "characteristic": "ag"
+      },
+      {
+        "name": "Swim",
+        "characteristic": "s"
+      }
+    ],
+    "talents": [
+      "Night Vision",
+      "Read/Write",
+      "Acute Sense - Sight",
+      "Coolheaded",
+      "Savvy",
+      "Second Sight",
+      "Sixth Sense"
+    ],
+    "randomTalents": 0
+  },
+  {
+    "name": "Wood Elf",
+    "modifiers": {
+      "ws": 30,
+      "bs": 30,
+      "s": 20,
+      "t": 20,
+      "i": 40,
+      "ag": 30,
+      "dex": 30,
+      "int": 30,
+      "wp": 30,
+      "fel": 20
+    },
+    "woundsCoeffs": {
+      "sb": 1,
+      "tb": 2,
+      "wpb": 1
+    },
+    "fate": 0,
+    "resilience": 0,
+    "extraPoints": 2,
+    "movement": 5,
+    "skills": [
+      {
+        "name": "Athletics",
+        "characteristic": "ag"
+      },
+      {
+        "name": "Climb",
+        "characteristic": "s"
+      },
+      {
+        "name": "Endurance",
+        "characteristic": "t"
+      },
+      {
+        "name": "Entertain - Singing",
+        "characteristic": "fel"
+      },
+      {
+        "name": "Intimidate",
+        "characteristic": "s"
+      },
+      {
+        "name": "Language - Eltharin",
+        "characteristic": "int"
+      },
+      {
+        "name": "Melee - Basic",
+        "characteristic": "ws"
+      },
+      {
+        "name": "Outdoor Survival",
+        "characteristic": "int"
+      },
+      {
+        "name": "Perception",
+        "characteristic": "i"
+      },
+      {
+        "name": "Ranged - Bow",
+        "characteristic": "bs"
+      },
+      {
+        "name": "Stealth - Rural",
+        "characteristic": "ag"
+      },
+      {
+        "name": "Track",
+        "characteristic": "i"
+      }
+    ],
+    "talents": [
+      "Night Vision",
+      "Read/Write",
+      "Rover",
+      "Acute Sense - Sight",
+      "Hardy",
+      "Second Sight",
+      "Very Resilient"
+    ],
+    "randomTalents": 0
+  }
+]

@@ -1,0 +1,1592 @@
+[
+  {
+    "id": "5caddb56a48cc24ecc4eca90",
+    "name": "Signos secretos"
+  },
+  {
+    "id": "5ce909813f5a0e36c0a4bab6",
+    "name": "Saber (Brujas)"
+  },
+  {
+    "id": "5cadddd3a48cc24ecc4eca99",
+    "name": "Montar"
+  },
+  {
+    "id": "5cadc7bb828dc9389cc7b15f",
+    "name": "Saber (Plantas)"
+  },
+  {
+    "id": "5cdfbd2c30259922e8ea210b",
+    "name": "Saber (Local)"
+  },
+  {
+    "id": "5cadc6a3828dc9389cc7b15a",
+    "name": "Idioma"
+  },
+  {
+    "id": "5cea8ed1adaed446d44365ec",
+    "name": "Tocar"
+  },
+  {
+    "id": "5cadc5d8828dc9389cc7b158",
+    "name": "Beber alcohol"
+  },
+  {
+    "id": "5cadd044828dc9389cc7b16c",
+    "name": "Cotillear"
+  },
+  {
+    "id": "5ce8518006ad2230542604e3",
+    "name": "Rastrear"
+  },
+  {
+    "id": "5ca91ce545b5ad53fc7b080e",
+    "name": "Cuidar animales"
+  },
+  {
+    "id": "5ce84fb806ad2230542604e2",
+    "name": "Nadar"
+  },
+  {
+    "id": "5ce93cd3d836af2ec4248aab",
+    "name": "Saber (Local - Altdorf)"
+  },
+  {
+    "id": "5ce984f11140dc34041696a0",
+    "name": "Remar"
+  },
+  {
+    "id": "5cea8a12adaed446d44365e5",
+    "name": "Saber (Enanos)"
+  },
+  {
+    "id": "5cf97cbfc611a9288474f5c1",
+    "name": "Saber (Ingeniería)"
+  },
+  {
+    "id": "5d0f33dea6b5ad5d006b21ea",
+    "name": "Signos secretos (Minero)"
+  },
+  {
+    "id": "5d0fc4d7ff5ffa6a34fd1587",
+    "name": "Saber (Etiqueta)"
+  },
+  {
+    "id": "5d0fedcc8332bf4c94ed6e9d",
+    "name": "Combate cuerpo a cuerpo (Mayal)"
+  },
+  {
+    "id": "5f5e90e7807c850c3dcd01b6",
+    "name": "Navegar (Coca)"
+  },
+  {
+    "id": "6367bcf99e8c0edb465ccb2b",
+    "name": "Idioma (Ghassally)"
+  },
+  {
+    "id": "5ce47184099f0c36546bdde1",
+    "name": "Saber (Derecho)"
+  },
+  {
+    "id": "5cadcbb5828dc9389cc7b169",
+    "name": "Encanto"
+  },
+  {
+    "id": "5d126c79a5009175446b700d",
+    "name": "Idioma (Magick)"
+  },
+  {
+    "id": "5d16930b339d63247c167c87",
+    "name": "Oficio (Barbero)"
+  },
+  {
+    "id": "5f5e92cc13ccf32ae905fc93",
+    "name": "Idioma (Nórdico)"
+  },
+  {
+    "id": "5f5e931d807c850c3dcd01b9",
+    "name": "Idioma (Reikspiel)"
+  },
+  {
+    "id": "5ce986db1140dc34041696a1",
+    "name": "Navegar"
+  },
+  {
+    "id": "5caddb8fa48cc24ecc4eca91",
+    "name": "Signos secretos (Gremio del Boticario)"
+  },
+  {
+    "id": "5ce844433ec45d1a88e33240",
+    "name": "Signos secretos (Cazador)"
+  },
+  {
+    "id": "5cdfbaf930259922e8ea210a",
+    "name": "Evaluar"
+  },
+  {
+    "id": "5d068f634c58df585c1bc30c",
+    "name": "A distancia (Enredo)"
+  },
+  {
+    "id": "5d06a164bbde575820bf30a5",
+    "name": "Actuar (Combate espectacular)"
+  },
+  {
+    "id": "5d111aa944bd6063e885c0d0",
+    "name": "Canalización (Aqshy)"
+  },
+  {
+    "id": "5d126d69a5009175446b700e",
+    "name": "Oficio (Herborista)"
+  },
+  {
+    "id": "5d1693ef339d63247c167c88",
+    "name": "Actuar (Danza)"
+  },
+  {
+    "id": "5d17ec4d6dcd9568649b11dc",
+    "name": "Saber (Naufragios)"
+  },
+  {
+    "id": "5d1886d723353e73dca2ec6b",
+    "name": "Saber (Hierbas)"
+  },
+  {
+    "id": "5cea88faadaed446d44365e2",
+    "name": "Entretener"
+  },
+  {
+    "id": "5ce46ed8099f0c36546bddda",
+    "name": "Combate cuerpo a cuerpo (Parada)"
+  },
+  {
+    "id": "5ce987721140dc34041696a2",
+    "name": "Navegar (Gabarra)"
+  },
+  {
+    "id": "5ce9cbaf179ba450886fba7e",
+    "name": "Sigilo (Urbano)"
+  },
+  {
+    "id": "5ce9be19c831083940ff5853",
+    "name": "Saber (Rutas fluviales)"
+  },
+  {
+    "id": "5cea8ef8adaed446d44365ed",
+    "name": "Tocar (Violín)"
+  },
+  {
+    "id": "5cea8c22adaed446d44365eb",
+    "name": "Idioma (Eltharin)"
+  },
+  {
+    "id": "5d06765048a38f3b4c12ef5a",
+    "name": "Saber (Imperio)"
+  },
+  {
+    "id": "5d0fc194ff5ffa6a34fd1583",
+    "name": "Saber (Historia)"
+  },
+  {
+    "id": "5d112a3aa85de1596cf2620f",
+    "name": "Canalización (Hysh)"
+  },
+  {
+    "id": "5d188aa923353e73dca2ec72",
+    "name": "Saber (Arte)"
+  },
+  {
+    "id": "5d18905a23353e73dca2ec76",
+    "name": "Entretener (Conferencia)"
+  },
+  {
+    "id": "5f26706140ec5f788f3ab085",
+    "name": "Navegar (Carabela)"
+  },
+  {
+    "id": "5f5e914f807c850c3dcd01b8",
+    "name": "Navegar (Barco Lobo)"
+  },
+  {
+    "id": "5cadc8b7828dc9389cc7b162",
+    "name": "Oficio (Envenenador)"
+  },
+  {
+    "id": "5cade0c1a48cc24ecc4ecaa0",
+    "name": "Investigar"
+  },
+  {
+    "id": "5ce3027f97b74e3c4cebdbbd",
+    "name": "Atletismo"
+  },
+  {
+    "id": "5cec2d31488ae64fb84c0483",
+    "name": "Adiestrar animales (Paloma)"
+  },
+  {
+    "id": "5cadc70d828dc9389cc7b15b",
+    "name": "Idioma (Clásico)"
+  },
+  {
+    "id": "5cea8a3aadaed446d44365e6",
+    "name": "Saber (Geología)"
+  },
+  {
+    "id": "5ce114c70f123f1f14a4cc66",
+    "name": "Sangre fría"
+  },
+  {
+    "id": "5ce909163f5a0e36c0a4bab5",
+    "name": "Combate cuerpo a cuerpo (Pelea)"
+  },
+  {
+    "id": "5d0ead9cc773f26d50fcc956",
+    "name": "Arte"
+  },
+  {
+    "id": "5d1877cb23353e73dca2ec5c",
+    "name": "Idioma (Ladrones)"
+  },
+  {
+    "id": "5ce47011099f0c36546bdddd",
+    "name": "Oficio (Armero de armas de fuego)"
+  },
+  {
+    "id": "5d18b4ad7209656444284f3e",
+    "name": "Adiestrar animales (Perro)"
+  },
+  {
+    "id": "5cadd072828dc9389cc7b16d",
+    "name": "Idioma (Gremio del Boticario)"
+  },
+  {
+    "id": "5d18b8647209656444284f44",
+    "name": "Combate cuerpo a cuerpo (Esgrima)"
+  },
+  {
+    "id": "5d0fed8a8332bf4c94ed6e9c",
+    "name": "Tocar (Pífano)"
+  },
+  {
+    "id": "5d1120f844bd6063e885c0d3",
+    "name": "Canalización (Dhar)"
+  },
+  {
+    "id": "5d18f132eeb0ed74f060f68b",
+    "name": "Idioma (Estaliano)"
+  },
+  {
+    "id": "5d167ce1339d63247c167c68",
+    "name": "Rezar"
+  },
+  {
+    "id": "5d18f3d9eeb0ed74f060f691",
+    "name": "Saber (Dragones)"
+  },
+  {
+    "id": "5d1885e223353e73dca2ec6a",
+    "name": "Sigilo (Rural o urbano)"
+  },
+  {
+    "id": "5d1887f423353e73dca2ec6d",
+    "name": "Saber (Espíritus)"
+  },
+  {
+    "id": "5d189a7423353e73dca2ec7c",
+    "name": "Idioma (Gremio Artesano)"
+  },
+  {
+    "id": "5d18f3b9eeb0ed74f060f690",
+    "name": "Saber (Gigantes)"
+  },
+  {
+    "id": "5ce8439f3ec45d1a88e3323e",
+    "name": "Poner trampas"
+  },
+  {
+    "id": "5cac706c25ce892b4c4a91ab",
+    "name": "Adiestrar animales (Demigrifo)"
+  },
+  {
+    "id": "5cadcc22828dc9389cc7b16b",
+    "name": "Saber (Ciencia)"
+  },
+  {
+    "id": "5cdf45c430259922e8ea2108",
+    "name": "Conducir"
+  },
+  {
+    "id": "5cea55d10bf34d4a646aa973",
+    "name": "Saber (Heráldica)"
+  },
+  {
+    "id": "5cfbf2e0f85c764dd8a5e908",
+    "name": "Oficio (Cartógrafo)"
+  },
+  {
+    "id": "5cea8a8dadaed446d44365e8",
+    "name": "Idioma (Mootish)"
+  },
+  {
+    "id": "5d0eab9ec773f26d50fcc953",
+    "name": "Idioma (Gremio del Abogado)"
+  },
+  {
+    "id": "5d0f34d5a6b5ad5d006b21ec",
+    "name": "Sigilo (Subterráneo)"
+  },
+  {
+    "id": "5d0fbca9ff5ffa6a34fd1580",
+    "name": "Oficio (Construcción de botes)"
+  },
+  {
+    "id": "5d112abfa85de1596cf26210",
+    "name": "Canalización (Shyish)"
+  },
+  {
+    "id": "5d112af3a85de1596cf26211",
+    "name": "Canalización (Ulgu)"
+  },
+  {
+    "id": "5d17e6796dcd9568649b11d6",
+    "name": "Adiestrar animales (Caballo)"
+  },
+  {
+    "id": "5d17f24d6dcd9568649b11e2",
+    "name": "Signos secretos (Caballero)"
+  },
+  {
+    "id": "5d1870d223353e73dca2ec57",
+    "name": "Entretener (Insultos)"
+  },
+  {
+    "id": "5d18736823353e73dca2ec59",
+    "name": "Saber (Genealogía)"
+  },
+  {
+    "id": "5d18f14ceeb0ed74f060f68c",
+    "name": "Idioma (Tileo)"
+  },
+  {
+    "id": "5f5e925b13ccf32ae905fc92",
+    "name": "Idioma (Grumbarth)"
+  },
+  {
+    "id": "5cadc77c828dc9389cc7b15c",
+    "name": "Saber"
+  },
+  {
+    "id": "5d068e764c58df585c1bc30b",
+    "name": "Combate cuerpo a cuerpo (Mayal o a dos manos)"
+  },
+  {
+    "id": "5ce848c93ec45d1a88e33242",
+    "name": "Sigilo (Rural)"
+  },
+  {
+    "id": "5cadc791828dc9389cc7b15d",
+    "name": "Saber (Química)"
+  },
+  {
+    "id": "5ce909ed3f5a0e36c0a4bab8",
+    "name": "Saber (Política)"
+  },
+  {
+    "id": "5ce9ccc7179ba450886fba7f",
+    "name": "Forzar cerraduras"
+  },
+  {
+    "id": "5ce9ce54179ba450886fba81",
+    "name": "Juego de manos"
+  },
+  {
+    "id": "5cf97d99c611a9288474f5c3",
+    "name": "A distancia (Ingeniería)"
+  },
+  {
+    "id": "5d0eabdfc773f26d50fcc954",
+    "name": "Signos secretos (Gremio del Abogado)"
+  },
+  {
+    "id": "5d0fed6c8332bf4c94ed6e9b",
+    "name": "Tocar (Tambor)"
+  },
+  {
+    "id": "5d167d92339d63247c167c69",
+    "name": "Oficio (Cervecero)"
+  },
+  {
+    "id": "5d187bb123353e73dca2ec60",
+    "name": "Idioma (Gremio)"
+  },
+  {
+    "id": "5d188a7f23353e73dca2ec71",
+    "name": "Oficio (Suministros artisticos)",
+    "description": "Posees el conocimiento para fabricar materiales artisticos",
+    "page": "p. 128"
+  },
+  {
+    "id": "5d189c3123353e73dca2ec7d",
+    "name": "Signos secretos (Gremio Artesano)"
+  },
+  {
+    "id": "5d18bf857209656444284f4a",
+    "name": "Entretener (Profecía)"
+  },
+  {
+    "id": "5f5e910a807c850c3dcd01b7",
+    "name": "Navegar (Fragata)"
+  },
+  {
+    "id": "5f5e920f13ccf32ae905fc91",
+    "name": "Idioma (Gospodarinyi)"
+  },
+  {
+    "id": "5ce470dd099f0c36546bdddf",
+    "name": "Actuar"
+  },
+  {
+    "id": "5ce46f1e099f0c36546bdddb",
+    "name": "A distancia"
+  },
+  {
+    "id": "5cadc62a828dc9389cc7b159",
+    "name": "Sanar"
+  },
+  {
+    "id": "5caddae3a48cc24ecc4eca8e",
+    "name": "Liderazgo"
+  },
+  {
+    "id": "5ce8410d3ec45d1a88e33239",
+    "name": "Encantar animales"
+  },
+  {
+    "id": "5ce116570f123f1f14a4cc67",
+    "name": "Navegación"
+  },
+  {
+    "id": "5cadc7a7828dc9389cc7b15e",
+    "name": "Saber (Medicina)"
+  },
+  {
+    "id": "5ce841be3ec45d1a88e3323b",
+    "name": "Saber (Bestias)"
+  },
+  {
+    "id": "5cf97d3cc611a9288474f5c2",
+    "name": "Oficio (Ingeniero)"
+  },
+  {
+    "id": "5d0f346ba6b5ad5d006b21eb",
+    "name": "Oficio (Explosivos)"
+  },
+  {
+    "id": "5d187c0023353e73dca2ec61",
+    "name": "Signos secretos (Gremio)"
+  },
+  {
+    "id": "5d18810423353e73dca2ec67",
+    "name": "Saber (Geografía)"
+  },
+  {
+    "id": "5d18c5f47209656444284f51",
+    "name": "Saber (Sigmar)"
+  },
+  {
+    "id": "5d18eda3eeb0ed74f060f686",
+    "name": "Saber (Impuestos)"
+  },
+  {
+    "id": "5ce46f66099f0c36546bdddc",
+    "name": "A distancia (Pólvora)"
+  },
+  {
+    "id": "5ce841743ec45d1a88e3323a",
+    "name": "Trepar"
+  },
+  {
+    "id": "5ce302d497b74e3c4cebdbbe",
+    "name": "Esquivar"
+  },
+  {
+    "id": "5cadddb1a48cc24ecc4eca98",
+    "name": "Intimidar"
+  },
+  {
+    "id": "5ce843d83ec45d1a88e3323f",
+    "name": "A distancia (Honda)"
+  },
+  {
+    "id": "5cf97e32c611a9288474f5c5",
+    "name": "Signos secretos (Gremio del Ingeniero)"
+  },
+  {
+    "id": "5d068f9a4c58df585c1bc30d",
+    "name": "Saber (Anatomía)"
+  },
+  {
+    "id": "5d0fcbfcff5ffa6a34fd158e",
+    "name": "Combate cuerpo a cuerpo (Asta)"
+  },
+  {
+    "id": "5d12731a3807396984fd240c",
+    "name": "Saber (Magia Oscura)"
+  },
+  {
+    "id": "5d18c6727209656444284f52",
+    "name": "Arte (Iconos religiosos)"
+  },
+  {
+    "id": "5caddaa1a48cc24ecc4eca8d",
+    "name": "Intuición"
+  },
+  {
+    "id": "5cadc89d828dc9389cc7b161",
+    "name": "Oficio (Boticario)"
+  },
+  {
+    "id": "5cadddf5a48cc24ecc4eca9a",
+    "name": "Montar (Caballo)"
+  },
+  {
+    "id": "5ce47042099f0c36546bddde",
+    "name": "Combate cuerpo a cuerpo (Básico)"
+  },
+  {
+    "id": "5ce9cea1179ba450886fba82",
+    "name": "A distancia (Ballesta)"
+  },
+  {
+    "id": "5cea8beaadaed446d44365ea",
+    "name": "Entretener (Canto)"
+  },
+  {
+    "id": "5cec2d07488ae64fb84c0482",
+    "name": "Entretener (Interpretación)"
+  },
+  {
+    "id": "5cea87e2adaed446d44365df",
+    "name": "Idioma (Bretoniano)"
+  },
+  {
+    "id": "5d066de248a38f3b4c12ef54",
+    "name": "Oficio (Carpintero)"
+  },
+  {
+    "id": "5d0eac3bc773f26d50fcc955",
+    "name": "Entretener (Discursos)"
+  },
+  {
+    "id": "5d0eaec0c773f26d50fcc957",
+    "name": "Arte (Escritura)"
+  },
+  {
+    "id": "5d11182d44bd6063e885c0cf",
+    "name": "Canalización (Sin entrenar)"
+  },
+  {
+    "id": "5d1274dc3807396984fd240e",
+    "name": "Saber (Demonología)"
+  },
+  {
+    "id": "5d167e93339d63247c167c6a",
+    "name": "Oficio (Vinatero)"
+  },
+  {
+    "id": "5d18bfa57209656444284f4b",
+    "name": "Saber (Astrología)"
+  },
+  {
+    "id": "5ce4714b099f0c36546bdde0",
+    "name": "Actuar (Acrobacias)"
+  },
+  {
+    "id": "5ce909d13f5a0e36c0a4bab7",
+    "name": "Saber (Caos)"
+  },
+  {
+    "id": "5cdf464330259922e8ea2109",
+    "name": "Apostar"
+  },
+  {
+    "id": "5d0eab36c773f26d50fcc952",
+    "name": "Saber (Teología)"
+  },
+  {
+    "id": "5d0fee1c8332bf4c94ed6e9e",
+    "name": "Tocar (Tambor o pífano)"
+  },
+  {
+    "id": "5d111b1344bd6063e885c0d1",
+    "name": "Canalización (Azyr)"
+  },
+  {
+    "id": "5d11238e44bd6063e885c0d4",
+    "name": "Canalización (Ghur)"
+  },
+  {
+    "id": "5d11243a44bd6063e885c0d5",
+    "name": "Canalización (Ghyran)"
+  },
+  {
+    "id": "5d17f1cc6dcd9568649b11e1",
+    "name": "Oficio (Herrador)"
+  },
+  {
+    "id": "5d1880c623353e73dca2ec66",
+    "name": "Oficio (Hojalatero)"
+  },
+  {
+    "id": "5d18bf337209656444284f49",
+    "name": "Entretener (Adivinación)"
+  },
+  {
+    "id": "5d18f16beeb0ed74f060f68d",
+    "name": "Idioma (Estaliano o tileo)"
+  },
+  {
+    "id": "5cadc7f7828dc9389cc7b160",
+    "name": "Oficio"
+  },
+  {
+    "id": "5cadd0b9828dc9389cc7b16e",
+    "name": "Percepción"
+  },
+  {
+    "id": "5cea55710bf34d4a646aa972",
+    "name": "Saber (Guerra)"
+  },
+  {
+    "id": "5cea546f0bf34d4a646aa970",
+    "name": "Idioma (Batalla)"
+  },
+  {
+    "id": "5cf97de1c611a9288474f5c4",
+    "name": "Idioma (Gremio del Ingeniero)"
+  },
+  {
+    "id": "5ce9ccf5179ba450886fba80",
+    "name": "Signos secretos (Ladrón)"
+  },
+  {
+    "id": "5d0f3bb5a6b5ad5d006b21f2",
+    "name": "Combate cuerpo a cuerpo (A dos manos)"
+  },
+  {
+    "id": "5d111b5f44bd6063e885c0d2",
+    "name": "Canalización (Chamon)"
+  },
+  {
+    "id": "5d169297339d63247c167c86",
+    "name": "Idioma (Gremio del Médico)"
+  },
+  {
+    "id": "5d17e6b16dcd9568649b11d7",
+    "name": "Saber (Rutas)"
+  },
+  {
+    "id": "5d17e7026dcd9568649b11d8",
+    "name": "A distancia (Lanzamiento)"
+  },
+  {
+    "id": "5d18f391eeb0ed74f060f68f",
+    "name": "Saber (Trolls)"
+  },
+  {
+    "id": "5ca92017451e0b3aa075c6b2",
+    "name": "Adiestrar animales"
+  },
+  {
+    "id": "5ce842173ec45d1a88e3323c",
+    "name": "Supervivencia"
+  },
+  {
+    "id": "5cdf457530259922e8ea2107",
+    "name": "Soborno"
+  },
+  {
+    "id": "5ce842533ec45d1a88e3323d",
+    "name": "A distancia (Arco)"
+  },
+  {
+    "id": "5ce93dc0d836af2ec4248aac",
+    "name": "Idioma (Gremio del Mercader)"
+  },
+  {
+    "id": "5cea891eadaed446d44365e3",
+    "name": "Entretener (Narración)"
+  },
+  {
+    "id": "5cea54be0bf34d4a646aa971",
+    "name": "Combate cuerpo a cuerpo (Caballería)"
+  },
+  {
+    "id": "5d11161944bd6063e885c0ce",
+    "name": "Canalización (Viento de Magia)"
+  },
+  {
+    "id": "5d11249444bd6063e885c0d6",
+    "name": "Canalización"
+  },
+  {
+    "id": "5d1273d73807396984fd240d",
+    "name": "Saber (Magia)"
+  },
+  {
+    "id": "5d16a5579ae1c87a18017575",
+    "name": "Signos secretos (Vagabundo)"
+  },
+  {
+    "id": "5d1887b223353e73dca2ec6c",
+    "name": "Oficio (Amuletos)"
+  },
+  {
+    "id": "5ce303c497b74e3c4cebdbbf",
+    "name": "Resistencia"
+  },
+  {
+    "id": "5cadcbf8828dc9389cc7b16a",
+    "name": "Regatear"
+  },
+  {
+    "id": "5cea8a5badaed446d44365e7",
+    "name": "Saber (Metalurgia)"
+  },
+  {
+    "id": "5cea8801adaed446d44365e0",
+    "name": "Idioma (Wastelander)"
+  },
+  {
+    "id": "5cea884aadaed446d44365e1",
+    "name": "Saber (Local - Reikland)"
+  },
+  {
+    "id": "5cea89b3adaed446d44365e4",
+    "name": "Idioma (Khazalid)"
+  },
+  {
+    "id": "5d18789223353e73dca2ec5d",
+    "name": "Saber (Folclore)"
+  },
+  {
+    "id": "5d18911323353e73dca2ec77",
+    "name": "Entretener (Retórica)"
+  },
+  {
+    "id": "5d18b7957209656444284f43",
+    "name": "Sigilo (Subterráneo o urbano)"
+  },
+  {
+    "id": "5d18c0867209656444284f4d",
+    "name": "Saber (Profecía)"
+  },
+  {
+    "id": "5d18eb73eeb0ed74f060f683",
+    "name": "Signos secretos (Contrabandista)"
+  },
+  {
+    "id": "5d18efa9eeb0ed74f060f689",
+    "name": "Oficio (Grabador)"
+  },
+  {
+    "id": "5ce305ee97b74e3c4cebdbc0",
+    "name": "Combate cuerpo a cuerpo"
+  },
+  {
+    "id": "5ce8489d3ec45d1a88e33241",
+    "name": "Sigilo"
+  },
+  {
+    "id": "5ce908533f5a0e36c0a4bab4",
+    "name": "Saber (Tortura)"
+  },
+  {
+    "id": "5ce93eadd836af2ec4248aad",
+    "name": "Signos secretos (Gremio del Mercader)"
+  },
+  {
+    "id": "5cea8badadaed446d44365e9",
+    "name": "Oficio (Cocinero)"
+  },
+  {
+    "id": "5d0f2aafa6b5ad5d006b21e3",
+    "name": "Oficio (Imprenta)"
+  },
+  {
+    "id": "5d167bdd339d63247c167c67",
+    "name": "Arte (Caligrafía)"
+  },
+  {
+    "id": "5d16942e339d63247c167c89",
+    "name": "Saber (Nobleza)"
+  },
+  {
+    "id": "5d18b4e97209656444284f3f",
+    "name": "Saber (Venenos)"
+  },
+  {
+    "id": "636f74cee8373533abe494ae",
+    "name": "Oficio (Fabricante de arcos)"
+  },
+  {
+    "id": "636f7544e8373533abe494af",
+    "name": "Signos secretos (Guardabosques)"
+  },
+  {
+    "id": "636f759be8373533abe494b0",
+    "name": "Saber (Local - Moot)"
+  },
+  {
+    "id": "636f75fce8373533abe494b1",
+    "name": "Signos secretos (Explorador)"
+  },
+  {
+    "id": "636f7633e8373533abe494b2",
+    "name": "Saber (Nigromancia)"
+  },
+  {
+    "id": "636f76c1e8373533abe494b3",
+    "name": "Signos secretos (Explorador o guardabosques)"
+  },
+  {
+    "id": "636f7777e8373533abe494b4",
+    "name": "Adiestrar animales (Tejón)"
+  },
+  {
+    "id": "636f77b0e8373533abe494b5",
+    "name": "Montar (Tejón)"
+  },
+  {
+    "id": "63b5ce75d059011ad48a8645",
+    "name": "Tocar (Cuerno)"
+  },
+  {
+    "id": "63b5cf12841671a97ecfb40e",
+    "name": "Oficio (Flechero)"
+  },
+  {
+    "id": "63b60439d059011ad48a864d",
+    "name": "Actuar (Desfile)"
+  },
+  {
+    "id": "63b60734d059011ad48a864f",
+    "name": "Tocar (Flauta)"
+  },
+  {
+    "id": "63b74c74d059011ad48a865f",
+    "name": "A distancia (Pólvora, catapulta, ballesta o ingeniería)"
+  },
+  {
+    "id": "63b74d59d059011ad48a8660",
+    "name": "A distancia (Catapulta)"
+  },
+  {
+    "id": "63b74dc6d059011ad48a8661",
+    "name": "Oficio (Carpintero o armero de armas de fuego)"
+  },
+  {
+    "id": "63b74e45d059011ad48a8662",
+    "name": "Saber (Artillería)"
+  },
+  {
+    "id": "63b89d03d059011ad48a867b",
+    "name": "Arte (Cartografía)"
+  },
+  {
+    "id": "63b89d80d059011ad48a867c",
+    "name": "Idioma (Gremio del Cartógrafo)"
+  },
+  {
+    "id": "63b89dc9d059011ad48a867d",
+    "name": "Signos secretos (Gremio del Cartógrafo)"
+  },
+  {
+    "id": "63b97e7f44e648c34b2f5fe4",
+    "name": "Signos secretos (Caballero - Sol Ardiente)"
+  },
+  {
+    "id": "63b9878be69fefc9d52c06b6",
+    "name": "Signos secretos (Caballero - Lobo Blanco)"
+  },
+  {
+    "id": "63b988e1e69fefc9d52c06b7",
+    "name": "Signos secretos (Caballero - Oso Negro)"
+  },
+  {
+    "id": "63b98913e69fefc9d52c06b8",
+    "name": "Signos secretos (Caballero - Grifo Negro)"
+  },
+  {
+    "id": "63b98a2be69fefc9d52c06b9",
+    "name": "Signos secretos (Caballero - Guardia Negra de Morr)"
+  },
+  {
+    "id": "63b98a5be69fefc9d52c06ba",
+    "name": "Signos secretos (Caballero - Rosa Negra)"
+  },
+  {
+    "id": "63b98cbde69fefc9d52c06bb",
+    "name": "Signos secretos (Caballero - Puño Sangriento)"
+  },
+  {
+    "id": "63b9b008c4b8b0714e9b971d",
+    "name": "Signos secretos (Caballero - Espuela Ensangrentada)"
+  },
+  {
+    "id": "63b9b042c4b8b0714e9b971e",
+    "name": "Signos secretos (Caballero - Espada Rota)"
+  },
+  {
+    "id": "63b9b06bc4b8b0714e9b971f",
+    "name": "Signos secretos (Caballero - Fuego Frío)"
+  },
+  {
+    "id": "63b9b096c4b8b0714e9b9720",
+    "name": "Signos secretos (Caballero - Lanza de Cristal)"
+  },
+  {
+    "id": "63b9b0d1c4b8b0714e9b9721",
+    "name": "Signos secretos (Caballero - Espada Divina)"
+  },
+  {
+    "id": "63b9b10ac4b8b0714e9b9722",
+    "name": "Signos secretos (Caballero - Encarnado)"
+  },
+  {
+    "id": "63b9b14fa3311c4aae1e9901",
+    "name": "Signos secretos (Caballero - Luz Eterna)"
+  },
+  {
+    "id": "63b9b185c4b8b0714e9b9723",
+    "name": "Signos secretos (Caballero - Corazón de Fuego)"
+  },
+  {
+    "id": "63b9b1b8c4b8b0714e9b9724",
+    "name": "Signos secretos (Caballero - Acero Destellante)"
+  },
+  {
+    "id": "63b9b394a3311c4aae1e9902",
+    "name": "Signos secretos (Caballero - León Dorado)"
+  },
+  {
+    "id": "63b9bc876b8788597fb6ddf8",
+    "name": "Signos secretos (Caballero - Martillo de Sigmar)"
+  },
+  {
+    "id": "63b9bca76b8788597fb6ddf9",
+    "name": "Signos secretos (Caballero - Grifo de Jade)"
+  },
+  {
+    "id": "63b9bcdd6b8788597fb6ddfa",
+    "name": "Signos secretos (Caballero - Caballeros del Grifo)"
+  },
+  {
+    "id": "63b9bd426b8788597fb6ddfb",
+    "name": "Signos secretos (Caballero - Caballeros Marineros)"
+  },
+  {
+    "id": "63b9bd676b8788597fb6ddfc",
+    "name": "Signos secretos (Caballero - Caballeros de la Flecha)"
+  },
+  {
+    "id": "63b9bd8b6b8788597fb6ddfd",
+    "name": "Signos secretos (Caballero - Caballeros del Toro)"
+  },
+  {
+    "id": "63b9bdc16b8788597fb6ddfe",
+    "name": "Signos secretos (Caballero - Caballeros del Pergamino)"
+  },
+  {
+    "id": "63b9be276b8788597fb6ddff",
+    "name": "Signos secretos (Caballero - Caballeros del Sol Poniente)"
+  },
+  {
+    "id": "63b9be526b8788597fb6de00",
+    "name": "Signos secretos (Caballero - Caballeros del Ciervo)"
+  },
+  {
+    "id": "63b9be706b8788597fb6de01",
+    "name": "Signos secretos (Caballero - Caballeros Pantera)"
+  },
+  {
+    "id": "63b9bebc6b8788597fb6de02",
+    "name": "Signos secretos (Caballero - Caballeros Cuervo)"
+  },
+  {
+    "id": "63b9bee06b8788597fb6de03",
+    "name": "Signos secretos (Caballero - Estrella del Norte)"
+  },
+  {
+    "id": "63b9bf156b8788597fb6de04",
+    "name": "Signos secretos (Caballero - Cruz del Norte)"
+  },
+  {
+    "id": "63b9bf356b8788597fb6de05",
+    "name": "Signos secretos (Caballero - Osterknacht)"
+  },
+  {
+    "id": "63b9bf556b8788597fb6de06",
+    "name": "Signos secretos (Caballero - Escudos Rojos)"
+  },
+  {
+    "id": "63b9bf8b6b8788597fb6de07",
+    "name": "Signos secretos (Caballero - Reiksguard)"
+  },
+  {
+    "id": "63b9c35b65b8644b8e8ca68a",
+    "name": "Signos secretos (Caballero - Lanza Justa)"
+  },
+  {
+    "id": "63b9c38f6b8788597fb6de08",
+    "name": "Signos secretos (Caballero - Guadaña Sagrada)"
+  },
+  {
+    "id": "63b9c4e96b8788597fb6de09",
+    "name": "Signos secretos (Caballero - Espada Brillante)"
+  },
+  {
+    "id": "63b9c5076b8788597fb6de0a",
+    "name": "Signos secretos (Caballero - Sangre de Sigmar)"
+  },
+  {
+    "id": "63b9c5236b8788597fb6de0b",
+    "name": "Signos secretos (Caballero - Montaña de Plata)"
+  },
+  {
+    "id": "63b9c55a6b8788597fb6de0c",
+    "name": "Signos secretos (Caballero - Hijos de Manann)"
+  },
+  {
+    "id": "63b9c5806b8788597fb6de0d",
+    "name": "Signos secretos (Caballero - Espada y Balanza)"
+  },
+  {
+    "id": "63b9c62065b8644b8e8ca68b",
+    "name": "Signos secretos (Caballero - Furia de Taal)"
+  },
+  {
+    "id": "63b9c6466b8788597fb6de0e",
+    "name": "Signos secretos (Caballero - Orbe de Cola Gemela)"
+  },
+  {
+    "id": "63b9c6656b8788597fb6de0f",
+    "name": "Signos secretos (Caballero - Sol Vengador)"
+  },
+  {
+    "id": "63b9ef216b8788597fb6de14",
+    "name": "Saber (Derecho o heráldica)"
+  },
+  {
+    "id": "63bad3bbc656841ea3364baa",
+    "name": "Oficio (Minero)"
+  },
+  {
+    "id": "63bad40cc656841ea3364bab",
+    "name": "A distancia (Pólvora o ingeniería)"
+  },
+  {
+    "id": "63baeab5c656841ea3364bb2",
+    "name": "Oficio (Herrero de armas)"
+  },
+  {
+    "id": "63baeaebc656841ea3364bb3",
+    "name": "Oficio (Armero)"
+  },
+  {
+    "id": "63baeb13c656841ea3364bb4",
+    "name": "Oficio (Herrero de armas o armero)"
+  },
+  {
+    "id": "63e28d31838ea72d008326ce",
+    "name": "Augurio"
+  },
+  {
+    "id": "63e28ea4838ea72d008326d0",
+    "name": "Psicometría"
+  },
+  {
+    "id": "63e425fb6450a8143fabca64",
+    "name": "Oficio (Alquimia)"
+  },
+  {
+    "id": "63e426a779b42d19391ffb44",
+    "name": "Idioma (Gremio de Alquimia)"
+  },
+  {
+    "id": "63e426dd79b42d19391ffb45",
+    "name": "Signos secretos (Gremio de Alquimia)"
+  },
+  {
+    "id": "63e429b079b42d19391ffb49",
+    "name": "Saber (Local - Nehekhara)"
+  },
+  {
+    "id": "63e42a4279b42d19391ffb4a",
+    "name": "Oficio (Herrero, orfebre o ingeniero)"
+  },
+  {
+    "id": "63e42b106450a8143fabca65",
+    "name": "Oficio (Herrero)"
+  },
+  {
+    "id": "63e42be979b42d19391ffb4c",
+    "name": "Oficio (Orfebre)"
+  },
+  {
+    "id": "63e42dbd79b42d19391ffb4f",
+    "name": "Saber (Astronomía)"
+  },
+  {
+    "id": "63e42e3979b42d19391ffb50",
+    "name": "Signos secretos (Orden Gris)"
+  },
+  {
+    "id": "63e42ebe6450a8143fabca67",
+    "name": "Arte (Grabado)"
+  },
+  {
+    "id": "63e42f826450a8143fabca68",
+    "name": "Saber (No muertos)"
+  },
+  {
+    "id": "63e4304879b42d19391ffb52",
+    "name": "Signos secretos (Orden Ámbar)"
+  },
+  {
+    "id": "63ee6bf6dcbb1970798de45e",
+    "name": "Entretener (Bramidos)"
+  },
+  {
+    "id": "63ee6da2dcbb1970798de45f",
+    "name": "Adiestrar animales (Rhinox)"
+  },
+  {
+    "id": "63ee6e55dcbb1970798de460",
+    "name": "Saber (Rhinox)"
+  },
+  {
+    "id": "63ee6edadcbb1970798de461",
+    "name": "Montar (Rhinox)"
+  },
+  {
+    "id": "63eea492021463a5afe8b284",
+    "name": "Oficio (Carnicero)"
+  },
+  {
+    "id": "63eea632021463a5afe8b285",
+    "name": "Arte (Carnicería)"
+  },
+  {
+    "id": "63eea6e1021463a5afe8b286",
+    "name": "Canalización (La Gran Fauces)"
+  },
+  {
+    "id": "63eea73eaf86ce22afb0f5b3",
+    "name": "Signos secretos (La Gran Fauces)"
+  },
+  {
+    "id": "63eea830021463a5afe8b287",
+    "name": "Saber (La Gran Fauces)"
+  },
+  {
+    "id": "63eea95caf86ce22afb0f5b5",
+    "name": "Saber (Ogros)"
+  },
+  {
+    "id": "642abea5ba6680a279153509",
+    "name": "Idioma (Queekish)"
+  },
+  {
+    "id": "6443c0a11474dc011058d112",
+    "name": "Saber (Ulric)"
+  },
+  {
+    "id": "6443e2e1299189654234bd04",
+    "name": "Saber (Caminos)"
+  },
+  {
+    "id": "6443fb00299189654234bd09",
+    "name": "Saber (Costas y mareas)"
+  },
+  {
+    "id": "6443fea6299189654234bd0d",
+    "name": "Tocar (Fiddle)"
+  },
+  {
+    "id": "6443fec0299189654234bd0e",
+    "name": "Tocar (Fiddle, acordeón o silbato)"
+  },
+  {
+    "id": "6443fee5299189654234bd0f",
+    "name": "Tocar (Acordeón)"
+  },
+  {
+    "id": "6443fee6299189654234bd10",
+    "name": "Tocar (Silbato de hojalata)"
+  },
+  {
+    "id": "64440069299189654234bd13",
+    "name": "Saber (Océanos)"
+  },
+  {
+    "id": "6444326f299189654234bd18",
+    "name": "Navegar (Knarr)"
+  },
+  {
+    "id": "6444328f299189654234bd19",
+    "name": "Navegar (Drakkar)"
+  },
+  {
+    "id": "644434d0299189654234bd1c",
+    "name": "Navegar (Carraca)"
+  },
+  {
+    "id": "644434ec299189654234bd1d",
+    "name": "Navegar (Galera de guerra)"
+  },
+  {
+    "id": "6444350f299189654234bd1e",
+    "name": "Navegar (Gran nave)"
+  },
+  {
+    "id": "64444663299189654234bd1f",
+    "name": "Navegar (Xebec)"
+  },
+  {
+    "id": "64444697299189654234bd20",
+    "name": "Navegar (Dhow)"
+  },
+  {
+    "id": "644446aa299189654234bd21",
+    "name": "Navegar (Barco de gemas de Cathay)"
+  },
+  {
+    "id": "644447d0299189654234bd22",
+    "name": "Tocar (Flauta de penique)"
+  },
+  {
+    "id": "64444800299189654234bd23",
+    "name": "Saber (Manann)"
+  },
+  {
+    "id": "64444939299189654234bd24",
+    "name": "Saber (Stromfels)"
+  },
+  {
+    "id": "644d817d1b9a2f929a766dea",
+    "name": "Idioma (Batalla o ladrones)"
+  },
+  {
+    "id": "644d888c1b9a2f929a766deb",
+    "name": "Saber (Local - Middenheim)"
+  },
+  {
+    "id": "644d8a221b9a2f929a766dec",
+    "name": "Saber (Local - Middenland)"
+  },
+  {
+    "id": "644d8adc1b9a2f929a766ded",
+    "name": "Saber (Local - Nordland)"
+  },
+  {
+    "id": "644d8d431b9a2f929a766dee",
+    "name": "Idioma (Arabiano)"
+  },
+  {
+    "id": "644d8d8a1b9a2f929a766def",
+    "name": "Saber (Local - Tilea)"
+  },
+  {
+    "id": "644d8da91b9a2f929a766df0",
+    "name": "Saber (Local - Estalia)"
+  },
+  {
+    "id": "644d8de01b9a2f929a766df1",
+    "name": "Saber (Local - Kislev)"
+  },
+  {
+    "id": "644d8e0d1b9a2f929a766df2",
+    "name": "Saber (Local - Bretonnia)"
+  },
+  {
+    "id": "644d8e321b9a2f929a766df3",
+    "name": "Saber (Local - Marienburg)"
+  },
+  {
+    "id": "644d90c11b9a2f929a766df4",
+    "name": "Saber (Local - Norsca)"
+  },
+  {
+    "id": "644d90eb1b9a2f929a766df5",
+    "name": "Saber (Khorne)"
+  },
+  {
+    "id": "644d95221b9a2f929a766df6",
+    "name": "Oficio (Platero)"
+  },
+  {
+    "id": "646145a99439abb2698d7c34",
+    "name": "Oficio (Agricultor)"
+  },
+  {
+    "id": "64e3b5ea49960d00011d3e90",
+    "name": "A distancia (Cerbatana)"
+  },
+  {
+    "id": "64e3cd6f49960d0001be47ea",
+    "name": "Signos secretos (Hombre Lagarto)"
+  },
+  {
+    "id": "64e3cea749960d0001be47ec",
+    "name": "Canalización (Azyr o Ghur)"
+  },
+  {
+    "id": "64e3cef549960d0001be47ed",
+    "name": "Saber (Los Antiguos)"
+  },
+  {
+    "id": "64eca5ed49960d0001e67a80",
+    "name": "Saber (Tzeentch)"
+  },
+  {
+    "id": "64eca68549960d0001e67a81",
+    "name": "Signos secretos (Cultista)"
+  },
+  {
+    "id": "64eca6ec49960d0001e67a82",
+    "name": "Idioma (Lengua Oscura)"
+  },
+  {
+    "id": "64f4b0b049960d0001d69bd9",
+    "name": "Idioma (Lengua Bestial)"
+  },
+  {
+    "id": "650b256649960d0001c52277",
+    "name": "Hipnotismo"
+  },
+  {
+    "id": "651b294b49960d00010e7ec2",
+    "name": "A distancia (Explosivos)"
+  },
+  {
+    "id": "651e8ee949960d00017d8749",
+    "name": "Canalización (¡Pequeño Waaagh!)"
+  },
+  {
+    "id": "651eafb649960d00017c94ee",
+    "name": "Signos secretos (Bruja rural)"
+  },
+  {
+    "id": "651eafd349960d00017c94ef",
+    "name": "Idioma (Belthani)"
+  },
+  {
+    "id": "651ebf4249960d00017c94fe",
+    "name": "Idioma (Corral)"
+  },
+  {
+    "id": "651ebfbd49960d00017c94ff",
+    "name": "Idioma (Naturaleza salvaje)"
+  },
+  {
+    "id": "6523149549960d00019a7f8d",
+    "name": "Canalización (Qhaysh)"
+  },
+  {
+    "id": "6525903e49960d00019a7fc0",
+    "name": "Canalización (¡WAAAGH!)"
+  },
+  {
+    "id": "66478f3c49960d0001694c7f",
+    "name": "Idioma (Malla-room-ba-larin)"
+  },
+  {
+    "id": "670a5ecd49960d000100f084",
+    "name": "Saber (Runas)"
+  },
+  {
+    "id": "670a5fe849960d000100f085",
+    "name": "Runesmithing"
+  },
+  {
+    "id": "670a5ff349960d000100f086",
+    "name": "Navegar (Nave aérea)"
+  },
+  {
+    "id": "6722aa8649960d000187f1de",
+    "name": "Saber (Historia o heráldica)"
+  },
+  {
+    "id": "6722ac7a49960d000187f1e0",
+    "name": "Signos secretos (Gremio del Maestro de Agravios)"
+  },
+  {
+    "id": "6725542749960d00013b8a72",
+    "name": "Combate cuerpo a cuerpo (Ingeniería)"
+  },
+  {
+    "id": "6725f28a49960d00019d2e8e",
+    "name": "Signos secretos (Hermandad de Grimnir)"
+  },
+  {
+    "id": "6725f2b549960d00019d2e8f",
+    "name": "Arte (Tatuaje)"
+  },
+  {
+    "id": "67267f3549960d00011f3256",
+    "name": "Entretener (Canto o narración)"
+  },
+  {
+    "id": "67267fc949960d00011f3257",
+    "name": "Combate cuerpo a cuerpo (Básico o a dos manos)"
+  },
+  {
+    "id": "6726b86f49960d00018f1acc",
+    "name": "Idioma (Gremio del Cervecero)"
+  },
+  {
+    "id": "6726b89949960d00018f1acd",
+    "name": "A distancia (Ballesta o lanzamiento)"
+  },
+  {
+    "id": "6726b93149960d00018f1acf",
+    "name": "Signos secretos (Gremio del Cervecero)"
+  },
+  {
+    "id": "6727cecd49960d00013447a7",
+    "name": "Saber (Teología o guerra)"
+  },
+  {
+    "id": "6727d47749960d00013447b0",
+    "name": "Arte (Escultura)"
+  },
+  {
+    "id": "6727d4a349960d00013447b1",
+    "name": "Arte (Escultura o grabado)"
+  },
+  {
+    "id": "6727d52849960d00013447b3",
+    "name": "Saber (Geología o metalurgia)"
+  },
+  {
+    "id": "6727d5f549960d00013447b5",
+    "name": "Idioma (Gremio del Sacerdote Forjador)"
+  },
+  {
+    "id": "6727d65f49960d00013447b6",
+    "name": "Idioma (Batalla o gremio del Sacerdote Forjador)"
+  },
+  {
+    "id": "6727d6ae49960d00013447b7",
+    "name": "Saber (Runas o teología)"
+  },
+  {
+    "id": "6727d6f649960d00013447b8",
+    "name": "Signos secretos (Sacerdote Forjador)"
+  },
+  {
+    "id": "6727d70e49960d00013447b9",
+    "name": "Signos secretos (Minero o gremio del Sacerdote Forjador)"
+  },
+  {
+    "id": "6728029c49960d00013b5c43",
+    "name": "Oficio (Cervecero o cocinero)"
+  },
+  {
+    "id": "672803b149960d00013b5c46",
+    "name": "Saber (Medicina o anatomía)"
+  },
+  {
+    "id": "672a9e6549960d000118ac48",
+    "name": "Tocar (Tambor o cuerno)"
+  },
+  {
+    "id": "672b3d1b49960d00011c7870",
+    "name": "Saber (Local o política)"
+  },
+  {
+    "id": "672b4ee149960d00015df7d7",
+    "name": "A distancia (Ballesta o pólvora)"
+  },
+  {
+    "id": "672b4f0e49960d00015df7d8",
+    "name": "Idioma (Gremio de la Nobleza Karak)"
+  },
+  {
+    "id": "672b4f3b49960d00015df7d9",
+    "name": "Signos secretos (Gremio de la Nobleza Karak)"
+  },
+  {
+    "id": "672b527549960d00015df7da",
+    "name": "Saber (Ingeniería o geología)"
+  },
+  {
+    "id": "6771853b49960d0001c9556c",
+    "name": "Saber (Ranald)"
+  },
+  {
+    "id": "6771935549960d0001c95575",
+    "name": "Actuar (Interpretación)"
+  },
+  {
+    "id": "6771b1ad49960d00019506cd",
+    "name": "Oficio (Arte)"
+  },
+  {
+    "id": "6771b1db49960d00019506ce",
+    "name": "Oficio (Herrero o arte)"
+  },
+  {
+    "id": "67f0d71b49960d0001cd2529",
+    "name": "A distancia (Catapulta o ballesta)"
+  },
+  {
+    "id": "67f54bd549960d0001cbdc0f",
+    "name": "Navegar (Halcón de Sangre)"
+  },
+  {
+    "id": "67f54c0649960d0001cbdc10",
+    "name": "Navegar (Nave Halcón)"
+  },
+  {
+    "id": "67f54c1b49960d0001cbdc11",
+    "name": "Navegar (Nave Águila)"
+  },
+  {
+    "id": "67f54c2849960d0001cbdc12",
+    "name": "Navegar (Nave Dragón)"
+  },
+  {
+    "id": "67f54c3349960d0001cbdc13",
+    "name": "Navegar (Halcón de Sangre, nave halcón, nave águila o nave dragón)"
+  },
+  {
+    "id": "67f65a2d49960d0001cbdc26",
+    "name": "Arte (Pintura)"
+  },
+  {
+    "id": "67f65a7849960d0001cbdc27",
+    "name": "Arte (Poesía)"
+  },
+  {
+    "id": "67f65aa349960d0001cbdc28",
+    "name": "Arte (Pintura o escultura)"
+  },
+  {
+    "id": "67f6601949960d0001cbdc2a",
+    "name": "Signos secretos (Guerreros de las Sombras)"
+  },
+  {
+    "id": "67f662bf49960d0001cbdc2e",
+    "name": "Regatear o apostar"
+  },
+  {
+    "id": "67f6880b49960d0001cbdc35",
+    "name": "Oficio (Joyero)"
+  },
+  {
+    "id": "68015f3f49960d0001615c6e",
+    "name": "Arte (Caligrafía o grabado)"
+  }
+]
