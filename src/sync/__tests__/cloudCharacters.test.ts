@@ -1,50 +1,50 @@
-import { softDeleteAllCharacters } from '../cloudCharacters';
+import { softDeleteAllCharacters, pushCharacter, pullCharacters, softDeleteCharacterCloud } from '../cloudCharacters';
 
-jest.mock('@/lib/supabase', () => ({
-  supabase: { from: jest.fn() },
+jest.mock('@/lib/api', () => ({
+  clearCharactersRequest: jest.fn(),
+  putCharacter: jest.fn(),
+  getCharacters: jest.fn(),
+  deleteCharacterRequest: jest.fn(),
 }));
-jest.mock('@/lib/config', () => ({
-  supabaseConfig: { enabled: true },
-}));
 
-import { supabase } from '@/lib/supabase';
-import { supabaseConfig } from '@/lib/config';
+import * as api from '@/lib/api';
 
-describe('softDeleteAllCharacters', () => {
+describe('cloudCharacters', () => {
   beforeEach(() => jest.clearAllMocks());
 
-  it('no-ops when sync is not configured', async () => {
-    (supabaseConfig as any).enabled = false;
-    await softDeleteAllCharacters({ user: { id: 'u1' } } as any);
-    expect(supabase.from).not.toHaveBeenCalled();
-    (supabaseConfig as any).enabled = true;
-  });
-
-  it('no-ops when there is no session', async () => {
-    await softDeleteAllCharacters(null);
-    expect(supabase.from).not.toHaveBeenCalled();
-  });
-
-  it('updates deleted_at scoped to the current user when signed in', async () => {
-    const eq = jest.fn().mockResolvedValue({ error: null });
-    const update = jest.fn().mockReturnValue({ eq });
-    (supabase.from as jest.Mock).mockReturnValue({ update });
-
-    const result = await softDeleteAllCharacters({ user: { id: 'u1' } } as any);
-
-    expect(supabase.from).toHaveBeenCalledWith('characters');
-    expect(update).toHaveBeenCalledWith(expect.objectContaining({ deleted_at: expect.any(String) }));
-    expect(eq).toHaveBeenCalledWith('user_id', 'u1');
+  it('softDeleteAllCharacters no-ops when there is no session', async () => {
+    const result = await softDeleteAllCharacters(null);
+    expect(api.clearCharactersRequest).not.toHaveBeenCalled();
     expect(result).toEqual({ ok: true });
   });
 
-  it('returns ok:false when the update fails', async () => {
-    const eq = jest.fn().mockResolvedValue({ error: { message: 'boom' } });
-    const update = jest.fn().mockReturnValue({ eq });
-    (supabase.from as jest.Mock).mockReturnValue({ update });
+  it('softDeleteAllCharacters calls the clear endpoint when signed in', async () => {
+    (api.clearCharactersRequest as jest.Mock).mockResolvedValue({ ok: true });
+    const result = await softDeleteAllCharacters({ user: { id: 'u1', name: 'A' } } as any);
+    expect(api.clearCharactersRequest).toHaveBeenCalled();
+    expect(result).toEqual({ ok: true });
+  });
 
-    const result = await softDeleteAllCharacters({ user: { id: 'u1' } } as any);
+  it('pushCharacter no-ops when there is no session', async () => {
+    const dbStub = {} as any;
+    const result = await pushCharacter(dbStub, null, { id: 'c1', system: 'dnd5e', data: {} });
+    expect(api.putCharacter).not.toHaveBeenCalled();
+    expect(result).toEqual({ ok: true });
+  });
 
-    expect(result).toEqual({ ok: false });
+  it('pullCharacters returns [] when there is no session', async () => {
+    const result = await pullCharacters(null);
+    expect(api.getCharacters).not.toHaveBeenCalled();
+    expect(result).toEqual([]);
+  });
+
+  it('softDeleteCharacterCloud no-ops when there is no session', async () => {
+    await softDeleteCharacterCloud(null, 'c1');
+    expect(api.deleteCharacterRequest).not.toHaveBeenCalled();
+  });
+
+  it('softDeleteCharacterCloud calls the delete endpoint when signed in', async () => {
+    await softDeleteCharacterCloud({ user: { id: 'u1', name: 'A' } } as any, 'c1');
+    expect(api.deleteCharacterRequest).toHaveBeenCalledWith('c1');
   });
 });
