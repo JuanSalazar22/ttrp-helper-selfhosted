@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, TouchableOpacity, TextInput, FlatList, Alert, ActivityIndicator } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, TextInput, FlatList, Alert, ActivityIndicator, Platform } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter, useFocusEffect } from 'expo-router';
 import { useCallback, useMemo, useState } from 'react';
@@ -92,7 +92,7 @@ function CharacterListScreen() {
   const [deleting, setDeleting] = useState<CharacterRow | null>(null);
   const [query, setQuery] = useState('');
   const { characters, loading, refresh, create, remove, duplicate, importCharacter } = useCharacterList();
-  const { session, configured, displayName } = useAuth();
+  const { session, displayName } = useAuth();
 
   const filtered = useMemo(
     () => (query.trim() ? characters.filter(c => matchesQuery(c, query)) : characters),
@@ -124,16 +124,16 @@ function CharacterListScreen() {
         </Text>
         <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
           <SyncBadge />
-          {configured && (
+          {Platform.OS === 'web' && (
             <TouchableOpacity
               style={[styles.addButton, { backgroundColor: t.colors.backgroundSecondary }]}
               onPress={() => setShowAccount(true)}
               activeOpacity={0.8}
             >
-              {session && (displayName ?? session.user.email) ? (
+              {session && displayName ? (
                 <View style={[styles.avatarBadge, { backgroundColor: t.colors.accent }]}>
                   <Text style={[styles.avatarChar, { color: t.colors.accentText }]}>
-                    {(displayName ?? session.user.email ?? '?')[0].toUpperCase()}
+                    {(displayName ?? '?')[0].toUpperCase()}
                   </Text>
                 </View>
               ) : (

@@ -62,7 +62,7 @@ export default function SettingsScreen() {
     if (db && setSettingFn) setSettingFn(db, 'sound_enabled', v ? 'true' : 'false');
   }
 
-  const { session, loading, configured } = useAuth();
+  const { session, loading } = useAuth();
   const [showAccount, setShowAccount] = useState(false);
 
   return (
@@ -107,7 +107,7 @@ export default function SettingsScreen() {
         <Switch value={sound} onValueChange={toggleSound} />
       </View>
 
-      {configured && (
+      {Platform.OS === 'web' && (
         <>
           <Text style={[styles.section, { color: t.colors.textSecondary }]}>{tr('settings.account.title')}</Text>
           <TouchableOpacity
@@ -120,8 +120,8 @@ export default function SettingsScreen() {
             ) : (
               <Text style={[styles.rowLabel, { color: t.colors.text }]} numberOfLines={1}>
                 {session
-                  ? tr('settings.account.signedInAs', { email: session.user.email ?? '' })
-                  : tr('settings.account.signIn')}
+                  ? tr('settings.account.signedInAs', { name: session.user.name })
+                  : tr('settings.account.signInWithPasskey')}
               </Text>
             )}
             <ChevronRight size={18} color={t.colors.textMuted} />
