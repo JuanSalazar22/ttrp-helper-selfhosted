@@ -124,6 +124,27 @@ setInterval(() => {
   for (const [code, l] of linkCodes) if (now > l.expires) linkCodes.delete(code);
 }, 60000).unref();
 
+// Global rate limit on link-code guessing — a 6-digit code has only 1e6
+// possibilities, so without this an attacker could enumerate the active
+// code well within its 5-minute TTL. Capped low enough to make brute-forcing
+// impractical (reaching even a small fraction of 1e6 guesses is impossible
+// at this rate) while comfortably covering legitimate typos/retries.
+let linkFailCount = 0;
+let linkFailWindowStart = Date.now();
+const LINK_FAIL_WINDOW_MS = 5 * 60000;
+const LINK_FAIL_MAX = 20;
+function linkGuessAllowed() {
+  const now = Date.now();
+  if (now - linkFailWindowStart > LINK_FAIL_WINDOW_MS) {
+    linkFailCount = 0;
+    linkFailWindowStart = now;
+  }
+  return linkFailCount < LINK_FAIL_MAX;
+}
+function recordLinkFail() {
+  linkFailCount++;
+}
+
 /* ---------- tiny http helpers ---------- */
 function json(res, code, obj, extraHeaders) {
   res.writeHead(code, { 'Content-Type': 'application/json', ...extraHeaders });
@@ -279,11 +300,12 @@ const routes = {
   },
 
   'POST /api/passkey/link/verify': async (req, res) => {
+    if (!linkGuessAllowed()) return json(res, 429, { error: 'too many attempts — wait a few minutes and get a new code' });
     const body = await readBody(req);
     const link = takeLinkCode(String(body.code || '').trim());
-    if (!link) return json(res, 400, { error: 'code expired or invalid — generate a new one' });
+    if (!link) { recordLinkFail(); return json(res, 400, { error: 'code expired or invalid — generate a new one' }); }
     const c = takeChallenge(link.cid);
-    if (!c || c.kind !== 'link') return json(res, 400, { error: 'code expired or invalid — generate a new one' });
+    if (!c || c.kind !== 'link') { recordLinkFail(); return json(res, 400, { error: 'code expired or invalid — generate a new one' }); }
     let verification;
     try {
       verification = await verifyRegistrationResponse({
@@ -315,12 +337,13 @@ const routes = {
   },
 
   'POST /api/passkey/link/exchange': async (req, res) => {
+    if (!linkGuessAllowed()) return json(res, 429, { error: 'too many attempts — wait a few minutes and get a new code' });
     const body = await readBody(req);
     const code = String(body.code || '').trim();
     const link = linkCodes.get(code);
-    if (!link || Date.now() > link.expires) return json(res, 400, { error: 'code expired or invalid' });
+    if (!link || Date.now() > link.expires) { recordLinkFail(); return json(res, 400, { error: 'code expired or invalid' }); }
     const c = challenges.get(link.cid);
-    if (!c) return json(res, 400, { error: 'code expired or invalid' });
+    if (!c) { recordLinkFail(); return json(res, 400, { error: 'code expired or invalid' }); }
     const user = db.users.find((u) => u.id === link.userId);
     const options = await generateRegistrationOptions({
       rpName: RP_NAME, rpID: RP_ID,
