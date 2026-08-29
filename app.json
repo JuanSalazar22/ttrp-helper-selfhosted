@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "TTRP Helper",
+    "name": "TTRP Helper (Self-Hosted)",
     "slug": "ttrp-helper",
     "version": "1.0.0",
     "scheme": "ttrphelper",
@@ -9,10 +9,10 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.juanjose220397.ttrphelper"
+      "bundleIdentifier": "com.juanjose220397.ttrphelperselfhosted"
     },
     "android": {
-      "package": "com.juanjose220397.ttrphelper",
+      "package": "com.juanjose220397.ttrphelperselfhosted",
       "adaptiveIcon": {
         "backgroundColor": "#1A1612",
         "foregroundImage": "./assets/android-icon-foreground.png",
