@@ -92,4 +92,11 @@ export async function initDatabase(db: SQLite.SQLiteDatabase): Promise<void> {
   } catch {
     // Column already exists — ignore.
   }
+
+  // portrait_updated_at was added for portrait upload; backfill on older installs.
+  try {
+    await db.execAsync('ALTER TABLE characters ADD COLUMN portrait_updated_at TEXT;');
+  } catch {
+    // Column already exists — ignore.
+  }
 }

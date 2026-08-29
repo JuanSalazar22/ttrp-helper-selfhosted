@@ -13,6 +13,7 @@ export type CharacterRow = {
   system: GameSystem;
   name: string;
   portrait_uri: string | null;
+  portrait_updated_at: string | null;
   data: string;
   schema_ver: number;
   created_at: number;
