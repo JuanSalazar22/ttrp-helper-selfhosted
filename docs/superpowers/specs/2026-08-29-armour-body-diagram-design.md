@@ -27,6 +27,10 @@ The user explicitly referenced opengym's `BodyMap.jsx` (`~/Repos/opengym/fronten
 - A back-view of the body — WFRP armour coverage isn't front/back-specific, so front view only.
 - Tap-to-reveal interactions on the diagram — numbers are always shown directly (per user decision), no hidden state.
 
+## Revision (same day)
+
+The first implementation adapted opengym's muscle-atlas art as originally decided below. Once rendered, the user didn't like the look and asked for a simplified version instead — plain geometric shapes, no muscle detail. Thanks to the geometry/renderer split already built for exactly this situation, this was a one-file swap: `armourBodyPaths.ts`'s content changed to hand-authored shapes (circle head, trapezoid torso, rectangle limbs); `ArmourBodyMap.tsx` didn't change at all. The "Geometry source" and "Attribution" rows below are now historical — no third-party art is used, so no NOTICE.md is needed.
+
 ## Decisions
 
 | Area | Decision |
