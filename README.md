@@ -152,6 +152,8 @@ npx expo export -p ios   # verify the native bundle compiles
 
 ## Content & licensing
 
+**Code license:** [AGPL-3.0-or-later](LICENSE). You can self-host, modify, and even offer this as a paid/hosted service — but if you do, you must release the source of your version (including modifications) under the same license. That's the AGPL's network-use clause: it closes the "run a modified copy as a SaaS without sharing changes" loophole that plain GPL leaves open.
+
 Built on the D&D 5e SRD and the WFRP 4e ruleset. The app bundles a searchable library of WFRP 4e content (careers, talents, skills, spells, prayers) **used with permission from Cubicle 7 for this non-commercial project**; you can also add your own homebrew. Warhammer Fantasy Roleplay is © Cubicle 7; D&D is © Wizards of the Coast.
 
 Personal project — not affiliated with or endorsed by either publisher.
