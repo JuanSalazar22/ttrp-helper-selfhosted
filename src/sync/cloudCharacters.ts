@@ -37,3 +37,27 @@ export async function softDeleteAllCharacters(session: Session): Promise<{ ok: b
   if (!session) return { ok: true }; // no-op is not a failure
   return api.clearCharactersRequest();
 }
+
+/** Upload a character's local portrait to the cloud. No-op when signed out;
+ *  never throws — callers enqueue the character id in the outbox on failure,
+ *  the same way a failed character-data push is retried. */
+export async function pushPortrait(session: Session, id: string, base64Jpeg: string): Promise<{ ok: boolean; portraitUpdatedAt?: string }> {
+  if (!session) return { ok: true };
+  const result = await api.putCharacterPortrait(id, base64Jpeg);
+  if (!result) { console.warn('[sync] portrait push failed'); return { ok: false }; }
+  return { ok: true, portraitUpdatedAt: result.portrait_updated_at };
+}
+
+/** Fetch a character's portrait from the cloud as base64, or null if signed out,
+ *  not found, or the request fails. */
+export async function pullPortrait(session: Session, id: string): Promise<string | null> {
+  if (!session) return null;
+  return api.getCharacterPortraitBase64(id);
+}
+
+/** Tell the cloud to delete a character's portrait (mirrors softDeleteCharacterCloud's
+ *  no-op-when-signed-out, never-throw shape). */
+export async function deletePortraitCloud(session: Session, id: string): Promise<void> {
+  if (!session) return;
+  await api.deleteCharacterPortrait(id);
+}

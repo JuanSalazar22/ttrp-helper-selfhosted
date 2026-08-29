@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import { apiConfig } from '@/lib/config';
 
 export type ApiUser = { id: string; name: string };
@@ -97,4 +98,25 @@ export async function deleteCharacterRequest(id: string): Promise<void> {
 export async function clearCharactersRequest(): Promise<{ ok: boolean }> {
   const res = await apiFetch('/characters/clear', { method: 'POST' });
   return { ok: res.ok };
+}
+
+export async function putCharacterPortrait(id: string, base64Jpeg: string): Promise<{ portrait_updated_at: string } | null> {
+  const res = await apiFetch(`/characters/${encodeURIComponent(id)}/portrait`, {
+    method: 'PUT',
+    body: JSON.stringify({ image: `data:image/jpeg;base64,${base64Jpeg}` }),
+  });
+  if (!res.ok) return null;
+  return res.json();
+}
+
+export async function getCharacterPortraitBase64(id: string): Promise<string | null> {
+  const res = await apiFetch(`/characters/${encodeURIComponent(id)}/portrait`);
+  if (!res.ok) return null;
+  const buf = await res.arrayBuffer();
+  // btoa/Buffer both work here; Buffer is available in the RN/Node/web runtimes this app targets.
+  return Buffer.from(buf).toString('base64');
+}
+
+export async function deleteCharacterPortrait(id: string): Promise<void> {
+  await apiFetch(`/characters/${encodeURIComponent(id)}/portrait`, { method: 'DELETE' });
 }
