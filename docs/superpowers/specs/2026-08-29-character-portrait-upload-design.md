@@ -67,6 +67,17 @@ flowchart TD
   Fetch --> GET
 ```
 
+## Amendment (at plan-writing time)
+
+Reading the actual codebase surfaced two things this design didn't know about:
+
+1. **`CharacterPortrait.tsx` already exists** (`src/components/ui/`) as a placeholder — dashed frame, generic icon, "sm"/"lg" sizes — already wired into both `Dnd5eSheet.tsx` and `Wfrp4eHeader.tsx`. This gets **extended in place**, not replaced by a new `PortraitAvatar.tsx` as originally written below.
+2. **`portrait_uri` isn't threaded to where these components render today** — `Dnd5eSheet`/`Wfrp4eHeader` only receive the per-system character *data* object, not the `CharacterRow` (which holds `portrait_uri`). `useCharacter.ts` already loads the full row internally but doesn't expose it. Wiring this up means: `useCharacter` exposes `row` + a new `setPortrait`; `app/character/[id].tsx` passes `portraitUri`/`onPortraitChange` down through `Dnd5eSheet`/`Wfrp4eSheet`/`Wfrp4eHeader` to `CharacterPortrait` — ordinary prop-threading matching how `character`/`onChange` already flow through this exact same path, not a new pattern.
+
+Also: the "new local column, schemaVer bump + migration" line below should read as the existing **ALTER-TABLE-with-catch** pattern already used for `cloud_updated_at` in `src/db/schema.ts`, not a per-system character-data `schemaVer` bump (that versioning is for the JSON `data` blob's own shape, a different thing).
+
+The character-list row (`CharacterCard`, defined inline in `app/(tabs)/index.tsx`) has no avatar today at all — it already receives the full `CharacterRow` as a prop, so showing a small portrait there needs no new prop-threading, just a render addition.
+
 ## File layout (new / modified)
 
 ```
