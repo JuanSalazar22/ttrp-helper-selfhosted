@@ -1,4 +1,3 @@
-/// <reference types="node" />
 import { apiConfig } from '@/lib/config';
 
 export type ApiUser = { id: string; name: string };
@@ -113,8 +112,13 @@ export async function getCharacterPortraitBase64(id: string): Promise<string | n
   const res = await apiFetch(`/characters/${encodeURIComponent(id)}/portrait`);
   if (!res.ok) return null;
   const buf = await res.arrayBuffer();
-  // btoa/Buffer both work here; Buffer is available in the RN/Node/web runtimes this app targets.
-  return Buffer.from(buf).toString('base64');
+  // No Buffer polyfill is installed, and React Native doesn't provide the Node
+  // `Buffer` global — but it (like every JS engine this app targets) has had
+  // btoa/atob for years, so encode via that instead of relying on Buffer.
+  const bytes = new Uint8Array(buf);
+  let binary = '';
+  for (let i = 0; i < bytes.length; i++) binary += String.fromCharCode(bytes[i]);
+  return btoa(binary);
 }
 
 export async function deleteCharacterPortrait(id: string): Promise<void> {
