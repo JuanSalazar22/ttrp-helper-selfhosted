@@ -10,6 +10,7 @@ import { useTranslation } from '@/i18n';
 import { Section } from '@/components/ui/Section';
 import { EditableNumber } from '@/components/ui/EditableNumber';
 import { ContentPicker } from '@/components/wfrp4e/ContentPicker';
+import { ArmourBodyMap } from '@/components/wfrp4e/ArmourBodyMap';
 import { confirmRemove } from '@/lib/confirm';
 import { isWeapon, isArmour, weaponFromRecord, armourFromRecord } from '@/lib/wfrpTrappings';
 import { armourPointsByLocation } from '@/types/wfrp4e';
@@ -197,6 +198,8 @@ export function Combat({ character, onChange }: Props) {
 
       {/* ── Armour ─────────────────────────────────────────────────────── */}
       <Section title={tr('wfrp.combat.armour')}>
+        <ArmourBodyMap armourPoints={ap} />
+
         {/* Armour Points — editable per hit location, laid out anatomically like the sheet */}
         <View style={styles.apBlock}>
           <View style={styles.apHeader}>
