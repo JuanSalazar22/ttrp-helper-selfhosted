@@ -18,6 +18,8 @@ export const en = {
     remove: 'Remove',
     removeTitle: 'Remove?',
     portraitPlaceholder: 'Add portrait',
+    cropCancel: 'Cancel',
+    cropConfirm: 'Use Photo',
   },
   tabs: {
     characters: 'Characters',
