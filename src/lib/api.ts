@@ -1,7 +1,7 @@
 import { apiConfig } from '@/lib/config';
 
 export type ApiUser = { id: string; name: string };
-export type CloudCharacter = { id: string; system: string; data: any; updated_at: string; deleted_at: string | null };
+export type CloudCharacter = { id: string; system: string; data: any; updated_at: string; deleted_at: string | null; portrait_updated_at: string | null };
 
 async function apiFetch(path: string, init?: RequestInit): Promise<Response> {
   return fetch(`${apiConfig.url}${path}`, {
