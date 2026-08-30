@@ -74,6 +74,12 @@ export function Wfrp4eHeader({ character, onChange, portraitUri, onPortraitChang
             {careerTitle || tr('wfrp.header.career')}
           </Text>
         </TouchableOpacity>
+        {!!character.careerClass && (
+          <>
+            <Text style={[styles.dot, { color: t.colors.textMuted }]}>·</Text>
+            <Text style={[styles.meta, { color: t.colors.textMuted }]}>{character.careerClass}</Text>
+          </>
+        )}
         <TouchableOpacity onPress={() => setCareerAdvanceOpen(true)} activeOpacity={0.7} style={[styles.pill, { borderColor: t.colors.accent }]}>
           <Text style={[styles.pillText, { color: t.colors.accent }]}>{tr('wfrp.header.rank', { n: character.careerRank })}</Text>
         </TouchableOpacity>

@@ -25,6 +25,9 @@ export type Wfrp4eCharacter = {
   currentCareer: string;
   careerPath: string[];
   careerRank: 1 | 2 | 3 | 4;
+  // Broad social-class category (e.g. "Burghers") some import sources carry — optional
+  // since nothing else in this app tracks it; manually-created characters won't have it.
+  careerClass?: string;
   status: { tier: 'Brass' | 'Silver' | 'Gold'; standing: number };
   age: number;
   height: string;
