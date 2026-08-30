@@ -48,9 +48,11 @@ export function cloudRowToLocalParams(c: CloudCharacter) {
 }
 
 /** Whether a device needs to fetch the cloud's portrait: cloud has one and it's
- *  either missing locally or newer than what's locally recorded. Removal (cloud
- *  went from having one to not) is a separate concern handled where this is
- *  called — this only ever says "go fetch," never "go delete." */
+ *  either missing locally or newer than what's locally recorded. This only ever
+ *  says "go fetch," never "go delete" — removal (cloud went from having a
+ *  portrait to not) is the caller's job to check separately, by comparing
+ *  local-has-one against cloud-has-none directly (see useCharacterList.ts's
+ *  pull loop, the `else if` branch beside this function's call). */
 export function needsPortraitPull(localPortraitUpdatedAt: string | null, cloudPortraitUpdatedAt: string | null): boolean {
   if (!cloudPortraitUpdatedAt) return false;
   if (!localPortraitUpdatedAt) return true;

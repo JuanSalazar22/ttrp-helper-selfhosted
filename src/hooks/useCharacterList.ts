@@ -54,12 +54,20 @@ export function useCharacterList() {
       for (const c of cloud) {
         if (cancelled) return;
         if (c.deleted_at) continue;
-        if (!needsPortraitPull(localPortraitMap.get(c.id) ?? null, c.portrait_updated_at)) continue;
-        const base64 = await pullPortrait(session, c.id);
-        if (!base64 || cancelled) continue;
-        // The fetched base64 IS the image — no file write/copy needed, portraits
-        // are stored as data: URIs directly (see portraitStorage.ts for why).
-        await queries.updatePortrait(db, c.id, `data:image/jpeg;base64,${base64}`, c.portrait_updated_at);
+        const localPortraitUpdatedAt = localPortraitMap.get(c.id) ?? null;
+        if (needsPortraitPull(localPortraitUpdatedAt, c.portrait_updated_at)) {
+          const base64 = await pullPortrait(session, c.id);
+          if (!base64 || cancelled) continue;
+          // The fetched base64 IS the image — no file write/copy needed, portraits
+          // are stored as data: URIs directly (see portraitStorage.ts for why).
+          await queries.updatePortrait(db, c.id, `data:image/jpeg;base64,${base64}`, c.portrait_updated_at);
+        } else if (localPortraitUpdatedAt && !c.portrait_updated_at) {
+          // The other direction needsPortraitPull deliberately never reports:
+          // cloud has no portrait but this device still has one cached, meaning
+          // it was removed elsewhere — clear it here too instead of leaving a
+          // stale photo showing indefinitely.
+          await queries.updatePortrait(db, c.id, null, null);
+        }
       }
       if (!cancelled) await refresh();
     })();
