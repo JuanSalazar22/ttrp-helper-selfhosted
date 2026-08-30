@@ -5,6 +5,7 @@ export type CloudCharacter = {
   data: any; // jsonb → JS object (the per-character JSON)
   updated_at: string; // ISO timestamp
   deleted_at: string | null;
+  portrait_updated_at: string | null;
 };
 
 /** A local row's identity + the cloud updated_at we last synced for it. */
@@ -44,4 +45,14 @@ export function cloudRowToLocalParams(c: CloudCharacter) {
     dataJson: JSON.stringify(c.data ?? {}),
     updatedAtMs: Number.isNaN(parsedMs) ? Date.now() : parsedMs,
   };
+}
+
+/** Whether a device needs to fetch the cloud's portrait: cloud has one and it's
+ *  either missing locally or newer than what's locally recorded. Removal (cloud
+ *  went from having one to not) is a separate concern handled where this is
+ *  called — this only ever says "go fetch," never "go delete." */
+export function needsPortraitPull(localPortraitUpdatedAt: string | null, cloudPortraitUpdatedAt: string | null): boolean {
+  if (!cloudPortraitUpdatedAt) return false;
+  if (!localPortraitUpdatedAt) return true;
+  return cloudPortraitUpdatedAt !== localPortraitUpdatedAt;
 }
