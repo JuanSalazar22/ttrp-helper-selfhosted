@@ -43,6 +43,12 @@ function atomicWrite(file, content) {
 function saveDb() { atomicWrite(dbFile, JSON.stringify(db, null, 2)); }
 
 const charsFile = (uid) => path.join(DATA, 'characters-' + uid.replace(/[^a-zA-Z0-9_-]/g, '') + '.json');
+const PORTRAIT_MAX_BASE64 = 3 * 1024 * 1024; // ~3MB base64 — generous for a 512x512 JPEG (typically tens of KB)
+const portraitsDir = (uid) => path.join(DATA, 'portraits', uid.replace(/[^a-zA-Z0-9_-]/g, ''));
+const portraitFile = (uid, id) => path.join(portraitsDir(uid), id.replace(/[^a-zA-Z0-9_-]/g, '') + '.jpg');
+function deletePortraitFile(uid, id) {
+  try { fs.unlinkSync(portraitFile(uid, id)); } catch { /* none to delete */ }
+}
 function readChars(uid) {
   try { return JSON.parse(fs.readFileSync(charsFile(uid), 'utf8')); } catch { return []; }
 }
@@ -373,6 +379,7 @@ const routes = {
     if (!user) return json(res, 401, { error: 'not signed in' });
     const now = new Date().toISOString();
     const list = readChars(user.id).map((c) => ({ ...c, deleted_at: now }));
+    for (const c of list) deletePortraitFile(user.id, c.id);
     saveChars(user.id, list);
     json(res, 200, { ok: true });
   },
@@ -384,6 +391,7 @@ const routes = {
     db.creds = db.creds.filter((c) => c.userId !== user.id);
     saveDb();
     try { fs.unlinkSync(charsFile(user.id)); } catch {}
+    try { fs.rmSync(portraitsDir(user.id), { recursive: true, force: true }); } catch {}
     json(res, 200, { ok: true }, { 'Set-Cookie': clearCookie });
   },
 };
@@ -419,6 +427,50 @@ http.createServer(async (req, res) => {
     const list = readChars(user.id);
     const row = list.find((c) => c.id === id);
     if (row) { row.deleted_at = new Date().toISOString(); saveChars(user.id, list); }
+    deletePortraitFile(user.id, id);
+    return json(res, 200, { ok: true });
+  }
+
+  if (req.method === 'PUT' && charIdFromPath(url.pathname, '/portrait') !== null) {
+    const user = readSession(req);
+    if (!user) return json(res, 401, { error: 'not signed in' });
+    const id = charIdFromPath(url.pathname, '/portrait');
+    const list = readChars(user.id);
+    const row = list.find((c) => c.id === id && !c.deleted_at);
+    if (!row) return json(res, 404, { error: 'character not found' });
+    const body = await readBody(req);
+    const dataUrl = String(body.image || '');
+    const base64 = dataUrl.replace(/^data:image\/\w+;base64,/, '');
+    if (!base64 || base64.length > PORTRAIT_MAX_BASE64) {
+      return json(res, 400, { error: 'image missing or too large' });
+    }
+    fs.mkdirSync(portraitsDir(user.id), { recursive: true });
+    fs.writeFileSync(portraitFile(user.id, id), Buffer.from(base64, 'base64'));
+    const now = new Date().toISOString();
+    row.portrait_updated_at = now;
+    saveChars(user.id, list);
+    return json(res, 200, { portrait_updated_at: now });
+  }
+
+  if (req.method === 'GET' && charIdFromPath(url.pathname, '/portrait') !== null) {
+    const user = readSession(req);
+    if (!user) return json(res, 401, { error: 'not signed in' });
+    const id = charIdFromPath(url.pathname, '/portrait');
+    const file = portraitFile(user.id, id);
+    if (!fs.existsSync(file)) return json(res, 404, { error: 'no portrait' });
+    res.writeHead(200, { 'Content-Type': 'image/jpeg' });
+    fs.createReadStream(file).pipe(res);
+    return;
+  }
+
+  if (req.method === 'DELETE' && charIdFromPath(url.pathname, '/portrait') !== null) {
+    const user = readSession(req);
+    if (!user) return json(res, 401, { error: 'not signed in' });
+    const id = charIdFromPath(url.pathname, '/portrait');
+    const list = readChars(user.id);
+    const row = list.find((c) => c.id === id);
+    if (row) { row.portrait_updated_at = null; saveChars(user.id, list); }
+    deletePortraitFile(user.id, id);
     return json(res, 200, { ok: true });
   }
 

@@ -1,9 +1,10 @@
 import { createContext, useContext, useCallback, useEffect, useRef, useState } from 'react';
 import { Platform } from 'react-native';
 import { useSQLiteContext } from 'expo-sqlite';
-import { getCharacter } from '@/db/queries';
+import { getCharacter, updatePortrait } from '@/db/queries';
 import { useAuth } from '@/auth/AuthProvider';
-import { pushCharacter } from '@/sync/cloudCharacters';
+import { pushCharacter, pushPortrait } from '@/sync/cloudCharacters';
+import { readLocalPortraitBase64 } from '@/lib/portraitStorage';
 import { enqueue, size as outboxSize, dequeueAll } from '@/sync/outbox';
 import { nextStatus, type SyncStatus } from '@/sync/syncStatus';
 
@@ -46,6 +47,22 @@ export function SyncProvider({ children }: { children: React.ReactNode }) {
       const { ok } = await pushCharacter(db, session, { id, system: row.system, data: JSON.parse(row.data) });
       inFlight.current--;
       if (!ok) enqueue(id);
+
+      // A queued id might also have a portrait that failed to push (setPortrait
+      // enqueues the same id on portrait failure as on data failure) — retry it
+      // too. Re-uploading an already-synced portrait is harmless, so this runs
+      // unconditionally rather than tracking exactly which failure queued the id.
+      if (row.portrait_uri) {
+        const base64 = readLocalPortraitBase64(row.portrait_uri);
+        if (base64) {
+          const portraitResult = await pushPortrait(session, id, base64);
+          if (portraitResult.ok && portraitResult.portraitUpdatedAt) {
+            await updatePortrait(db, id, row.portrait_uri, portraitResult.portraitUpdatedAt);
+          } else if (!portraitResult.ok) {
+            enqueue(id);
+          }
+        }
+      }
       recompute();
     }
   }, [db, session, recompute]);

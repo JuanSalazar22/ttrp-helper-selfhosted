@@ -22,9 +22,11 @@ import { FeaturesSection } from '@/components/dnd5e/FeaturesSection';
 type Props = {
   character: Dnd5eCharacter;
   onChange: (patch: Partial<Dnd5eCharacter>) => void;
+  portraitUri: string | null;
+  onPortraitChange: (croppedUri: string | null) => void;
 };
 
-export function Dnd5eSheet({ character, onChange }: Props) {
+export function Dnd5eSheet({ character, onChange, portraitUri, onPortraitChange }: Props) {
   const { result, rollCheck, rollExpression, reroll, dismiss } = useRoll();
   const [rollMode] = useState<AdvantageMode>('normal');
   const { wide } = useWideLayout();
@@ -50,7 +52,7 @@ export function Dnd5eSheet({ character, onChange }: Props) {
   };
 
   const single = [s.proficiency, s.ability, s.combat, s.saves, s.skills, s.attacks, s.spellcasting, s.inventory, s.features];
-  const left = [<CharacterPortrait key="portrait" />, s.ability, s.saves, s.skills, s.features];
+  const left = [<CharacterPortrait key="portrait" portraitUri={portraitUri} onChange={onPortraitChange} />, s.ability, s.saves, s.skills, s.features];
   const right = [s.proficiency, s.combat, s.attacks, s.spellcasting, s.inventory];
 
   return (

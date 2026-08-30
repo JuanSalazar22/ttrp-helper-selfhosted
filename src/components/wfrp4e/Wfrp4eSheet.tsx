@@ -20,9 +20,11 @@ import { CharacterDetails } from '@/components/wfrp4e/CharacterDetails';
 type Props = {
   character: Wfrp4eCharacter;
   onChange: (patch: Partial<Wfrp4eCharacter>) => void;
+  portraitUri: string | null;
+  onPortraitChange: (croppedUri: string | null) => void;
 };
 
-export function Wfrp4eSheet({ character, onChange }: Props) {
+export function Wfrp4eSheet({ character, onChange, portraitUri, onPortraitChange }: Props) {
   const { result, rollTest, setDifficulty, setManualRoll, reroll, dismiss } = useWfrpRoll();
   const { wide } = useWideLayout();
 
@@ -48,7 +50,7 @@ export function Wfrp4eSheet({ character, onChange }: Props) {
 
   return (
     <>
-      <Wfrp4eHeader character={character} onChange={onChange} />
+      <Wfrp4eHeader character={character} onChange={onChange} portraitUri={portraitUri} onPortraitChange={onPortraitChange} />
       <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
         <View style={styles.body}>
           <ResponsiveColumns wide={wide} single={single} left={left} right={right} />

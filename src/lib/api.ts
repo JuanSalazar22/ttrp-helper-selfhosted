@@ -1,7 +1,7 @@
 import { apiConfig } from '@/lib/config';
 
 export type ApiUser = { id: string; name: string };
-export type CloudCharacter = { id: string; system: string; data: any; updated_at: string; deleted_at: string | null };
+export type CloudCharacter = { id: string; system: string; data: any; updated_at: string; deleted_at: string | null; portrait_updated_at: string | null };
 
 async function apiFetch(path: string, init?: RequestInit): Promise<Response> {
   return fetch(`${apiConfig.url}${path}`, {
@@ -97,4 +97,30 @@ export async function deleteCharacterRequest(id: string): Promise<void> {
 export async function clearCharactersRequest(): Promise<{ ok: boolean }> {
   const res = await apiFetch('/characters/clear', { method: 'POST' });
   return { ok: res.ok };
+}
+
+export async function putCharacterPortrait(id: string, base64Jpeg: string): Promise<{ portrait_updated_at: string } | null> {
+  const res = await apiFetch(`/characters/${encodeURIComponent(id)}/portrait`, {
+    method: 'PUT',
+    body: JSON.stringify({ image: `data:image/jpeg;base64,${base64Jpeg}` }),
+  });
+  if (!res.ok) return null;
+  return res.json();
+}
+
+export async function getCharacterPortraitBase64(id: string): Promise<string | null> {
+  const res = await apiFetch(`/characters/${encodeURIComponent(id)}/portrait`);
+  if (!res.ok) return null;
+  const buf = await res.arrayBuffer();
+  // No Buffer polyfill is installed, and React Native doesn't provide the Node
+  // `Buffer` global — but it (like every JS engine this app targets) has had
+  // btoa/atob for years, so encode via that instead of relying on Buffer.
+  const bytes = new Uint8Array(buf);
+  let binary = '';
+  for (let i = 0; i < bytes.length; i++) binary += String.fromCharCode(bytes[i]);
+  return btoa(binary);
+}
+
+export async function deleteCharacterPortrait(id: string): Promise<void> {
+  await apiFetch(`/characters/${encodeURIComponent(id)}/portrait`, { method: 'DELETE' });
 }

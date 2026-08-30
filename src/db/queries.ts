@@ -68,11 +68,12 @@ export async function updateCharacter(
 export async function updatePortrait(
   db: SQLite.SQLiteDatabase,
   id: string,
-  uri: string | null
+  uri: string | null,
+  portraitUpdatedAt: string | null = null
 ): Promise<void> {
   await db.runAsync(
-    'UPDATE characters SET portrait_uri = ?, updated_at = ? WHERE id = ?',
-    [uri, Date.now(), id]
+    'UPDATE characters SET portrait_uri = ?, portrait_updated_at = ?, updated_at = ? WHERE id = ?',
+    [uri, portraitUpdatedAt, Date.now(), id]
   );
 }
 
@@ -106,9 +107,9 @@ export async function duplicateCharacter(
 /** Local rows' id + last-synced cloud timestamp, for building the pull reconcile map. */
 export async function getCharacterSyncRefs(
   db: SQLite.SQLiteDatabase,
-): Promise<Array<{ id: string; cloud_updated_at: string | null }>> {
-  return db.getAllAsync<{ id: string; cloud_updated_at: string | null }>(
-    'SELECT id, cloud_updated_at FROM characters',
+): Promise<Array<{ id: string; cloud_updated_at: string | null; portrait_updated_at: string | null }>> {
+  return db.getAllAsync<{ id: string; cloud_updated_at: string | null; portrait_updated_at: string | null }>(
+    'SELECT id, cloud_updated_at, portrait_updated_at FROM characters',
   );
 }
 
