@@ -39,7 +39,13 @@ export function Talents({ character, onChange }: Props) {
   const [calcId, setCalcId] = useState<string | null>(null);
   const [picking, setPicking] = useState(false);
   const [wikiId, setWikiId] = useState<string | null>(null);
+  const [sortBy, setSortBy] = useState<'name' | 'added'>('name');
   const wikiTalent = wikiId ? character.talents.find(x => x.id === wikiId) ?? null : null;
+
+  // Display-only — sorting never changes character.talents itself or its stored order.
+  const sortedTalents = sortBy === 'name'
+    ? [...character.talents].sort((a, b) => a.name.localeCompare(b.name, locale))
+    : character.talents;
 
   // Buy/sell talent ranks (N×100 per rank) and charge XP against `spent`.
   function applyRank(id: string, next: number, cost: number) {
@@ -84,7 +90,28 @@ export function Talents({ character, onChange }: Props) {
 
   return (
     <Section title={tr('wfrp.talents.title')}>
-      {character.talents.map(tal => (
+      {character.talents.length > 1 && (
+        <View style={styles.sortRow}>
+          <Text style={[styles.sortLabel, { color: t.colors.textSecondary }]}>{tr('wfrp.talents.sortBy')}</Text>
+          <TouchableOpacity
+            onPress={() => setSortBy('name')}
+            style={[styles.sortChip, { borderColor: t.colors.accent, backgroundColor: sortBy === 'name' ? t.colors.accent : 'transparent' }]}
+          >
+            <Text style={{ color: sortBy === 'name' ? t.colors.accentText : t.colors.accent, fontSize: 12, fontWeight: '600' }}>
+              {tr('wfrp.talents.sortName')}
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => setSortBy('added')}
+            style={[styles.sortChip, { borderColor: t.colors.accent, backgroundColor: sortBy === 'added' ? t.colors.accent : 'transparent' }]}
+          >
+            <Text style={{ color: sortBy === 'added' ? t.colors.accentText : t.colors.accent, fontSize: 12, fontWeight: '600' }}>
+              {tr('wfrp.talents.sortAdded')}
+            </Text>
+          </TouchableOpacity>
+        </View>
+      )}
+      {sortedTalents.map(tal => (
         <View key={tal.id} style={[styles.row, { borderColor: t.colors.border }]}>
           <TouchableOpacity style={{ flex: 1 }} activeOpacity={0.6} onPress={() => openEdit(tal)}>
             <Text style={[styles.name, { color: t.colors.text }]}>
@@ -209,6 +236,9 @@ export function Talents({ character, onChange }: Props) {
 }
 
 const styles = StyleSheet.create({
+  sortRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 10 },
+  sortLabel: { fontSize: 12, fontWeight: '600' },
+  sortChip: { borderWidth: 1, borderRadius: 6, paddingHorizontal: 10, paddingVertical: 4 },
   row: { flexDirection: 'row', alignItems: 'center', gap: 8, paddingVertical: 8, borderBottomWidth: StyleSheet.hairlineWidth },
   name: { fontSize: 14, fontWeight: '500' },
   desc: { fontSize: 12, marginTop: 2 },

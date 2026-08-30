@@ -263,6 +263,9 @@ export const en = {
     },
     talents: {
       title: 'Talents',
+      sortBy: 'Sort:',
+      sortName: 'Name',
+      sortAdded: 'Added',
       addTalent: 'Add Talent',
       editTalent: 'Edit Talent',
       clearAll: 'Clear all talents',

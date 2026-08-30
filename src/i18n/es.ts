@@ -259,6 +259,9 @@ export const es: DeepPartial<Messages> = {
     },
     talents: {
       title: 'Talentos',
+      sortBy: 'Orden:',
+      sortName: 'Nombre',
+      sortAdded: 'Añadido',
       addTalent: 'Añadir talento',
       editTalent: 'Editar talento',
       clearAll: 'Borrar todos los talentos',
