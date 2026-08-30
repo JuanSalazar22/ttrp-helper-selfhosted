@@ -15,6 +15,7 @@ import { confirmRemove } from '@/lib/confirm';
 import { isWeapon, isArmour, weaponFromRecord, armourFromRecord } from '@/lib/wfrpTrappings';
 import { armourPointsByLocation } from '@/types/wfrp4e';
 import type { Wfrp4eCharacter, ArmourLocation } from '@/types/wfrp4e';
+import { resolveWeaponDamage } from './weaponDamageFormula';
 
 type Weapon = Wfrp4eCharacter['weapons'][number];
 type Armour = Wfrp4eCharacter['armour'][number];
@@ -163,32 +164,36 @@ export function Combat({ character, onChange }: Props) {
     <>
       {/* ── Weapons ────────────────────────────────────────────────────── */}
       <Section title={tr('wfrp.combat.weapons')}>
-        {character.weapons.map(w => (
-          <View key={w.id} style={[styles.row, { borderColor: t.colors.border }]}>
-            <TouchableOpacity style={{ flex: 1 }} activeOpacity={0.6} onPress={() => openEditWeapon(w)}>
-              <Text style={[styles.itemName, { color: t.colors.text }]}>{w.name}</Text>
-              <Text style={[styles.itemSub, { color: t.colors.textSecondary }]}>
-                {[w.damage, w.group].filter(Boolean).join(' · ')}
-              </Text>
-            </TouchableOpacity>
-            <Text style={[styles.encLabel, { color: t.colors.textSecondary }]}>{tr('wfrp.combat.enc', { n: w.encumbrance })}</Text>
-            <TouchableOpacity
-              onPress={() => toggleWeaponEquipped(w.id)}
-              style={[styles.equipChip, {
-                borderColor: w.equipped ? t.colors.accent : t.colors.border,
-                backgroundColor: w.equipped ? t.colors.accent : 'transparent',
-              }]}
-              accessibilityLabel={tr(w.equipped ? 'wfrp.equip.unequipA11y' : 'wfrp.equip.equipA11y', { name: w.name })}
-            >
-              <Text style={[styles.equipChipText, { color: w.equipped ? t.colors.accentText : t.colors.textSecondary }]}>
-                {tr(w.equipped ? 'wfrp.equip.equipped' : 'wfrp.equip.equip')}
-              </Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => removeWeapon(w.id)} style={styles.del}>
-              <Trash2 size={14} color={t.colors.danger} />
-            </TouchableOpacity>
-          </View>
-        ))}
+        {character.weapons.map(w => {
+          const resolved = resolveWeaponDamage(character, w.damage);
+          const damageLabel = resolved !== null ? `${w.damage} (${resolved})` : w.damage;
+          return (
+            <View key={w.id} style={[styles.row, { borderColor: t.colors.border }]}>
+              <TouchableOpacity style={{ flex: 1 }} activeOpacity={0.6} onPress={() => openEditWeapon(w)}>
+                <Text style={[styles.itemName, { color: t.colors.text }]}>{w.name}</Text>
+                <Text style={[styles.itemSub, { color: t.colors.textSecondary }]}>
+                  {[damageLabel, w.group].filter(Boolean).join(' · ')}
+                </Text>
+              </TouchableOpacity>
+              <Text style={[styles.encLabel, { color: t.colors.textSecondary }]}>{tr('wfrp.combat.enc', { n: w.encumbrance })}</Text>
+              <TouchableOpacity
+                onPress={() => toggleWeaponEquipped(w.id)}
+                style={[styles.equipChip, {
+                  borderColor: w.equipped ? t.colors.accent : t.colors.border,
+                  backgroundColor: w.equipped ? t.colors.accent : 'transparent',
+                }]}
+                accessibilityLabel={tr(w.equipped ? 'wfrp.equip.unequipA11y' : 'wfrp.equip.equipA11y', { name: w.name })}
+              >
+                <Text style={[styles.equipChipText, { color: w.equipped ? t.colors.accentText : t.colors.textSecondary }]}>
+                  {tr(w.equipped ? 'wfrp.equip.equipped' : 'wfrp.equip.equip')}
+                </Text>
+              </TouchableOpacity>
+              <TouchableOpacity onPress={() => removeWeapon(w.id)} style={styles.del}>
+                <Trash2 size={14} color={t.colors.danger} />
+              </TouchableOpacity>
+            </View>
+          );
+        })}
 
         <TouchableOpacity style={[styles.addBtn, { borderColor: t.colors.accent }]} onPress={openAddWeapon}>
           <Plus size={14} color={t.colors.accent} />
