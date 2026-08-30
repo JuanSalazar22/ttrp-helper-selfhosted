@@ -24,10 +24,9 @@ Realistic next picks — small enough to actually finish in a weekend or two, wi
 - [x] **Beta readiness — D&D beta badge, bug-report tab, translated confirm dialog.** D&D 5e is marked `Beta` in the create-character system picker so testers know it trails WFRP. A Report tab (`app/(tabs)/report.tsx`) lets testers file bugs, wrong-content reports, and suggestions into a write-only `bug_reports` Supabase table — anonymous submission allowed, with the RLS policy (`user_id is null or user_id = auth.uid()`) rejecting forged user ids, since a column default alone does not stop a client from supplying its own value. Reports capture app version, platform, and locale automatically. The tab hides when Supabase is unconfigured. Also fixed: `confirmRemove` hardcoded English "Cancel"/"Remove"/"Remove?" in the native alert on all 19 call sites — now translated (web is unaffected; `window.confirm` labels are browser-supplied). Plan: `docs/superpowers/plans/2026-08-07-beta-readiness.md`.
 - [ ] **Onboarding flow.** 3 screens max — pick system, name character, start. Skips today; new users land on an empty list with no guidance.
 - [ ] **Armour diagram visual polish.** Shipped 2026-08-29 with simple flat shapes (circle head, trapezoid torso, rectangle limbs) — a first pass using opengym's muscle-atlas art didn't look right once rendered, so it was swapped for this. Works correctly and reads fine, but the art itself is intentionally basic; revisit `src/data/wfrp-content/armourBodyPaths.ts` for a nicer-looking body outline when there's time. `ArmourBodyMap.tsx` shouldn't need to change — the geometry file is deliberately swappable on its own. Plan: `docs/superpowers/plans/2026-08-29-armour-body-diagram.md`.
+- [ ] **Show computed final weapon damage.** Weapon damage is currently just the free-text field as typed (e.g. "BF+4") — show the actual resolved number too (characteristic bonus + flat damage), reusing `characteristicBonus()` from `src/types/wfrp4e.ts`. Idea surfaced while designing the Hammergen import, which can only bring in Hammergen's bare damage numbers (no bonus-inclusion flag in its export), making this more useful for spotting under-imported weapons at a glance.
 
 ## Stubbed — groundwork exists, no UI
-
-- [ ] **Character portrait.** `portrait_uri` column exists on `characters`; no picker or display anywhere in the UI. Add an image picker on the sheet header + render it in the sheet + character-list rows.
 - [ ] **Roll history drawer.** `roll_history` table + queries exist but aren't wired to any UI. Add a drawer accessible from the character sheet showing the last 50 rolls (label, expression, result, timestamp).
 
 ## Paid tier — deferred
@@ -36,7 +35,6 @@ Free for now — RevenueCat is not wired. All items below require the paywall to
 
 - [ ] **Paywall / free-tier character limit** (RevenueCat integration + gating).
 - [ ] **Custom dice macros** (named rolls like "Sneak Attack" → `1d20+7; 2d6+4`). Schema table already sketched in PROJECT_BRIEF.md §8.
-- [ ] **Portrait upload** (paid tier only; free tier gets a default avatar).
 - [ ] **Inventory presets** (combat / town / downtime loadouts).
 - [ ] **PDF export** of the character sheet.
 
