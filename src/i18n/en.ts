@@ -20,6 +20,9 @@ export const en = {
     portraitPlaceholder: 'Add portrait',
     cropCancel: 'Cancel',
     cropConfirm: 'Use Photo',
+    changePhoto: 'Change photo',
+    removePhoto: 'Remove photo',
+    addPhoto: 'Add photo',
   },
   tabs: {
     characters: 'Characters',
