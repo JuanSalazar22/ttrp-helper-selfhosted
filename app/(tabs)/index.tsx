@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, TouchableOpacity, TextInput, FlatList, Alert, ActivityIndicator, Platform } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, TextInput, FlatList, Alert, ActivityIndicator, Platform, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter, useFocusEffect } from 'expo-router';
 import { useCallback, useMemo, useState } from 'react';
@@ -49,6 +49,13 @@ function CharacterCard({
       onPress={onPress}
       activeOpacity={0.75}
     >
+      {row.portrait_uri
+        ? <Image source={{ uri: row.portrait_uri }} style={[styles.cardAvatar, { borderColor: t.colors.border }]} />
+        : (
+          <View style={[styles.cardAvatar, styles.cardAvatarPlaceholder, { borderColor: t.colors.border, backgroundColor: t.colors.backgroundSecondary }]}>
+            <User size={18} color={t.colors.textMuted} />
+          </View>
+        )}
       <View style={styles.cardLeft}>
         <View style={[styles.systemBadge, { backgroundColor: t.colors.accent + '22', borderColor: t.colors.accent }]}>
           <Text style={[styles.systemText, { color: t.colors.accent }]}>{SYSTEM_LABEL[row.system]}</Text>
@@ -246,6 +253,8 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   cardLeft: { flex: 1, gap: 4 },
+  cardAvatar: { width: 44, height: 44, borderRadius: 22, borderWidth: 1, marginRight: 12 },
+  cardAvatarPlaceholder: { alignItems: 'center', justifyContent: 'center' },
   cardRight: { alignItems: 'flex-end', gap: 8 },
   cardActions: { flexDirection: 'row', gap: 12 },
   cardAction: { padding: 2 },
