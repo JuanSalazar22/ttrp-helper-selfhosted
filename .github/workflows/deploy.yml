@@ -1,0 +1,41 @@
+name: Deploy to production
+
+# Runs after CI finishes on main, and only deploys if CI passed — never on a
+# merge that broke tests/typecheck. Connects over SSH with a dedicated,
+# restricted deploy key (see docs/SELF_HOSTING.md's "Automated deploys"
+# section) whose authorized_keys entry force-runs deploy/deploy.sh on the
+# box regardless of what command this workflow sends — the box's own script
+# does the actual git pull + docker compose rebuild, and never touches the
+# ./data bind mount or .env.
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch: {}  # manual "Run workflow" button, for testing or an emergency redeploy
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy over SSH
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p "$DEPLOY_PORT" -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+
+          # The remote authorized_keys entry force-runs deploy.sh no matter what
+          # command we send — this is just a label for the Actions log.
+          ssh -i ~/.ssh/deploy_key -p "$DEPLOY_PORT" -o StrictHostKeyChecking=yes \
+            "$DEPLOY_USER@$DEPLOY_HOST" "deploy"
