@@ -157,6 +157,10 @@ export const es: DeepPartial<Messages> = {
       ws: 'HA', bs: 'HP', s: 'F', t: 'R', i: 'I',
       ag: 'Ag', dex: 'Des', int: 'Int', wp: 'V', fel: 'Em',
     },
+    charBonus: {
+      ws: 'BHA', bs: 'BHP', s: 'BF', t: 'BR', i: 'BI',
+      ag: 'BAg', dex: 'BDes', int: 'BInt', wp: 'BV', fel: 'BEm',
+    },
     sections: {
       characteristics: 'Características',
       experience: 'Experiencia',

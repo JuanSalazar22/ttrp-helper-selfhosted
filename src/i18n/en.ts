@@ -161,6 +161,10 @@ export const en = {
       ws: 'WS', bs: 'BS', s: 'S', t: 'T', i: 'I',
       ag: 'Ag', dex: 'Dex', int: 'Int', wp: 'WP', fel: 'Fel',
     },
+    charBonus: {
+      ws: 'WSB', bs: 'BSB', s: 'SB', t: 'TB', i: 'IB',
+      ag: 'AgB', dex: 'DexB', int: 'IntB', wp: 'WPB', fel: 'FelB',
+    },
     sections: {
       characteristics: 'Characteristics',
       experience: 'Experience',
