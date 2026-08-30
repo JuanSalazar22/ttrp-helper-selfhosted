@@ -498,7 +498,7 @@ export const en = {
       cancel: 'Cancel',
       noMatch: 'No result for that roll',
       death: 'Death',
-      removeConfirm: 'Remove "{{name}}"?',
+      removeConfirm: 'Remove {name}?',
     },
   },
   dnd: {
