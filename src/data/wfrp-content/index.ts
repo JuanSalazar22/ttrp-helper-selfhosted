@@ -12,12 +12,14 @@ import mutation from './mutation.json';
 import creature_trait from './creature_trait.json';
 import rune from './rune.json';
 import career from './career.json';
+import critical_wound from './critical_wound.json';
 
-export const CONTENT_SEED_VERSION = '1';
+export const CONTENT_SEED_VERSION = '2';
 
 export type ContentCategory =
   | 'skill' | 'talent' | 'spell' | 'prayer' | 'trapping'
-  | 'quality' | 'mutation' | 'creature_trait' | 'rune' | 'career';
+  | 'quality' | 'mutation' | 'creature_trait' | 'rune' | 'career'
+  | 'critical_wound';
 
 export type ContentRecord = {
   id: string;
@@ -37,4 +39,5 @@ export const CONTENT_SOURCES: Record<ContentCategory, ContentRecord[]> = {
   creature_trait: creature_trait as ContentRecord[],
   rune: rune as ContentRecord[],
   career: career as ContentRecord[],
+  critical_wound: critical_wound as ContentRecord[],
 };
