@@ -9,6 +9,7 @@ import { Experience } from '@/components/wfrp4e/Experience';
 import { Characteristics } from '@/components/wfrp4e/Characteristics';
 import { Buffs } from '@/components/wfrp4e/Buffs';
 import { Resources } from '@/components/wfrp4e/Resources';
+import { CriticalWounds } from '@/components/wfrp4e/CriticalWounds';
 import { WfrpSkills } from '@/components/wfrp4e/WfrpSkills';
 import { Talents } from '@/components/wfrp4e/Talents';
 import { Combat } from '@/components/wfrp4e/Combat';
@@ -35,6 +36,7 @@ export function Wfrp4eSheet({ character, onChange, portraitUri, onPortraitChange
     characteristics: <Characteristics key="characteristics" character={character} onChange={onChange} onRoll={rollTest} />,
     buffs: <Buffs key="buffs" character={character} onChange={onChange} />,
     resources: <Resources key="resources" character={character} onChange={onChange} />,
+    criticalWounds: <CriticalWounds key="criticalWounds" character={character} onChange={onChange} />,
     skills: <WfrpSkills key="skills" character={character} onChange={onChange} onRoll={rollTest} />,
     talents: <Talents key="talents" character={character} onChange={onChange} />,
     combat: <Combat key="combat" character={character} onChange={onChange} />,
@@ -44,9 +46,9 @@ export function Wfrp4eSheet({ character, onChange, portraitUri, onPortraitChange
     details: <CharacterDetails key="details" character={character} onChange={onChange} />,
   };
 
-  const single = [s.details, s.experience, s.characteristics, s.buffs, s.resources, s.skills, s.talents, s.combat, s.trappings, s.magic, s.corruption];
+  const single = [s.details, s.experience, s.characteristics, s.buffs, s.resources, s.criticalWounds, s.skills, s.talents, s.combat, s.trappings, s.magic, s.corruption];
   const left = [s.experience, s.characteristics, s.buffs, s.skills, s.talents];
-  const right = [s.resources, s.combat, s.trappings, s.magic, s.corruption, s.details];
+  const right = [s.resources, s.criticalWounds, s.combat, s.trappings, s.magic, s.corruption, s.details];
 
   return (
     <>
