@@ -35,22 +35,29 @@ export function CriticalWounds({ character, onChange }: Props) {
   const [rollValue, setRollValue] = useState(1);
   const [editingRoll, setEditingRoll] = useState(false);
   const [rollDraft, setRollDraft] = useState('1');
-  const [locationRows, setLocationRows] = useState<ContentRecord[]>([]);
+  const [allRows, setAllRows] = useState<ContentRecord[]>([]);
   const [picking, setPicking] = useState(false);
   const [wikiId, setWikiId] = useState<string | null>(null);
 
   const wikiWound = wikiId ? character.criticalWounds.find(x => x.id === wikiId) ?? null : null;
 
-  // Load this location's 80-row-total (20 per location) table once the roll
-  // picker is open, so findCriticalWound has something to search.
+  // Load the full 80-row table once the roll picker opens — filtered by
+  // location at render time (below), not re-fetched per location. Re-fetching
+  // on every location change left a real race: `location` state flips
+  // synchronously on a chip tap, but the old rows stuck around until the new
+  // fetch resolved, so hitting Confirm in that window could add an entry whose
+  // name/description came from the PREVIOUS location under the NEW location's
+  // label. Fetching once and filtering client-side removes the window entirely.
   useEffect(() => {
     if (!rolling) return;
     let cancelled = false;
     searchContent(db, 'critical_wound', '', 100, locale).then(rows => {
-      if (!cancelled) setLocationRows(rows.filter(r => r.location === location));
+      if (!cancelled) setAllRows(rows);
     });
     return () => { cancelled = true; };
-  }, [rolling, location, db, locale]);
+  }, [rolling, db, locale]);
+
+  const locationRows = allRows.filter(r => r.location === location);
 
   function openRoll() {
     setLocation('head');
