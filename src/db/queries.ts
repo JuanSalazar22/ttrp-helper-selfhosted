@@ -264,12 +264,14 @@ export async function getContentByIds(
   );
 }
 
-/** Look up talent records by exact name (case-insensitive). Used to enrich race/origin
- *  grants — race data stores talent names as strings, so this maps them back to the
- *  library entries carrying `description` and `tests`. Missing names are simply absent
- *  from the result (custom / non-book talents keep empty descriptions upstream). */
-export async function getTalentsByNames(
+/** Look up records of one category by exact name (case-insensitive). Used to enrich race/origin
+ *  talent grants and Hammergen-imported talents/skills — those sources store names as plain
+ *  strings, so this maps them back to the library entries carrying `description` and `tests`.
+ *  Missing names are simply absent from the result (custom / non-book entries keep empty
+ *  descriptions upstream). */
+export async function getContentByNames(
   db: SQLite.SQLiteDatabase,
+  category: ContentCategory,
   names: string[],
   locale: Locale = 'en'
 ): Promise<ContentRecord[]> {
@@ -280,8 +282,8 @@ export async function getTalentsByNames(
     `SELECT c.data AS data, t.overlay AS overlay
        FROM content_library c
        LEFT JOIN content_translations t ON t.content_id = c.id AND t.locale = ?
-      WHERE c.category = 'talent' AND lower(c.name) IN (${placeholders})`,
-    [locale, ...lowered]
+      WHERE c.category = ? AND lower(c.name) IN (${placeholders})`,
+    [locale, category, ...lowered]
   );
   return rows.map((r) =>
     applyOverlay(JSON.parse(r.data) as ContentRecord, r.overlay ? JSON.parse(r.overlay) : null)

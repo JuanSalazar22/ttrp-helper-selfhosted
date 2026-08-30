@@ -15,7 +15,7 @@ import { WikiModal } from '@/components/wfrp4e/WikiModal';
 import { experienceCurrent, mergeGrantedTalents, type GrantedTalent } from '@/types/wfrp4e';
 import { rollRandomTalents } from '@/lib/randomTalents';
 import { roll } from '@/dice/engine';
-import { getTalentsByNames } from '@/db/queries';
+import { getContentByNames } from '@/db/queries';
 import { confirmRemove } from '@/lib/confirm';
 import type { Wfrp4eCharacter } from '@/types/wfrp4e';
 
@@ -59,7 +59,7 @@ export function Talents({ character, onChange }: Props) {
   async function rollRandom() {
     const names = rollRandomTalents(1, () => roll('1d100').total, character.talents.map(t => t.name));
     if (!names.length) return;
-    const records = await getTalentsByNames(db, names, locale);
+    const records = await getContentByNames(db, 'talent', names, locale);
     const lookup = new Map<string, GrantedTalent>(records.map(r => [
       r.name.toLowerCase(),
       { name: r.name, description: r.description as string | undefined, tests: r.tests as string | undefined },

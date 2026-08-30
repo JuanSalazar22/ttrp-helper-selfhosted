@@ -8,7 +8,7 @@ import { useTranslation, useLocale } from '@/i18n';
 import { OriginEditor } from '@/components/wfrp4e/OriginEditor';
 import { useWfrpLibrary } from '@/hooks/useWfrpLibrary';
 import { applyOrigin, type GrantedTalent } from '@/types/wfrp4e';
-import { getTalentsByNames } from '@/db/queries';
+import { getContentByNames } from '@/db/queries';
 import type { Wfrp4eCharacter, WfrpOriginDef } from '@/types/wfrp4e';
 
 type Props = {
@@ -27,7 +27,7 @@ export function OriginPicker({ visible, character, onChange, onClose }: Props) {
   const [editing, setEditing] = useState(false);
 
   async function buildLookup(def: WfrpOriginDef): Promise<Map<string, GrantedTalent>> {
-    const records = await getTalentsByNames(db, def.talents ?? [], locale);
+    const records = await getContentByNames(db, 'talent', def.talents ?? [], locale);
     return new Map(records.map(r => [
       r.name.toLowerCase(),
       { name: r.name, description: r.description as string | undefined, tests: r.tests as string | undefined },

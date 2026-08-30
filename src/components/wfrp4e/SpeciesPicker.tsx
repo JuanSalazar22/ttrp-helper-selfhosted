@@ -11,7 +11,7 @@ import { applySpecies, upsertByName, mergeGrantedTalents, type GrantedTalent } f
 import { BASE_RACES } from '@/data/wfrp-races';
 import { rollRandomTalents } from '@/lib/randomTalents';
 import { roll } from '@/dice/engine';
-import { getTalentsByNames } from '@/db/queries';
+import { getContentByNames } from '@/db/queries';
 import type { SQLiteDatabase } from 'expo-sqlite';
 import type { Locale } from '@/i18n';
 import type { Wfrp4eCharacter, WfrpSpeciesDef } from '@/types/wfrp4e';
@@ -44,14 +44,14 @@ async function applyRaceWithRandomTalents(
   character: Wfrp4eCharacter,
   def: WfrpSpeciesDef,
 ): Promise<Partial<Wfrp4eCharacter>> {
-  const fixedRecords = await getTalentsByNames(db, def.talents ?? [], locale);
+  const fixedRecords = await getContentByNames(db, 'talent', def.talents ?? [], locale);
   const lookup = buildTalentLookup(fixedRecords);
   const patch = applySpecies(character, def, uuidv4, roll2d10, lookup);
 
   const granted = patch.talents ?? character.talents;
   const randomNames = rollRandomTalents(def.randomTalents ?? 0, rollD100, granted.map(t => t.name));
   if (randomNames.length > 0) {
-    const randomRecords = await getTalentsByNames(db, randomNames, locale);
+    const randomRecords = await getContentByNames(db, 'talent', randomNames, locale);
     const randomLookup = buildTalentLookup(randomRecords);
     const enrichedRandom: GrantedTalent[] = randomNames.map(name =>
       randomLookup.get(name.toLowerCase()) ?? { name }

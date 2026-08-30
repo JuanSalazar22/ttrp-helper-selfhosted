@@ -59,6 +59,7 @@ export const en = {
     emptyBody: 'Tap + to create your first character.',
     importFailedTitle: 'Import failed',
     importFailedBody: 'Could not read that file.',
+    importHammergenA11y: 'Import from Hammergen',
     duplicateA11y: 'Duplicate {name}',
     deleteA11y: 'Delete {name}',
     searchPlaceholder: 'Search by name or tag…',
