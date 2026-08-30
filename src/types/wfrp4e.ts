@@ -64,6 +64,15 @@ export type Wfrp4eCharacter = {
     page?: string;
   }>;
 
+  criticalWounds: Array<{
+    id: string;
+    name: string;
+    location: 'head' | 'body' | 'arm' | 'leg';
+    wounds: number | 'death';
+    description: string;
+    roll: number | null;
+  }>;
+
   wounds: { current: number; modifier: number };
   // Per-race Max-Wounds coefficients: woundsMax = sb·SB + tb·TB + wpb·WPB + wounds.modifier.
   // Default {1,2,1} is the standard SB + 2·TB + WPB; Halflings use {0,2,1}.
@@ -470,6 +479,8 @@ export function migrateWfrp4eCharacter(raw: any): Wfrp4eCharacter {
     ? raw.tags.filter((x: unknown): x is string => typeof x === 'string' && x.trim().length > 0)
     : [];
 
+  const criticalWounds = Array.isArray(raw?.criticalWounds) ? raw.criticalWounds : [];
+
   const withEquipped = <T extends { equipped?: unknown }>(xs: T[] | undefined): Array<T & { equipped: boolean }> =>
     (Array.isArray(xs) ? xs : []).map(x => ({ ...x, equipped: x.equipped === true }));
 
@@ -506,6 +517,7 @@ export function migrateWfrp4eCharacter(raw: any): Wfrp4eCharacter {
     armour: withEquipped(raw?.armour),
     trappings: withEquipped(raw?.trappings),
     tags,
+    criticalWounds,
     schemaVer: 9,
   } as Wfrp4eCharacter;
 }
@@ -794,6 +806,7 @@ export function defaultWfrp4eCharacter(name: string): Wfrp4eCharacter {
     buffs: [],
     skills: [],
     talents: [],
+    criticalWounds: [],
     wounds: { current: 0, modifier: 0 },
     woundsCoeffs: { ...DEFAULT_WOUNDS_COEFFS },
     movement: 4,
