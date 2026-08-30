@@ -14,35 +14,38 @@ This idea surfaced while building the Hammergen import (2026-08-30): Hammergen o
 
 ## Goals
 
-- Next to every weapon's damage formula, show the resolved total (characteristic bonus + flat number) computed from the character's *current* stats — live, not stored, so it stays correct as characteristics/advances/buffs change.
-- Recognize any of the 10 characteristic-bonus abbreviations, in either English or Spanish spelling, case-insensitively — not just Strength Bonus — since a formula could reasonably use any of them (a homebrew/reskinned weapon keyed off Willpower, for instance).
-- Never show a number that adds no information: a bare numeric formula (no bonus) or unparseable text shows nothing extra.
+- Next to every weapon's damage formula, show the resolved total computed from the character's *current* stats — live, not stored, so it stays correct as characteristics/advances/buffs change (and re-resolves per weapon if the formula itself is edited).
+- Recognize any of the 10 characteristic-bonus abbreviations, in either English or Spanish spelling, case-insensitively — not just Strength Bonus.
+- Support combining multiple characteristic terms and flat numbers in one formula (`SB+TB+4`), with standard arithmetic precedence and optional parentheses for grouping (`(SBx2)+TB+4`) — not just a single bonus plus a flat add.
+- Never show a number that adds no information: a formula with no characteristic term anywhere in it, or one that fails to parse, shows nothing extra.
 
 ## Non-goals
 
 - No live preview in the add/edit weapon form — only the collapsed row's subtitle changes.
-- No support for multipliers (`2×SB+4`) or multi-term formulas (`SB+TB`) — WFRP4e's own book data and the Hammergen import never produce these; adding parsing for forms nothing generates would be speculative.
+- No subtraction, division, or decimal numbers — not requested, and nothing in this app's data needs them; adding them would be speculative.
 - No change to how `damage` is stored, edited, imported, or exported — this only adds a computed, derived display value.
 
 ## Decisions
 
 | Area | Decision |
 |---|---|
-| Where the logic lives | `resolveWeaponDamage(char, damage)` in `src/types/wfrp4e.ts`, alongside `characteristicBonus()`. That file is intentionally i18n-independent (no `@/i18n` import anywhere in it today), so the 20 recognized abbreviation strings (10 characteristics × English/Spanish) are hardcoded there directly, with a comment noting they must stay in sync with `wfrp.charBonus` in `src/i18n/en.ts` / `es.ts` if those ever change. These are fixed rulebook terms (Devir's official Spanish WFRP4e abbreviations), not arbitrary UI copy, so drift risk is low. |
-| Grammar | `^\s*(ABBREV)\s*(?:\+\s*(\d+))?\s*$`, case-insensitive. `ABBREV` is any of the 20 known strings. The `+N` part is optional (a bonus-alone formula like `"SB"` is valid, matching real WFRP4e weapons like unarmed/fist attacks). Anything else (a bare number, prose, a typo, empty string) does not match. |
-| Result when no bonus term is present | Returns `null` for a non-matching formula (including a bare number like `"6"`) — not because it's invalid, but because there's nothing new to show: the number the player already sees *is* the final number. `null` means "don't render the parenthetical," never an error state. |
-| Live-ness | No new stored field. `resolveWeaponDamage` calls the existing `characteristicBonus()`, which already folds in advances, manual "other" adjustments, and active buffs (including the synthetic Encumbered debuff) — so the resolved number is automatically consistent with everything else on the sheet, with zero sync logic to write. |
-| UI | `Combat.tsx`'s weapon row subtitle changes from `` `${w.damage} · ${w.group}` `` to insert the resolved value in parens right after the formula when non-null: `"SB+4 (7) · Basic"`. The raw formula is never replaced or hidden — the parenthetical is purely additive. No i18n string needed (parentheses read fine in both locales). |
+| Where the logic lives | New file `src/components/wfrp4e/weaponDamageFormula.ts`, colocated with `Combat.tsx` — matching how `criticalWoundLookup.ts` sits next to `CriticalWounds.tsx`. This is a real small tokenizer + recursive-descent parser + evaluator (not a one-line regex anymore), so it earns its own file rather than growing `src/types/wfrp4e.ts` further. It imports `characteristicBonus`, `CharacteristicKey`, and `CHARACTERISTIC_KEYS` from `@/types/wfrp4e`. |
+| Recognized abbreviations | The 20 fixed rulebook strings (10 characteristics × English/Spanish — `WSB/BSB/SB/TB/IB/AgB/DexB/IntB/WPB/FelB` and `BHA/BHP/BF/BR/BI/BAg/BDes/BInt/BV/BEm`), hardcoded in `weaponDamageFormula.ts` with a comment noting they must stay in sync with `wfrp.charBonus` in `src/i18n/en.ts` / `es.ts` if those ever change. Matched case-insensitively; mixing English and Spanish terms in one formula works too (nothing prevents it, and nothing needs to). |
+| Grammar | `expr := term ('+' term)*` · `term := factor (('x'\|'X'\|'*') factor)*` · `factor := NUMBER \| ABBREV \| '(' expr ')'`. Standard precedence (multiplication binds tighter than addition), so `SBx2+TB+4` and `(SBx2)+TB+4` are equivalent — parentheses are only needed to override precedence. Repeating a characteristic (`SB+SB+4`) sums its bonus twice, which covers "double a bonus" without dedicated multiplier-on-a-characteristic syntax beyond `x`. |
+| Tokenizer / `DexB` trap | `DexB` contains a literal `x`. The tokenizer always attempts the longest known-abbreviation match at the current position *before* falling back to treating a bare `x`/`X` as the multiply operator, so `DexB` is read as one token, never split into `De` × `B`. |
+| Result when no characteristic term is present | Returns `null` — for a pure-numeric formula (`"6"`, `"4+2"`), *and* for anything that fails to parse (unmatched paren, unknown token, empty string). `null` always means "don't render the parenthetical," never an error state. |
+| Live-ness | No new stored field. The evaluator calls the existing `characteristicBonus()` for each abbreviation term, which already folds in advances, manual "other" adjustments, and active buffs (including the synthetic Encumbered debuff) — so the resolved number is automatically consistent with everything else on the sheet, and re-resolves on every render (both when stats change and when the formula itself is edited), with zero sync logic to write. |
+| UI | `Combat.tsx`'s weapon row subtitle changes from `` `${w.damage} · ${w.group}` `` to insert the resolved value in parens right after the formula when non-null: `"SB+4 (7) · Basic"`. The raw formula is never replaced or hidden. No i18n string needed. |
 
-## File layout (modified only — no new files)
+## File layout
 
 ```
-src/types/wfrp4e.ts                    # + resolveWeaponDamage()
-src/types/__tests__/wfrp4e.test.ts     # + unit tests for resolveWeaponDamage()
-src/components/wfrp4e/Combat.tsx       # weapon row subtitle includes the resolved value
+src/components/wfrp4e/weaponDamageFormula.ts               # new — tokenizer + parser + evaluator, resolveWeaponDamage(char, formula)
+src/components/wfrp4e/__tests__/weaponDamageFormula.test.ts # new — unit tests
+src/components/wfrp4e/Combat.tsx                            # weapon row subtitle includes the resolved value
 ```
 
 ## Testing / verification plan
 
-- `resolveWeaponDamage()` is a pure function — real unit tests in `src/types/__tests__/wfrp4e.test.ts`: a plain `"SB+4"` match against a character with known Strength, an ES abbreviation (`"BF+4"`), a bonus-alone formula (`"WPB"`) proving the non-Strength scope works, a bare number (`"6"` → `null`), and unparseable text (→ `null`). Also case-insensitivity (`"sb+4"`) and stray whitespace (`"SB + 4"`).
-- Manual verification (per this project's existing convention): open a WFRP4e character with a book-sourced weapon (already `"SB+N"` shaped), confirm the resolved number appears and matches hand-computed Strength Bonus + N; edit a weapon's damage to a bare number and confirm the parenthetical disappears; switch locale to Spanish and confirm a `"BF+N"` formula still resolves.
+- `resolveWeaponDamage()` is a pure function — real unit tests in `weaponDamageFormula.test.ts`: a plain `"SB+4"`, an ES abbreviation (`"BF+4"`), a bonus-alone formula (`"WPB"`), multi-term (`"SB+TB+4"`), precedence without parens (`"SBx2+TB+4"`) vs. the same with explicit parens (`"(SBx2)+TB+4"`) producing identical results, a repeated characteristic (`"SB+SB+4"`), the `DexB`-contains-`x` tokenizer trap, a bare/pure-numeric formula (→ `null`), and unparseable text / unmatched parens (→ `null`). Also case-insensitivity and stray whitespace throughout.
+- Manual verification (per this project's existing convention): open a WFRP4e character with a book-sourced weapon (already `"SB+N"` shaped), confirm the resolved number matches hand-computed Strength Bonus + N and updates live when Strength changes; edit a weapon's formula to a multi-term expression and confirm it resolves correctly; edit to a bare number and confirm the parenthetical disappears; switch locale to Spanish and confirm a `"BF+N"` formula still resolves.
