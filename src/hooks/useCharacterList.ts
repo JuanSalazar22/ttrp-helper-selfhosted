@@ -6,8 +6,10 @@ import { defaultWfrp4eCharacter } from '@/types/wfrp4e';
 import type { CharacterRow, GameSystem } from '@/types';
 import { pickAndParseCharacter } from '@/lib/transfer';
 import { useAuth } from '@/auth/AuthProvider';
-import { pullCharacters, softDeleteCharacterCloud } from '@/sync/cloudCharacters';
-import { reconcilePull, cloudRowToLocalParams, type LocalRef } from '@/sync/reconcile';
+import { pullCharacters, softDeleteCharacterCloud, pullPortrait } from '@/sync/cloudCharacters';
+import { reconcilePull, cloudRowToLocalParams, needsPortraitPull, type LocalRef } from '@/sync/reconcile';
+import { saveLocalPortrait } from '@/lib/portraitStorage';
+import * as FileSystem from 'expo-file-system/legacy';
 
 export function useCharacterList() {
   const db = useSQLiteContext();
@@ -31,19 +33,36 @@ export function useCharacterList() {
     (async () => {
       const cloud = await pullCharacters(session);
       const refs = await queries.getCharacterSyncRefs(db);
+      const localPortraitMap = new Map(refs.map(r => [r.id, r.portrait_updated_at]));
       const localMap = new Map<string, LocalRef>(
         refs.map(r => [r.id, { id: r.id, cloudUpdatedAt: r.cloud_updated_at }]),
       );
       const actions = reconcilePull(localMap, cloud);
-      if (actions.length === 0) return;
-      for (const a of actions) {
-        if (cancelled) return;
-        if (a.kind === 'delete') {
-          await queries.deleteCharacter(db, a.id);
-        } else {
-          const p = cloudRowToLocalParams(a.row);
-          await queries.upsertLocalCharacter(db, { ...p, cloudUpdatedAt: a.row.updated_at });
+      if (actions.length > 0) {
+        for (const a of actions) {
+          if (cancelled) return;
+          if (a.kind === 'delete') {
+            await queries.deleteCharacter(db, a.id);
+          } else {
+            const p = cloudRowToLocalParams(a.row);
+            await queries.upsertLocalCharacter(db, { ...p, cloudUpdatedAt: a.row.updated_at });
+          }
         }
+      }
+      // Independent of insert/update/delete: any cloud row with a newer portrait
+      // than what this device has cached gets fetched and saved locally. This
+      // runs for every non-deleted cloud row, not just ones reconcilePull acted
+      // on, since a character's DATA can be unchanged while its portrait isn't.
+      for (const c of cloud) {
+        if (cancelled) return;
+        if (c.deleted_at) continue;
+        if (!needsPortraitPull(localPortraitMap.get(c.id) ?? null, c.portrait_updated_at)) continue;
+        const base64 = await pullPortrait(session, c.id);
+        if (!base64 || cancelled) continue;
+        const tempPath = `${FileSystem.cacheDirectory}pulled-portrait-${c.id}.jpg`;
+        await FileSystem.writeAsStringAsync(tempPath, base64, { encoding: FileSystem.EncodingType.Base64 });
+        const localUri = await saveLocalPortrait(c.id, tempPath);
+        await queries.updatePortrait(db, c.id, localUri, c.portrait_updated_at);
       }
       if (!cancelled) await refresh();
     })();
