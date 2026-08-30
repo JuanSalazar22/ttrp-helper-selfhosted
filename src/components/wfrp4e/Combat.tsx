@@ -437,8 +437,8 @@ export function Combat({ character, onChange }: Props) {
         category="trapping"
         title={tr('wfrp.combat.weapons')}
         filter={isWeapon}
-        subtitle={(r) => { const w = weaponFromRecord(r); return [w.group, w.damage].filter(Boolean).join(' · '); }}
-        onSelect={(r) => setWeaponDraft(weaponFromRecord(r))}
+        subtitle={(r) => { const w = weaponFromRecord(r, tr('wfrp.charBonus.s')); return [w.group, w.damage].filter(Boolean).join(' · '); }}
+        onSelect={(r) => setWeaponDraft(weaponFromRecord(r, tr('wfrp.charBonus.s')))}
         onClose={() => setWeaponPicking(false)}
       />
 

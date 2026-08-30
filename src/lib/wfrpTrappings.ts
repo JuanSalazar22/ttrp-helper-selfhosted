@@ -15,13 +15,18 @@ type ArmourDraft = { name: string; locations: string[]; encumbrance: number; ap:
 export const isWeapon = (r: ContentRecord) => !!(r.melee || r.ranged);
 export const isArmour = (r: ContentRecord) => !!r.armour;
 
-/** Trimmed trapping record → weapon draft. Handles both melee and ranged profiles. */
-export function weaponFromRecord(r: ContentRecord): WeaponDraft {
+/** Trimmed trapping record → weapon draft. Handles both melee and ranged profiles.
+ *  `sbLabel` is the caller's already-locale-resolved Strength Bonus abbreviation
+ *  (e.g. tr('wfrp.charBonus.s')) — this file has no i18n import of its own, since
+ *  it's otherwise a pure data-transform utility. Only affects newly-picked weapons;
+ *  a weapon's damage text, once saved, is free text like any other and doesn't
+ *  re-localize retroactively (same as manually-typed damage). */
+export function weaponFromRecord(r: ContentRecord, sbLabel: string): WeaponDraft {
   const melee = r.melee as { dmg?: number; dmgSbMult?: number; group?: number; reach?: number } | undefined;
   const ranged = r.ranged as { dmg?: number; dmgSbMult?: number; group?: number; rng?: number } | undefined;
   const w = melee ?? ranged ?? {};
   const dmg = w.dmg ?? 0;
-  const damage = w.dmgSbMult ? `SB+${dmg}` : String(dmg);
+  const damage = w.dmgSbMult ? `${sbLabel}+${dmg}` : String(dmg);
   const group = melee ? at(MELEE_GROUPS, w.group) : at(RANGED_GROUPS, w.group);
   const range = melee ? at(REACH, (melee as { reach?: number }).reach) : (ranged?.rng ? `${ranged.rng} yds` : '');
   return {
