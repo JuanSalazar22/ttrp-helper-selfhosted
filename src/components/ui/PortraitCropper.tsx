@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Modal, View, Image, StyleSheet, TouchableOpacity, Text, Dimensions } from 'react-native';
+import { Modal, View, Image, StyleSheet, TouchableOpacity, Text, Dimensions, Platform } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, { useSharedValue, useAnimatedStyle, runOnJS } from 'react-native-reanimated';
 import * as ImageManipulator from 'expo-image-manipulator';
@@ -60,6 +60,25 @@ export function PortraitCropper({ visible, sourceUri, onCancel, onConfirm }: Pro
 
   const gesture = Gesture.Simultaneous(pan, pinch);
 
+  // Desktop-web zoom fallback: react-native-gesture-handler's web Pinch handler
+  // only fires from real multi-touch — a mouse can never produce it, and a
+  // trackpad's pinch reaches the browser as a `wheel` event (with ctrlKey),
+  // not a touch event, so Pinch never sees it either. Without this, zoom is
+  // entirely unreachable on a non-touchscreen desktop browser. `onWheel` is a
+  // react-native-web-only prop (a no-op on native, which never fires `wheel`),
+  // so no Platform guard is needed on the handler itself — only on wiring it up.
+  function handleWheel(e: { deltaY: number; preventDefault?: () => void }) {
+    e.preventDefault?.();
+    const factor = 1 - e.deltaY * 0.0015;
+    const next = clampTransform(
+      { scale: scale.value * factor, translateX: translateX.value, translateY: translateY.value },
+      imageSize.w, imageSize.h, FRAME,
+    );
+    scale.value = next.scale;
+    translateX.value = next.translateX;
+    translateY.value = next.translateY;
+  }
+
   const style = useAnimatedStyle(() => ({
     transform: [
       { translateX: translateX.value },
@@ -87,7 +106,10 @@ export function PortraitCropper({ visible, sourceUri, onCancel, onConfirm }: Pro
       <View style={[styles.root, { backgroundColor: t.colors.background }]}>
         <View style={styles.frameWrap}>
           <GestureDetector gesture={gesture}>
-            <View style={[styles.frame, { width: FRAME, height: FRAME, borderRadius: FRAME / 2 }]}>
+            <View
+              style={[styles.frame, { width: FRAME, height: FRAME, borderRadius: FRAME / 2 }]}
+              {...(Platform.OS === 'web' ? { onWheel: handleWheel } : {})}
+            >
               {sourceUri && (
                 <Animated.Image
                   source={{ uri: sourceUri }}
