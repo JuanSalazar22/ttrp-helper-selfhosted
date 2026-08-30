@@ -1,0 +1,593 @@
+{
+  "id": "6a358f2c49960d00016c6e50",
+  "canEdit": true,
+  "shared": true,
+  "name": "Olaf Frostbrew",
+  "description": "Age: 61, Height: 5'1\", Eyes: Hazel, Hair: Dark Brown",
+  "notes": "8 cervezas en mi barril",
+  "species": "Dwarf (Zhufbar)",
+  "size": "Average",
+  "fate": 0,
+  "fortune": 0,
+  "resilience": 2,
+  "resolve": 2,
+  "brass": 23,
+  "silver": 0,
+  "gold": 0,
+  "spentExp": 825,
+  "currentExp": 1740,
+  "totalExp": 2565,
+  "sin": 0,
+  "corruption": 0,
+  "status": "Silver",
+  "standing": 2,
+  "currentCareer": {
+    "id": "6726806a49960d00011f3259",
+    "name": "Brewer 2",
+    "levelName": "Brewer",
+    "className": "Burghers"
+  },
+  "pastCareers": [
+    {
+      "id": "6726806a49960d00011f3259",
+      "name": "Brewer 1",
+      "levelName": "Apprentice Brewer",
+      "className": "Burghers"
+    }
+  ],
+  "baseAttributes": {
+    "Ag": 23,
+    "BS": 28,
+    "Dex": 37,
+    "Fel": 19,
+    "I": 29,
+    "Int": 37,
+    "S": 37,
+    "T": 49,
+    "WP": 53,
+    "WS": 45
+  },
+  "attributeAdvances": {
+    "Ag": 0,
+    "BS": 0,
+    "Dex": 3,
+    "Fel": 0,
+    "I": 1,
+    "Int": 0,
+    "S": 3,
+    "T": 1,
+    "WP": 0,
+    "WS": 0
+  },
+  "otherAttributes": {
+    "WS": 0,
+    "BS": 0,
+    "S": 0,
+    "T": 0,
+    "I": 0,
+    "Ag": 0,
+    "Dex": 0,
+    "Int": 0,
+    "WP": 0,
+    "Fel": 0
+  },
+  "attributes": {
+    "WS": 45,
+    "BS": 28,
+    "S": 40,
+    "T": 50,
+    "I": 30,
+    "Ag": 23,
+    "Dex": 40,
+    "Int": 37,
+    "WP": 53,
+    "Fel": 19
+  },
+  "movement": 3,
+  "walk": 6,
+  "run": 12,
+  "wounds": 19,
+  "talents": [
+    {
+      "id": "6726803d49960d00011f3258",
+      "name": "Craftsman - Brewer",
+      "rank": 1
+    },
+    {
+      "id": "5ceaa110ba626c52981c27a4",
+      "name": "Magic Resistance",
+      "rank": 1
+    },
+    {
+      "id": "5ce9e13a0573c70904e2943e",
+      "name": "Night Vision",
+      "rank": 1
+    },
+    {
+      "id": "5cea9e7eba626c52981c27a3",
+      "name": "Sturdy",
+      "rank": 1
+    },
+    {
+      "id": "6715296d49960d0001308612",
+      "name": "Tireless",
+      "rank": 1
+    },
+    {
+      "id": "5ce90a933f5a0e36c0a4bab9",
+      "name": "Resolute",
+      "rank": 1
+    },
+    {
+      "id": "5cec2eec488ae64fb84c0484",
+      "name": "Carouser",
+      "rank": 1
+    },
+    {
+      "id": "5ce9b06fc831083940ff5845",
+      "name": "Strong Back",
+      "rank": 1
+    }
+  ],
+  "basicSkills": [
+    {
+      "id": "5d0ead9cc773f26d50fcc956",
+      "name": "Art (Any)",
+      "attributeName": "Dex",
+      "attributeValue": 40,
+      "advances": 0,
+      "skill": 40
+    },
+    {
+      "id": "68015f3f49960d0001615c6e",
+      "name": "Art - Calligraphy or Engraving (Any)",
+      "attributeName": "Dex",
+      "attributeValue": 40,
+      "advances": 0,
+      "skill": 40
+    },
+    {
+      "id": "67f65aa349960d0001cbdc28",
+      "name": "Art - Painting or Sculpture (Any)",
+      "attributeName": "Dex",
+      "attributeValue": 40,
+      "advances": 0,
+      "skill": 40
+    },
+    {
+      "id": "6727d4a349960d00013447b1",
+      "name": "Art - Sculpture or Engraving (Any)",
+      "attributeName": "Dex",
+      "attributeValue": 40,
+      "advances": 0,
+      "skill": 40
+    },
+    {
+      "id": "5ce3027f97b74e3c4cebdbbd",
+      "name": "Athletics",
+      "attributeName": "Ag",
+      "attributeValue": 23,
+      "advances": 5,
+      "skill": 28
+    },
+    {
+      "id": "5cdf457530259922e8ea2107",
+      "name": "Bribery",
+      "attributeName": "Fel",
+      "attributeValue": 19,
+      "advances": 0,
+      "skill": 19
+    },
+    {
+      "id": "5cadcbb5828dc9389cc7b169",
+      "name": "Charm",
+      "attributeName": "Fel",
+      "attributeValue": 19,
+      "advances": 0,
+      "skill": 19
+    },
+    {
+      "id": "5ce8410d3ec45d1a88e33239",
+      "name": "Charm Animal",
+      "attributeName": "WP",
+      "attributeValue": 53,
+      "advances": 0,
+      "skill": 53
+    },
+    {
+      "id": "5ce841743ec45d1a88e3323a",
+      "name": "Climb",
+      "attributeName": "S",
+      "attributeValue": 40,
+      "advances": 0,
+      "skill": 40
+    },
+    {
+      "id": "5cadc5d8828dc9389cc7b158",
+      "name": "Consume Alcohol",
+      "attributeName": "T",
+      "attributeValue": 50,
+      "advances": 10,
+      "skill": 60
+    },
+    {
+      "id": "5ce114c70f123f1f14a4cc66",
+      "name": "Cool",
+      "attributeName": "WP",
+      "attributeValue": 53,
+      "advances": 5,
+      "skill": 58
+    },
+    {
+      "id": "5ce302d497b74e3c4cebdbbe",
+      "name": "Dodge",
+      "attributeName": "Ag",
+      "attributeValue": 23,
+      "advances": 0,
+      "skill": 23
+    },
+    {
+      "id": "5cdf45c430259922e8ea2108",
+      "name": "Drive",
+      "attributeName": "Ag",
+      "attributeValue": 23,
+      "advances": 5,
+      "skill": 28
+    },
+    {
+      "id": "5ce303c497b74e3c4cebdbbf",
+      "name": "Endurance",
+      "attributeName": "T",
+      "attributeValue": 50,
+      "advances": 10,
+      "skill": 60
+    },
+    {
+      "id": "5cea88faadaed446d44365e2",
+      "name": "Entertain (Any)",
+      "attributeName": "Fel",
+      "attributeValue": 19,
+      "advances": 0,
+      "skill": 19
+    },
+    {
+      "id": "5cea8beaadaed446d44365ea",
+      "name": "Entertain - Singing",
+      "attributeName": "Fel",
+      "attributeValue": 19,
+      "advances": 5,
+      "skill": 24
+    },
+    {
+      "id": "67267f3549960d00011f3256",
+      "name": "Entertain - Singing or Storytelling (Any)",
+      "attributeName": "Fel",
+      "attributeValue": 19,
+      "advances": 0,
+      "skill": 19
+    },
+    {
+      "id": "5cdf464330259922e8ea2109",
+      "name": "Gamble",
+      "attributeName": "Int",
+      "attributeValue": 37,
+      "advances": 0,
+      "skill": 37
+    },
+    {
+      "id": "5cadd044828dc9389cc7b16c",
+      "name": "Gossip",
+      "attributeName": "Fel",
+      "attributeValue": 19,
+      "advances": 0,
+      "skill": 19
+    },
+    {
+      "id": "5cadcbf8828dc9389cc7b16a",
+      "name": "Haggle",
+      "attributeName": "Fel",
+      "attributeValue": 19,
+      "advances": 0,
+      "skill": 19
+    },
+    {
+      "id": "5cadddb1a48cc24ecc4eca98",
+      "name": "Intimidate",
+      "attributeName": "S",
+      "attributeValue": 40,
+      "advances": 0,
+      "skill": 40
+    },
+    {
+      "id": "5caddaa1a48cc24ecc4eca8d",
+      "name": "Intuition",
+      "attributeName": "I",
+      "attributeValue": 30,
+      "advances": 0,
+      "skill": 30
+    },
+    {
+      "id": "5caddae3a48cc24ecc4eca8e",
+      "name": "Leadership",
+      "attributeName": "Fel",
+      "attributeValue": 19,
+      "advances": 0,
+      "skill": 19
+    },
+    {
+      "id": "5ce305ee97b74e3c4cebdbc0",
+      "name": "Melee (Any)",
+      "attributeName": "WS",
+      "attributeValue": 45,
+      "advances": 0,
+      "skill": 45
+    },
+    {
+      "id": "5d0f3bb5a6b5ad5d006b21f2",
+      "name": "Melee - Two Handed",
+      "attributeName": "WS",
+      "attributeValue": 45,
+      "advances": 5,
+      "skill": 50
+    },
+    {
+      "id": "5ce116570f123f1f14a4cc67",
+      "name": "Navigation",
+      "attributeName": "I",
+      "attributeValue": 30,
+      "advances": 0,
+      "skill": 30
+    },
+    {
+      "id": "5ce842173ec45d1a88e3323c",
+      "name": "Outdoor Survival",
+      "attributeName": "Int",
+      "attributeValue": 37,
+      "advances": 0,
+      "skill": 37
+    },
+    {
+      "id": "5cadd0b9828dc9389cc7b16e",
+      "name": "Perception",
+      "attributeName": "I",
+      "attributeValue": 30,
+      "advances": 5,
+      "skill": 35
+    },
+    {
+      "id": "5cadddd3a48cc24ecc4eca99",
+      "name": "Ride (Any)",
+      "attributeName": "Ag",
+      "attributeValue": 23,
+      "advances": 0,
+      "skill": 23
+    },
+    {
+      "id": "5ce984f11140dc34041696a0",
+      "name": "Row",
+      "attributeName": "S",
+      "attributeValue": 40,
+      "advances": 0,
+      "skill": 40
+    },
+    {
+      "id": "5ce8489d3ec45d1a88e33241",
+      "name": "Stealth (Any)",
+      "attributeName": "Ag",
+      "attributeValue": 23,
+      "advances": 0,
+      "skill": 23
+    }
+  ],
+  "advancedSkills": [
+    {
+      "id": "5cdfbaf930259922e8ea210a",
+      "name": "Evaluate",
+      "attributeName": "Int",
+      "attributeValue": 37,
+      "advances": 10,
+      "skill": 47
+    },
+    {
+      "id": "5cea89b3adaed446d44365e4",
+      "name": "Language - Khazalid",
+      "attributeName": "Int",
+      "attributeValue": 37,
+      "advances": 5,
+      "skill": 42
+    },
+    {
+      "id": "5cf97cbfc611a9288474f5c1",
+      "name": "Lore - Engineering",
+      "attributeName": "Int",
+      "attributeValue": 37,
+      "advances": 3,
+      "skill": 40
+    },
+    {
+      "id": "5cea8a3aadaed446d44365e6",
+      "name": "Lore - Geology",
+      "attributeName": "Int",
+      "attributeValue": 37,
+      "advances": 5,
+      "skill": 42
+    },
+    {
+      "id": "5cea8a5badaed446d44365e7",
+      "name": "Lore - Metallurgy",
+      "attributeName": "Int",
+      "attributeValue": 37,
+      "advances": 5,
+      "skill": 42
+    },
+    {
+      "id": "5d167d92339d63247c167c69",
+      "name": "Trade - Brewer",
+      "attributeName": "Dex",
+      "attributeValue": 40,
+      "advances": 5,
+      "skill": 45
+    }
+  ],
+  "equippedArmor": [
+    {
+      "id": "6a36f84f49960d00016c6e79",
+      "name": "Sombrero de ala ancha",
+      "enc": 0,
+      "qualitiesFlaws": [],
+      "runes": [],
+      "number": 1,
+      "description": "",
+      "type": "Armour",
+      "group": "Soft leather",
+      "locations": [
+        "Head"
+      ],
+      "ap": 0
+    }
+  ],
+  "equippedWeapon": [
+    {
+      "id": "5c48f45c0972393f20ee03bb",
+      "name": "Dagger",
+      "enc": 0,
+      "qualitiesFlaws": [],
+      "runes": [],
+      "number": 1,
+      "description": "Deadlier version of a knife. Broken sword can act as dagger with Dangerous Flaw if it lacks integral hilt.",
+      "type": "Melee",
+      "group": "Basic",
+      "rng": "Very Short",
+      "dmg": "6"
+    },
+    {
+      "id": "5f1cb1cef3230369ab4eb3d1",
+      "name": "Cloak",
+      "enc": 1,
+      "qualitiesFlaws": [
+        {
+          "name": "Defensive",
+          "id": "5cdb0a042218c71f3493c092"
+        },
+        {
+          "name": "Entangle",
+          "id": "5cdb0a7f2218c71f3493c094"
+        },
+        {
+          "name": "Undamaging",
+          "id": "5c48f193bc0ede3b9cffe87a"
+        }
+      ],
+      "runes": [],
+      "number": 1,
+      "description": "Cloak without hood. Protects against the elements. When wrapped around hand can be used as parrying weapon. When making a Test to see if an opponent becomes entangled in a cloak, the cloak has a Strength of 25.",
+      "type": "Melee",
+      "group": "Parry",
+      "rng": "Short",
+      "dmg": "4"
+    }
+  ],
+  "equippedOther": [
+    {
+      "id": "5ced97d41e0d2244e8c36bb3",
+      "name": "Clothing",
+      "enc": 1,
+      "qualitiesFlaws": [],
+      "runes": [],
+      "number": 1,
+      "description": "Regular cloths.",
+      "type": "Other"
+    },
+    {
+      "id": "5ced99ab1e0d2244e8c36bb6",
+      "name": "Sling Bag",
+      "enc": 1,
+      "qualitiesFlaws": [],
+      "runes": [],
+      "number": 1,
+      "description": "(Capacity 2) Sling bag you can wear over your shoulder. Counts as \"worn\" when slung over shoulder.",
+      "type": "Container"
+    },
+    {
+      "id": "5f1cb08b84e29b5d32d78f91",
+      "name": "Pouch",
+      "enc": 0,
+      "qualitiesFlaws": [],
+      "runes": [],
+      "number": 1,
+      "description": "(Capacity 1) A simple pouch.",
+      "type": "Container"
+    },
+    {
+      "id": "5f1cb24ff3230369ab4eb3d2",
+      "name": "Hat",
+      "enc": 0,
+      "qualitiesFlaws": [],
+      "runes": [],
+      "number": 1,
+      "description": "Basic hat.",
+      "type": "Other"
+    },
+    {
+      "id": "6a36fa3849960d00016c6e7b",
+      "name": "La cuba de oro (barril)",
+      "enc": 3,
+      "qualitiesFlaws": [],
+      "runes": [],
+      "number": 1,
+      "description": "(Capacity 1000) ",
+      "type": "Container"
+    }
+  ],
+  "carried": [
+    {
+      "id": "5f1cb2ee84e29b5d32d78f92",
+      "name": "Lunch",
+      "enc": 0,
+      "qualitiesFlaws": [],
+      "runes": [],
+      "number": 1,
+      "description": "Super-tasty.",
+      "type": "Other"
+    },
+    {
+      "id": "5f5fe613bec9ed3804581747",
+      "name": "Mop",
+      "enc": 2,
+      "qualitiesFlaws": [],
+      "runes": [],
+      "number": 1,
+      "description": "For cleaning.",
+      "type": "Other"
+    },
+    {
+      "id": "5f5facb213ccf32ae905fc9f",
+      "name": "Bucket",
+      "enc": 1,
+      "qualitiesFlaws": [],
+      "runes": [],
+      "number": 1,
+      "description": "Usually made out of wood.",
+      "type": "Other"
+    },
+    {
+      "id": "671d09cb49960d000159f3b9",
+      "name": "Trade Tools - Brewer",
+      "enc": 1,
+      "qualitiesFlaws": [],
+      "runes": [],
+      "number": 1,
+      "description": "Includes pots, buckets, kettles, bottles, etc.",
+      "type": "Other"
+    }
+  ],
+  "stored": [],
+  "spells": [],
+  "prayers": [],
+  "traits": [],
+  "mutations": [],
+  "encWeapon": 1,
+  "encArmor": 0,
+  "encOther": 2,
+  "encCarried": 4
+}
