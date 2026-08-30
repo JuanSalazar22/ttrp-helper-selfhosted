@@ -152,6 +152,28 @@ const TRANSFORMS = {
   },
 };
 
+/** critical_wounds.json isn't a Foundry dump like the others (it's hand-transcribed
+ *  from a fan reference sheet) — nested by location, no id/object wrapper — so it
+ *  gets its own flattening step instead of joining the generic TRANSFORMS loop below. */
+async function buildCriticalWounds() {
+  const raw = JSON.parse(await readFile(join(SRC, 'critical_wounds.json'), 'utf8'));
+  const rows = [];
+  for (const location of ['head', 'body', 'arm', 'leg']) {
+    for (const entry of raw[location]) {
+      rows.push({
+        id: `${location}_${entry.rollMin}`,
+        name: clean(entry.name),
+        location,
+        rollMin: entry.rollMin,
+        rollMax: entry.rollMax,
+        wounds: entry.wounds,
+        description: clean(entry.description),
+      });
+    }
+  }
+  return rows;
+}
+
 const CATEGORY = {
   skills: 'skill', talents: 'talent', spells: 'spell', prayers: 'prayer',
   trappings: 'trapping', qualities_and_flaws: 'quality', mutations: 'mutation',
@@ -174,6 +196,12 @@ async function run() {
     index[category] = deduped.length;
     console.log(`${category.padEnd(16)} ${deduped.length} records`);
   }
+
+  const criticalWounds = await buildCriticalWounds();
+  await writeFile(join(OUT, 'critical_wound.json'), JSON.stringify(criticalWounds));
+  index.critical_wound = criticalWounds.length;
+  console.log(`${'critical_wound'.padEnd(16)} ${criticalWounds.length} records`);
+
   await writeFile(join(OUT, 'index.json'), JSON.stringify(index, null, 2));
   console.log('Total categories:', Object.keys(index).length);
 }
