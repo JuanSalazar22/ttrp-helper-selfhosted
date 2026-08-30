@@ -6,6 +6,7 @@ import esPrayer from '../prayer.json';
 import esTrapping from '../trapping.json';
 import esCareer from '../career.json';
 import esMutation from '../mutation.json';
+import esCriticalWound from '../critical_wound.json';
 
 type EsName = { id: string; name: string };
 
@@ -17,6 +18,7 @@ const ES: Partial<Record<ContentCategory, EsName[]>> = {
   trapping: esTrapping as EsName[],
   career: esCareer as EsName[],
   mutation: esMutation as EsName[],
+  critical_wound: esCriticalWound as EsName[],
 };
 
 describe('Spanish content overlay', () => {

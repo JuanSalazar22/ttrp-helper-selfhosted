@@ -7,8 +7,9 @@ import prayer from './prayer.json';
 import trapping from './trapping.json';
 import career from './career.json';
 import mutation from './mutation.json';
+import critical_wound from './critical_wound.json';
 
-export const ES_CONTENT_SEED_VERSION = 'es-6';
+export const ES_CONTENT_SEED_VERSION = 'es-7';
 
 export type EsOverlay = { id: string; name: string; description?: string; page?: string; range?: string; duration?: string };
 
@@ -20,4 +21,5 @@ export const WFRP_CONTENT_ES: EsOverlay[] = [
   ...(trapping as EsOverlay[]),
   ...(career as EsOverlay[]),
   ...(mutation as EsOverlay[]),
+  ...(critical_wound as EsOverlay[]),
 ];
