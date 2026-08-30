@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, TouchableOpacity, TextInput, FlatList, Alert, A
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter, useFocusEffect } from 'expo-router';
 import { useCallback, useMemo, useState } from 'react';
-import { Plus, Upload, Dices, Copy, Trash2, User, Search } from 'lucide-react-native';
+import { Plus, Upload, Hammer, Dices, Copy, Trash2, User, Search } from 'lucide-react-native';
 import { useTheme } from '@/hooks/useTheme';
 import { useCharacterList } from '@/hooks/useCharacterList';
 import { useTranslation, useLocale } from '@/i18n';
@@ -98,7 +98,7 @@ function CharacterListScreen() {
   const [showAccount, setShowAccount] = useState(false);
   const [deleting, setDeleting] = useState<CharacterRow | null>(null);
   const [query, setQuery] = useState('');
-  const { characters, loading, refresh, create, remove, duplicate, importCharacter } = useCharacterList();
+  const { characters, loading, refresh, create, remove, duplicate, importCharacter, importHammergenCharacter } = useCharacterList();
   const { session, displayName } = useAuth();
 
   const filtered = useMemo(
@@ -117,6 +117,15 @@ function CharacterListScreen() {
   async function handleImport() {
     try {
       const id = await importCharacter();
+      if (id) router.push(`/character/${id}`);
+    } catch (e) {
+      Alert.alert(tr('characters.importFailedTitle'), e instanceof Error ? e.message : tr('characters.importFailedBody'));
+    }
+  }
+
+  async function handleImportHammergen() {
+    try {
+      const id = await importHammergenCharacter();
       if (id) router.push(`/character/${id}`);
     } catch (e) {
       Alert.alert(tr('characters.importFailedTitle'), e instanceof Error ? e.message : tr('characters.importFailedBody'));
@@ -150,6 +159,14 @@ function CharacterListScreen() {
           )}
           <TouchableOpacity style={[styles.addButton, { backgroundColor: t.colors.backgroundSecondary }]} onPress={handleImport} activeOpacity={0.8}>
             <Upload size={18} color={t.colors.accent} />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={[styles.addButton, { backgroundColor: t.colors.backgroundSecondary }]}
+            onPress={handleImportHammergen}
+            activeOpacity={0.8}
+            accessibilityLabel={tr('characters.importHammergenA11y')}
+          >
+            <Hammer size={18} color={t.colors.accent} />
           </TouchableOpacity>
           <TouchableOpacity style={[styles.addButton, { backgroundColor: t.colors.accent }]} onPress={() => setShowCreate(true)} activeOpacity={0.8}>
             <Plus size={20} color={t.colors.accentText} />

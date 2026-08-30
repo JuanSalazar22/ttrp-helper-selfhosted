@@ -1,17 +1,58 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useSQLiteContext } from 'expo-sqlite';
+import { v4 as uuidv4 } from 'uuid';
 import * as queries from '@/db/queries';
 import { defaultDnd5eCharacter } from '@/types/dnd5e';
-import { defaultWfrp4eCharacter } from '@/types/wfrp4e';
+import { defaultWfrp4eCharacter, type Wfrp4eCharacter } from '@/types/wfrp4e';
 import type { CharacterRow, GameSystem } from '@/types';
-import { pickAndParseCharacter } from '@/lib/transfer';
+import { pickAndParseCharacter, pickHammergenFile } from '@/lib/transfer';
+import { hammergenToCharacter, type HammergenExport } from '@/lib/hammergenImport';
 import { useAuth } from '@/auth/AuthProvider';
+import { useLocale } from '@/i18n';
+import type { Locale } from '@/i18n/types';
 import { pullCharacters, softDeleteCharacterCloud, pullPortrait } from '@/sync/cloudCharacters';
 import { reconcilePull, cloudRowToLocalParams, needsPortraitPull, type LocalRef } from '@/sync/reconcile';
+
+// Enriches imported talents/skills with real book description/tests/page by looking
+// them up against the local content library by name — same mechanism "Random Talent"
+// already uses (see getContentByNames in src/db/queries.ts). Names with no match
+// (homebrew/custom) are left bare, same as manually typing one in today.
+async function enrichFromContentLibrary(
+  db: ReturnType<typeof useSQLiteContext>,
+  character: Wfrp4eCharacter,
+  locale: Locale,
+): Promise<Wfrp4eCharacter> {
+  const talentNames = character.talents.map(t => t.name);
+  const skillNames = character.skills.map(s => s.name);
+  const [talentRecords, skillRecords] = await Promise.all([
+    queries.getContentByNames(db, 'talent', talentNames, locale),
+    queries.getContentByNames(db, 'skill', skillNames, locale),
+  ]);
+  const talentByName = new Map(talentRecords.map(r => [String(r.name).toLowerCase(), r]));
+  const skillByName = new Map(skillRecords.map(r => [String(r.name).toLowerCase(), r]));
+
+  return {
+    ...character,
+    talents: character.talents.map(t => {
+      const r = talentByName.get(t.name.toLowerCase());
+      return r ? {
+        ...t,
+        description: (r.description as string) ?? t.description,
+        tests: (r.tests as string) ?? undefined,
+        page: (r.page as string) ?? undefined,
+      } : t;
+    }),
+    skills: character.skills.map(s => {
+      const r = skillByName.get(s.name.toLowerCase());
+      return r ? { ...s, description: (r.description as string) ?? s.description } : s;
+    }),
+  };
+}
 
 export function useCharacterList() {
   const db = useSQLiteContext();
   const { session } = useAuth();
+  const { locale } = useLocale();
   const [characters, setCharacters] = useState<CharacterRow[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -103,5 +144,15 @@ export function useCharacterList() {
     return id;
   }, [db, refresh]);
 
-  return { characters, loading, refresh, create, remove, duplicate, importCharacter };
+  const importHammergenCharacter = useCallback(async (): Promise<string | null> => {
+    const raw = await pickHammergenFile();
+    if (!raw) return null;
+    const parsed = hammergenToCharacter(raw as HammergenExport, uuidv4);
+    const enriched = await enrichFromContentLibrary(db, parsed, locale);
+    const id = await queries.createCharacter(db, 'wfrp4e', enriched.name, enriched);
+    await refresh();
+    return id;
+  }, [db, refresh, locale]);
+
+  return { characters, loading, refresh, create, remove, duplicate, importCharacter, importHammergenCharacter };
 }

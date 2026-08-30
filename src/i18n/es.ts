@@ -55,6 +55,7 @@ export const es: DeepPartial<Messages> = {
     emptyBody: 'Toca + para crear tu primer personaje.',
     importFailedTitle: 'Error al importar',
     importFailedBody: 'No se pudo leer ese archivo.',
+    importHammergenA11y: 'Importar desde Hammergen',
     duplicateA11y: 'Duplicar {name}',
     deleteA11y: 'Eliminar {name}',
     searchPlaceholder: 'Buscar por nombre o etiqueta…',
