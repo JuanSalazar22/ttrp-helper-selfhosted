@@ -328,7 +328,6 @@ export const es: DeepPartial<Messages> = {
       title: 'Corrupción y Pecado',
       corruption: 'Corrupción',
       threshold: 'Umbral',
-      thresholdBreakdown: 'BR {tb} + BFV {wpb} + mod {mod}',
       sin: 'Pecado',
       mutations: 'Mutaciones',
       addMutation: 'Añadir mutación',

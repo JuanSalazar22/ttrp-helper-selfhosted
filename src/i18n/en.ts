@@ -332,7 +332,6 @@ export const en = {
       title: 'Corruption & Sin',
       corruption: 'Corruption',
       threshold: 'Threshold',
-      thresholdBreakdown: 'TB {tb} + WB {wpb} + mod {mod}',
       sin: 'Sin',
       mutations: 'Mutations',
       addMutation: 'Add Mutation',

@@ -95,7 +95,7 @@ export function CorruptionSin({ character, onChange }: Props) {
         />
       </View>
       <Text style={[styles.breakdown, { color: t.colors.textMuted }]}>
-        {tr('wfrp.corruption.thresholdBreakdown', { tb, wpb, mod: character.corruption.modifier })}
+        {tr('wfrp.charBonus.t')} {tb} + {tr('wfrp.charBonus.wp')} {wpb} + mod {character.corruption.modifier}
       </Text>
 
       {/* Mutations list */}
