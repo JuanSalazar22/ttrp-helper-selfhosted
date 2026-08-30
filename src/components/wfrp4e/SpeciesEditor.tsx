@@ -82,9 +82,9 @@ export function SpeciesEditor({ visible, initial, onSubmit, onClose }: Props) {
     { label: tr('wfrp.species.statRandomTal'), value: randomTalents, set: setRandomTalents },
   ];
   const coeffFields: Array<{ label: string; value: string; set: (v: string) => void }> = [
-    { label: '× SB', value: coeffs.sb, set: (v) => setCoeffs(c => ({ ...c, sb: v })) },
-    { label: '× TB', value: coeffs.tb, set: (v) => setCoeffs(c => ({ ...c, tb: v })) },
-    { label: '× WPB', value: coeffs.wpb, set: (v) => setCoeffs(c => ({ ...c, wpb: v })) },
+    { label: `× ${tr('wfrp.charBonus.s')}`, value: coeffs.sb, set: (v) => setCoeffs(c => ({ ...c, sb: v })) },
+    { label: `× ${tr('wfrp.charBonus.t')}`, value: coeffs.tb, set: (v) => setCoeffs(c => ({ ...c, tb: v })) },
+    { label: `× ${tr('wfrp.charBonus.wp')}`, value: coeffs.wpb, set: (v) => setCoeffs(c => ({ ...c, wpb: v })) },
   ];
 
   return (

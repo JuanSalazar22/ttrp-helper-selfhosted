@@ -73,7 +73,7 @@ export function Resources({ character, onChange }: Props) {
         <View>
           <Text style={[styles.maxLabel, { color: t.colors.textSecondary }]}>{tr('wfrp.fields.maxWounds')}</Text>
           <Text style={[styles.breakdown, { color: t.colors.textMuted }]}>
-            {coeffs.sb}×SB {sb} + {coeffs.tb}×TB {tb} + {coeffs.wpb}×WPB {wpb} + mod {character.wounds.modifier}
+            {coeffs.sb}×{tr('wfrp.charBonus.s')} {sb} + {coeffs.tb}×{tr('wfrp.charBonus.t')} {tb} + {coeffs.wpb}×{tr('wfrp.charBonus.wp')} {wpb} + mod {character.wounds.modifier}
           </Text>
         </View>
         <View style={styles.maxRight}>

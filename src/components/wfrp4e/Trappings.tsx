@@ -106,7 +106,7 @@ export function Trappings({ character, onChange }: Props) {
       </View>
       <View style={styles.encBreakdownRow}>
         <Text style={[styles.encBreakdown, { color: t.colors.textMuted }]}>
-          SB {sb} + TB {tb} + mod {encMod}{capBonus !== 0 ? ` + cap ${capBonus}` : ''}
+          {tr('wfrp.charBonus.s')} {sb} + {tr('wfrp.charBonus.t')} {tb} + mod {encMod}{capBonus !== 0 ? ` + cap ${capBonus}` : ''}
         </Text>
         <EditableNumber
           value={encMod}
