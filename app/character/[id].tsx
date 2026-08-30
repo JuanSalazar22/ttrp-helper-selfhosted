@@ -17,7 +17,7 @@ export default function CharacterSheet() {
   const router = useRouter();
   const t = useTheme();
   const tr = useTranslation();
-  const { data, loading, saving, patch } = useCharacter(id);
+  const { row, data, loading, saving, patch, setPortrait } = useCharacter(id);
 
   async function handleExport() {
     if (!data) return;
@@ -60,8 +60,8 @@ export default function CharacterSheet() {
       </View>
 
       {data.system === 'dnd5e'
-        ? <Dnd5eSheet character={data as Dnd5eCharacter} onChange={(p) => patch(p)} />
-        : <Wfrp4eSheet character={data as Wfrp4eCharacter} onChange={(p) => patch(p)} />}
+        ? <Dnd5eSheet character={data as Dnd5eCharacter} onChange={(p) => patch(p)} portraitUri={row?.portrait_uri ?? null} onPortraitChange={setPortrait} />
+        : <Wfrp4eSheet character={data as Wfrp4eCharacter} onChange={(p) => patch(p)} portraitUri={row?.portrait_uri ?? null} onPortraitChange={setPortrait} />}
     </SafeAreaView>
   );
 }

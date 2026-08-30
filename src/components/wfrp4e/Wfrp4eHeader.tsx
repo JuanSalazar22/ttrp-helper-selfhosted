@@ -15,6 +15,8 @@ import type { Wfrp4eCharacter } from '@/types/wfrp4e';
 type Props = {
   character: Wfrp4eCharacter;
   onChange: (patch: Partial<Wfrp4eCharacter>) => void;
+  portraitUri: string | null;
+  onPortraitChange: (croppedUri: string | null) => void;
 };
 
 type StrField = 'name' | 'currentCareer' | 'height';
@@ -27,7 +29,7 @@ const TIER_KEYS: Record<Wfrp4eCharacter['status']['tier'], TKey> = {
   Brass: 'wfrp.status.brass', Silver: 'wfrp.status.silver', Gold: 'wfrp.status.gold',
 };
 
-export function Wfrp4eHeader({ character, onChange }: Props) {
+export function Wfrp4eHeader({ character, onChange, portraitUri, onPortraitChange }: Props) {
   const t = useTheme();
   const tr = useTranslation();
   const [editing, setEditing] = useState<StrField | null>(null);
@@ -44,7 +46,7 @@ export function Wfrp4eHeader({ character, onChange }: Props) {
   return (
     <View style={[styles.root, { borderBottomColor: t.colors.border }]}>
       <View style={styles.nameRow}>
-        <CharacterPortrait size="sm" />
+        <CharacterPortrait size="sm" portraitUri={portraitUri} onChange={onPortraitChange} />
         <TouchableOpacity style={styles.nameTouchable} onPress={() => setEditing('name')} activeOpacity={0.7}>
           <Text style={[styles.name, styles.editable, { color: t.colors.text, borderBottomColor: t.colors.accent + '59', fontFamily: t.fontFamily.serif }]} numberOfLines={1}>
             {character.name || tr('wfrp.header.unnamed')}
