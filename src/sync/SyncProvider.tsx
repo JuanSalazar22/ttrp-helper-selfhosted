@@ -53,7 +53,7 @@ export function SyncProvider({ children }: { children: React.ReactNode }) {
       // too. Re-uploading an already-synced portrait is harmless, so this runs
       // unconditionally rather than tracking exactly which failure queued the id.
       if (row.portrait_uri) {
-        const base64 = await readLocalPortraitBase64(id);
+        const base64 = readLocalPortraitBase64(row.portrait_uri);
         if (base64) {
           const portraitResult = await pushPortrait(session, id, base64);
           if (portraitResult.ok && portraitResult.portraitUpdatedAt) {

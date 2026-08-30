@@ -8,8 +8,6 @@ import { pickAndParseCharacter } from '@/lib/transfer';
 import { useAuth } from '@/auth/AuthProvider';
 import { pullCharacters, softDeleteCharacterCloud, pullPortrait } from '@/sync/cloudCharacters';
 import { reconcilePull, cloudRowToLocalParams, needsPortraitPull, type LocalRef } from '@/sync/reconcile';
-import { saveLocalPortrait } from '@/lib/portraitStorage';
-import * as FileSystem from 'expo-file-system/legacy';
 
 export function useCharacterList() {
   const db = useSQLiteContext();
@@ -59,10 +57,9 @@ export function useCharacterList() {
         if (!needsPortraitPull(localPortraitMap.get(c.id) ?? null, c.portrait_updated_at)) continue;
         const base64 = await pullPortrait(session, c.id);
         if (!base64 || cancelled) continue;
-        const tempPath = `${FileSystem.cacheDirectory}pulled-portrait-${c.id}.jpg`;
-        await FileSystem.writeAsStringAsync(tempPath, base64, { encoding: FileSystem.EncodingType.Base64 });
-        const localUri = await saveLocalPortrait(c.id, tempPath);
-        await queries.updatePortrait(db, c.id, localUri, c.portrait_updated_at);
+        // The fetched base64 IS the image — no file write/copy needed, portraits
+        // are stored as data: URIs directly (see portraitStorage.ts for why).
+        await queries.updatePortrait(db, c.id, `data:image/jpeg;base64,${base64}`, c.portrait_updated_at);
       }
       if (!cancelled) await refresh();
     })();

@@ -95,7 +95,7 @@ export function useCharacter(id: string) {
     const localUri = await saveLocalPortrait(id, croppedUri);
     await updatePortrait(db, id, localUri, null);
     setRow(prev => prev ? { ...prev, portrait_uri: localUri, portrait_updated_at: null } : prev);
-    const base64 = await readLocalPortraitBase64(id);
+    const base64 = readLocalPortraitBase64(localUri);
     if (!base64) return;
     const { ok, portraitUpdatedAt } = await pushPortrait(session, id, base64);
     if (!ok) { enqueue(id); return; }

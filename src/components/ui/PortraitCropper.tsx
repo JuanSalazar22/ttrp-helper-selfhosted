@@ -112,7 +112,12 @@ export function PortraitCropper({ visible, sourceUri, onCancel, onConfirm }: Pro
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, alignItems: 'center', justifyContent: 'center' },
+  // `flex: 1` alone doesn't reliably fill react-native-web's Modal portal — its
+  // wrapper chain doesn't always establish a definite height for a flexed child
+  // to grow into, so this collapsed to 0 height on web (verified: DevTools showed
+  // an ancestor at height 0 despite the outer fixed-position layer being full
+  // screen). absoluteFillObject sizes directly off the viewport instead.
+  root: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, alignItems: 'center', justifyContent: 'center' },
   frameWrap: { overflow: 'hidden', borderRadius: FRAME / 2 },
   frame: { overflow: 'hidden', alignItems: 'center', justifyContent: 'center' },
   actions: { flexDirection: 'row', gap: 40, marginTop: 32 },
