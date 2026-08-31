@@ -61,6 +61,9 @@ export const en = {
     importFailedTitle: 'Import failed',
     importFailedBody: 'Could not read that file.',
     importHammergenA11y: 'Import from Hammergen',
+    accountA11y: 'Account',
+    importA11y: 'Import character',
+    createA11y: 'Create character',
     duplicateA11y: 'Duplicate {name}',
     deleteA11y: 'Delete {name}',
     searchPlaceholder: 'Search by name or tag…',
@@ -103,6 +106,7 @@ export const en = {
   sheet: {
     back: 'Characters',
     saving: 'Saving…',
+    exportA11y: 'Export character',
     exportFailedTitle: 'Export failed',
     exportFailedBody: 'Could not export this character.',
     notFoundTitle: 'Character not found',

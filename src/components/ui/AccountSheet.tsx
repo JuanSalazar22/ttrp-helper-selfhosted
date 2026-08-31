@@ -10,6 +10,7 @@ import { useAuth } from '@/auth/AuthProvider';
 import { exchangeLinkCode } from '@/lib/api';
 import { softDeleteAllCharacters } from '@/sync/cloudCharacters';
 import { confirmRemove } from '@/lib/confirm';
+import { hoverTitle } from '@/lib/a11y';
 
 type Props = { visible: boolean; onClose: () => void };
 
@@ -19,6 +20,7 @@ type Mode = 'start' | 'enterName' | 'showLinkCode' | 'enterLinkCode';
 export function AccountSheet({ visible, onClose }: Props) {
   const t = useTheme();
   const tr = useTranslation();
+  const closeLabel = tr('common.close');
   const {
     session, loading, displayName,
     registerPasskey, loginWithPasskey, startDeviceLink, linkDevice,
@@ -323,7 +325,7 @@ export function AccountSheet({ visible, onClose }: Props) {
         <View style={[styles.sheet, { backgroundColor: t.colors.card, borderColor: t.colors.border }]}>
           <View style={styles.headerRow}>
             <Text style={[styles.title, { color: t.colors.text, fontFamily: t.fontFamily.serif }]}>{tr('settings.account.title')}</Text>
-            <TouchableOpacity onPress={onClose} hitSlop={12}><X size={22} color={t.colors.textMuted} /></TouchableOpacity>
+            <TouchableOpacity onPress={onClose} hitSlop={12} accessibilityLabel={closeLabel} {...hoverTitle(closeLabel)}><X size={22} color={t.colors.textMuted} /></TouchableOpacity>
           </View>
           {renderBody()}
         </View>

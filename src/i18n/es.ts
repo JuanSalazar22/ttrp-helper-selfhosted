@@ -62,6 +62,9 @@ export const es: DeepPartial<Messages> = {
     importFailedTitle: 'Error al importar',
     importFailedBody: 'No se pudo leer ese archivo.',
     importHammergenA11y: 'Importar desde Hammergen',
+    accountA11y: 'Cuenta',
+    importA11y: 'Importar personaje',
+    createA11y: 'Crear personaje',
     duplicateA11y: 'Duplicar {name}',
     deleteA11y: 'Eliminar {name}',
     searchPlaceholder: 'Buscar por nombre o etiqueta…',
@@ -104,6 +107,7 @@ export const es: DeepPartial<Messages> = {
   sheet: {
     back: 'Personajes',
     saving: 'Guardando…',
+    exportA11y: 'Exportar personaje',
     exportFailedTitle: 'Error al exportar',
     exportFailedBody: 'No se pudo exportar este personaje.',
     notFoundTitle: 'Personaje no encontrado',
