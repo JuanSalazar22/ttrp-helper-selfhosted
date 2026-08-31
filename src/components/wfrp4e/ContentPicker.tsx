@@ -8,6 +8,7 @@ import { Search, X } from 'lucide-react-native';
 import { useTheme } from '@/hooks/useTheme';
 import { useLocale, useTranslation } from '@/i18n';
 import { searchContent } from '@/db/queries';
+import { hoverTitle } from '@/lib/a11y';
 import type { ContentCategory, ContentRecord } from '@/data/wfrp-content';
 
 type Props = {
@@ -62,7 +63,7 @@ export function ContentPicker({ visible, category, title, onSelect, onClose, sub
         <View style={[styles.sheet, { backgroundColor: t.colors.card, borderColor: t.colors.border }]}>
           <View style={styles.headerRow}>
             <Text style={[styles.title, { color: t.colors.text, fontFamily: t.fontFamily.serif }]}>{title}</Text>
-            <TouchableOpacity onPress={onClose} hitSlop={12}><X size={22} color={t.colors.textMuted} /></TouchableOpacity>
+            <TouchableOpacity onPress={onClose} hitSlop={12} accessibilityLabel={tr('wfrp.contentPicker.closeA11y')} {...hoverTitle(tr('wfrp.contentPicker.closeA11y'))}><X size={22} color={t.colors.textMuted} /></TouchableOpacity>
           </View>
 
           <View style={[styles.searchBox, { borderColor: t.colors.border, backgroundColor: t.colors.backgroundSecondary }]}>
