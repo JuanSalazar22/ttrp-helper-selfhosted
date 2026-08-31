@@ -6,7 +6,7 @@ import {
 import { Plus, Trash2, BookOpen, Info, Dices } from 'lucide-react-native';
 import { v4 as uuidv4 } from 'uuid';
 import { useTheme } from '@/hooks/useTheme';
-import { useTranslation } from '@/i18n';
+import { useTranslation, useLocale } from '@/i18n';
 import { Section } from '@/components/ui/Section';
 import { AdvanceCalculatorModal } from '@/components/wfrp4e/AdvanceCalculatorModal';
 import { ContentPicker } from '@/components/wfrp4e/ContentPicker';
@@ -32,11 +32,13 @@ const EMPTY: Omit<Skill, 'id'> = { name: '', characteristic: 'ws', advances: 0, 
 export function WfrpSkills({ character, onChange, onRoll }: Props) {
   const t = useTheme();
   const tr = useTranslation();
+  const { locale } = useLocale();
   const [adding, setAdding] = useState(false);
   const [draft, setDraft] = useState<Omit<Skill, 'id'>>(EMPTY);
   const [calcId, setCalcId] = useState<string | null>(null);
   const [picking, setPicking] = useState(false);
   const [wikiId, setWikiId] = useState<string | null>(null);
+  const [sortBy, setSortBy] = useState<'name' | 'added'>('name');
   const wikiSkill = wikiId ? character.skills.find(s => s.id === wikiId) ?? null : null;
 
   function total(s: Skill) {
@@ -62,10 +64,36 @@ export function WfrpSkills({ character, onChange, onRoll }: Props) {
     setAdding(false);
   }
 
-  const sorted = [...character.skills].sort((a, b) => a.name.localeCompare(b.name));
+  // Display-only — sorting never changes character.skills itself or its stored order.
+  const sorted = sortBy === 'name'
+    ? [...character.skills].sort((a, b) => a.name.localeCompare(b.name, locale))
+    : character.skills;
 
   return (
     <Section title={tr('wfrp.skills.title')}>
+      {character.skills.length > 1 && (
+        <View style={styles.sortRow}>
+          <Text style={[styles.sortLabel, { color: t.colors.textSecondary }]}>{tr('wfrp.skills.sortBy')}</Text>
+          <TouchableOpacity
+            onPress={() => setSortBy('name')}
+            hitSlop={6}
+            style={[styles.sortChip, { borderColor: t.colors.accent, backgroundColor: sortBy === 'name' ? t.colors.accent : 'transparent' }]}
+          >
+            <Text style={{ color: sortBy === 'name' ? t.colors.accentText : t.colors.accentFg, fontSize: 12, fontWeight: '600' }}>
+              {tr('wfrp.skills.sortName')}
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => setSortBy('added')}
+            hitSlop={6}
+            style={[styles.sortChip, { borderColor: t.colors.accent, backgroundColor: sortBy === 'added' ? t.colors.accent : 'transparent' }]}
+          >
+            <Text style={{ color: sortBy === 'added' ? t.colors.accentText : t.colors.accentFg, fontSize: 12, fontWeight: '600' }}>
+              {tr('wfrp.skills.sortAdded')}
+            </Text>
+          </TouchableOpacity>
+        </View>
+      )}
       {sorted.map(s => (
         <View key={s.id} style={[styles.rowWrap, { borderColor: t.colors.border }]}>
           <View style={styles.topRow}>
@@ -207,6 +235,9 @@ export function WfrpSkills({ character, onChange, onRoll }: Props) {
 }
 
 const styles = StyleSheet.create({
+  sortRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 10 },
+  sortLabel: { fontSize: 12, fontWeight: '600' },
+  sortChip: { borderWidth: 1, borderRadius: 6, paddingHorizontal: 10, paddingVertical: 4 },
   rowWrap: { paddingVertical: 8, borderBottomWidth: StyleSheet.hairlineWidth },
   topRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   rowMain: { flex: 1, flexDirection: 'row', alignItems: 'baseline', gap: 6 },

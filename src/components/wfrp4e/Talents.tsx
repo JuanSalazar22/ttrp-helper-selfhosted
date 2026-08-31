@@ -96,17 +96,19 @@ export function Talents({ character, onChange }: Props) {
           <Text style={[styles.sortLabel, { color: t.colors.textSecondary }]}>{tr('wfrp.talents.sortBy')}</Text>
           <TouchableOpacity
             onPress={() => setSortBy('name')}
+            hitSlop={6}
             style={[styles.sortChip, { borderColor: t.colors.accent, backgroundColor: sortBy === 'name' ? t.colors.accent : 'transparent' }]}
           >
-            <Text style={{ color: sortBy === 'name' ? t.colors.accentText : t.colors.accent, fontSize: 12, fontWeight: '600' }}>
+            <Text style={{ color: sortBy === 'name' ? t.colors.accentText : t.colors.accentFg, fontSize: 12, fontWeight: '600' }}>
               {tr('wfrp.talents.sortName')}
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => setSortBy('added')}
+            hitSlop={6}
             style={[styles.sortChip, { borderColor: t.colors.accent, backgroundColor: sortBy === 'added' ? t.colors.accent : 'transparent' }]}
           >
-            <Text style={{ color: sortBy === 'added' ? t.colors.accentText : t.colors.accent, fontSize: 12, fontWeight: '600' }}>
+            <Text style={{ color: sortBy === 'added' ? t.colors.accentText : t.colors.accentFg, fontSize: 12, fontWeight: '600' }}>
               {tr('wfrp.talents.sortAdded')}
             </Text>
           </TouchableOpacity>

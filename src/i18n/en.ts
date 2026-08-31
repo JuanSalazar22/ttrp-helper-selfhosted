@@ -213,6 +213,9 @@ export const en = {
       distributePts: 'Distribute {n} pts',
       makeAdvances: 'Make Advances',
       generateRolls: 'Generate rolls (2d10)',
+      addXpA11y: 'Add XP gained',
+      addXpTitle: 'XP gained',
+      addXpPlaceholder: 'e.g. 50',
     },
     pairs: {
       fate: 'Fate',
@@ -251,6 +254,9 @@ export const en = {
     },
     skills: {
       title: 'Skills',
+      sortBy: 'Sort:',
+      sortName: 'Name',
+      sortAdded: 'Added',
       addSkill: 'Add Skill',
       addSkillTitle: 'Add Skill',
       clearAll: 'Clear all',
