@@ -8,6 +8,7 @@ import { useTheme } from '@/hooks/useTheme';
 import { useTranslation } from '@/i18n';
 import { Section } from '@/components/ui/Section';
 import { confirmRemove } from '@/lib/confirm';
+import { hoverTitle } from '@/lib/a11y';
 import type { Dnd5eCharacter } from '@/types/dnd5e';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -110,7 +111,12 @@ export function Attacks({ character, onChange, onRollAttack, onRollExpression }:
                 </Text>
               </TouchableOpacity>
               {onChange && (
-                <TouchableOpacity style={styles.colAction} onPress={() => deleteAttack(attack.id)}>
+                <TouchableOpacity
+                  style={styles.colAction}
+                  onPress={() => deleteAttack(attack.id)}
+                  accessibilityLabel={tr('dnd.attacks.deleteA11y', { name: attack.name })}
+                  {...hoverTitle(tr('dnd.attacks.deleteA11y', { name: attack.name }))}
+                >
                   <Trash2 size={14} color={t.colors.danger} />
                 </TouchableOpacity>
               )}

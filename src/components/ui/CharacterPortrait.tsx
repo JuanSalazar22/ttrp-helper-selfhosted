@@ -5,6 +5,7 @@ import * as ImagePicker from 'expo-image-picker';
 import { useTheme } from '@/hooks/useTheme';
 import { useTranslation } from '@/i18n';
 import { PortraitCropper } from './PortraitCropper';
+import { hoverTitle } from '@/lib/a11y';
 
 type Props = {
   /** 'lg' (default) is the full block shown atop the left column in wide layout.
@@ -31,6 +32,7 @@ export function CharacterPortrait({ size = 'lg', portraitUri, onChange }: Props)
   const [expanded, setExpanded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [pickedUri, setPickedUri] = useState<string | null>(null);
+  const thumbLabel = portraitUri ? tr('common.changePhoto') : tr('common.addPhoto');
 
   async function pickPhoto() {
     setMenuOpen(false);
@@ -78,7 +80,8 @@ export function CharacterPortrait({ size = 'lg', portraitUri, onChange }: Props)
           style={[styles.thumb, { borderColor: t.colors.border, backgroundColor: t.colors.backgroundSecondary }]}
           onPress={handlePress}
           activeOpacity={0.7}
-          accessibilityLabel={portraitUri ? tr('common.changePhoto') : tr('common.addPhoto')}
+          accessibilityLabel={thumbLabel}
+          {...hoverTitle(thumbLabel)}
         >
           {portraitUri ? <Image source={{ uri: portraitUri }} style={styles.thumbImage} /> : <UserRound size={20} color={t.colors.textMuted} />}
         </TouchableOpacity>

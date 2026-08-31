@@ -9,6 +9,7 @@ import { useTheme } from '@/hooks/useTheme';
 import { useTranslation, type TFunc } from '@/i18n';
 import { Section } from '@/components/ui/Section';
 import { confirmRemove } from '@/lib/confirm';
+import { hoverTitle } from '@/lib/a11y';
 import {
   CHARACTERISTIC_KEYS, CHARACTERISTIC_LABELS,
   displayBuffs, ENCUMBERED_BUFF_ID,
@@ -131,7 +132,7 @@ export function Buffs({ character, onChange }: Props) {
                   onValueChange={v => toggleActive(b.id, v)}
                   trackColor={{ true: t.colors.accent, false: t.colors.border }}
                 />
-                <TouchableOpacity onPress={() => remove(b.id)} style={styles.del}>
+                <TouchableOpacity onPress={() => remove(b.id)} style={styles.del} accessibilityLabel={tr('wfrp.buffs.removeA11y', { name: b.name })} {...hoverTitle(tr('wfrp.buffs.removeA11y', { name: b.name }))}>
                   <Trash2 size={14} color={t.colors.danger} />
                 </TouchableOpacity>
               </>
@@ -215,6 +216,7 @@ export function Buffs({ character, onChange }: Props) {
                       disabled={draft.effects.length === 1}
                       style={[styles.removeEffect, { opacity: draft.effects.length === 1 ? 0.3 : 1 }]}
                       accessibilityLabel={tr('wfrp.buffs.removeEffect')}
+                      {...hoverTitle(tr('wfrp.buffs.removeEffect'))}
                     >
                       <X size={16} color={t.colors.textMuted} />
                     </TouchableOpacity>

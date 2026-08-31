@@ -12,6 +12,7 @@ import { BASE_RACES } from '@/data/wfrp-races';
 import { rollRandomTalents } from '@/lib/randomTalents';
 import { roll } from '@/dice/engine';
 import { getContentByNames } from '@/db/queries';
+import { hoverTitle } from '@/lib/a11y';
 import type { SQLiteDatabase } from 'expo-sqlite';
 import type { Locale } from '@/i18n';
 import type { Wfrp4eCharacter, WfrpSpeciesDef } from '@/types/wfrp4e';
@@ -97,7 +98,7 @@ export function SpeciesPicker({ visible, character, onChange, onClose }: Props) 
       <SafeAreaView style={[styles.screen, { backgroundColor: t.colors.background }]}>
         <View style={[styles.header, { borderBottomColor: t.colors.border }]}>
           <Text style={[styles.title, { color: t.colors.text }]}>{tr('wfrp.species.title')}</Text>
-          <TouchableOpacity onPress={onClose} hitSlop={12} accessibilityLabel={tr('wfrp.species.closeA11y')}>
+          <TouchableOpacity onPress={onClose} hitSlop={12} accessibilityLabel={tr('wfrp.species.closeA11y')} {...hoverTitle(tr('wfrp.species.closeA11y'))}>
             <X size={24} color={t.colors.textMuted} />
           </TouchableOpacity>
         </View>

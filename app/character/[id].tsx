@@ -9,6 +9,7 @@ import { ErrorState } from '@/components/ui/ErrorState';
 import { Dnd5eSheet } from '@/components/dnd5e/Dnd5eSheet';
 import { Wfrp4eSheet } from '@/components/wfrp4e/Wfrp4eSheet';
 import { exportCharacter } from '@/lib/transfer';
+import { hoverTitle } from '@/lib/a11y';
 import type { Dnd5eCharacter } from '@/types/dnd5e';
 import type { Wfrp4eCharacter } from '@/types/wfrp4e';
 
@@ -18,6 +19,7 @@ export default function CharacterSheet() {
   const t = useTheme();
   const tr = useTranslation();
   const { row, data, loading, saving, patch, setPortrait } = useCharacter(id);
+  const exportLabel = tr('sheet.exportA11y');
 
   async function handleExport() {
     if (!data) return;
@@ -53,7 +55,7 @@ export default function CharacterSheet() {
         </TouchableOpacity>
         <View style={styles.backRight}>
           {saving && <Text style={[styles.savingText, { color: t.colors.textMuted }]}>{tr('sheet.saving')}</Text>}
-          <TouchableOpacity onPress={handleExport} activeOpacity={0.7} hitSlop={8}>
+          <TouchableOpacity onPress={handleExport} activeOpacity={0.7} hitSlop={8} accessibilityLabel={exportLabel} {...hoverTitle(exportLabel)}>
             <Share2 size={20} color={t.colors.accent} />
           </TouchableOpacity>
         </View>

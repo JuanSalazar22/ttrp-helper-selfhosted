@@ -14,6 +14,7 @@ import { AccountSheet } from '@/components/ui/AccountSheet';
 import { CreateCharacterModal } from '@/components/ui/CreateCharacterModal';
 import { DeleteCharacterModal } from '@/components/ui/DeleteCharacterModal';
 import { extractTags, matchesQuery } from '@/lib/characterSearch';
+import { hoverTitle } from '@/lib/a11y';
 
 const SYSTEM_LABEL: Record<GameSystem, string> = {
   dnd5e: 'D&D 5e',
@@ -42,6 +43,8 @@ function CharacterCard({
 
   const updated = new Date(row.updated_at);
   const updatedStr = updated.toLocaleDateString(locale, { month: 'short', day: 'numeric' });
+  const duplicateLabel = tr('characters.duplicateA11y', { name: row.name });
+  const deleteLabel = tr('characters.deleteA11y', { name: row.name });
 
   return (
     <TouchableOpacity
@@ -77,10 +80,10 @@ function CharacterCard({
       <View style={styles.cardRight}>
         <Text style={[styles.updatedText, { color: t.colors.textMuted }]}>{updatedStr}</Text>
         <View style={styles.cardActions}>
-          <TouchableOpacity onPress={onDuplicate} hitSlop={8} style={styles.cardAction} accessibilityLabel={tr('characters.duplicateA11y', { name: row.name })}>
+          <TouchableOpacity onPress={onDuplicate} hitSlop={8} style={styles.cardAction} accessibilityLabel={duplicateLabel} {...hoverTitle(duplicateLabel)}>
             <Copy size={16} color={t.colors.textMuted} />
           </TouchableOpacity>
-          <TouchableOpacity onPress={onDelete} hitSlop={8} style={styles.cardAction} accessibilityLabel={tr('characters.deleteA11y', { name: row.name })}>
+          <TouchableOpacity onPress={onDelete} hitSlop={8} style={styles.cardAction} accessibilityLabel={deleteLabel} {...hoverTitle(deleteLabel)}>
             <Trash2 size={16} color={t.colors.danger} />
           </TouchableOpacity>
         </View>
@@ -105,6 +108,11 @@ function CharacterListScreen() {
     () => (query.trim() ? characters.filter(c => matchesQuery(c, query)) : characters),
     [characters, query],
   );
+
+  const accountLabel = tr('characters.accountA11y');
+  const importLabel = tr('characters.importA11y');
+  const importHammergenLabel = tr('characters.importHammergenA11y');
+  const createLabel = tr('characters.createA11y');
 
   // Refresh list when screen re-focuses (coming back from a sheet)
   useFocusEffect(useCallback(() => { refresh(); }, [refresh]));
@@ -145,6 +153,8 @@ function CharacterListScreen() {
               style={[styles.addButton, { backgroundColor: t.colors.backgroundSecondary }]}
               onPress={() => setShowAccount(true)}
               activeOpacity={0.8}
+              accessibilityLabel={accountLabel}
+              {...hoverTitle(accountLabel)}
             >
               {session && displayName ? (
                 <View style={[styles.avatarBadge, { backgroundColor: t.colors.accent }]}>
@@ -157,18 +167,31 @@ function CharacterListScreen() {
               )}
             </TouchableOpacity>
           )}
-          <TouchableOpacity style={[styles.addButton, { backgroundColor: t.colors.backgroundSecondary }]} onPress={handleImport} activeOpacity={0.8}>
+          <TouchableOpacity
+            style={[styles.addButton, { backgroundColor: t.colors.backgroundSecondary }]}
+            onPress={handleImport}
+            activeOpacity={0.8}
+            accessibilityLabel={importLabel}
+            {...hoverTitle(importLabel)}
+          >
             <Upload size={18} color={t.colors.accent} />
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.addButton, { backgroundColor: t.colors.backgroundSecondary }]}
             onPress={handleImportHammergen}
             activeOpacity={0.8}
-            accessibilityLabel={tr('characters.importHammergenA11y')}
+            accessibilityLabel={importHammergenLabel}
+            {...hoverTitle(importHammergenLabel)}
           >
             <Hammer size={18} color={t.colors.accent} />
           </TouchableOpacity>
-          <TouchableOpacity style={[styles.addButton, { backgroundColor: t.colors.accent }]} onPress={() => setShowCreate(true)} activeOpacity={0.8}>
+          <TouchableOpacity
+            style={[styles.addButton, { backgroundColor: t.colors.accent }]}
+            onPress={() => setShowCreate(true)}
+            activeOpacity={0.8}
+            accessibilityLabel={createLabel}
+            {...hoverTitle(createLabel)}
+          >
             <Plus size={20} color={t.colors.accentText} />
           </TouchableOpacity>
         </View>

@@ -13,6 +13,7 @@ import { mergeGrantedSkills, mergeGrantedTalents, mergeGrantedTrappings, type Gr
 import { classTrappingsForClass } from '@/data/wfrp-class-trappings';
 import type { Wfrp4eCharacter, CharacteristicKey } from '@/types/wfrp4e';
 import type { ContentRecord } from '@/data/wfrp-content';
+import { hoverTitle } from '@/lib/a11y';
 
 type Props = {
   visible: boolean;
@@ -142,7 +143,7 @@ export function CareerPicker({ visible, character, onChange, onClose }: Props) {
             <Text style={[styles.title, { color: t.colors.text, fontFamily: t.fontFamily.serif }]}>
               {tr('wfrp.career.title')}
             </Text>
-            <TouchableOpacity onPress={onClose} hitSlop={12}><X size={22} color={t.colors.textMuted} /></TouchableOpacity>
+            <TouchableOpacity onPress={onClose} hitSlop={12} accessibilityLabel={tr('wfrp.contentPicker.closeA11y')} {...hoverTitle(tr('wfrp.contentPicker.closeA11y'))}><X size={22} color={t.colors.textMuted} /></TouchableOpacity>
           </View>
 
           <View style={[styles.searchBox, { borderColor: t.colors.border, backgroundColor: t.colors.backgroundSecondary }]}>

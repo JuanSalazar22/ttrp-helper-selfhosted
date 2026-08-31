@@ -6,6 +6,7 @@ import { useTheme } from '@/hooks/useTheme';
 import { useTranslation } from '@/i18n';
 import { EditableNumber } from '@/components/ui/EditableNumber';
 import { roll } from '@/dice/engine';
+import { hoverTitle } from '@/lib/a11y';
 import { AdvanceCalculatorModal } from '@/components/wfrp4e/AdvanceCalculatorModal';
 import {
   CHARACTERISTIC_LABELS, characteristicTotal, buffTotal, advanceCost, experienceCurrent,
@@ -73,7 +74,7 @@ export function CharacteristicsDetail({ visible, character, onChange, onClose }:
       <SafeAreaView style={[styles.screen, { backgroundColor: t.colors.background }]} edges={['top', 'bottom']}>
         <View style={[styles.header, { borderBottomColor: t.colors.border }]}>
           <Text style={[styles.title, { color: t.colors.text }]}>{tr('wfrp.sections.characteristics')}</Text>
-          <TouchableOpacity onPress={onClose} hitSlop={12} accessibilityLabel={tr('common.close')}>
+          <TouchableOpacity onPress={onClose} hitSlop={12} accessibilityLabel={tr('common.close')} {...hoverTitle(tr('common.close'))}>
             <X size={24} color={t.colors.textMuted} />
           </TouchableOpacity>
         </View>

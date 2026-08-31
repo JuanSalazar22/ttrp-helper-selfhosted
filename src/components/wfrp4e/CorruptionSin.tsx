@@ -12,6 +12,7 @@ import { EditableNumber } from '@/components/ui/EditableNumber';
 import { ContentPicker } from '@/components/wfrp4e/ContentPicker';
 import { WikiModal } from '@/components/wfrp4e/WikiModal';
 import { confirmRemove } from '@/lib/confirm';
+import { hoverTitle } from '@/lib/a11y';
 import { characteristicBonus, corruptionThreshold, type Wfrp4eCharacter } from '@/types/wfrp4e';
 
 type MutationType = 'physical' | 'mental';
@@ -128,11 +129,11 @@ export function CorruptionSin({ character, onChange }: Props) {
                 </Text>
               </View>
               {(!!m.description || !!m.page) && (
-                <TouchableOpacity onPress={() => setWikiId(m.id)} style={styles.del} accessibilityLabel={tr('wfrp.corruption.infoFor', { name: m.name })}>
+                <TouchableOpacity onPress={() => setWikiId(m.id)} style={styles.del} accessibilityLabel={tr('wfrp.corruption.infoFor', { name: m.name })} {...hoverTitle(tr('wfrp.corruption.infoFor', { name: m.name }))}>
                   <Info size={14} color={t.colors.textMuted} />
                 </TouchableOpacity>
               )}
-              <TouchableOpacity onPress={() => remove(m.id)} style={styles.del}>
+              <TouchableOpacity onPress={() => remove(m.id)} style={styles.del} accessibilityLabel={tr('wfrp.corruption.removeA11y', { name: m.name })} {...hoverTitle(tr('wfrp.corruption.removeA11y', { name: m.name }))}>
                 <Trash2 size={14} color={t.colors.danger} />
               </TouchableOpacity>
             </View>

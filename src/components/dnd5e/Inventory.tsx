@@ -8,6 +8,7 @@ import { useTheme } from '@/hooks/useTheme';
 import { useTranslation } from '@/i18n';
 import { Section } from '@/components/ui/Section';
 import { confirmRemove } from '@/lib/confirm';
+import { hoverTitle } from '@/lib/a11y';
 import type { Dnd5eCharacter } from '@/types/dnd5e';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -87,7 +88,9 @@ export function Inventory({ character, onChange }: Props) {
           <Text style={[styles.colWeight, { color: t.colors.textSecondary }]}>{tr('dnd.inventory.colWeight')}</Text>
           {onChange && <View style={styles.colDel} />}
         </View>
-        {character.inventory.map((item, i) => (
+        {character.inventory.map((item, i) => {
+          const removeLabel = tr('dnd.inventory.removeItemA11y', { name: item.name });
+          return (
           <View
             key={item.id}
             style={[
@@ -121,12 +124,18 @@ export function Inventory({ character, onChange }: Props) {
 
             <Text style={[styles.colWeight, styles.cellText, { color: t.colors.textMuted }]}>{item.weight}</Text>
             {onChange && (
-              <TouchableOpacity style={styles.colDel} onPress={() => deleteItem(item.id)}>
+              <TouchableOpacity
+                style={styles.colDel}
+                onPress={() => deleteItem(item.id)}
+                accessibilityLabel={removeLabel}
+                {...hoverTitle(removeLabel)}
+              >
                 <Trash2 size={13} color={t.colors.danger} />
               </TouchableOpacity>
             )}
           </View>
-        ))}
+          );
+        })}
       </View>
 
       {onChange && (
