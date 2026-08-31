@@ -142,7 +142,7 @@ export function CareerPicker({ visible, character, onChange, onClose }: Props) {
             <Text style={[styles.title, { color: t.colors.text, fontFamily: t.fontFamily.serif }]}>
               {tr('wfrp.career.title')}
             </Text>
-            <TouchableOpacity onPress={onClose} hitSlop={12}><X size={22} color={t.colors.textMuted} /></TouchableOpacity>
+            <TouchableOpacity onPress={onClose} hitSlop={12} accessibilityLabel={tr('common.close')}><X size={22} color={t.colors.textMuted} /></TouchableOpacity>
           </View>
 
           <View style={[styles.searchBox, { borderColor: t.colors.border, backgroundColor: t.colors.backgroundSecondary }]}>
@@ -170,7 +170,7 @@ export function CareerPicker({ visible, character, onChange, onClose }: Props) {
                   onPress={() => { onChange({ currentCareer: query.trim(), careerRank: 1, careerPath: [] }); onClose(); }}
                   activeOpacity={0.6}
                 >
-                  <Text style={[styles.customText, { color: t.colors.accent }]} numberOfLines={1}>
+                  <Text style={[styles.customText, { color: t.colors.accentFg }]} numberOfLines={1}>
                     {tr('wfrp.contentPicker.useCustom', { query: query.trim() })}
                   </Text>
                 </TouchableOpacity>

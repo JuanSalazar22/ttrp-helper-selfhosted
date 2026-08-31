@@ -61,6 +61,9 @@ export const en = {
     importFailedTitle: 'Import failed',
     importFailedBody: 'Could not read that file.',
     importHammergenA11y: 'Import from Hammergen',
+    uploadA11y: 'Import character file',
+    accountA11y: 'Account',
+    createA11y: 'Create character',
     duplicateA11y: 'Duplicate {name}',
     deleteA11y: 'Delete {name}',
     searchPlaceholder: 'Search by name or tag…',
@@ -444,6 +447,8 @@ export const en = {
       grantedTalents: 'Granted talents',
       skillNamePlaceholder: 'Skill name',
       talentNamePlaceholder: 'Talent name',
+      removeSkillA11y: 'Remove skill {name}',
+      removeTalentA11y: 'Remove talent {name}',
     },
     combat: {
       weapons: 'Weapons',

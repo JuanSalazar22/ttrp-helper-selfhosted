@@ -150,7 +150,7 @@ export function AccountSheet({ visible, onClose }: Props) {
   function linkButton(labelKey: TKey, onPress: () => void) {
     return (
       <TouchableOpacity onPress={onPress} hitSlop={8}>
-        <Text style={[styles.link, { color: t.colors.accent }]}>{tr(labelKey)}</Text>
+        <Text style={[styles.link, { color: t.colors.accentFg }]}>{tr(labelKey)}</Text>
       </TouchableOpacity>
     );
   }
@@ -227,7 +227,7 @@ export function AccountSheet({ visible, onClose }: Props) {
     return (
       <View style={styles.body}>
         <View style={[styles.avatar, { backgroundColor: t.colors.accent + '22' }]}>
-          <Text style={[styles.avatarText, { color: t.colors.accent }]}>
+          <Text style={[styles.avatarText, { color: t.colors.accentFg }]}>
             {(displayName ?? '?')[0].toUpperCase()}
           </Text>
         </View>
@@ -323,7 +323,7 @@ export function AccountSheet({ visible, onClose }: Props) {
         <View style={[styles.sheet, { backgroundColor: t.colors.card, borderColor: t.colors.border }]}>
           <View style={styles.headerRow}>
             <Text style={[styles.title, { color: t.colors.text, fontFamily: t.fontFamily.serif }]}>{tr('settings.account.title')}</Text>
-            <TouchableOpacity onPress={onClose} hitSlop={12}><X size={22} color={t.colors.textMuted} /></TouchableOpacity>
+            <TouchableOpacity onPress={onClose} hitSlop={12} accessibilityLabel={tr('common.close')}><X size={22} color={t.colors.textMuted} /></TouchableOpacity>
           </View>
           {renderBody()}
         </View>

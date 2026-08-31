@@ -62,6 +62,9 @@ export const es: DeepPartial<Messages> = {
     importFailedTitle: 'Error al importar',
     importFailedBody: 'No se pudo leer ese archivo.',
     importHammergenA11y: 'Importar desde Hammergen',
+    uploadA11y: 'Importar archivo de personaje',
+    accountA11y: 'Cuenta',
+    createA11y: 'Crear personaje',
     duplicateA11y: 'Duplicar {name}',
     deleteA11y: 'Eliminar {name}',
     searchPlaceholder: 'Buscar por nombre o etiqueta…',
@@ -445,6 +448,8 @@ export const es: DeepPartial<Messages> = {
       grantedTalents: 'Talentos otorgados',
       skillNamePlaceholder: 'Nombre de la habilidad',
       talentNamePlaceholder: 'Nombre del talento',
+      removeSkillA11y: 'Eliminar habilidad {name}',
+      removeTalentA11y: 'Eliminar talento {name}',
     },
     combat: {
       weapons: 'Armas',

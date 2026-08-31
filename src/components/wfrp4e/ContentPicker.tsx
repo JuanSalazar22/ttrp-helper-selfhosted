@@ -62,7 +62,7 @@ export function ContentPicker({ visible, category, title, onSelect, onClose, sub
         <View style={[styles.sheet, { backgroundColor: t.colors.card, borderColor: t.colors.border }]}>
           <View style={styles.headerRow}>
             <Text style={[styles.title, { color: t.colors.text, fontFamily: t.fontFamily.serif }]}>{title}</Text>
-            <TouchableOpacity onPress={onClose} hitSlop={12}><X size={22} color={t.colors.textMuted} /></TouchableOpacity>
+            <TouchableOpacity onPress={onClose} hitSlop={12} accessibilityLabel={tr('common.close')}><X size={22} color={t.colors.textMuted} /></TouchableOpacity>
           </View>
 
           <View style={[styles.searchBox, { borderColor: t.colors.border, backgroundColor: t.colors.backgroundSecondary }]}>
@@ -90,7 +90,7 @@ export function ContentPicker({ visible, category, title, onSelect, onClose, sub
                   onPress={() => { onUseCustom(query.trim()); onClose(); }}
                   activeOpacity={0.6}
                 >
-                  <Text style={[styles.customText, { color: t.colors.accent }]} numberOfLines={1}>
+                  <Text style={[styles.customText, { color: t.colors.accentFg }]} numberOfLines={1}>
                     {tr('wfrp.contentPicker.useCustom', { query: query.trim() })}
                   </Text>
                 </TouchableOpacity>

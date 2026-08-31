@@ -47,7 +47,7 @@ export function GrantedListsFields({ value, onChange }: Props) {
         <View key={i} style={[styles.listRow, { borderColor: t.colors.border }]}>
           <Text style={[styles.listText, { color: t.colors.text }]} numberOfLines={1}>{s.name}</Text>
           <Text style={[styles.charTag, { color: t.colors.textSecondary }]}>{tr(`wfrp.char.${s.characteristic}`)}</Text>
-          <TouchableOpacity onPress={() => removeSkill(i)} hitSlop={8}><X size={16} color={t.colors.danger} /></TouchableOpacity>
+          <TouchableOpacity onPress={() => removeSkill(i)} hitSlop={8} accessibilityLabel={tr('wfrp.grants.removeSkillA11y', { name: s.name })}><X size={16} color={t.colors.danger} /></TouchableOpacity>
         </View>
       ))}
       <View style={styles.addRow}>
@@ -68,7 +68,7 @@ export function GrantedListsFields({ value, onChange }: Props) {
       {value.talents.map((name, i) => (
         <View key={i} style={[styles.listRow, { borderColor: t.colors.border }]}>
           <Text style={[styles.listText, { color: t.colors.text }]} numberOfLines={1}>{name}</Text>
-          <TouchableOpacity onPress={() => removeTalent(i)} hitSlop={8}><X size={16} color={t.colors.danger} /></TouchableOpacity>
+          <TouchableOpacity onPress={() => removeTalent(i)} hitSlop={8} accessibilityLabel={tr('wfrp.grants.removeTalentA11y', { name })}><X size={16} color={t.colors.danger} /></TouchableOpacity>
         </View>
       ))}
       <View style={styles.addRow}>
