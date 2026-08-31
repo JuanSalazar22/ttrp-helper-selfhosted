@@ -19,6 +19,12 @@ export const es: DeepPartial<Messages> = {
     remove: 'Quitar',
     removeTitle: '¿Quitar?',
     portraitPlaceholder: 'Añadir retrato',
+    cropCancel: 'Cancelar',
+    cropConfirm: 'Usar foto',
+    viewPhoto: 'Ver foto',
+    changePhoto: 'Cambiar foto',
+    removePhoto: 'Quitar foto',
+    addPhoto: 'Añadir foto',
   },
   tabs: {
     characters: 'Personajes',

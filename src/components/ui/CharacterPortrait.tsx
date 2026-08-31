@@ -48,8 +48,12 @@ export function CharacterPortrait({ size = 'lg', portraitUri, onChange }: Props)
 
   function handlePress() {
     if (portraitUri) setMenuOpen(true);
-    else if (size === 'sm') void pickPhoto();
-    else setExpanded(true);
+    else void pickPhoto();
+  }
+
+  function viewPhoto() {
+    setMenuOpen(false);
+    setExpanded(true);
   }
 
   const placeholder = (
@@ -66,32 +70,40 @@ export function CharacterPortrait({ size = 'lg', portraitUri, onChange }: Props)
   return (
     <>
       {size === 'lg' ? (
-        <TouchableOpacity activeOpacity={0.8} onPress={() => portraitUri ? setMenuOpen(true) : pickPhoto()}>
+        <TouchableOpacity activeOpacity={0.8} onPress={handlePress}>
           {content}
         </TouchableOpacity>
       ) : (
-        <>
-          <TouchableOpacity
-            style={[styles.thumb, { borderColor: t.colors.border, backgroundColor: t.colors.backgroundSecondary }]}
-            onPress={handlePress}
-            activeOpacity={0.7}
-            accessibilityLabel={portraitUri ? tr('common.changePhoto') : tr('common.addPhoto')}
-          >
-            {portraitUri ? <Image source={{ uri: portraitUri }} style={styles.thumbImage} /> : <UserRound size={20} color={t.colors.textMuted} />}
-          </TouchableOpacity>
-          <Modal visible={expanded} transparent animationType="fade" onRequestClose={() => setExpanded(false)}>
-            <View style={styles.overlay}>
-              <TouchableOpacity style={styles.overlayDismiss} onPress={() => setExpanded(false)} />
-              {content}
-            </View>
-          </Modal>
-        </>
+        <TouchableOpacity
+          style={[styles.thumb, { borderColor: t.colors.border, backgroundColor: t.colors.backgroundSecondary }]}
+          onPress={handlePress}
+          activeOpacity={0.7}
+          accessibilityLabel={portraitUri ? tr('common.changePhoto') : tr('common.addPhoto')}
+        >
+          {portraitUri ? <Image source={{ uri: portraitUri }} style={styles.thumbImage} /> : <UserRound size={20} color={t.colors.textMuted} />}
+        </TouchableOpacity>
       )}
+
+      {/* Full-size view — shared by both sizes, opened from the menu below. Shows
+          the stored portrait at its true 1:1 shape and a larger size than either
+          inline display (the 'lg' frame itself crops it into a 3:4 card). */}
+      <Modal visible={expanded} transparent animationType="fade" onRequestClose={() => setExpanded(false)}>
+        <View style={styles.overlay}>
+          <TouchableOpacity style={styles.overlayDismiss} onPress={() => setExpanded(false)} />
+          {portraitUri && (
+            <Image source={{ uri: portraitUri }} style={styles.expandedImage} resizeMode="contain" />
+          )}
+        </View>
+      </Modal>
 
       <Modal visible={menuOpen} transparent animationType="fade" onRequestClose={() => setMenuOpen(false)}>
         <View style={styles.overlay}>
           <TouchableOpacity style={styles.overlayDismiss} onPress={() => setMenuOpen(false)} />
           <View style={[styles.menu, { backgroundColor: t.colors.card, borderColor: t.colors.border }]}>
+            <TouchableOpacity style={styles.menuItem} onPress={viewPhoto}>
+              <Text style={[styles.menuItemText, { color: t.colors.text }]}>{tr('common.viewPhoto')}</Text>
+            </TouchableOpacity>
+            <View style={[styles.menuDivider, { backgroundColor: t.colors.border }]} />
             <TouchableOpacity style={styles.menuItem} onPress={pickPhoto}>
               <Text style={[styles.menuItemText, { color: t.colors.text }]}>{tr('common.changePhoto')}</Text>
             </TouchableOpacity>
@@ -144,6 +156,7 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   thumbImage: { width: '100%', height: '100%' },
+  expandedImage: { width: '100%', maxWidth: 400, aspectRatio: 1, borderRadius: 16 },
   // position:absolute (not flex:1) — react-native-web's Modal portal doesn't
   // reliably give a flexed child a definite height to grow into (confirmed
   // live on the crop screen, which had the same flex:1 pattern and rendered

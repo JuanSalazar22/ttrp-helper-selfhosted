@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Modal, View, Image, StyleSheet, TouchableOpacity, Text, Dimensions, Platform } from 'react-native';
+import { Modal, View, Image, StyleSheet, TouchableOpacity, Text, useWindowDimensions, Platform } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, { useSharedValue, useAnimatedStyle, runOnJS } from 'react-native-reanimated';
 import * as ImageManipulator from 'expo-image-manipulator';
@@ -7,7 +7,10 @@ import { useTheme } from '@/hooks/useTheme';
 import { useTranslation } from '@/i18n';
 import { clampTransform, cropRectFor } from './portraitCropMath';
 
-const FRAME = Math.min(300, Dimensions.get('window').width - 48);
+// Minimum frame size (px) — never let a tiny/zero-width window collapse the
+// crop frame to 0 or negative, which would render invisibly (black) and make
+// confirm() throw ("Crop size must be greater than 0").
+const MIN_FRAME = 150;
 const OUTPUT_SIZE = 512;
 
 type Props = {
@@ -24,6 +27,13 @@ type Props = {
 export function PortraitCropper({ visible, sourceUri, onCancel, onConfirm }: Props) {
   const t = useTheme();
   const tr = useTranslation();
+  // Reactive, not Dimensions.get('window') at module scope: the module-level
+  // version was computed once at import time, and if the window hadn't been
+  // measured yet at that exact moment (a real, observed race — width read as
+  // 0), FRAME was stuck negative for the whole session, collapsing the crop
+  // frame to 0×0 (invisible/"black") and making confirm() throw.
+  const { width: windowWidth } = useWindowDimensions();
+  const FRAME = Math.max(MIN_FRAME, Math.min(300, windowWidth - 48));
   const [imageSize, setImageSize] = useState({ w: 1, h: 1 });
   const scale = useSharedValue(1);
   const translateX = useSharedValue(0);
@@ -104,7 +114,7 @@ export function PortraitCropper({ visible, sourceUri, onCancel, onConfirm }: Pro
   return (
     <Modal visible={visible} transparent animationType="fade">
       <View style={[styles.root, { backgroundColor: t.colors.background }]}>
-        <View style={styles.frameWrap}>
+        <View style={[styles.frameWrap, { borderRadius: FRAME / 2 }]}>
           <GestureDetector gesture={gesture}>
             <View
               style={[styles.frame, { width: FRAME, height: FRAME, borderRadius: FRAME / 2 }]}
@@ -140,7 +150,7 @@ const styles = StyleSheet.create({
   // an ancestor at height 0 despite the outer fixed-position layer being full
   // screen). absoluteFillObject sizes directly off the viewport instead.
   root: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, alignItems: 'center', justifyContent: 'center' },
-  frameWrap: { overflow: 'hidden', borderRadius: FRAME / 2 },
+  frameWrap: { overflow: 'hidden' },
   frame: { overflow: 'hidden', alignItems: 'center', justifyContent: 'center' },
   actions: { flexDirection: 'row', gap: 40, marginTop: 32 },
   actionBtn: { padding: 12 },
