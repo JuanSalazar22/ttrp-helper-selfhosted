@@ -20,6 +20,7 @@ export const en = {
     portraitPlaceholder: 'Add portrait',
     cropCancel: 'Cancel',
     cropConfirm: 'Use Photo',
+    viewPhoto: 'View photo',
     changePhoto: 'Change photo',
     removePhoto: 'Remove photo',
     addPhoto: 'Add photo',
