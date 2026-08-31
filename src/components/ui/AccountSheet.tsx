@@ -152,7 +152,7 @@ export function AccountSheet({ visible, onClose }: Props) {
   function linkButton(labelKey: TKey, onPress: () => void) {
     return (
       <TouchableOpacity onPress={onPress} hitSlop={8}>
-        <Text style={[styles.link, { color: t.colors.accent }]}>{tr(labelKey)}</Text>
+        <Text style={[styles.link, { color: t.colors.accentFg }]}>{tr(labelKey)}</Text>
       </TouchableOpacity>
     );
   }
@@ -229,7 +229,7 @@ export function AccountSheet({ visible, onClose }: Props) {
     return (
       <View style={styles.body}>
         <View style={[styles.avatar, { backgroundColor: t.colors.accent + '22' }]}>
-          <Text style={[styles.avatarText, { color: t.colors.accent }]}>
+          <Text style={[styles.avatarText, { color: t.colors.accentFg }]}>
             {(displayName ?? '?')[0].toUpperCase()}
           </Text>
         </View>

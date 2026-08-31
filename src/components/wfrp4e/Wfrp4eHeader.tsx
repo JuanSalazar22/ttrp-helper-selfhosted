@@ -80,11 +80,11 @@ export function Wfrp4eHeader({ character, onChange, portraitUri, onPortraitChang
             <Text style={[styles.meta, { color: t.colors.textMuted }]}>{character.careerClass}</Text>
           </>
         )}
-        <TouchableOpacity onPress={() => setCareerAdvanceOpen(true)} activeOpacity={0.7} style={[styles.pill, { borderColor: t.colors.accent }]}>
-          <Text style={[styles.pillText, { color: t.colors.accent }]}>{tr('wfrp.header.rank', { n: character.careerRank })}</Text>
+        <TouchableOpacity onPress={() => setCareerAdvanceOpen(true)} activeOpacity={0.7} hitSlop={12} style={[styles.pill, { borderColor: t.colors.accent }]}>
+          <Text style={[styles.pillText, { color: t.colors.accentFg }]}>{tr('wfrp.header.rank', { n: character.careerRank })}</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => setStatusEditOpen(true)} activeOpacity={0.7} style={[styles.pill, { borderColor: t.colors.gold }]}>
-          <Text style={[styles.pillText, { color: t.colors.gold }]}>
+        <TouchableOpacity onPress={() => setStatusEditOpen(true)} activeOpacity={0.7} hitSlop={12} style={[styles.pill, { borderColor: t.colors.goldText }]}>
+          <Text style={[styles.pillText, { color: t.colors.goldText }]}>
             {tr(TIER_KEYS[character.status.tier])} {character.status.standing}
           </Text>
         </TouchableOpacity>
@@ -140,6 +140,6 @@ const styles = StyleSheet.create({
   meta: { fontSize: 14, fontWeight: '500' },
   editable: { borderBottomWidth: 1, alignSelf: 'flex-start', paddingBottom: 1 },
   dot: { fontSize: 14 },
-  pill: { borderRadius: 6, borderWidth: 1, paddingHorizontal: 8, paddingVertical: 2 },
+  pill: { borderRadius: 6, borderWidth: 1, paddingHorizontal: 8, paddingVertical: 4 },
   pillText: { fontSize: 11, fontWeight: '700', letterSpacing: 0.4 },
 });

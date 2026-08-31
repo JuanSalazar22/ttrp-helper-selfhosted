@@ -13,7 +13,7 @@ export function Section({ title, children, noPad }: Props) {
   return (
     <View style={styles.wrapper}>
       <View style={[styles.headerRow, { borderBottomColor: t.colors.accent }]}>
-        <Text style={[styles.title, { color: t.colors.accent }]}>{title}</Text>
+        <Text style={[styles.title, { color: t.colors.accentFg }]}>{title}</Text>
       </View>
       <View style={noPad ? undefined : styles.body}>{children}</View>
     </View>

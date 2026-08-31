@@ -125,7 +125,7 @@ export function SpeciesPicker({ visible, character, onChange, onClose }: Props) 
             activeOpacity={0.7}
           >
             <Plus size={16} color={t.colors.accent} />
-            <Text style={[styles.createText, { color: t.colors.accent }]}>{tr('wfrp.species.createCustom')}</Text>
+            <Text style={[styles.createText, { color: t.colors.accentFg }]}>{tr('wfrp.species.createCustom')}</Text>
           </TouchableOpacity>
         </ScrollView>
       </SafeAreaView>

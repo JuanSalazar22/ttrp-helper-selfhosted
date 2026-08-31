@@ -96,7 +96,7 @@ export function AdvanceCalculatorModal({ visible, title, kind, current, unspent,
               style={[styles.stepBtn, { borderColor: t.colors.accent }]}
               onPress={() => setDelta(d => d + 1)}
             >
-              <Text style={[styles.stepText, { color: t.colors.accent }]}>+</Text>
+              <Text style={[styles.stepText, { color: t.colors.accentFg }]}>+</Text>
             </TouchableOpacity>
           </View>
 
@@ -126,7 +126,7 @@ export function AdvanceCalculatorModal({ visible, title, kind, current, unspent,
               onPress={save}
               disabled={noChange}
             >
-              <Text style={[styles.btnText, { color: t.colors.accentText }]}>
+              <Text style={[styles.btnText, { color: noChange ? t.colors.textMuted : t.colors.accentText }]}>
                 {confirming && overspend ? tr('wfrp.advanceModal.continueAnyway') : tr('common.save')}
               </Text>
             </TouchableOpacity>

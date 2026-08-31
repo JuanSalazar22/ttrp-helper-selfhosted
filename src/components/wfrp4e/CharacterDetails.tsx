@@ -45,7 +45,7 @@ export function CharacterDetails({ character, onChange }: Props) {
   }
 
   const groupHeader = (labelKey: TKey) => (
-    <Text key={labelKey} style={[styles.group, { color: t.colors.accent }]}>{tr(labelKey)}</Text>
+    <Text key={labelKey} style={[styles.group, { color: t.colors.accentFg }]}>{tr(labelKey)}</Text>
   );
 
   return (
@@ -55,7 +55,7 @@ export function CharacterDetails({ character, onChange }: Props) {
         activeOpacity={0.7}
         style={[styles.header, { borderBottomColor: t.colors.accent }]}
       >
-        <Text style={[styles.title, { color: t.colors.accent }]}>{tr('wfrp.details.title')}</Text>
+        <Text style={[styles.title, { color: t.colors.accentFg }]}>{tr('wfrp.details.title')}</Text>
         {open
           ? <ChevronDown size={20} color={t.colors.accent} />
           : <ChevronRight size={20} color={t.colors.accent} />}

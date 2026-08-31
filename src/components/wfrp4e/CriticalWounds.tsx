@@ -146,11 +146,11 @@ export function CriticalWounds({ character, onChange }: Props) {
         <View style={styles.actions}>
           <TouchableOpacity style={[styles.addBtn, { borderColor: t.colors.accent }]} onPress={openRoll}>
             <Plus size={14} color={t.colors.accent} />
-            <Text style={[styles.addText, { color: t.colors.accent }]}>{tr('wfrp.criticalWounds.roll')}</Text>
+            <Text style={[styles.addText, { color: t.colors.accentFg }]}>{tr('wfrp.criticalWounds.roll')}</Text>
           </TouchableOpacity>
           <TouchableOpacity style={[styles.addBtn, { borderColor: t.colors.accent }]} onPress={() => setPicking(true)}>
             <Plus size={14} color={t.colors.accent} />
-            <Text style={[styles.addText, { color: t.colors.accent }]}>{tr('wfrp.criticalWounds.search')}</Text>
+            <Text style={[styles.addText, { color: t.colors.accentFg }]}>{tr('wfrp.criticalWounds.search')}</Text>
           </TouchableOpacity>
         </View>
       ) : (
@@ -191,7 +191,7 @@ export function CriticalWounds({ character, onChange }: Props) {
             </TouchableOpacity>
           )}
           <TouchableOpacity onPress={reroll} style={[styles.rerollBtn, { borderColor: t.colors.accent }]}>
-            <Text style={{ color: t.colors.accent }}>{tr('wfrp.criticalWounds.reroll')}</Text>
+            <Text style={{ color: t.colors.accentFg }}>{tr('wfrp.criticalWounds.reroll')}</Text>
           </TouchableOpacity>
 
           <Text style={[styles.panelLabel, { color: t.colors.textSecondary }]}>{tr('wfrp.criticalWounds.preview')}</Text>

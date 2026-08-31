@@ -146,7 +146,7 @@ export function Magic({ character, onChange }: Props) {
 
         <TouchableOpacity style={[styles.addBtn, { borderColor: t.colors.accent }]} onPress={openAddSpell}>
           <Plus size={14} color={t.colors.accent} />
-          <Text style={[styles.addText, { color: t.colors.accent }]}>{tr('wfrp.magic.addSpell')}</Text>
+          <Text style={[styles.addText, { color: t.colors.accentFg }]}>{tr('wfrp.magic.addSpell')}</Text>
         </TouchableOpacity>
       </Section>
 
@@ -173,7 +173,7 @@ export function Magic({ character, onChange }: Props) {
 
         <TouchableOpacity style={[styles.addBtn, { borderColor: t.colors.accent }]} onPress={openAddPrayer}>
           <Plus size={14} color={t.colors.accent} />
-          <Text style={[styles.addText, { color: t.colors.accent }]}>{tr('wfrp.magic.addPrayer')}</Text>
+          <Text style={[styles.addText, { color: t.colors.accentFg }]}>{tr('wfrp.magic.addPrayer')}</Text>
         </TouchableOpacity>
       </Section>
 
@@ -188,7 +188,7 @@ export function Magic({ character, onChange }: Props) {
             {!spellEditId && (
               <TouchableOpacity style={[styles.bookBtn, { borderColor: t.colors.accent }]} onPress={() => setSpellPicking(true)}>
                 <BookOpen size={15} color={t.colors.accent} />
-                <Text style={[styles.bookBtnText, { color: t.colors.accent }]}>{tr('wfrp.magic.searchBook')}</Text>
+                <Text style={[styles.bookBtnText, { color: t.colors.accentFg }]}>{tr('wfrp.magic.searchBook')}</Text>
               </TouchableOpacity>
             )}
             <TextInput
@@ -267,7 +267,7 @@ export function Magic({ character, onChange }: Props) {
             {!prayerEditId && (
               <TouchableOpacity style={[styles.bookBtn, { borderColor: t.colors.accent }]} onPress={() => setPrayerPicking(true)}>
                 <BookOpen size={15} color={t.colors.accent} />
-                <Text style={[styles.bookBtnText, { color: t.colors.accent }]}>{tr('wfrp.magic.searchBook')}</Text>
+                <Text style={[styles.bookBtnText, { color: t.colors.accentFg }]}>{tr('wfrp.magic.searchBook')}</Text>
               </TouchableOpacity>
             )}
             <TextInput

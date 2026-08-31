@@ -125,7 +125,7 @@ export function Talents({ character, onChange }: Props) {
             onPress={() => setCalcId(tal.id)}
             accessibilityLabel={tr('wfrp.talents.buyRankFor', { name: tal.name })}
           >
-            <Text style={[styles.rankChipText, { color: t.colors.accent }]}>×{tal.timesTaken}</Text>
+            <Text style={[styles.rankChipText, { color: t.colors.accentFg }]}>×{tal.timesTaken}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => setWikiId(tal.id)} style={styles.del} accessibilityLabel={tr('wfrp.talents.infoFor', { name: tal.name })} {...hoverTitle(tr('wfrp.talents.infoFor', { name: tal.name }))}>
             <Info size={14} color={t.colors.textMuted} />
@@ -139,10 +139,10 @@ export function Talents({ character, onChange }: Props) {
       <View style={styles.btnRow}>
         <TouchableOpacity style={[styles.addBtn, { flex: 1, borderColor: t.colors.accent }]} onPress={openAdd}>
           <Plus size={14} color={t.colors.accent} />
-          <Text style={[styles.addText, { color: t.colors.accent }]}>{tr('wfrp.talents.addTalent')}</Text>
+          <Text style={[styles.addText, { color: t.colors.accentFg }]}>{tr('wfrp.talents.addTalent')}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={[styles.addBtn, { flex: 1, borderColor: t.colors.accent }]} onPress={rollRandom} accessibilityLabel={tr('wfrp.talents.randomTalent')}>
-          <Text style={[styles.addText, { color: t.colors.accent }]}>🎲 {tr('wfrp.talents.randomTalent')}</Text>
+          <Text style={[styles.addText, { color: t.colors.accentFg }]}>🎲 {tr('wfrp.talents.randomTalent')}</Text>
         </TouchableOpacity>
       </View>
       {character.talents.length > 0 && (
@@ -162,7 +162,7 @@ export function Talents({ character, onChange }: Props) {
             {!editId && (
               <TouchableOpacity style={[styles.bookBtn, { borderColor: t.colors.accent }]} onPress={() => setPicking(true)}>
                 <BookOpen size={15} color={t.colors.accent} />
-                <Text style={[styles.bookBtnText, { color: t.colors.accent }]}>{tr('wfrp.talents.searchBook')}</Text>
+                <Text style={[styles.bookBtnText, { color: t.colors.accentFg }]}>{tr('wfrp.talents.searchBook')}</Text>
               </TouchableOpacity>
             )}
             <TextInput style={[styles.input, { color: t.colors.text, borderColor: t.colors.border, backgroundColor: t.colors.backgroundSecondary }]}

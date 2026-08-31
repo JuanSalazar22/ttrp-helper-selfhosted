@@ -103,7 +103,7 @@ export function Skills({ character, onChange, onRoll }: Props) {
               </TouchableOpacity>
             )}
             {!onChange && skill.expertise && (
-              <Text style={[styles.expertiseBadge, { color: t.colors.accent, borderColor: t.colors.accent }]}>
+              <Text style={[styles.expertiseBadge, { color: t.colors.accentFg, borderColor: t.colors.accent }]}>
                 {tr('dnd.proficiency.expertise')}
               </Text>
             )}

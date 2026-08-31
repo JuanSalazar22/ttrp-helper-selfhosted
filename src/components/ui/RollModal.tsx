@@ -7,6 +7,7 @@ import Animated, {
   withTiming, runOnJS,
 } from 'react-native-reanimated';
 import { useTheme } from '@/hooks/useTheme';
+import { useReducedMotion } from '@/hooks/useReducedMotion';
 import { useTranslation } from '@/i18n';
 import type { RollResult } from '@/dice/types';
 
@@ -41,6 +42,7 @@ export function RollModal({ result, onClose, onReroll }: Props) {
   const scale = useSharedValue(0.5);
   const opacity = useSharedValue(0);
   const bounce = useSharedValue(1);
+  const reducedMotion = useReducedMotion();
 
   const animStyle = useAnimatedStyle(() => ({
     transform: [{ scale: scale.value * bounce.value }],
@@ -48,6 +50,13 @@ export function RollModal({ result, onClose, onReroll }: Props) {
   }));
 
   useEffect(() => {
+    if (reducedMotion) {
+      // Land on the correct end state immediately — no spring/bounce.
+      scale.value = result ? 1 : 0.5;
+      opacity.value = result ? 1 : 0;
+      bounce.value = 1;
+      return;
+    }
     if (result) {
       scale.value = withSpring(1, { damping: 14, stiffness: 200 });
       opacity.value = withTiming(1, { duration: 150 });
@@ -59,7 +68,7 @@ export function RollModal({ result, onClose, onReroll }: Props) {
       scale.value = withTiming(0.5, { duration: 150 });
       opacity.value = withTiming(0, { duration: 150 });
     }
-  }, [result]);
+  }, [result, reducedMotion]);
 
   if (!result) return null;
 
@@ -106,7 +115,7 @@ export function RollModal({ result, onClose, onReroll }: Props) {
             {/* Mode badge */}
             {result.mode !== 'normal' && (
               <View style={[styles.modeBadge, { backgroundColor: t.colors.accent + '22', borderColor: t.colors.accent }]}>
-                <Text style={[styles.modeText, { color: t.colors.accent }]}>
+                <Text style={[styles.modeText, { color: t.colors.accentFg }]}>
                   {result.mode === 'advantage' ? tr('roll.advantage') : tr('roll.disadvantage')}
                 </Text>
               </View>
@@ -115,7 +124,7 @@ export function RollModal({ result, onClose, onReroll }: Props) {
             {/* Actions */}
             <View style={styles.actions}>
               <TouchableOpacity style={[styles.btn, { borderColor: t.colors.border }]} onPress={onReroll}>
-                <Text style={[styles.btnText, { color: t.colors.accent }]}>{tr('common.rollAgain')}</Text>
+                <Text style={[styles.btnText, { color: t.colors.accentFg }]}>{tr('common.rollAgain')}</Text>
               </TouchableOpacity>
               <TouchableOpacity style={[styles.btn, styles.btnClose, { backgroundColor: t.colors.accent }]} onPress={onClose}>
                 <Text style={[styles.btnText, { color: t.colors.accentText }]}>{tr('common.done')}</Text>

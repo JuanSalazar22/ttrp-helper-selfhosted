@@ -149,7 +149,7 @@ export default function DiceScreen() {
               disabled={!customExpr.trim()}
               activeOpacity={0.8}
             >
-              <Text style={[styles.rollBtnText, { color: t.colors.accentText }]}>{tr('common.roll')}</Text>
+              <Text style={[styles.rollBtnText, { color: customExpr.trim() ? t.colors.accentText : t.colors.textMuted }]}>{tr('common.roll')}</Text>
             </TouchableOpacity>
           </View>
         </View>

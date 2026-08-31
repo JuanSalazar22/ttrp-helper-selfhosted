@@ -51,7 +51,7 @@ export default function CharacterSheet() {
       <View style={[styles.backBar, { borderBottomColor: t.colors.border }]}>
         <TouchableOpacity style={styles.backBtn} onPress={() => router.canGoBack() ? router.back() : router.replace('/(tabs)/')} activeOpacity={0.7}>
           <ChevronLeft size={22} color={t.colors.accent} />
-          <Text style={[styles.backText, { color: t.colors.accent }]}>{tr('sheet.back')}</Text>
+          <Text style={[styles.backText, { color: t.colors.accentFg }]}>{tr('sheet.back')}</Text>
         </TouchableOpacity>
         <View style={styles.backRight}>
           {saving && <Text style={[styles.savingText, { color: t.colors.textMuted }]}>{tr('sheet.saving')}</Text>}

@@ -4,6 +4,7 @@ import Animated, {
   useSharedValue, useAnimatedStyle, withDelay, withTiming, Easing, interpolate,
   type SharedValue,
 } from 'react-native-reanimated';
+import { useReducedMotion } from '@/hooks/useReducedMotion';
 
 const COLS = 4;
 const ROWS = 3;
@@ -56,12 +57,17 @@ type Props = {
 /** Card-colored shards that pop over the card and fall away — the roll "breaking" the UI. */
 export function CrumbleOverlay({ trigger, color, borderColor }: Props) {
   const progress = useSharedValue(0);
+  const reducedMotion = useReducedMotion();
 
   useEffect(() => {
     if (trigger === 0) return;
     progress.value = 0;
-    progress.value = withDelay(200, withTiming(1, { duration: 750, easing: Easing.in(Easing.quad) }));
-  }, [trigger]);
+    // Reduced motion: skip the falling/spinning shards and jump straight to
+    // the dissolved end state instead of animating it.
+    progress.value = reducedMotion
+      ? 1
+      : withDelay(200, withTiming(1, { duration: 750, easing: Easing.in(Easing.quad) }));
+  }, [trigger, reducedMotion]);
 
   return (
     <View style={StyleSheet.absoluteFill} pointerEvents="none">

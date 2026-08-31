@@ -116,7 +116,7 @@ export function CreateCharacterModal({ visible, onClose, onCreate }: Props) {
               onPress={handleCreate}
               disabled={!name.trim() || loading}
             >
-              <Text style={[styles.btnText, { color: t.colors.accentText }]}>
+              <Text style={[styles.btnText, { color: name.trim() ? t.colors.accentText : t.colors.textMuted }]}>
                 {loading ? tr('common.creating') : tr('common.create')}
               </Text>
             </TouchableOpacity>

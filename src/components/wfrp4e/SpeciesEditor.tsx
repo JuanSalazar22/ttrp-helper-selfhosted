@@ -97,7 +97,7 @@ export function SpeciesEditor({ visible, initial, onSubmit, onClose }: Props) {
             </TouchableOpacity>
             <Text style={[styles.title, { color: t.colors.text }]}>{initial ? tr('wfrp.species.editRace') : tr('wfrp.species.newRace')}</Text>
             <TouchableOpacity onPress={handleSave} style={[styles.hBtn, styles.hBtnRight]}>
-              <Text style={[styles.saveText, { color: t.colors.accent }]}>{tr('common.save')}</Text>
+              <Text style={[styles.saveText, { color: t.colors.accentFg }]}>{tr('common.save')}</Text>
             </TouchableOpacity>
           </View>
 

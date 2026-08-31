@@ -91,7 +91,7 @@ export function ContentPicker({ visible, category, title, onSelect, onClose, sub
                   onPress={() => { onUseCustom(query.trim()); onClose(); }}
                   activeOpacity={0.6}
                 >
-                  <Text style={[styles.customText, { color: t.colors.accent }]} numberOfLines={1}>
+                  <Text style={[styles.customText, { color: t.colors.accentFg }]} numberOfLines={1}>
                     {tr('wfrp.contentPicker.useCustom', { query: query.trim() })}
                   </Text>
                 </TouchableOpacity>

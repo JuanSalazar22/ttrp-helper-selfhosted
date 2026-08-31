@@ -69,7 +69,7 @@ export function CombatStats({ character, onChange }: Props) {
             disabled={ro}
           >
             <Text style={[styles.metaLabel, { color: t.colors.textSecondary }]}>{tr('dnd.combat.temp')}</Text>
-            <Text style={[styles.metaVal, { color: hp.temp > 0 ? t.colors.gold : t.colors.textMuted }]}>
+            <Text style={[styles.metaVal, { color: hp.temp > 0 ? t.colors.goldText : t.colors.textMuted }]}>
               {hp.temp}
             </Text>
           </TouchableOpacity>

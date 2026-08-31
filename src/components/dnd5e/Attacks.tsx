@@ -131,7 +131,7 @@ export function Attacks({ character, onChange, onRollAttack, onRollExpression }:
       {onChange && (
         <TouchableOpacity style={[styles.addBtn, { borderColor: t.colors.accent }]} onPress={openNew}>
           <Plus size={14} color={t.colors.accent} />
-          <Text style={[styles.addText, { color: t.colors.accent }]}>{tr('dnd.attacks.addAttack')}</Text>
+          <Text style={[styles.addText, { color: t.colors.accentFg }]}>{tr('dnd.attacks.addAttack')}</Text>
         </TouchableOpacity>
       )}
 

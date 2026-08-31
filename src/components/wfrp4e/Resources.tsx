@@ -125,14 +125,14 @@ export function Resources({ character, onChange }: Props) {
               onPress={() => allocate('fate')}
               activeOpacity={0.7}
             >
-              <Text style={[styles.allocBtnText, { color: t.colors.accent }]}>+1 {tr('wfrp.pairs.fate')}</Text>
+              <Text style={[styles.allocBtnText, { color: t.colors.accentFg }]}>+1 {tr('wfrp.pairs.fate')}</Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={[styles.allocBtn, { borderColor: t.colors.accent }]}
               onPress={() => allocate('resilience')}
               activeOpacity={0.7}
             >
-              <Text style={[styles.allocBtnText, { color: t.colors.accent }]}>+1 {tr('wfrp.pairs.resilience')}</Text>
+              <Text style={[styles.allocBtnText, { color: t.colors.accentFg }]}>+1 {tr('wfrp.pairs.resilience')}</Text>
             </TouchableOpacity>
           </View>
         </View>

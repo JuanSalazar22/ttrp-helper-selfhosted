@@ -84,7 +84,7 @@ export function CharacteristicsDetail({ visible, character, onChange, onClose }:
           onPress={generateRolls}
           activeOpacity={0.7}
         >
-          <Text style={[styles.generateText, { color: t.colors.accent }]}>{tr('wfrp.fields.generateRolls')}</Text>
+          <Text style={[styles.generateText, { color: t.colors.accentFg }]}>{tr('wfrp.fields.generateRolls')}</Text>
         </TouchableOpacity>
 
         <ScrollView contentContainerStyle={styles.list}>
@@ -126,7 +126,7 @@ export function CharacteristicsDetail({ visible, character, onChange, onClose }:
                     onPress={() => setCalcKey(k)}
                     activeOpacity={0.7}
                   >
-                    <Text style={[styles.makeBtnText, { color: t.colors.accent }]}>{tr('wfrp.fields.makeAdvances')}</Text>
+                    <Text style={[styles.makeBtnText, { color: t.colors.accentFg }]}>{tr('wfrp.fields.makeAdvances')}</Text>
                   </TouchableOpacity>
                 </View>
               </View>

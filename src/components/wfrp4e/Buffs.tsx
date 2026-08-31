@@ -148,7 +148,7 @@ export function Buffs({ character, onChange }: Props) {
 
       <TouchableOpacity style={[styles.addBtn, { borderColor: t.colors.accent }]} onPress={openAdd}>
         <Plus size={14} color={t.colors.accent} />
-        <Text style={[styles.addText, { color: t.colors.accent }]}>{tr('wfrp.buffs.addBuff')}</Text>
+        <Text style={[styles.addText, { color: t.colors.accentFg }]}>{tr('wfrp.buffs.addBuff')}</Text>
       </TouchableOpacity>
 
       {stored.length > 0 && (
@@ -230,7 +230,7 @@ export function Buffs({ character, onChange }: Props) {
               onPress={() => setDraft(d => ({ ...d, effects: [...d.effects, { target: 's', value: 10 }] }))}
             >
               <Plus size={12} color={t.colors.accent} />
-              <Text style={[styles.addEffectText, { color: t.colors.accent }]}>{tr('wfrp.buffs.addEffect')}</Text>
+              <Text style={[styles.addEffectText, { color: t.colors.accentFg }]}>{tr('wfrp.buffs.addEffect')}</Text>
             </TouchableOpacity>
 
             <View style={styles.actions}>
@@ -242,7 +242,7 @@ export function Buffs({ character, onChange }: Props) {
                 onPress={save}
                 disabled={!draft.name.trim()}
               >
-                <Text style={[styles.btnText, { color: t.colors.accentText }]}>{tr('common.save')}</Text>
+                <Text style={[styles.btnText, { color: draft.name.trim() ? t.colors.accentText : t.colors.textMuted }]}>{tr('common.save')}</Text>
               </TouchableOpacity>
             </View>
           </View>

@@ -44,7 +44,7 @@ export function TagEditor({ tags, onChange }: Props) {
           style={[styles.chip, { backgroundColor: t.colors.accent + '18', borderColor: t.colors.accent }]}
           accessibilityLabel={tr('tags.removeA11y', { tag })}
         >
-          <Text style={[styles.chipText, { color: t.colors.accent }]} numberOfLines={1}>{tag}</Text>
+          <Text style={[styles.chipText, { color: t.colors.accentFg }]} numberOfLines={1}>{tag}</Text>
           <X size={10} color={t.colors.accent} />
         </TouchableOpacity>
       ))}

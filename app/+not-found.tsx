@@ -9,7 +9,7 @@ export default function NotFound() {
   return (
     <View style={[styles.root, { backgroundColor: t.colors.background }]}>
       <Text style={{ color: t.colors.text, fontSize: 18 }}>{tr('notFound.message')}</Text>
-      <Link href="/" style={{ color: t.colors.accent, marginTop: 12 }}>
+      <Link href="/" style={{ color: t.colors.accentFg, marginTop: 12 }}>
         {tr('notFound.goHome')}
       </Link>
     </View>

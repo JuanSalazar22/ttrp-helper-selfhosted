@@ -5,6 +5,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import LottieView from 'lottie-react-native';
 import { useTheme } from '@/hooks/useTheme';
+import { useReducedMotion } from '@/hooks/useReducedMotion';
 import { useTranslation } from '@/i18n';
 import { WFRP_DIFFICULTIES } from '@/dice/types';
 import { flairOf, type WfrpFlair } from '@/dice/wfrp';
@@ -45,6 +46,7 @@ export function WfrpRollModal({ result, onClose, onReroll, onDifficulty, onManua
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState('');
   const [crumbleKey, setCrumbleKey] = useState(0);
+  const reducedMotion = useReducedMotion();
 
   const animStyle = useAnimatedStyle(() => ({
     transform: [{ translateX: shakeX.value }, { scale: scale.value * bounce.value }],
@@ -54,11 +56,19 @@ export function WfrpRollModal({ result, onClose, onReroll, onDifficulty, onManua
   useEffect(() => {
     if (result) {
       setEditing(false);
-      scale.value = withSpring(1, { damping: 14, stiffness: 200 });
-      opacity.value = withTiming(1, { duration: 150 });
       const flair = flairOf(result);
       const crumble = isCrumble(flair, result.success);
       setCrumbleKey(k => (crumble ? k + 1 : 0));
+      if (reducedMotion) {
+        // Land on the correct end state immediately — no bounce/shake.
+        scale.value = 1;
+        opacity.value = 1;
+        bounce.value = 1;
+        shakeX.value = 0;
+        return;
+      }
+      scale.value = withSpring(1, { damping: 14, stiffness: 200 });
+      opacity.value = withTiming(1, { duration: 150 });
       if (flair === 'crit' || flair === 'autoSuccess') {
         bounce.value = withSequence(
           withTiming(1.18, { duration: 110 }),
@@ -87,10 +97,15 @@ export function WfrpRollModal({ result, onClose, onReroll, onDifficulty, onManua
       }
     } else {
       setCrumbleKey(0);
+      if (reducedMotion) {
+        scale.value = 0.5;
+        opacity.value = 0;
+        return;
+      }
       scale.value = withTiming(0.5, { duration: 150 });
       opacity.value = withTiming(0, { duration: 150 });
     }
-  }, [result]);
+  }, [result, reducedMotion]);
 
   if (!result) return null;
 
@@ -126,8 +141,8 @@ export function WfrpRollModal({ result, onClose, onReroll, onDifficulty, onManua
             <View pointerEvents="none" style={styles.flames}>
               <LottieView
                 source={require('@/assets/lottie/flames.json')}
-                autoPlay
-                loop
+                autoPlay={!reducedMotion}
+                loop={!reducedMotion}
                 style={styles.flamesLottie}
                 webStyle={{ width: '100%', height: 150 }}
               />
@@ -198,7 +213,7 @@ export function WfrpRollModal({ result, onClose, onReroll, onDifficulty, onManua
 
             <View style={styles.actions}>
               <TouchableOpacity style={[styles.btn, { borderColor: t.colors.border }]} onPress={onReroll}>
-                <Text style={[styles.btnText, { color: t.colors.accent }]}>{tr('ui.wfrpRoll.rollAgain')}</Text>
+                <Text style={[styles.btnText, { color: t.colors.accentFg }]}>{tr('ui.wfrpRoll.rollAgain')}</Text>
               </TouchableOpacity>
               <TouchableOpacity style={[styles.btn, styles.btnClose, { backgroundColor: t.colors.accent }]} onPress={onClose}>
                 <Text style={[styles.btnText, { color: t.colors.accentText }]}>{tr('ui.wfrpRoll.done')}</Text>
@@ -210,8 +225,8 @@ export function WfrpRollModal({ result, onClose, onReroll, onDifficulty, onManua
             <View pointerEvents="none" style={styles.halo}>
               <LottieView
                 source={require('@/assets/lottie/halo.json')}
-                autoPlay
-                loop
+                autoPlay={!reducedMotion}
+                loop={!reducedMotion}
                 style={styles.haloLottie}
                 webStyle={{ width: '100%', height: '100%' }}
               />

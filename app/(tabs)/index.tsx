@@ -61,7 +61,7 @@ function CharacterCard({
         )}
       <View style={styles.cardLeft}>
         <View style={[styles.systemBadge, { backgroundColor: t.colors.accent + '22', borderColor: t.colors.accent }]}>
-          <Text style={[styles.systemText, { color: t.colors.accent }]}>{SYSTEM_LABEL[row.system]}</Text>
+          <Text style={[styles.systemText, { color: t.colors.accentFg }]}>{SYSTEM_LABEL[row.system]}</Text>
         </View>
         <Text style={[styles.charName, { color: t.colors.text, fontFamily: t.fontFamily.serif }]} numberOfLines={1}>
           {row.name}
@@ -71,7 +71,7 @@ function CharacterCard({
           <View style={styles.tagsRow}>
             {tags.map((tag, i) => (
               <View key={`${tag}-${i}`} style={[styles.tagChip, { borderColor: t.colors.accent, backgroundColor: t.colors.accent + '14' }]}>
-                <Text style={[styles.tagChipText, { color: t.colors.accent }]} numberOfLines={1}>{tag}</Text>
+                <Text style={[styles.tagChipText, { color: t.colors.accentFg }]} numberOfLines={1}>{tag}</Text>
               </View>
             ))}
           </View>
@@ -296,8 +296,8 @@ const styles = StyleSheet.create({
   cardAvatar: { width: 44, height: 44, borderRadius: 22, borderWidth: 1, marginRight: 12 },
   cardAvatarPlaceholder: { alignItems: 'center', justifyContent: 'center' },
   cardRight: { alignItems: 'flex-end', gap: 8 },
-  cardActions: { flexDirection: 'row', gap: 12 },
-  cardAction: { padding: 2 },
+  cardActions: { flexDirection: 'row', gap: 18 },
+  cardAction: { padding: 6 },
   systemBadge: {
     alignSelf: 'flex-start',
     borderRadius: 4,
