@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Modal, View, Image, StyleSheet, TouchableOpacity, Text, useWindowDimensions, Platform } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, { useSharedValue, useAnimatedStyle, runOnJS } from 'react-native-reanimated';
 import * as ImageManipulator from 'expo-image-manipulator';
 import { useTheme } from '@/hooks/useTheme';
 import { useTranslation } from '@/i18n';
-import { clampTransform, cropRectFor } from './portraitCropMath';
+import { clampTransform, cropRectFor, MIN_SCALE_FOR } from './portraitCropMath';
 
 // Minimum frame size (px) — never let a tiny/zero-width window collapse the
 // crop frame to 0 or negative, which would render invisibly (black) and make
@@ -35,14 +35,36 @@ export function PortraitCropper({ visible, sourceUri, onCancel, onConfirm }: Pro
   const { width: windowWidth } = useWindowDimensions();
   const FRAME = Math.max(MIN_FRAME, Math.min(300, windowWidth - 48));
   const [imageSize, setImageSize] = useState({ w: 1, h: 1 });
+  const [imageLoaded, setImageLoaded] = useState(false);
   const scale = useSharedValue(1);
   const translateX = useSharedValue(0);
   const translateY = useSharedValue(0);
   const start = useSharedValue({ scale: 1, x: 0, y: 0 });
 
-  if (sourceUri && imageSize.w === 1) {
-    Image.getSize(sourceUri, (w, h) => setImageSize({ w, h }));
-  }
+  // Fetch the picked photo's real pixel dimensions and reset the crop to
+  // "whole image fits the frame" every time a new photo comes in. Without
+  // this, `scale` stayed at its hardcoded initial value of 1 — meaning "1
+  // native pixel per frame pixel" — so a multi-megapixel photo started
+  // cropped to a few hundred pixels from its center, then blown back up to
+  // the 512×512 output: a badly zoomed, soft result (and since the stored
+  // file *is* the crop, "view full photo" showed that same bad crop too).
+  // Re-running on every sourceUri change (not just once) also fixes picking
+  // a second photo: PortraitCropper stays mounted across picks (only its
+  // `visible` prop toggles), so a size fetched once would otherwise linger.
+  useEffect(() => {
+    setImageLoaded(false);
+    if (!sourceUri) return;
+    let cancelled = false;
+    Image.getSize(sourceUri, (w, h) => {
+      if (cancelled) return;
+      setImageSize({ w, h });
+      scale.value = MIN_SCALE_FOR(w, h, FRAME);
+      translateX.value = 0;
+      translateY.value = 0;
+      setImageLoaded(true);
+    });
+    return () => { cancelled = true; };
+  }, [sourceUri]);
 
   function clamp() {
     'worklet';
@@ -120,11 +142,16 @@ export function PortraitCropper({ visible, sourceUri, onCancel, onConfirm }: Pro
               style={[styles.frame, { width: FRAME, height: FRAME, borderRadius: FRAME / 2 }]}
               {...(Platform.OS === 'web' ? { onWheel: handleWheel } : {})}
             >
-              {sourceUri && (
+              {sourceUri && imageLoaded && (
+                // Rendered at the photo's own native pixel size — `scale` (from
+                // `style`) is the only thing scaling it, matching what
+                // portraitCropMath.ts assumes (native pixels -> frame pixels).
+                // A resizeMode="cover" fit here would silently pre-scale the
+                // image a second time, which is what caused the over-zoomed
+                // crop bug (see the effect above).
                 <Animated.Image
                   source={{ uri: sourceUri }}
-                  style={[{ width: FRAME, height: FRAME }, style]}
-                  resizeMode="cover"
+                  style={[{ width: imageSize.w, height: imageSize.h }, style]}
                 />
               )}
             </View>

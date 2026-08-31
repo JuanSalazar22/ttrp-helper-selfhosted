@@ -214,6 +214,9 @@ export const es: DeepPartial<Messages> = {
       distributePts: 'Reparte {n} ptos',
       makeAdvances: 'Hacer avances',
       generateRolls: 'Generar tiradas (2d10)',
+      addXpA11y: 'Añadir PX ganados',
+      addXpTitle: 'PX ganados',
+      addXpPlaceholder: 'p. ej. 50',
     },
     pairs: {
       fate: 'Destino',
@@ -252,6 +255,9 @@ export const es: DeepPartial<Messages> = {
     },
     skills: {
       title: 'Habilidades',
+      sortBy: 'Orden:',
+      sortName: 'Nombre',
+      sortAdded: 'Añadido',
       addSkill: 'Añadir habilidad',
       addSkillTitle: 'Añadir habilidad',
       clearAll: 'Borrar todo',
