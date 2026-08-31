@@ -135,7 +135,7 @@ export function PortraitCropper({ visible, sourceUri, onCancel, onConfirm }: Pro
             <Text style={[styles.actionText, { color: t.colors.textSecondary }]}>{tr('common.cropCancel')}</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={confirm} style={styles.actionBtn}>
-            <Text style={[styles.actionText, { color: t.colors.accent, fontWeight: '700' }]}>{tr('common.cropConfirm')}</Text>
+            <Text style={[styles.actionText, { color: t.colors.accentFg, fontWeight: '700' }]}>{tr('common.cropConfirm')}</Text>
           </TouchableOpacity>
         </View>
       </View>

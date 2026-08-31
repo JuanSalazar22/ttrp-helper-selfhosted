@@ -182,7 +182,7 @@ export function Spellcasting({ character, onChange }: Props) {
       {onChange && (
         <TouchableOpacity style={[styles.addBtn, { borderColor: t.colors.accent }]} onPress={() => setAddingSpell(true)}>
           <Plus size={14} color={t.colors.accent} />
-          <Text style={[styles.addText, { color: t.colors.accent }]}>{tr('dnd.spells.addSpell')}</Text>
+          <Text style={[styles.addText, { color: t.colors.accentFg }]}>{tr('dnd.spells.addSpell')}</Text>
         </TouchableOpacity>
       )}
 

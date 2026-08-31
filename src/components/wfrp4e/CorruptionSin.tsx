@@ -145,7 +145,7 @@ export function CorruptionSin({ character, onChange }: Props) {
         onPress={openAdd}
       >
         <Plus size={14} color={t.colors.accent} />
-        <Text style={[styles.addText, { color: t.colors.accent }]}>{tr('wfrp.corruption.addMutation')}</Text>
+        <Text style={[styles.addText, { color: t.colors.accentFg }]}>{tr('wfrp.corruption.addMutation')}</Text>
       </TouchableOpacity>
 
       <Modal
@@ -169,7 +169,7 @@ export function CorruptionSin({ character, onChange }: Props) {
 
             <TouchableOpacity style={[styles.bookBtn, { borderColor: t.colors.accent }]} onPress={() => setPicking(true)}>
               <BookOpen size={15} color={t.colors.accent} />
-              <Text style={[styles.bookBtnText, { color: t.colors.accent }]}>{tr('wfrp.corruption.searchBook')}</Text>
+              <Text style={[styles.bookBtnText, { color: t.colors.accentFg }]}>{tr('wfrp.corruption.searchBook')}</Text>
             </TouchableOpacity>
 
             <TextInput

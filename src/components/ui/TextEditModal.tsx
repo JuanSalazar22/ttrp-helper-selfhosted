@@ -47,7 +47,7 @@ export function TextEditModal({ visible, title, value, onSave, onClose, placehol
             </TouchableOpacity>
             <Text style={[styles.title, { color: t.colors.text }]}>{title}</Text>
             <TouchableOpacity onPress={handleSave} style={styles.saveBtn}>
-              <Text style={[styles.saveText, { color: t.colors.accent }]}>{tr('ui.textEditModal.save')}</Text>
+              <Text style={[styles.saveText, { color: t.colors.accentFg }]}>{tr('ui.textEditModal.save')}</Text>
             </TouchableOpacity>
           </View>
           <TextInput

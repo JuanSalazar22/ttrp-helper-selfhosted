@@ -197,7 +197,7 @@ export function Combat({ character, onChange }: Props) {
 
         <TouchableOpacity style={[styles.addBtn, { borderColor: t.colors.accent }]} onPress={openAddWeapon}>
           <Plus size={14} color={t.colors.accent} />
-          <Text style={[styles.addText, { color: t.colors.accent }]}>{tr('wfrp.combat.addWeapon')}</Text>
+          <Text style={[styles.addText, { color: t.colors.accentFg }]}>{tr('wfrp.combat.addWeapon')}</Text>
         </TouchableOpacity>
       </Section>
 
@@ -210,7 +210,7 @@ export function Combat({ character, onChange }: Props) {
           <View style={styles.apHeader}>
             <Text style={[styles.apLabel, { color: t.colors.textSecondary }]}>{tr('wfrp.combat.apTitle')}</Text>
             <TouchableOpacity onPress={autoFillAP} style={[styles.autoBtn, { borderColor: t.colors.accent }]} activeOpacity={0.7}>
-              <Text style={[styles.autoBtnText, { color: t.colors.accent }]}>{tr('wfrp.combat.apAutoFill')}</Text>
+              <Text style={[styles.autoBtnText, { color: t.colors.accentFg }]}>{tr('wfrp.combat.apAutoFill')}</Text>
             </TouchableOpacity>
           </View>
           <View style={styles.apGrid}>
@@ -261,7 +261,7 @@ export function Combat({ character, onChange }: Props) {
 
         <TouchableOpacity style={[styles.addBtn, { borderColor: t.colors.accent }]} onPress={openAddArmour}>
           <Plus size={14} color={t.colors.accent} />
-          <Text style={[styles.addText, { color: t.colors.accent }]}>{tr('wfrp.combat.addArmour')}</Text>
+          <Text style={[styles.addText, { color: t.colors.accentFg }]}>{tr('wfrp.combat.addArmour')}</Text>
         </TouchableOpacity>
       </Section>
 
@@ -276,7 +276,7 @@ export function Combat({ character, onChange }: Props) {
             {!weaponEditId && (
               <TouchableOpacity style={[styles.bookBtn, { borderColor: t.colors.accent }]} onPress={() => setWeaponPicking(true)}>
                 <BookOpen size={15} color={t.colors.accent} />
-                <Text style={[styles.bookBtnText, { color: t.colors.accent }]}>{tr('wfrp.combat.searchBook')}</Text>
+                <Text style={[styles.bookBtnText, { color: t.colors.accentFg }]}>{tr('wfrp.combat.searchBook')}</Text>
               </TouchableOpacity>
             )}
             <TextInput
@@ -370,7 +370,7 @@ export function Combat({ character, onChange }: Props) {
             {!armourEditId && (
               <TouchableOpacity style={[styles.bookBtn, { borderColor: t.colors.accent }]} onPress={() => setArmourPicking(true)}>
                 <BookOpen size={15} color={t.colors.accent} />
-                <Text style={[styles.bookBtnText, { color: t.colors.accent }]}>{tr('wfrp.combat.searchBook')}</Text>
+                <Text style={[styles.bookBtnText, { color: t.colors.accentFg }]}>{tr('wfrp.combat.searchBook')}</Text>
               </TouchableOpacity>
             )}
             <TextInput

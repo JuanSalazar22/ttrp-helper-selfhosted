@@ -45,7 +45,7 @@ export function OriginEditor({ visible, initialName = '', initialSkills, initial
             </TouchableOpacity>
             <Text style={[styles.title, { color: t.colors.text }]}>{tr('wfrp.origin.newOrigin')}</Text>
             <TouchableOpacity onPress={handleSave} style={[styles.hBtn, styles.hBtnRight]}>
-              <Text style={[styles.saveText, { color: t.colors.accent }]}>{tr('common.save')}</Text>
+              <Text style={[styles.saveText, { color: t.colors.accentFg }]}>{tr('common.save')}</Text>
             </TouchableOpacity>
           </View>
 

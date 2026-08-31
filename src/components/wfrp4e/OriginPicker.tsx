@@ -77,7 +77,7 @@ export function OriginPicker({ visible, character, onChange, onClose }: Props) {
             activeOpacity={0.7}
           >
             <Plus size={16} color={t.colors.accent} />
-            <Text style={[styles.createText, { color: t.colors.accent }]}>{tr('wfrp.origin.createNew')}</Text>
+            <Text style={[styles.createText, { color: t.colors.accentFg }]}>{tr('wfrp.origin.createNew')}</Text>
           </TouchableOpacity>
         </ScrollView>
       </SafeAreaView>

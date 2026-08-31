@@ -14,7 +14,9 @@ export const palette = {
   // Accents
   crimson: '#8B1A1A',
   crimsonDark: '#C0392B',
+  crimsonDarkFg: '#D3746B',
   gold: '#C9A84C',
+  goldText: '#75612C',
   goldLight: '#E8C96A',
 
   // System
@@ -37,12 +39,17 @@ export const light = {
   textMuted: '#74543C',
   accent: palette.crimson,
   accentText: palette.white,
+  // Text-safe variant of `accent`/`gold` — use for text and inline labels.
+  // `accent`/`gold` themselves are for backgrounds, borders, and icons, where
+  // WCAG's looser 3:1 non-text threshold applies instead of 4.5:1.
+  accentFg: palette.crimson,
   gold: palette.gold,
+  goldText: palette.goldText,
   border: palette.borderLight,
   card: palette.white,
   tabBar: palette.parchmentDark,
   tabBarActive: palette.crimson,
-  tabBarInactive: palette.inkLight,
+  tabBarInactive: '#6F5848',
   danger: palette.danger,
   success: palette.success,
 } as const;
@@ -55,12 +62,17 @@ export const dark = {
   textMuted: '#A38A6A',
   accent: palette.crimsonDark,
   accentText: palette.white,
+  // Lighter than `accent` — `accent` at 3.31:1 on this theme's dark
+  // backgrounds only clears WCAG's non-text 3:1 threshold (fine for
+  // backgrounds/borders/icons), not the 4.5:1 text needs.
+  accentFg: palette.crimsonDarkFg,
   gold: palette.goldLight,
+  goldText: palette.goldLight,
   border: palette.borderDark,
   card: palette.charcoalMid,
   tabBar: palette.charcoalMid,
   tabBarActive: palette.crimsonDark,
-  tabBarInactive: '#8B7355',
+  tabBarInactive: '#A28F77',
   danger: palette.crimsonDark,
   success: '#52B788',
 } as const;
@@ -73,7 +85,9 @@ export type ColorScheme = {
   textMuted: string;
   accent: string;
   accentText: string;
+  accentFg: string;
   gold: string;
+  goldText: string;
   border: string;
   card: string;
   tabBar: string;

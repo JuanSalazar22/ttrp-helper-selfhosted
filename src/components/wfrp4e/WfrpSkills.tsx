@@ -74,7 +74,7 @@ export function WfrpSkills({ character, onChange, onRoll }: Props) {
             </TouchableOpacity>
             <Dices size={11} color={t.colors.textMuted} style={styles.skillRollHint} />
             <TouchableOpacity activeOpacity={0.6} onPress={() => onRoll(total(s), s.name)} style={styles.totalBox}>
-              <Text style={[styles.total, { color: t.colors.accent, fontFamily: t.fontFamily.serif }]}>{total(s)}</Text>
+              <Text style={[styles.total, { color: t.colors.accentFg, fontFamily: t.fontFamily.serif }]}>{total(s)}</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => setWikiId(s.id)} style={styles.info} accessibilityLabel={tr('wfrp.skills.infoFor', { name: s.name })}>
               <Info size={14} color={t.colors.textMuted} />
@@ -93,7 +93,7 @@ export function WfrpSkills({ character, onChange, onRoll }: Props) {
               activeOpacity={0.7}
               accessibilityLabel={tr('wfrp.skills.makeAdvancesFor', { name: s.name })}
             >
-              <Text style={[styles.makeBtnText, { color: t.colors.accent }]}>{tr('wfrp.skills.makeAdvances')}</Text>
+              <Text style={[styles.makeBtnText, { color: t.colors.accentFg }]}>{tr('wfrp.skills.makeAdvances')}</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -102,7 +102,7 @@ export function WfrpSkills({ character, onChange, onRoll }: Props) {
       <View style={styles.btnRow}>
         <TouchableOpacity style={[styles.addBtn, { flex: 1, borderColor: t.colors.accent }]} onPress={() => setAdding(true)}>
           <Plus size={14} color={t.colors.accent} />
-          <Text style={[styles.addText, { color: t.colors.accent }]}>{tr('wfrp.skills.addSkill')}</Text>
+          <Text style={[styles.addText, { color: t.colors.accentFg }]}>{tr('wfrp.skills.addSkill')}</Text>
         </TouchableOpacity>
         {character.skills.length > 0 && (
           <TouchableOpacity
@@ -121,7 +121,7 @@ export function WfrpSkills({ character, onChange, onRoll }: Props) {
             <Text style={[styles.sheetTitle, { color: t.colors.text, fontFamily: t.fontFamily.serif }]}>{tr('wfrp.skills.addSkillTitle')}</Text>
             <TouchableOpacity style={[styles.bookBtn, { borderColor: t.colors.accent }]} onPress={() => setPicking(true)}>
               <BookOpen size={15} color={t.colors.accent} />
-              <Text style={[styles.bookBtnText, { color: t.colors.accent }]}>{tr('wfrp.skills.searchBook')}</Text>
+              <Text style={[styles.bookBtnText, { color: t.colors.accentFg }]}>{tr('wfrp.skills.searchBook')}</Text>
             </TouchableOpacity>
             <TextInput style={[styles.input, { color: t.colors.text, borderColor: t.colors.border, backgroundColor: t.colors.backgroundSecondary }]}
               placeholder={tr('wfrp.skills.namePlaceholder')} placeholderTextColor={t.colors.textMuted}

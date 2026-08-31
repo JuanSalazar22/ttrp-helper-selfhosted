@@ -67,7 +67,7 @@ export function Inventory({ character, onChange }: Props) {
               disabled={!onChange}
               activeOpacity={0.7}
             >
-              <Text style={[styles.coinVal, { color: val > 0 ? t.colors.gold : t.colors.textMuted, fontFamily: t.fontFamily.serif }]}>
+              <Text style={[styles.coinVal, { color: val > 0 ? t.colors.goldText : t.colors.textMuted, fontFamily: t.fontFamily.serif }]}>
                 {val}
               </Text>
               <Text style={[styles.coinLabel, { color: t.colors.textSecondary }]}>{CURRENCY_LABEL[key]}</Text>
@@ -98,7 +98,7 @@ export function Inventory({ character, onChange }: Props) {
           >
             <View style={[styles.colItem, styles.itemCell]}>
               <Text style={[styles.itemName, { color: t.colors.text }]}>{item.name}</Text>
-              {item.equipped && <Text style={[styles.equippedTag, { color: t.colors.accent }]}>{tr('dnd.inventory.equipped')}</Text>}
+              {item.equipped && <Text style={[styles.equippedTag, { color: t.colors.accentFg }]}>{tr('dnd.inventory.equipped')}</Text>}
             </View>
 
             {onChange ? (
@@ -132,7 +132,7 @@ export function Inventory({ character, onChange }: Props) {
       {onChange && (
         <TouchableOpacity style={[styles.addBtn, { borderColor: t.colors.accent }]} onPress={() => setAddingItem(true)}>
           <Plus size={14} color={t.colors.accent} />
-          <Text style={[styles.addText, { color: t.colors.accent }]}>{tr('dnd.inventory.addItem')}</Text>
+          <Text style={[styles.addText, { color: t.colors.accentFg }]}>{tr('dnd.inventory.addItem')}</Text>
         </TouchableOpacity>
       )}
 

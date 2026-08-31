@@ -138,7 +138,7 @@ export function Trappings({ character, onChange }: Props) {
           </TouchableOpacity>
           {!!item.capacity && (
             <View style={[styles.capBadge, { borderColor: t.colors.accent }]}>
-              <Text style={[styles.capBadgeText, { color: t.colors.accent }]}>
+              <Text style={[styles.capBadgeText, { color: t.colors.accentFg }]}>
                 {tr('wfrp.trappings.capacityBadge', { n: item.capacity })}
               </Text>
             </View>
@@ -170,7 +170,7 @@ export function Trappings({ character, onChange }: Props) {
       <View style={styles.btnRow}>
         <TouchableOpacity style={[styles.addBtn, { flex: 1, borderColor: t.colors.accent }]} onPress={openAdd}>
           <Plus size={14} color={t.colors.accent} />
-          <Text style={[styles.addText, { color: t.colors.accent }]}>{tr('wfrp.trappings.addItem')}</Text>
+          <Text style={[styles.addText, { color: t.colors.accentFg }]}>{tr('wfrp.trappings.addItem')}</Text>
         </TouchableOpacity>
         {character.trappings.length > 0 && (
           <TouchableOpacity
@@ -210,7 +210,7 @@ export function Trappings({ character, onChange }: Props) {
                   onPress={() => setCoin(character.wealth[coin] + 1)}
                   accessibilityLabel={tr('wfrp.trappings.increaseCoin', { coin: tr(COIN_LABEL_KEY[coin]) })}
                 >
-                  <Text style={[styles.coinBtnText, { color: t.colors.accent }]}>+</Text>
+                  <Text style={[styles.coinBtnText, { color: t.colors.accentFg }]}>+</Text>
                 </TouchableOpacity>
               </View>
             </View>
@@ -229,7 +229,7 @@ export function Trappings({ character, onChange }: Props) {
             {!editId && (
               <TouchableOpacity style={[styles.bookBtn, { borderColor: t.colors.accent }]} onPress={() => setPicking(true)}>
                 <BookOpen size={15} color={t.colors.accent} />
-                <Text style={[styles.bookBtnText, { color: t.colors.accent }]}>{tr('wfrp.trappings.searchBook')}</Text>
+                <Text style={[styles.bookBtnText, { color: t.colors.accentFg }]}>{tr('wfrp.trappings.searchBook')}</Text>
               </TouchableOpacity>
             )}
             <TextInput
