@@ -17,6 +17,7 @@ import { rollRandomTalents } from '@/lib/randomTalents';
 import { roll } from '@/dice/engine';
 import { getContentByNames } from '@/db/queries';
 import { confirmRemove } from '@/lib/confirm';
+import { hoverTitle } from '@/lib/a11y';
 import type { Wfrp4eCharacter } from '@/types/wfrp4e';
 
 type Talent = Wfrp4eCharacter['talents'][number];
@@ -126,10 +127,10 @@ export function Talents({ character, onChange }: Props) {
           >
             <Text style={[styles.rankChipText, { color: t.colors.accentFg }]}>×{tal.timesTaken}</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => setWikiId(tal.id)} style={styles.del} accessibilityLabel={tr('wfrp.talents.infoFor', { name: tal.name })}>
+          <TouchableOpacity onPress={() => setWikiId(tal.id)} style={styles.del} accessibilityLabel={tr('wfrp.talents.infoFor', { name: tal.name })} {...hoverTitle(tr('wfrp.talents.infoFor', { name: tal.name }))}>
             <Info size={14} color={t.colors.textMuted} />
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => remove(tal.id)} style={styles.del}>
+          <TouchableOpacity onPress={() => remove(tal.id)} style={styles.del} accessibilityLabel={tr('wfrp.talents.removeA11y', { name: tal.name })} {...hoverTitle(tr('wfrp.talents.removeA11y', { name: tal.name }))}>
             <Trash2 size={14} color={t.colors.danger} />
           </TouchableOpacity>
         </View>

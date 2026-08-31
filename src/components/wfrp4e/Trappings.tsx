@@ -12,6 +12,7 @@ import { EditableNumber } from '@/components/ui/EditableNumber';
 import { ContentPicker } from '@/components/wfrp4e/ContentPicker';
 import { WikiModal } from '@/components/wfrp4e/WikiModal';
 import { confirmRemove } from '@/lib/confirm';
+import { hoverTitle } from '@/lib/a11y';
 import { encumbranceMaxValue, characteristicBonus, encumbranceCarried, encumbranceLevel, encumbrancePenalty, defaultContainerCapacity } from '@/types/wfrp4e';
 import type { Wfrp4eCharacter } from '@/types/wfrp4e';
 
@@ -144,7 +145,7 @@ export function Trappings({ character, onChange }: Props) {
             </View>
           )}
           {(!!item.description || !!item.page) && (
-            <TouchableOpacity onPress={() => setWikiId(item.id)} style={styles.del} accessibilityLabel={tr('wfrp.trappings.infoFor', { name: item.name })}>
+            <TouchableOpacity onPress={() => setWikiId(item.id)} style={styles.del} accessibilityLabel={tr('wfrp.trappings.infoFor', { name: item.name })} {...hoverTitle(tr('wfrp.trappings.infoFor', { name: item.name }))}>
               <Info size={14} color={t.colors.textMuted} />
             </TouchableOpacity>
           )}
@@ -161,7 +162,7 @@ export function Trappings({ character, onChange }: Props) {
               {tr(item.equipped ? 'wfrp.equip.equipped' : 'wfrp.equip.equip')}
             </Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => remove(item.id)} style={styles.del}>
+          <TouchableOpacity onPress={() => remove(item.id)} style={styles.del} accessibilityLabel={tr('wfrp.trappings.removeA11y', { name: item.name })} {...hoverTitle(tr('wfrp.trappings.removeA11y', { name: item.name }))}>
             <Trash2 size={14} color={t.colors.danger} />
           </TouchableOpacity>
         </View>

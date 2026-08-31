@@ -12,6 +12,7 @@ import { EditableNumber } from '@/components/ui/EditableNumber';
 import { ContentPicker } from '@/components/wfrp4e/ContentPicker';
 import { ArmourBodyMap } from '@/components/wfrp4e/ArmourBodyMap';
 import { confirmRemove } from '@/lib/confirm';
+import { hoverTitle } from '@/lib/a11y';
 import { isWeapon, isArmour, weaponFromRecord, armourFromRecord } from '@/lib/wfrpTrappings';
 import { armourPointsByLocation } from '@/types/wfrp4e';
 import type { Wfrp4eCharacter, ArmourLocation } from '@/types/wfrp4e';
@@ -188,7 +189,7 @@ export function Combat({ character, onChange }: Props) {
                   {tr(w.equipped ? 'wfrp.equip.equipped' : 'wfrp.equip.equip')}
                 </Text>
               </TouchableOpacity>
-              <TouchableOpacity onPress={() => removeWeapon(w.id)} style={styles.del}>
+              <TouchableOpacity onPress={() => removeWeapon(w.id)} style={styles.del} accessibilityLabel={tr('wfrp.combat.removeWeaponA11y', { name: w.name })} {...hoverTitle(tr('wfrp.combat.removeWeaponA11y', { name: w.name }))}>
                 <Trash2 size={14} color={t.colors.danger} />
               </TouchableOpacity>
             </View>
@@ -253,7 +254,7 @@ export function Combat({ character, onChange }: Props) {
                 {tr(a.equipped ? 'wfrp.equip.equipped' : 'wfrp.equip.equip')}
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => removeArmour(a.id)} style={styles.del}>
+            <TouchableOpacity onPress={() => removeArmour(a.id)} style={styles.del} accessibilityLabel={tr('wfrp.combat.removeArmourA11y', { name: a.name })} {...hoverTitle(tr('wfrp.combat.removeArmourA11y', { name: a.name }))}>
               <Trash2 size={14} color={t.colors.danger} />
             </TouchableOpacity>
           </View>

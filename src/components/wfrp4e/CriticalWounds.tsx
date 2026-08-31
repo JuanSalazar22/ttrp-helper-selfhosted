@@ -9,6 +9,7 @@ import { Section } from '@/components/ui/Section';
 import { ContentPicker } from '@/components/wfrp4e/ContentPicker';
 import { WikiModal } from '@/components/wfrp4e/WikiModal';
 import { confirmRemove } from '@/lib/confirm';
+import { hoverTitle } from '@/lib/a11y';
 import { searchContent } from '@/db/queries';
 import { findCriticalWound } from './criticalWoundLookup';
 import type { Wfrp4eCharacter } from '@/types/wfrp4e';
@@ -135,7 +136,7 @@ export function CriticalWounds({ character, onChange }: Props) {
               {w.roll !== null ? ` · ${tr('wfrp.criticalWounds.rollLabel')} ${w.roll}` : ''}
             </Text>
           </View>
-          <TouchableOpacity onPress={() => removeWound(w.id)} style={styles.del} hitSlop={8}>
+          <TouchableOpacity onPress={() => removeWound(w.id)} style={styles.del} hitSlop={8} accessibilityLabel={tr('wfrp.criticalWounds.removeA11y', { name: w.name })} {...hoverTitle(tr('wfrp.criticalWounds.removeA11y', { name: w.name }))}>
             <Trash2 size={14} color={t.colors.danger} />
           </TouchableOpacity>
         </TouchableOpacity>

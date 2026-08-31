@@ -8,6 +8,7 @@ import { useTheme } from '@/hooks/useTheme';
 import { useTranslation } from '@/i18n';
 import { Section } from '@/components/ui/Section';
 import { confirmRemove } from '@/lib/confirm';
+import { hoverTitle } from '@/lib/a11y';
 import { abilityModifier } from '@/types/dnd5e';
 import type { Dnd5eCharacter } from '@/types/dnd5e';
 import { v4 as uuidv4 } from 'uuid';
@@ -139,7 +140,11 @@ export function Spellcasting({ character, onChange }: Props) {
               <Text style={[styles.spellName, { color: t.colors.text, flex: 1 }]}>{spell.name}</Text>
               {spell.notes && <Text style={[styles.spellNotes, { color: t.colors.textMuted }]}>{spell.notes}</Text>}
               {onChange && (
-                <TouchableOpacity onPress={() => confirmRemove(tr, tr('dnd.spells.deleteConfirm', { name: spell.name }), () => deleteSpell(spell.id), tr('dnd.spells.deleteTitle'))}>
+                <TouchableOpacity
+                  onPress={() => confirmRemove(tr, tr('dnd.spells.deleteConfirm', { name: spell.name }), () => deleteSpell(spell.id), tr('dnd.spells.deleteTitle'))}
+                  accessibilityLabel={tr('dnd.spells.deleteA11y', { name: spell.name })}
+                  {...hoverTitle(tr('dnd.spells.deleteA11y', { name: spell.name }))}
+                >
                   <Trash2 size={13} color={t.colors.textMuted} />
                 </TouchableOpacity>
               )}
@@ -170,7 +175,11 @@ export function Spellcasting({ character, onChange }: Props) {
               </Text>
               {spell.notes && <Text style={[styles.spellNotes, { color: t.colors.textMuted }]}>{spell.notes}</Text>}
               {onChange && (
-                <TouchableOpacity onPress={() => confirmRemove(tr, tr('dnd.spells.deleteConfirm', { name: spell.name }), () => deleteSpell(spell.id), tr('dnd.spells.deleteTitle'))}>
+                <TouchableOpacity
+                  onPress={() => confirmRemove(tr, tr('dnd.spells.deleteConfirm', { name: spell.name }), () => deleteSpell(spell.id), tr('dnd.spells.deleteTitle'))}
+                  accessibilityLabel={tr('dnd.spells.deleteA11y', { name: spell.name })}
+                  {...hoverTitle(tr('dnd.spells.deleteA11y', { name: spell.name }))}
+                >
                   <Trash2 size={13} color={t.colors.textMuted} />
                 </TouchableOpacity>
               )}

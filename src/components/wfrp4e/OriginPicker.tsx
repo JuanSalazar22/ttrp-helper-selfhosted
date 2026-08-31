@@ -9,6 +9,7 @@ import { OriginEditor } from '@/components/wfrp4e/OriginEditor';
 import { useWfrpLibrary } from '@/hooks/useWfrpLibrary';
 import { applyOrigin, type GrantedTalent } from '@/types/wfrp4e';
 import { getContentByNames } from '@/db/queries';
+import { hoverTitle } from '@/lib/a11y';
 import type { Wfrp4eCharacter, WfrpOriginDef } from '@/types/wfrp4e';
 
 type Props = {
@@ -51,7 +52,7 @@ export function OriginPicker({ visible, character, onChange, onClose }: Props) {
       <SafeAreaView style={[styles.screen, { backgroundColor: t.colors.background }]}>
         <View style={[styles.header, { borderBottomColor: t.colors.border }]}>
           <Text style={[styles.title, { color: t.colors.text }]}>{tr('wfrp.origin.title')}</Text>
-          <TouchableOpacity onPress={onClose} hitSlop={12} accessibilityLabel={tr('wfrp.origin.closeA11y')}>
+          <TouchableOpacity onPress={onClose} hitSlop={12} accessibilityLabel={tr('wfrp.origin.closeA11y')} {...hoverTitle(tr('wfrp.origin.closeA11y'))}>
             <X size={24} color={t.colors.textMuted} />
           </TouchableOpacity>
         </View>

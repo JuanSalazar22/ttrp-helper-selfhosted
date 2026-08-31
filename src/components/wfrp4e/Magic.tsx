@@ -11,6 +11,7 @@ import { Section } from '@/components/ui/Section';
 import { ContentPicker } from '@/components/wfrp4e/ContentPicker';
 import { WikiModal } from '@/components/wfrp4e/WikiModal';
 import { confirmRemove } from '@/lib/confirm';
+import { hoverTitle } from '@/lib/a11y';
 import type { Wfrp4eCharacter } from '@/types/wfrp4e';
 
 type Spell = Wfrp4eCharacter['spells'][number];
@@ -133,10 +134,11 @@ export function Magic({ character, onChange }: Props) {
             <TouchableOpacity
               onPress={() => setWiki({ title: s.name, subtitle: [s.lore ? tr('wfrp.magic.lorePrefixed', { lore: s.lore }) : '', `CN ${s.castingNumber}`, s.range, s.target, s.duration, s.page].filter(Boolean).join(' · '), body: s.effect })}
               style={styles.del} accessibilityLabel={tr('wfrp.magic.infoFor', { name: s.name })}
+              {...hoverTitle(tr('wfrp.magic.infoFor', { name: s.name }))}
             >
               <Info size={14} color={t.colors.textMuted} />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => removeSpell(s.id)} style={styles.del}>
+            <TouchableOpacity onPress={() => removeSpell(s.id)} style={styles.del} accessibilityLabel={tr('wfrp.magic.removeSpellA11y', { name: s.name })} {...hoverTitle(tr('wfrp.magic.removeSpellA11y', { name: s.name }))}>
               <Trash2 size={14} color={t.colors.danger} />
             </TouchableOpacity>
           </View>
@@ -159,10 +161,11 @@ export function Magic({ character, onChange }: Props) {
             <TouchableOpacity
               onPress={() => setWiki({ title: p.name, subtitle: [p.god, p.range, p.target, p.duration, p.page].filter(Boolean).join(' · '), body: p.effect })}
               style={styles.del} accessibilityLabel={tr('wfrp.magic.infoFor', { name: p.name })}
+              {...hoverTitle(tr('wfrp.magic.infoFor', { name: p.name }))}
             >
               <Info size={14} color={t.colors.textMuted} />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => removePrayer(p.id)} style={styles.del}>
+            <TouchableOpacity onPress={() => removePrayer(p.id)} style={styles.del} accessibilityLabel={tr('wfrp.magic.removePrayerA11y', { name: p.name })} {...hoverTitle(tr('wfrp.magic.removePrayerA11y', { name: p.name }))}>
               <Trash2 size={14} color={t.colors.danger} />
             </TouchableOpacity>
           </View>

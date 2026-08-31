@@ -12,6 +12,7 @@ import { AdvanceCalculatorModal } from '@/components/wfrp4e/AdvanceCalculatorMod
 import { ContentPicker } from '@/components/wfrp4e/ContentPicker';
 import { WikiModal } from '@/components/wfrp4e/WikiModal';
 import { confirmRemove } from '@/lib/confirm';
+import { hoverTitle } from '@/lib/a11y';
 import { CHARACTERISTIC_LABELS } from '@/types/wfrp4e';
 import type { CharacteristicKey as CharKey } from '@/types/wfrp4e';
 import { characteristicTotal, advanceCost, experienceCurrent } from '@/types/wfrp4e';
@@ -76,10 +77,10 @@ export function WfrpSkills({ character, onChange, onRoll }: Props) {
             <TouchableOpacity activeOpacity={0.6} onPress={() => onRoll(total(s), s.name)} style={styles.totalBox}>
               <Text style={[styles.total, { color: t.colors.accentFg, fontFamily: t.fontFamily.serif }]}>{total(s)}</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => setWikiId(s.id)} style={styles.info} accessibilityLabel={tr('wfrp.skills.infoFor', { name: s.name })}>
+            <TouchableOpacity onPress={() => setWikiId(s.id)} style={styles.info} accessibilityLabel={tr('wfrp.skills.infoFor', { name: s.name })} {...hoverTitle(tr('wfrp.skills.infoFor', { name: s.name }))}>
               <Info size={14} color={t.colors.textMuted} />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => remove(s.id)} style={styles.del}>
+            <TouchableOpacity onPress={() => remove(s.id)} style={styles.del} accessibilityLabel={tr('wfrp.skills.removeA11y', { name: s.name })} {...hoverTitle(tr('wfrp.skills.removeA11y', { name: s.name }))}>
               <Trash2 size={14} color={t.colors.danger} />
             </TouchableOpacity>
           </View>

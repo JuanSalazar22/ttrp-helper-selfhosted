@@ -2,6 +2,7 @@ import { View, Text, Modal, TouchableOpacity, ScrollView, StyleSheet } from 'rea
 import { X } from 'lucide-react-native';
 import { useTheme } from '@/hooks/useTheme';
 import { useTranslation } from '@/i18n';
+import { hoverTitle } from '@/lib/a11y';
 
 type Props = {
   visible: boolean;
@@ -26,7 +27,7 @@ export function WikiModal({ visible, title, subtitle, body, onClose }: Props) {
               <Text style={[styles.title, { color: t.colors.text, fontFamily: t.fontFamily.serif }]}>{title}</Text>
               {!!subtitle && <Text style={[styles.subtitle, { color: t.colors.textSecondary }]}>{subtitle}</Text>}
             </View>
-            <TouchableOpacity onPress={onClose} hitSlop={12} accessibilityLabel={tr('wfrp.wiki.closeA11y')}>
+            <TouchableOpacity onPress={onClose} hitSlop={12} accessibilityLabel={tr('wfrp.wiki.closeA11y')} {...hoverTitle(tr('wfrp.wiki.closeA11y'))}>
               <X size={22} color={t.colors.textMuted} />
             </TouchableOpacity>
           </View>

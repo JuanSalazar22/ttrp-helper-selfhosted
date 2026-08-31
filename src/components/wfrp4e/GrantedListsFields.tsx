@@ -3,6 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-nativ
 import { X, Plus } from 'lucide-react-native';
 import { useTheme } from '@/hooks/useTheme';
 import { useTranslation } from '@/i18n';
+import { hoverTitle } from '@/lib/a11y';
 import type { CharacteristicKey, GrantedSkill } from '@/types/wfrp4e';
 
 const KEYS: CharacteristicKey[] = ['ws', 'bs', 's', 't', 'i', 'ag', 'dex', 'int', 'wp', 'fel'];
@@ -47,7 +48,7 @@ export function GrantedListsFields({ value, onChange }: Props) {
         <View key={i} style={[styles.listRow, { borderColor: t.colors.border }]}>
           <Text style={[styles.listText, { color: t.colors.text }]} numberOfLines={1}>{s.name}</Text>
           <Text style={[styles.charTag, { color: t.colors.textSecondary }]}>{tr(`wfrp.char.${s.characteristic}`)}</Text>
-          <TouchableOpacity onPress={() => removeSkill(i)} hitSlop={8} accessibilityLabel={tr('wfrp.grants.removeSkillA11y', { name: s.name })}><X size={16} color={t.colors.danger} /></TouchableOpacity>
+          <TouchableOpacity onPress={() => removeSkill(i)} hitSlop={8} accessibilityLabel={tr('wfrp.grants.removeSkillA11y', { name: s.name })} {...hoverTitle(tr('wfrp.grants.removeSkillA11y', { name: s.name }))}><X size={16} color={t.colors.danger} /></TouchableOpacity>
         </View>
       ))}
       <View style={styles.addRow}>
@@ -59,7 +60,7 @@ export function GrantedListsFields({ value, onChange }: Props) {
         <TouchableOpacity onPress={cycleChar} style={[styles.charBtn, { borderColor: t.colors.border }]} activeOpacity={0.7}>
           <Text style={[styles.charBtnText, { color: t.colors.textSecondary }]}>{tr(`wfrp.char.${skillChar}`)}</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={addSkill} style={[styles.addBtn, { backgroundColor: t.colors.accent }]} activeOpacity={0.7}>
+        <TouchableOpacity onPress={addSkill} style={[styles.addBtn, { backgroundColor: t.colors.accent }]} activeOpacity={0.7} accessibilityLabel={tr('wfrp.grants.addSkillA11y')} {...hoverTitle(tr('wfrp.grants.addSkillA11y'))}>
           <Plus size={16} color={t.colors.accentText} />
         </TouchableOpacity>
       </View>
@@ -68,7 +69,7 @@ export function GrantedListsFields({ value, onChange }: Props) {
       {value.talents.map((name, i) => (
         <View key={i} style={[styles.listRow, { borderColor: t.colors.border }]}>
           <Text style={[styles.listText, { color: t.colors.text }]} numberOfLines={1}>{name}</Text>
-          <TouchableOpacity onPress={() => removeTalent(i)} hitSlop={8} accessibilityLabel={tr('wfrp.grants.removeTalentA11y', { name })}><X size={16} color={t.colors.danger} /></TouchableOpacity>
+          <TouchableOpacity onPress={() => removeTalent(i)} hitSlop={8} accessibilityLabel={tr('wfrp.grants.removeTalentA11y', { name })} {...hoverTitle(tr('wfrp.grants.removeTalentA11y', { name }))}><X size={16} color={t.colors.danger} /></TouchableOpacity>
         </View>
       ))}
       <View style={styles.addRow}>
@@ -77,7 +78,7 @@ export function GrantedListsFields({ value, onChange }: Props) {
           value={talentName} onChangeText={setTalentName}
           placeholder={tr('wfrp.grants.talentNamePlaceholder')} placeholderTextColor={t.colors.textMuted}
         />
-        <TouchableOpacity onPress={addTalent} style={[styles.addBtn, { backgroundColor: t.colors.accent }]} activeOpacity={0.7}>
+        <TouchableOpacity onPress={addTalent} style={[styles.addBtn, { backgroundColor: t.colors.accent }]} activeOpacity={0.7} accessibilityLabel={tr('wfrp.grants.addTalentA11y')} {...hoverTitle(tr('wfrp.grants.addTalentA11y'))}>
           <Plus size={16} color={t.colors.accentText} />
         </TouchableOpacity>
       </View>
