@@ -3,6 +3,7 @@
 **Date:** 2026-08-31
 **Status:** Draft — pending review
 **Topic:** Fix the contrast, accessibility-labeling, touch-target, and motion issues found by a full-app UI/UX audit (run against WCAG AA and mobile HIG/Material touch-target guidelines, since the app is React Native/Expo rather than a web page).
+**Process requirement:** The `design-taste-frontend` ("taste-skill") and `web-design-guidelines` skills must both be invoked as part of executing this spec — not just during the original audit. Since those skills are written for web marketing pages and this is a React Native/Expo app, apply only their transferable, platform-agnostic checks (contrast math, disabled/error/empty state handling, color-token discipline, touch-target sizing, motion/reduced-motion, screen-reader labeling) rather than their web-only rules (Tailwind, `<a>`/`<Link>` nav, hero-section/landing-page layout rules, em-dash bans, etc.), per the scope note in `design-taste-frontend`'s own Section 13 excluding native mobile. Re-run both skills against the changed files before considering this spec done, to catch anything the initial audit missed and confirm no new violations were introduced by the fixes themselves.
 
 ## Context
 
@@ -46,6 +47,7 @@ A pass over `src/tokens/colors.ts` and every screen/component was done using com
 
 ## Testing / verification plan
 
+- Before marking this spec complete, re-invoke both `design-taste-frontend` and `web-design-guidelines` against the touched files (tokens, the four disabled-button components, the labeled close/header buttons, the resized touch targets, and the four animated components) and confirm no findings remain and no new violations were introduced.
 - Extend (or reuse) the contrast-ratio Node script used during the audit as a one-off check for each new/changed token pair before committing the color value — not shipped as a permanent script unless useful for future token additions.
 - After the token and component changes, manually verify in both light and dark mode: status pill legible, rank pill legible, dark-mode labels (e.g. a `Section.tsx` header, an "equipped" tag) legible, tab bar inactive labels legible.
 - Manually trigger each of the four disabled-button states (empty name in Create Character, no career-advance changes, empty custom dice expression, empty buff name) and confirm the label is visible (muted, not white-on-light).
