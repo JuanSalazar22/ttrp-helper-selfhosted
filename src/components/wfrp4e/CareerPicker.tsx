@@ -99,7 +99,9 @@ export function CareerPicker({ visible, character, onChange, onClose }: Props) {
     setLoading(true);
     const handle = setTimeout(async () => {
       try {
-        const careers = await searchContent(db, 'career', query, 60, locale);
+        // Comfortably above the seeded career count (~180) so browsing/searching never
+        // silently truncates — same fix as ContentPicker's SEARCH_LIMIT.
+        const careers = await searchContent(db, 'career', query, 300, locale);
         if (!cancelled) setRows(expandToLevelRows(careers));
       } finally {
         if (!cancelled) setLoading(false);

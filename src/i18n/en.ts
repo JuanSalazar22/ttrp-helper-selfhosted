@@ -397,6 +397,7 @@ export const en = {
       searchPlaceholder: 'Search the book…',
       useCustom: 'Use "{query}" as custom',
       noMatches: 'No matches. Type a name, or close to create a custom one.',
+      truncatedHint: 'Showing the first {n} results — keep typing to narrow it down.',
     },
     wiki: {
       closeA11y: 'Close',

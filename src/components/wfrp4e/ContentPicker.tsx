@@ -11,6 +11,14 @@ import { searchContent } from '@/db/queries';
 import { hoverTitle } from '@/lib/a11y';
 import type { ContentCategory, ContentRecord } from '@/data/wfrp-content';
 
+// Comfortably above the largest seeded category (Trappings, ~640 entries) so browsing
+// with an empty query — or a broad search — returns everything instead of silently
+// truncating to an alphabetical slice. FlatList only renders what's on screen, so a
+// generous fetch here doesn't cost anything at render time; it's a plain LIKE scan on a
+// local SQLite DB either way. `rows.length === SEARCH_LIMIT` below is a safety net in
+// case a future content update ever pushes a category past this.
+const SEARCH_LIMIT = 1000;
+
 type Props = {
   visible: boolean;
   category: ContentCategory;
@@ -34,6 +42,7 @@ export function ContentPicker({ visible, category, title, onSelect, onClose, sub
   const { locale } = useLocale();
   const [query, setQuery] = useState('');
   const [rows, setRows] = useState<ContentRecord[]>([]);
+  const [truncated, setTruncated] = useState(false);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -47,8 +56,13 @@ export function ContentPicker({ visible, category, title, onSelect, onClose, sub
     setLoading(true);
     const handle = setTimeout(async () => {
       try {
-        const res = await searchContent(db, category, query, filter ? 200 : 40, locale);
-        if (!cancelled) setRows(filter ? res.filter(filter).slice(0, 60) : res);
+        const res = await searchContent(db, category, query, SEARCH_LIMIT, locale);
+        if (!cancelled) {
+          setRows(filter ? res.filter(filter) : res);
+          // Only meaningful for the unfiltered case — a filter can legitimately shrink
+          // a full result set well under SEARCH_LIMIT with nothing missing.
+          setTruncated(!filter && res.length >= SEARCH_LIMIT);
+        }
       } finally {
         if (!cancelled) setLoading(false);
       }
@@ -102,6 +116,13 @@ export function ContentPicker({ visible, category, title, onSelect, onClose, sub
                 ? <ActivityIndicator style={{ marginTop: 24 }} color={t.colors.accent} />
                 : <Text style={[styles.empty, { color: t.colors.textMuted }]}>{tr('wfrp.contentPicker.noMatches')}</Text>
             }
+            ListFooterComponent={
+              truncated ? (
+                <Text style={[styles.truncatedHint, { color: t.colors.textMuted }]}>
+                  {tr('wfrp.contentPicker.truncatedHint', { n: SEARCH_LIMIT })}
+                </Text>
+              ) : null
+            }
             renderItem={({ item }) => (
               <TouchableOpacity
                 style={[styles.rowItem, { borderBottomColor: t.colors.border }]}
@@ -128,6 +149,7 @@ const styles = StyleSheet.create({
   searchInput: { flex: 1, fontSize: 15 },
   list: { marginTop: 8 },
   empty: { textAlign: 'center', marginTop: 24, fontSize: 13, paddingHorizontal: 20 },
+  truncatedHint: { textAlign: 'center', marginTop: 8, marginBottom: 4, fontSize: 12, paddingHorizontal: 20 },
   customRow: { paddingVertical: 12, paddingHorizontal: 12, borderWidth: 1, borderRadius: 8, borderStyle: 'dashed', marginBottom: 6 },
   customText: { fontSize: 14, fontWeight: '700' },
   rowItem: { paddingVertical: 12, borderBottomWidth: StyleSheet.hairlineWidth },
