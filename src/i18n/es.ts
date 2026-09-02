@@ -398,6 +398,7 @@ export const es: DeepPartial<Messages> = {
       searchPlaceholder: 'Buscar en el libro…',
       useCustom: 'Usar "{query}" como personalizado',
       noMatches: 'Sin resultados. Escribe un nombre o cierra para crear uno personalizado.',
+      truncatedHint: 'Mostrando los primeros {n} resultados — sigue escribiendo para acotar.',
     },
     wiki: {
       closeA11y: 'Cerrar',

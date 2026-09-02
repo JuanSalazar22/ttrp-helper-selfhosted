@@ -290,7 +290,11 @@ export async function getContentByNames(
   );
 }
 
-/** Case-insensitive name search within one category, overlaying locale translations on results. */
+/** Case-insensitive name search within one category, overlaying locale translations on
+ *  results. `limit` should comfortably exceed the category's total row count when the
+ *  caller means to let the user browse everything (e.g. an empty query) — the query
+ *  itself is a plain indexed-friendly LIKE scan, so a generous limit costs nothing on a
+ *  local SQLite DB; it's the row COUNT actually returned to the UI that matters. */
 export async function searchContent(
   db: SQLite.SQLiteDatabase,
   category: ContentCategory,
@@ -298,18 +302,31 @@ export async function searchContent(
   limit = 30,
   locale: Locale = 'en'
 ): Promise<ContentRecord[]> {
-  const q = `%${query.trim()}%`;
+  const trimmed = query.trim();
+  const q = `%${trimmed}%`;
+  const nameExpr = 'COALESCE(t.name, c.name)';
   // Careers carry rank-specific level names inside `data` (e.g. "Doktor" for Physician);
   // match those too so a search by rank title finds the parent career.
   const matchData = category === 'career';
   const dataClause = matchData ? ' OR c.data LIKE ? COLLATE NOCASE' : '';
-  const params = matchData ? [locale, category, q, q, q, limit] : [locale, category, q, q, limit];
+  // Once there's something to match, rank exact hits ahead of prefix hits ahead of plain
+  // substring hits (still alphabetical within each tier) — so typing more of a name
+  // surfaces it immediately instead of it being buried among hundreds of alphabetically
+  // earlier matches in a large category (e.g. Trappings, 600+ entries). An empty query
+  // (browsing) has nothing to rank against, so it stays plain alphabetical.
+  const orderBy = trimmed
+    ? `CASE WHEN ${nameExpr} LIKE ? COLLATE NOCASE THEN 0 WHEN ${nameExpr} LIKE ? COLLATE NOCASE THEN 1 ELSE 2 END, ${nameExpr}`
+    : nameExpr;
+  const params: (string | number)[] = [locale, category, q, q];
+  if (matchData) params.push(q);
+  if (trimmed) params.push(trimmed, `${trimmed}%`);
+  params.push(limit);
   const rows = await db.getAllAsync<{ data: string; overlay: string | null }>(
     `SELECT c.data AS data, t.overlay AS overlay
        FROM content_library c
        LEFT JOIN content_translations t ON t.content_id = c.id AND t.locale = ?
       WHERE c.category = ? AND (c.name LIKE ? COLLATE NOCASE OR t.name LIKE ? COLLATE NOCASE${dataClause})
-      ORDER BY COALESCE(t.name, c.name) LIMIT ?`,
+      ORDER BY ${orderBy} LIMIT ?`,
     params
   );
   return rows.map((r) =>
